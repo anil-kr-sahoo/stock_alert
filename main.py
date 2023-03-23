@@ -2,6 +2,8 @@ import contextlib
 import os
 import json
 import csv
+import platform
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
@@ -25,7 +27,8 @@ def send_notifications(title, message):
     # For ubuntu, as it has not any sound on desktop notification
     # "sudo apt install sox"
     with contextlib.suppress(Exception):
-        os.system('spd-say "hey, you got notification from stock alert" ')
+        if platform.system() == "Linux":
+            os.system('spd-say "hey, you got notification from stock alert" ')
 
 
 def get_two_decimal_val(decimal_num):
@@ -85,7 +88,7 @@ def get_stock_details(all_data):
     stock_details["Qty"] = stock_qty
 
     print(json.dumps(stock_details, indent=2))
-    send_notifications("Stok Details", str(stock_details))
+    send_notifications("Stok Details", str(stock_details["Name"]))
     return stock_details
 
 
@@ -149,9 +152,8 @@ with open("stock_data.json", "w") as twitter_data_file:
     json.dump(all_data, twitter_data_file, indent=4, sort_keys=True)
 
 
-file = open('stock_details.csv', 'w')
-writer = csv.writer(file)
-heading = [list(all_data[0].keys())]
-stock_details = [list(data.values()) for data in all_data]
-writer.writerows(heading + stock_details)
-file.close()
+with open('stock_details.csv', 'w') as file:
+    writer = csv.writer(file)
+    heading = [list(all_data[0].keys())]
+    stock_details = [list(data.values()) for data in all_data]
+    writer.writerows(heading + stock_details)
