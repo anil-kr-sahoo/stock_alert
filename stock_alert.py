@@ -15,7 +15,8 @@ from plyer import notification
 # Use Airtel Wi-Fi battery indicator as well
 USE_WIFI_INDICATOR = True
 modem_url = "http://192.168.1.1/index.html"
-
+buy_stock_list = []
+sell_stock_list = []
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
 urls = [
@@ -41,7 +42,7 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 9, 74.73, -4.5],
+    ['https://groww.in/stocks/bank-of-india', 9, 74.73],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
     ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
@@ -123,6 +124,7 @@ def get_stock_details(all_data):
     stock_average_val = all_data[2]
     try:
         lowest_day_limit = all_data[3]
+        print(f"Manually limit provided on {url}")
     except Exception as e:
         lowest_day_limit = -2
 
@@ -140,9 +142,8 @@ def get_stock_details(all_data):
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
     individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")), "Name": name,
                                 "Current Price": current_price,
-                                "Day Returns": day_returns}
-    if stock_qty:
-        individual_stock_details["Stock_average_value"] = stock_average_val
+                                "Day Returns": day_returns,
+                                "Stock Average Value": stock_average_val}
     for each in all_details.split('\n'):
         if 'Dividend' in each:
             dividend_ratio_percentage = get_float_val(each.split(" ")[-1][:-1])
@@ -188,46 +189,6 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
     print(json.dumps(individual_stock_details, indent=2))
 
 
-def sleep_time_modifier():
-    global sleep_time
-    current_day = datetime.now().weekday()
-    current_hour = datetime.now().hour
-    if current_hour > 15:
-        sleep_time = 18 * 60 * 60
-        print("----------Trade out for today----------")
-    if current_day > 4:
-        sleep_time = 66 * 60 * 60
-        print("----------Trade out for this week----------")
-    if current_day > 4 or current_hour > 15:
-        wifi_battery_health_checker()
-    if 10 <= current_hour <= 15 and current_day < 5:
-        sleep_time = 120
-
-
-def wifi_battery_health_checker():
-    if not USE_WIFI_INDICATOR:
-        return
-    while True:
-        wifi_options = Options()
-        wifi_options.headless = True
-        wifi_options.add_argument('--remote-debugging-port=61625')
-        wifi_options.add_argument('--no-sandbox')
-        wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
-        wifi_driver.execute_script("window.open('about:blank', 'secondtab');")
-        wifi_driver.switch_to.window("secondtab")
-        wifi_driver.get(modem_url)
-        wifi_battery_percentage = \
-            wifi_driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
-                '</b>')[0][:-1]
-        print(wifi_battery_percentage)
-        with contextlib.suppress(Exception):
-            if int(wifi_battery_percentage) <= 15:
-                send_notifications(title=f"{wifi_battery_percentage}% Battery Left",
-                                   message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-        wifi_driver.quit()
-        sleep(60)
-
-
 def generate_files(file_name, file_data):
     with open(f"{file_name}.json", "w") as stock_data:
         json.dump(file_data, stock_data, indent=4, sort_keys=True)
@@ -239,13 +200,10 @@ def generate_files(file_name, file_data):
         writer.writerows(heading + stock_details)
 
 
-current_date = datetime.now()
 sleep_time = 120
-buy_stock_list = list()
-sell_stock_list = list()
 
 while True:
-    all_stocks_data = list()
+    all_stocks_data = []
 
     options = Options()
     options.headless = True
@@ -260,21 +218,20 @@ while True:
         all_stocks_data.append(get_stock_details(data))
 
     if USE_WIFI_INDICATOR:
-        # Get airtel wi-fi modem battery health
-        # ------------------------------------------------------------------------------------------------------------------
-        driver.execute_script("window.open('about:blank', 'secondtab');")
-        driver.switch_to.window("secondtab")
-        driver.get(modem_url)
-        battery_percentage = \
-            driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[0][
-            :-1]
-        print(battery_percentage)
         with contextlib.suppress(Exception):
-            if int(battery_percentage) <= 15:
-                send_notifications(title=f"{battery_percentage}% Battery Left",
-                                   message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-        # ------------------------------------------------------------------------------------------------------------------
-
+            # Get airtel wi-fi modem battery health
+            # ------------------------------------------------------------------------------------------------------------------
+            driver.execute_script("window.open('about:blank', 'secondtab');")
+            driver.switch_to.window("secondtab")
+            driver.get(modem_url)
+            battery_level = \
+                driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[
+                    0][:-1]
+            print(battery_level)
+            with contextlib.suppress(Exception):
+                if int(battery_level) <= 15:
+                    send_notifications(title=f"{battery_level}% Battery Left",
+                                       message="Wifi modem is going to be shut down soon\nPlease plug in charger")
     driver.quit()
 
     # Calculate total dividend to get from stocks
@@ -289,10 +246,10 @@ while True:
         file = 'sell_stock_details'
         data = sell_stock_list
         generate_files(file, data)
-    if (datetime.now().hour >= 15 and datetime.now().minute > 50) or buy_stock_list or sell_stock_list:
+    if (datetime.now().hour >= 15 and datetime.now().minute > 50) or datetime.now().hour > 15:
         file = 'stock_data'
         data = all_stocks_data
         generate_files(file, data)
+        break
 
-    sleep_time_modifier()
     sleep(sleep_time)
