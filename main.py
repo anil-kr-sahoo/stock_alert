@@ -18,6 +18,7 @@ modem_url = "http://192.168.1.1/index.html"
 
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
+lowest_day_limit = -2
 urls = [
     ['https://groww.in/stocks/equitas-small-finance-bank-ltd', 1, 67.40],
     ['https://groww.in/stocks/dcb-bank-ltd', 1, 119.95],
@@ -41,7 +42,7 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    # ['https://groww.in/stocks/bank-of-india', 5, 77.96],
+    ['https://groww.in/stocks/bank-of-india', 9, 74.73],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
     ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
@@ -160,7 +161,7 @@ def get_stock_details(all_data):
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
-    if day_returns <= -2 and dividend_ratio_percentage > 2:
+    if day_returns <= lowest_day_limit and dividend_ratio_percentage > 2:
         global_notifier(
             "Buy Stocks",
             notify_details,
@@ -189,8 +190,10 @@ def sleep_time_modifier():
     current_hour = datetime.now().hour
     if current_hour > 15:
         sleep_time = 18 * 60 * 60
+        print("----------Trade out for today----------")
     if current_day > 4:
         sleep_time = 66 * 60 * 60
+        print("----------Trade out for this week----------")
     if 10 <= current_hour <= 15 and current_day < 5:
         sleep_time = 120
 
