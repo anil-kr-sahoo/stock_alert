@@ -41,7 +41,7 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 5, 77.96],
+    # ['https://groww.in/stocks/bank-of-india', 5, 77.96],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
     ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
@@ -67,6 +67,8 @@ urls = [
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
+    ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 0, 0],
+    ['https://groww.in/stocks/hero-motocorp-ltd', 0, 0],
 ]
 
 
