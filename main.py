@@ -41,7 +41,7 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 2, 87.82],
+    ['https://groww.in/stocks/bank-of-india', 5, 77.96],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
     ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
@@ -151,11 +151,11 @@ def get_stock_details(all_data):
     individual_stock_details["To Be Credit Dividend"] = get_two_decimal_val(
         get_to_be_credit_dividend(current_price, dividend_ratio_percentage) * stock_qty)
     individual_stock_details["Qty"] = stock_qty
-    notify_details_1 = f"Name - {name}\nCurrent Price - {current_price}\n"
-    notify_details_2 = "Day Returns - {day_returns}\nDividend - {dividend_ratio_percentage}\n" \
-                       "Current Stock QTY - {stock_qty}"
+    notify_details_1 = f"Name : {name}\nCurrent Price : {current_price}\n"
+    notify_details_2 = f"Day Returns : {day_returns}\nDividend : {dividend_ratio_percentage}\n" \
+                       f"Current Stock QTY : {stock_qty}"
     if stock_qty:
-        notify_details = f"{notify_details_1}Average Value - {stock_average_val}\n{notify_details_2}"
+        notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
     if day_returns <= -2 and dividend_ratio_percentage > 2:
