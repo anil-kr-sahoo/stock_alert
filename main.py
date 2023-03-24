@@ -18,7 +18,6 @@ modem_url = "http://192.168.1.1/index.html"
 
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
-lowest_day_limit = -2
 urls = [
     ['https://groww.in/stocks/equitas-small-finance-bank-ltd', 1, 67.40],
     ['https://groww.in/stocks/dcb-bank-ltd', 1, 119.95],
@@ -42,7 +41,7 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 9, 74.73],
+    ['https://groww.in/stocks/bank-of-india', 9, 74.73, -4.5],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
     ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
@@ -66,7 +65,6 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/hcl-technologies-ltd', 0, 0],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
-    ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 0, 0],
@@ -123,6 +121,11 @@ def get_stock_details(all_data):
     url = all_data[0]
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
+    try:
+        lowest_day_limit = all_data[3]
+    except Exception as e:
+        lowest_day_limit = -2
+
     target_stock_val = stock_average_val + stock_average_val * .1
     dividend_ratio_percentage = 0
     driver.get(url)
@@ -135,7 +138,8 @@ def get_stock_details(all_data):
     day_returns = get_float_val(
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
-    individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")), "Name": name, "Current Price": current_price,
+    individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")), "Name": name,
+                                "Current Price": current_price,
                                 "Day Returns": day_returns}
     if stock_qty:
         individual_stock_details["Stock_average_value"] = stock_average_val
@@ -194,8 +198,45 @@ def sleep_time_modifier():
     if current_day > 4:
         sleep_time = 66 * 60 * 60
         print("----------Trade out for this week----------")
+    if current_day > 4 or current_hour > 15:
+        wifi_battery_health_checker()
     if 10 <= current_hour <= 15 and current_day < 5:
         sleep_time = 120
+
+
+def wifi_battery_health_checker():
+    if not USE_WIFI_INDICATOR:
+        return
+    while True:
+        wifi_options = Options()
+        wifi_options.headless = True
+        wifi_options.add_argument('--remote-debugging-port=61625')
+        wifi_options.add_argument('--no-sandbox')
+        wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
+        wifi_driver.execute_script("window.open('about:blank', 'secondtab');")
+        wifi_driver.switch_to.window("secondtab")
+        wifi_driver.get(modem_url)
+        wifi_battery_percentage = \
+            wifi_driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
+                '</b>')[0][:-1]
+        print(wifi_battery_percentage)
+        with contextlib.suppress(Exception):
+            if int(wifi_battery_percentage) <= 15:
+                send_notifications(title=f"{wifi_battery_percentage}% Battery Left",
+                                   message="Wifi modem is going to be shut down soon\nPlease plug in charger")
+        wifi_driver.quit()
+        sleep(60)
+
+
+def generate_files(file_name, file_data):
+    with open(f"{file_name}.json", "w") as stock_data:
+        json.dump(file_data, stock_data, indent=4, sort_keys=True)
+
+    with open(f'{file_name}.csv', 'w') as file:
+        writer = csv.writer(file)
+        heading = [list(file_data[0].keys())]
+        stock_details = [list(element.values()) for element in file_data]
+        writer.writerows(heading + stock_details)
 
 
 current_date = datetime.now()
@@ -225,7 +266,8 @@ while True:
         driver.switch_to.window("secondtab")
         driver.get(modem_url)
         battery_percentage = \
-            driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[0][:-1]
+            driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[0][
+            :-1]
         print(battery_percentage)
         with contextlib.suppress(Exception):
             if int(battery_percentage) <= 15:
@@ -238,22 +280,19 @@ while True:
     # Calculate total dividend to get from stocks
     total = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
     print(f"Total dividend to be credit is {total}/-")
-    if (datetime.now().hour == 15 and datetime.now().minute > 50) or buy_stock_list or sell_stock_list:
-        file_name = 'stock_data'
-        data = all_stocks_data
-        if buy_stock_list:
-            file_name = 'buy_stock_details'
-            data = buy_stock_list
-        if sell_stock_list:
-            file_name = 'sell_stock_details'
-            data = sell_stock_list
-        with open(f"{file_name}.json", "w") as stock_data:
-            json.dump(data, stock_data, indent=4, sort_keys=True)
 
-        with open(f'{file_name}.csv', 'w') as file:
-            writer = csv.writer(file)
-            heading = [list(data[0].keys())]
-            stock_details = [list(data.values()) for data in data]
-            writer.writerows(heading + stock_details)
+    if buy_stock_list:
+        file = 'buy_stock_details'
+        data = buy_stock_list
+        generate_files(file, data)
+    if sell_stock_list:
+        file = 'sell_stock_details'
+        data = sell_stock_list
+        generate_files(file, data)
+    if (datetime.now().hour >= 15 and datetime.now().minute > 50) or buy_stock_list or sell_stock_list:
+        file = 'stock_data'
+        data = all_stocks_data
+        generate_files(file, data)
+
     sleep_time_modifier()
     sleep(sleep_time)
