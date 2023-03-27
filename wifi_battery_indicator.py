@@ -1,6 +1,6 @@
 import contextlib
 import os
-from sys import platform
+import platform
 from time import sleep
 
 from selenium import webdriver
@@ -11,7 +11,7 @@ from plyer import notification
 
 # Use Airtel Wi-Fi battery indicator as well
 modem_url = "http://192.168.1.1/index.html"
-
+POWER_BANK_LOW_BATTERY = False
 
 def send_notifications(title, message):
     notification.notify(
@@ -23,12 +23,10 @@ def send_notifications(title, message):
         # For ubuntu, as it has not any sound on desktop notification
         # "sudo apt install sox"
         with contextlib.suppress(Exception):
-            if 'Buy' in title:
-                os.system('spd-say "HURRY!!! Buy a Stock" ')
-            elif 'Sell' in title:
-                os.system('spd-say "HURRY!!! Sell a Stock" ')
+            if 'Charge' in title:
+                os.system('spd-say "Hi Sir, Please Check your Power Bank Battery" ')
             else:
-                os.system('spd-say "Upps!! Your Wi-Fi Battery Low" ')
+                os.system('spd-say "Hi Sir, Your wifi running low, Please plug in Charger" ')
 
 
 while True:
@@ -45,7 +43,9 @@ while True:
             '</b>')[0][:-1]
     print(wifi_battery_percentage)
     with contextlib.suppress(Exception):
-        if int(wifi_battery_percentage) <= 15:
+        if POWER_BANK_LOW_BATTERY and 'Charging' not in wifi_battery_percentage:
+            send_notifications(title="Charge your Power Bank", message="Power Bank Battery Low")
+        elif int(wifi_battery_percentage) <= 15:
             send_notifications(title=f"{wifi_battery_percentage}% Battery Left",
                                message="Wifi modem is going to be shut down soon\nPlease plug in charger")
     wifi_driver.quit()

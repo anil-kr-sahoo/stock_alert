@@ -32,7 +32,7 @@ urls = [
     ['https://groww.in/stocks/uco-bank', 1, 31],
     ['https://groww.in/stocks/jb-chemicals-pharmaceuticals-ltd', 1, 1974.95],
     ['https://groww.in/stocks/coal-india-ltd', 4, 204.74],
-    ['https://groww.in/stocks/oil-india-ltd', 3, 250.45],
+    ['https://groww.in/stocks/oil-india-ltd', 3, 248.53, -3],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
@@ -42,10 +42,10 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 9, 74.73],
+    ['https://groww.in/stocks/bank-of-india', 15, 72.12, -5],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
-    ['https://groww.in/stocks/bank-of-maharashtra', 1, 32.05],
+    ['https://groww.in/stocks/bank-of-maharashtra', 3, 26.45, -3],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.80],
     ['https://groww.in/stocks/delta-corp-ltd', 1, 202.50],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
@@ -69,6 +69,7 @@ urls = [
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 0, 0],
+    ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
 ]
 
 
@@ -83,11 +84,11 @@ def send_notifications(title, message):
         # "sudo apt install sox"
         with contextlib.suppress(Exception):
             if 'Buy' in title:
-                os.system('spd-say "HURRY!!! Buy a Stock" ')
+                os.system('spd-say "Hi Sir, A stock is ready to Buy" ')
             elif 'Sell' in title:
-                os.system('spd-say "HURRY!!! Sell a Stock" ')
+                os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
             else:
-                os.system('spd-say "Upps!! Your Wi-Fi Battery Low" ')
+                os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
 
 
 def get_two_decimal_val(decimal_num):
@@ -246,7 +247,8 @@ while True:
         file = 'sell_stock_details'
         data = sell_stock_list
         generate_files(file, data)
-    if (datetime.now().hour >= 15 and datetime.now().minute > 50) or datetime.now().hour > 15:
+    if (
+            datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
         file = 'stock_data'
         data = all_stocks_data
         generate_files(file, data)
