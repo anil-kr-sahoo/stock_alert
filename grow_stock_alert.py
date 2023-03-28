@@ -29,30 +29,33 @@ urls = [
     ['https://groww.in/stocks/idfc-ltd', 3, 81.92],
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
     ['https://groww.in/stocks/divis-laboratories-ltd', 1, 3425],
-    ['https://groww.in/stocks/uco-bank', 1, 31],
+    ['https://groww.in/stocks/uco-bank', 1, 31.50],
     ['https://groww.in/stocks/jb-chemicals-pharmaceuticals-ltd', 1, 1974.95],
     ['https://groww.in/stocks/coal-india-ltd', 4, 204.74],
-    ['https://groww.in/stocks/oil-india-ltd', 3, 248.53, -3],
+    ['https://groww.in/stocks/oil-india-ltd', 5, 248.53],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
+    ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.30],
     ['https://groww.in/stocks/marico-ltd', 1, 526.60],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.40],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
-    ['https://groww.in/stocks/bank-of-india', 15, 72.12, -5],
+    ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.80],
+    ['https://groww.in/stocks/bank-of-india', 15, 72.12],
+    ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 2, 337.40],
     ['https://groww.in/stocks/vedanta-ltd', 4, 273],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.90],
-    ['https://groww.in/stocks/bank-of-maharashtra', 3, 26.45, -3],
+    ['https://groww.in/stocks/bank-of-maharashtra', 5, 25.03],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.80],
     ['https://groww.in/stocks/delta-corp-ltd', 1, 202.50],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
     ['https://groww.in/stocks/ntpc-ltd', 3, 168.22],
     ['https://groww.in/stocks/irb-infrastructure-developers-ltd', 1, 29.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.40],
-    ['https://groww.in/stocks/rail-vikas-nigam-ltd', 1, 73.70],
+    ['https://groww.in/stocks/rail-vikas-nigam-ltd', 3, 68.00],
     ['https://groww.in/stocks/cg-power-industrial-solutions-ltd', 2, 313.10],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 1, 210],
     ['https://groww.in/stocks/dlf-ltd', 1, 406],
@@ -63,12 +66,9 @@ urls = [
     ['https://groww.in/stocks/infosys-ltd', 1, 1542.65],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
-    ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/hcl-technologies-ltd', 0, 0],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
-    ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 0, 0],
-    ['https://groww.in/stocks/hero-motocorp-ltd', 0, 0],
     ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
 ]
 
@@ -123,11 +123,6 @@ def get_stock_details(all_data):
     url = all_data[0]
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
-    try:
-        lowest_day_limit = all_data[3]
-        print(f"Manually limit provided on {url}")
-    except Exception as e:
-        lowest_day_limit = -2
 
     target_stock_val = stock_average_val + stock_average_val * .1
     dividend_ratio_percentage = 0
@@ -138,6 +133,11 @@ def get_stock_details(all_data):
     check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
     if check_negative_multiplier:
         multiplier *= -1
+    try:
+        lowest_day_limit = all_data[3]
+        print(f"Manually limit provided on -------- {name}")
+    except Exception as e:
+        lowest_day_limit = -2
     day_returns = get_float_val(
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
@@ -167,7 +167,7 @@ def get_stock_details(all_data):
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
-    if day_returns <= lowest_day_limit and dividend_ratio_percentage > 2:
+    if day_returns != -100 and day_returns <= lowest_day_limit and dividend_ratio_percentage > 2:
         global_notifier(
             "Buy Stocks",
             notify_details,
