@@ -32,7 +32,7 @@ urls = [
     ['https://groww.in/stocks/uco-bank', 1, 31.50],
     ['https://groww.in/stocks/jb-chemicals-pharmaceuticals-ltd', 1, 1974.95],
     ['https://groww.in/stocks/coal-india-ltd', 4, 204.74],
-    ['https://groww.in/stocks/oil-india-ltd', 5, 248.53],
+    ['https://groww.in/stocks/oil-india-ltd', 7, 249.39],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
@@ -87,6 +87,8 @@ def send_notifications(title, message):
                 os.system('spd-say "Hi Sir, A stock is ready to Buy" ')
             elif 'Sell' in title:
                 os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
+            elif 'over' in title:
+                os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
             else:
                 os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
 
@@ -127,6 +129,9 @@ def get_stock_details(all_data):
     target_stock_val = stock_average_val + stock_average_val * .1
     dividend_ratio_percentage = 0
     driver.get(url)
+    if (
+            datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
+        sleep(5)
     name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
     current_price = get_current_stock_price()
     multiplier = 1
@@ -167,7 +172,7 @@ def get_stock_details(all_data):
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
-    if day_returns != -100 and day_returns <= lowest_day_limit and dividend_ratio_percentage > 2:
+    if current_price != 0 and day_returns != -100 and day_returns <= lowest_day_limit and dividend_ratio_percentage > 2:
         global_notifier(
             "Buy Stocks",
             notify_details,
@@ -252,6 +257,9 @@ while True:
         file = 'stock_data'
         data = all_stocks_data
         generate_files(file, data)
+        send_notifications(title="Today's trade over",
+                           message="Please run wifi battery checker")
+
         break
 
     sleep(sleep_time)
