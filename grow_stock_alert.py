@@ -17,11 +17,10 @@ USE_WIFI_INDICATOR = True
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
-must_buy_stock_keys = ["hindustan", "nestle"]
+must_buy_stock_keys = ["hindustan", "nestle", "consultancy", "procter"]
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
 urls = [
-    ['https://groww.in/stocks/acc-ltd', 0, 0],
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
@@ -43,12 +42,12 @@ urls = [
     ['https://groww.in/stocks/fertilisers-chemicals-travancore-ltd', 1, 237.25],
     ['https://groww.in/stocks/hcl-technologies-ltd', 0, 0],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
+    ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.8],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
     ['https://groww.in/stocks/hindustan-petroleum-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-unilever-ltd', 0, 0],
     ['https://groww.in/stocks/idfc-ltd', 3, 81.92],
-    ['https://groww.in/stocks/indiabulls-housing-finance-ltd', 0, 0],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
     ['https://groww.in/stocks/infosys-ltd', 1, 1542.65],
@@ -66,19 +65,20 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
-    ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 1, 210],
+    ['https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd', 0, 0],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/rail-vikas-nigam-ltd', 3, 68.0],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
+    ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/timken-india-ltd', 1, 3084.6],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
-    ['https://groww.in/stocks/vedanta-ltd', 4, 274.05, -3],
+    ['https://groww.in/stocks/vedanta-ltd', 4, 274.05],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
@@ -140,6 +140,7 @@ def get_stock_details(all_data):
 
     target_stock_val = stock_average_val + stock_average_val * .1
     dividend_ratio_percentage = 0
+    roe = 0
     driver.get(url)
     if (
             datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
@@ -167,7 +168,8 @@ def get_stock_details(all_data):
             dividend_ratio_percentage = get_float_val(each.split(" ")[-1][:-1])
             individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1][:-1])
         elif 'ROE' in each:
-            individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1][:-1])
+            roe = get_float_val(each.split(" ")[-1][:-1])
+            individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
         elif 'Market' in each:
             individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
                 each.split(" ")[-1][1:-2].replace(',', ''))
@@ -177,6 +179,7 @@ def get_stock_details(all_data):
     individual_stock_details["To Be Credit Dividend"] = get_two_decimal_val(
         get_to_be_credit_dividend(current_price, dividend_ratio_percentage) * stock_qty)
     individual_stock_details["Qty"] = stock_qty
+    individual_stock_details["Total Returns"] = (current_price - stock_average_val)*stock_qty
     notify_details_1 = f"Name : {name}\nCurrent Price : {current_price}\n"
     notify_details_2 = f"Day Returns : {day_returns}\nDividend : {dividend_ratio_percentage}\n" \
                        f"Current Stock QTY : {stock_qty}"
@@ -184,7 +187,7 @@ def get_stock_details(all_data):
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
-    if current_price != 0 and day_returns != -100 and day_returns <= lowest_day_limit and (
+    if current_price != 0 and day_returns != -100 and day_returns <= lowest_day_limit and roe > 10 and (
             any(key in url for key in must_buy_stock_keys) or dividend_ratio_percentage >= 2):
         global_notifier(
             "Buy Stocks",
@@ -254,8 +257,11 @@ while True:
     driver.quit()
 
     # Calculate total dividend to get from stocks
-    total = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
-    print(f"Total dividend to be credit is {total}/-")
+    total_dividend = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
+    print(f"Total dividend to be credit is {total_dividend}/-")
+    total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
+    print(f"Total returns is {total}/-")
+
 
     if buy_stock_list:
         file = 'buy_stock_details'
