@@ -18,6 +18,7 @@ modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
 must_buy_stock_keys = ["hindustan", "nestle", "consultancy", "procter"]
+unaffordable_stocks = []
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
 urls = [
@@ -187,15 +188,29 @@ def get_stock_details(all_data):
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
     else:
         notify_details = notify_details_1 + notify_details_2
-    if current_price != 0 and day_returns != -100 and day_returns <= lowest_day_limit and roe > 10 and (
-            any(key in url for key in must_buy_stock_keys) or dividend_ratio_percentage >= 2):
+    if (
+        current_price != 0
+        and day_returns != -100
+        and day_returns <= lowest_day_limit
+        and roe >= 10
+        and all(key not in url for key in unaffordable_stocks)
+        and (
+            any(key in url for key in must_buy_stock_keys)
+            or dividend_ratio_percentage >= 2
+        )
+    ):
         global_notifier(
             "Buy Stocks",
             notify_details,
             buy_stock_list,
             individual_stock_details,
         )
-    if stock_qty and target_stock_val < current_price and dividend_ratio_percentage < 2:
+    if (
+        stock_qty
+        and target_stock_val < current_price
+        and (dividend_ratio_percentage < 2 or roe < 10)
+        and all(key not in url for key in must_buy_stock_keys)
+    ):
         global_notifier(
             "Sell Stocks",
             notify_details,
@@ -222,63 +237,67 @@ def generate_files(file_name, file_data):
         writer.writerows(heading + stock_details)
 
 
-sleep_time = 120
+try:
+    sleep_time = 120
 
-while True:
-    all_stocks_data = []
+    while True:
+        all_stocks_data = []
 
-    options = Options()
-    options.headless = True
-    options.add_argument('--remote-debugging-port=61625')
-    options.add_argument('--no-sandbox')
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-    for data in urls:
-        driver.execute_script("window.open('about:blank', 'secondtab');")
-
-        # It is switching to second tab now
-        driver.switch_to.window("secondtab")
-        all_stocks_data.append(get_stock_details(data))
-
-    if USE_WIFI_INDICATOR:
-        with contextlib.suppress(Exception):
-            # Get airtel wi-fi modem battery health
-            # ------------------------------------------------------------------------------------------------------------------
+        options = Options()
+        options.headless = True
+        options.add_argument('--remote-debugging-port=61625')
+        options.add_argument('--no-sandbox')
+        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+        for data in urls:
             driver.execute_script("window.open('about:blank', 'secondtab');")
+
+            # It is switching to second tab now
             driver.switch_to.window("secondtab")
-            driver.get(modem_url)
-            battery_level = \
-                driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[
-                    0][:-1]
-            print(battery_level)
+            all_stocks_data.append(get_stock_details(data))
+
+        if USE_WIFI_INDICATOR:
             with contextlib.suppress(Exception):
-                if int(battery_level) <= 15:
-                    send_notifications(title=f"{battery_level}% Battery Left",
-                                       message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-    driver.quit()
+                # Get airtel wi-fi modem battery health
+                # ------------------------------------------------------------------------------------------------------------------
+                driver.execute_script("window.open('about:blank', 'secondtab');")
+                driver.switch_to.window("secondtab")
+                driver.get(modem_url)
+                battery_level = \
+                    driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[
+                        0][:-1]
+                print(battery_level)
+                with contextlib.suppress(Exception):
+                    if int(battery_level) <= 15:
+                        send_notifications(title=f"{battery_level}% Battery Left",
+                                           message="Wifi modem is going to be shut down soon\nPlease plug in charger")
+        driver.quit()
 
-    # Calculate total dividend to get from stocks
-    total_dividend = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
-    print(f"Total dividend to be credit is {total_dividend}/-")
-    total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
-    print(f"Total returns is {total}/-")
+        # Calculate total dividend to get from stocks
+        total_dividend = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
+        print(f"Total dividend to be credit is {total_dividend}/-")
+        total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
+        print(f"Total returns is {total}/-")
 
 
-    if buy_stock_list:
-        file = 'buy_stock_details'
-        data = buy_stock_list
-        generate_files(file, data)
-    if sell_stock_list:
-        file = 'sell_stock_details'
-        data = sell_stock_list
-        generate_files(file, data)
-    if (
-            datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
-        file = 'stock_data'
-        data = all_stocks_data
-        generate_files(file, data)
-        send_notifications(title="Today's trade over",
-                           message="Please run wifi battery checker")
+        if buy_stock_list:
+            file = 'buy_stock_details'
+            data = buy_stock_list
+            generate_files(file, data)
+        if sell_stock_list:
+            file = 'sell_stock_details'
+            data = sell_stock_list
+            generate_files(file, data)
+        if (
+                datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
+            file = 'stock_data'
+            data = all_stocks_data
+            generate_files(file, data)
+            send_notifications(title="Today's trade over",
+                               message="Please run wifi battery checker")
 
-        break
+            break
 
-    sleep(sleep_time)
+        sleep(sleep_time)
+except Exception as e:
+    send_notifications(title="Upps!! Something went wrong",
+                       message="Unreachable server possibility")
