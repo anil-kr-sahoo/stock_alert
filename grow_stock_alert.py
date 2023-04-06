@@ -41,7 +41,7 @@ urls = [
     ['https://groww.in/stocks/dlf-ltd', 1, 406],
     ['https://groww.in/stocks/equitas-small-finance-bank-ltd', 1, 67.4],
     ['https://groww.in/stocks/fertilisers-chemicals-travancore-ltd', 1, 237.25],
-    ['https://groww.in/stocks/hcl-technologies-ltd', 0, 0],
+    ['https://groww.in/stocks/hcl-technologies-ltd', 2, 1086.15],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.8],
@@ -62,7 +62,7 @@ urls = [
     ['https://groww.in/stocks/nhpc-ltd', 5, 40.47],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/ntpc-ltd', 3, 168.22],
-    ['https://groww.in/stocks/oil-india-ltd', 12, 252.03],
+    ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
@@ -299,5 +299,6 @@ try:
 
         sleep(sleep_time)
 except Exception as e:
+    print(e)
     send_notifications(title="Upps!! Something went wrong",
                        message="Unreachable server possibility")
