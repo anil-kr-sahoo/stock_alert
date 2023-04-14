@@ -13,6 +13,7 @@ from plyer import notification
 modem_url = "http://192.168.1.1/index.html"
 POWER_BANK_LOW_BATTERY = False
 
+
 def send_notifications(title, message):
     notification.notify(
         title=title,
@@ -29,24 +30,30 @@ def send_notifications(title, message):
                 os.system('spd-say "Hi Sir, Your wifi running low, Please plug in Charger" ')
 
 
-while True:
-    wifi_options = Options()
-    wifi_options.headless = True
-    wifi_options.add_argument('--remote-debugging-port=61625')
-    wifi_options.add_argument('--no-sandbox')
-    wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
-    wifi_driver.execute_script("window.open('about:blank', 'secondtab');")
-    wifi_driver.switch_to.window("secondtab")
-    wifi_driver.get(modem_url)
-    wifi_battery_percentage = \
-        wifi_driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
-            '</b>')[0][:-1]
-    print(wifi_battery_percentage)
-    with contextlib.suppress(Exception):
-        if POWER_BANK_LOW_BATTERY and 'Charging' not in wifi_battery_percentage:
-            send_notifications(title="Charge your Power Bank", message="Power Bank Battery Low")
-        elif int(wifi_battery_percentage) <= 15:
-            send_notifications(title=f"{wifi_battery_percentage}% Battery Left",
-                               message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-    wifi_driver.quit()
-    sleep(60)
+wifi_driver = None
+try:
+    while True:
+        wifi_options = Options()
+        wifi_options.headless = True
+        wifi_options.add_argument('--remote-debugging-port=61625')
+        wifi_options.add_argument('--no-sandbox')
+        wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
+        wifi_driver.execute_script("window.open('about:blank', 'secondtab');")
+        wifi_driver.switch_to.window("secondtab")
+        wifi_driver.get(modem_url)
+        wifi_battery_percentage = \
+            wifi_driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
+                '</b>')[0][:-1]
+        print(wifi_battery_percentage)
+        with contextlib.suppress(Exception):
+            if POWER_BANK_LOW_BATTERY and 'Charging' not in wifi_battery_percentage:
+                send_notifications(title="Charge your Power Bank", message="Power Bank Battery Low")
+            elif int(wifi_battery_percentage) <= 15:
+                send_notifications(title=f"{wifi_battery_percentage}% Battery Left",
+                                   message="Wifi modem is going to be shut down soon\nPlease plug in charger")
+        wifi_driver.quit()
+        sleep(60)
+except Exception as e:
+    if wifi_driver:
+        wifi_driver.quit()
+        wifi_driver.close()

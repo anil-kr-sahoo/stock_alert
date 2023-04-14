@@ -17,7 +17,6 @@ USE_WIFI_INDICATOR = True
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
-must_buy_stock_keys = ["hindustan", "nestle", "consultancy", "procter"]
 unaffordable_stocks = []
 # List details
 # Grow url of stock, quantity you have, average price of your stocks
@@ -40,14 +39,12 @@ urls = [
     ['https://groww.in/stocks/divis-laboratories-ltd', 1, 3425],
     ['https://groww.in/stocks/dlf-ltd', 1, 406],
     ['https://groww.in/stocks/equitas-small-finance-bank-ltd', 1, 67.4],
-    ['https://groww.in/stocks/fertilisers-chemicals-travancore-ltd', 1, 237.25],
     ['https://groww.in/stocks/hcl-technologies-ltd', 2, 1086.15],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.8],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
-    ['https://groww.in/stocks/hindustan-petroleum-corporation-ltd', 5, 227.92],
-    ['https://groww.in/stocks/hindustan-unilever-ltd', 0, 0],
+    ['https://groww.in/stocks/hindustan-petroleum-corporation-ltd', 6, 227.30],
     ['https://groww.in/stocks/idfc-ltd', 3, 81.92],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
@@ -58,24 +55,20 @@ urls = [
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.4],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
-    ['https://groww.in/stocks/nestle-india-ltd', 0, 0],
     ['https://groww.in/stocks/nhpc-ltd', 5, 40.47],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
     ['https://groww.in/stocks/ntpc-ltd', 3, 168.22],
     ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
-    ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
-    ['https://groww.in/stocks/power-finance-corporation-ltd', 0, 0],
+    ['https://groww.in/stocks/power-finance-corporation-ltd', 2, 161.85],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 1, 210],
-    ['https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd', 0, 0],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/rail-vikas-nigam-ltd', 3, 68.0],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
-    ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
     ['https://groww.in/stocks/timken-india-ltd', 1, 3084.6],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
@@ -194,10 +187,7 @@ def get_stock_details(all_data):
         and day_returns <= lowest_day_limit
         and roe >= 10
         and all(key not in url for key in unaffordable_stocks)
-        and (
-            any(key in url for key in must_buy_stock_keys)
-            or dividend_ratio_percentage >= 2
-        )
+        and dividend_ratio_percentage >= 2
     ):
         global_notifier(
             "Buy Stocks",
@@ -209,7 +199,6 @@ def get_stock_details(all_data):
         stock_qty
         and target_stock_val < current_price
         and (dividend_ratio_percentage < 2 or roe < 10)
-        and all(key not in url for key in must_buy_stock_keys)
     ):
         global_notifier(
             "Sell Stocks",
@@ -237,6 +226,7 @@ def generate_files(file_name, file_data):
         writer.writerows(heading + stock_details)
 
 
+driver = None
 try:
     sleep_time = 120
 
@@ -299,6 +289,9 @@ try:
 
         sleep(sleep_time)
 except Exception as e:
+    if driver:
+        driver.quit()
+        driver.close()
     print(e)
     send_notifications(title="Upps!! Something went wrong",
                        message="Unreachable server possibility")
