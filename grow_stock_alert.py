@@ -25,8 +25,6 @@ urls = [
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
     ['https://groww.in/stocks/bajaj-holdings-investment-ltd', 0, 0],
-    ['https://groww.in/stocks/bank-of-india', 17, 72.5],
-    ['https://groww.in/stocks/bank-of-maharashtra', 5, 25.03],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 7, 332.96],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
@@ -39,7 +37,7 @@ urls = [
     ['https://groww.in/stocks/divis-laboratories-ltd', 1, 3425],
     ['https://groww.in/stocks/dlf-ltd', 1, 406],
     ['https://groww.in/stocks/equitas-small-finance-bank-ltd', 1, 67.4],
-    ['https://groww.in/stocks/hcl-technologies-ltd', 2, 1086.15],
+    ['https://groww.in/stocks/hcl-technologies-ltd', 3, 1070.93],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
     ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.8],
@@ -48,16 +46,15 @@ urls = [
     ['https://groww.in/stocks/idfc-ltd', 3, 81.92],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
-    ['https://groww.in/stocks/infosys-ltd', 1, 1542.65],
+    ['https://groww.in/stocks/infosys-ltd', 2, 1384.32],
     ['https://groww.in/stocks/irb-infrastructure-developers-ltd', 1, 29.65],
     ['https://groww.in/stocks/itc-ltd', 2, 354.43],
-    ['https://groww.in/stocks/jb-chemicals-pharmaceuticals-ltd', 1, 1974.95],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.4],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
     ['https://groww.in/stocks/nhpc-ltd', 5, 40.47],
     ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
-    ['https://groww.in/stocks/ntpc-ltd', 3, 168.22],
+    ['https://groww.in/stocks/ntpc-ltd', 5, 168.77],
     ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
@@ -154,9 +151,10 @@ def get_stock_details(all_data):
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
     individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")), "Name": name,
-                                "Current Price": current_price,
+                                "Stock Average Value": stock_average_val,
                                 "Day Returns": day_returns,
-                                "Stock Average Value": stock_average_val}
+                                "Current Price": current_price
+                                }
     for each in all_details.split('\n'):
         if 'Dividend' in each:
             dividend_ratio_percentage = get_float_val(each.split(" ")[-1][:-1])
