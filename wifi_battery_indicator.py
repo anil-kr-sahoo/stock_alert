@@ -26,6 +26,8 @@ def send_notifications(title, message):
         with contextlib.suppress(Exception):
             if 'Charge' in title:
                 os.system('spd-say "Hi Sir, Please Check your Power Bank Battery" ')
+            elif 'Restart' in title:
+                os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
             else:
                 os.system('spd-say "Hi Sir, Your wifi running low, Please plug in Charger" ')
 
@@ -54,6 +56,8 @@ try:
         wifi_driver.quit()
         sleep(60)
 except Exception as e:
+    send_notifications(title="Restart Server", message="Server crashed due low internet connection")
+
     if wifi_driver:
         wifi_driver.quit()
         wifi_driver.close()

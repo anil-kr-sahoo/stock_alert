@@ -24,7 +24,6 @@ urls = [
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
-    ['https://groww.in/stocks/bajaj-holdings-investment-ltd', 0, 0],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 7, 332.96],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
@@ -52,8 +51,8 @@ urls = [
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.4],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
-    ['https://groww.in/stocks/nhpc-ltd', 5, 40.47],
-    ['https://groww.in/stocks/nmdc-ltd', 4, 114.81],
+    ['https://groww.in/stocks/nhpc-ltd', 7, 40.89],
+    ['https://groww.in/stocks/nmdc-ltd', 5, 113.66],
     ['https://groww.in/stocks/ntpc-ltd', 5, 168.77],
     ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
@@ -61,9 +60,9 @@ urls = [
     ['https://groww.in/stocks/power-finance-corporation-ltd', 4, 161.55],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 3, 224.03],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
-    ['https://groww.in/stocks/rail-vikas-nigam-ltd', 3, 68.0],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
+    ['https://groww.in/stocks/shriram-transport-finance-company-ltd', 0, 0],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
@@ -171,7 +170,7 @@ def get_stock_details(all_data):
     individual_stock_details["To Be Credit Dividend"] = get_two_decimal_val(
         get_to_be_credit_dividend(current_price, dividend_ratio_percentage) * stock_qty)
     individual_stock_details["Qty"] = stock_qty
-    individual_stock_details["Total Returns"] = (current_price - stock_average_val)*stock_qty
+    individual_stock_details["Total Returns"] = (current_price - stock_average_val) * stock_qty
     notify_details_1 = f"Name : {name}\nCurrent Price : {current_price}\n"
     notify_details_2 = f"Day Returns : {day_returns}\nDividend : {dividend_ratio_percentage}\n" \
                        f"Current Stock QTY : {stock_qty}"
@@ -180,12 +179,12 @@ def get_stock_details(all_data):
     else:
         notify_details = notify_details_1 + notify_details_2
     if (
-        current_price != 0
-        and day_returns != -100
-        and day_returns <= lowest_day_limit
-        and roe >= 10
-        and all(key not in url for key in unaffordable_stocks)
-        and dividend_ratio_percentage >= 2
+            current_price != 0
+            and day_returns != -100
+            and day_returns <= lowest_day_limit
+            and roe >= 10
+            and all(key not in url for key in unaffordable_stocks)
+            and dividend_ratio_percentage >= 2
     ):
         global_notifier(
             "Buy Stocks",
@@ -194,9 +193,9 @@ def get_stock_details(all_data):
             individual_stock_details,
         )
     if (
-        stock_qty
-        and target_stock_val < current_price
-        and (dividend_ratio_percentage < 2 or roe < 10)
+            stock_qty
+            and target_stock_val < current_price
+            and (dividend_ratio_percentage < 2 or roe < 10)
     ):
         global_notifier(
             "Sell Stocks",
@@ -251,7 +250,8 @@ try:
                 driver.switch_to.window("secondtab")
                 driver.get(modem_url)
                 battery_level = \
-                    driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split('</b>')[
+                    driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
+                        '</b>')[
                         0][:-1]
                 print(battery_level)
                 with contextlib.suppress(Exception):
@@ -265,7 +265,6 @@ try:
         print(f"Total dividend to be credit is {total_dividend}/-")
         total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
         print(f"Total returns is {total}/-")
-
 
         if buy_stock_list:
             file = 'buy_stock_details'
