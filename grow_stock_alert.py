@@ -39,10 +39,9 @@ urls = [
     ['https://groww.in/stocks/hcl-technologies-ltd', 3, 1070.93],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
-    ['https://groww.in/stocks/hero-motocorp-ltd', 2, 2258.8],
+    ['https://groww.in/stocks/hero-motocorp-ltd', 3, 2338.31, -3],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
     ['https://groww.in/stocks/hindustan-petroleum-corporation-ltd', 6, 227.30],
-    ['https://groww.in/stocks/idfc-ltd', 3, 81.92],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
     ['https://groww.in/stocks/infosys-ltd', 2, 1384.32],
@@ -91,6 +90,8 @@ def send_notifications(title, message):
                 os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
             elif 'over' in title:
                 os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
+            elif 'Restart' in title:
+                os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
             else:
                 os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
 
@@ -286,9 +287,7 @@ try:
 
         sleep(sleep_time)
 except Exception as e:
+    send_notifications(title="Restart Server", message="Server crashed due low internet connection")
     if driver:
         driver.quit()
         driver.close()
-    print(e)
-    send_notifications(title="Upps!! Something went wrong",
-                       message="Unreachable server possibility")
