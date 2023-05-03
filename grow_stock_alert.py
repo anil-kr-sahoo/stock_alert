@@ -19,7 +19,7 @@ buy_stock_list = []
 sell_stock_list = []
 unaffordable_stocks = []
 # List details
-# Grow url of stock, quantity you have, average price of your stocks
+# [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
@@ -39,7 +39,7 @@ urls = [
     ['https://groww.in/stocks/hcl-technologies-ltd', 3, 1070.93],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 0, 0],
-    ['https://groww.in/stocks/hero-motocorp-ltd', 3, 2338.31, -3],
+    ['https://groww.in/stocks/hero-motocorp-ltd', 3, 2338.31],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
     ['https://groww.in/stocks/hindustan-petroleum-corporation-ltd', 6, 227.30],
     ['https://groww.in/stocks/indian-oil-corporation-ltd', 1, 81.75],
