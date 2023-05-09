@@ -29,7 +29,7 @@ urls = [
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
     ['https://groww.in/stocks/canara-bank', 2, 302.28],
     ['https://groww.in/stocks/cg-power-industrial-solutions-ltd', 2, 313.1],
-    ['https://groww.in/stocks/coal-india-ltd', 4, 204.74],
+    ['https://groww.in/stocks/coal-india-ltd', 6, 213.51],
     ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
     ['https://groww.in/stocks/dcb-bank-ltd', 1, 119.95],
     ['https://groww.in/stocks/delta-corp-ltd', 1, 202.5],
@@ -45,17 +45,17 @@ urls = [
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
     ['https://groww.in/stocks/infosys-ltd', 2, 1384.32],
     ['https://groww.in/stocks/irb-infrastructure-developers-ltd', 1, 29.65],
-    ['https://groww.in/stocks/itc-ltd', 2, 354.43],
+    ['https://groww.in/stocks/itc-ltd', 4, 388.84],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.4],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
-    ['https://groww.in/stocks/nhpc-ltd', 7, 40.89],
+    ['https://groww.in/stocks/nhpc-ltd', 9, 41.71],
     ['https://groww.in/stocks/nmdc-ltd', 5, 113.66],
     ['https://groww.in/stocks/ntpc-ltd', 5, 168.77],
     ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
-    ['https://groww.in/stocks/power-finance-corporation-ltd', 4, 161.55],
+    ['https://groww.in/stocks/power-finance-corporation-ltd', 6, 163.46],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 3, 224.03],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
@@ -261,8 +261,8 @@ try:
         driver.quit()
 
         # Calculate total dividend to get from stocks
-        total_dividend = get_two_decimal_val(sum(data["To Be Credit Dividend"] for data in all_stocks_data))
-        print(f"Total dividend to be credit is {total_dividend}/-")
+        total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
+        print(f"{int(total_units)} units purchased till now.")
         total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
         print(f"Total returns is {total}/-")
 
