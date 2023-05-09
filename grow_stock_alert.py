@@ -17,7 +17,6 @@ USE_WIFI_INDICATOR = True
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
-unaffordable_stocks = []
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
@@ -118,7 +117,7 @@ def get_current_stock_price():
 def get_to_be_credit_dividend(stock_price, dividend_ratio):
     try:
         return get_two_decimal_val(get_float_val(stock_price) * get_float_val(dividend_ratio) / 100)
-    except Exception as e:
+    except Exception:
         return 0
 
 
@@ -183,11 +182,10 @@ def get_stock_details(all_data):
             and day_returns != -100
             and day_returns <= lowest_day_limit
             and roe >= 10
-            and all(key not in url for key in unaffordable_stocks)
             and dividend_ratio_percentage >= 2
     ):
         global_notifier(
-            "Buy Stocks",
+            f"Buy {round(day_returns * -1)} Stocks",
             notify_details,
             buy_stock_list,
             individual_stock_details,
@@ -198,7 +196,7 @@ def get_stock_details(all_data):
             and (dividend_ratio_percentage < 2 or roe < 10)
     ):
         global_notifier(
-            "Sell Stocks",
+            "Sell All Stocks",
             notify_details,
             sell_stock_list,
             individual_stock_details,
