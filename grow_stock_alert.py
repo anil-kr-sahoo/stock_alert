@@ -17,7 +17,6 @@ from plyer import notification
 
 # Use Airtel Wi-Fi battery indicator as well
 USE_WIFI_INDICATOR = True
-WHATSAPP_NUMBERS = ["+917749984274"]
 system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
@@ -78,14 +77,19 @@ urls = [
 ]
 
 def send_whatsapp_notification(message):
-    for each_num in WHATSAPP_NUMBERS:
-        pywhatkit.sendwhatmsg_instantly(
-            phone_no=each_num,
-            message=message,
-        )
-def send_notifications(title, message):
-    if system_name == "":
-        send_whatsapp_notification(title)
+    pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U",
+                                             message=message,
+                                             tab_close=True
+                                             )
+
+
+def send_notifications(title, message, wp_message=None):
+    if system_name in ["anil-ubuntu"]:
+        if wp_message:
+            send_whatsapp_notification(wp_message)
+        else:
+            send_whatsapp_notification(title)
+
     notification.notify(
         title=title,
         message=message,
@@ -161,10 +165,12 @@ def get_stock_details(all_data):
     day_returns = get_float_val(
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
-    individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")), "Name": name,
+    individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+                                "Name": name,
                                 "Stock Average Value": stock_average_val,
                                 "Day Returns": day_returns,
-                                "Current Price": current_price
+                                "Current Price": current_price,
+                                "Url": url
                                 }
     for each in all_details.split('\n'):
         if 'Dividend' in each:
@@ -218,7 +224,9 @@ def get_stock_details(all_data):
 
 
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
-    send_notifications(notification_title, notify_details)
+    whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
+                       f"Day Returns {individual_stock_details['Day Returns']}"
+    send_notifications(notification_title, notify_details, whatsapp_message)
     stock_list_type.append(individual_stock_details)
     print(json.dumps(individual_stock_details, indent=2))
 
@@ -236,8 +244,6 @@ def generate_files(file_name, file_data):
 
 driver = None
 try:
-    sleep_time = 120
-
     while True:
         all_stocks_data = []
 
@@ -267,7 +273,7 @@ try:
                 print(battery_level)
                 with contextlib.suppress(Exception):
                     if int(battery_level) <= 15:
-                        send_notifications(title=f"{battery_level}% Battery Left",
+                        send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
                                            message="Wifi modem is going to be shut down soon\nPlease plug in charger")
         driver.quit()
 
@@ -290,12 +296,11 @@ try:
             file = 'stock_data'
             data = all_stocks_data
             generate_files(file, data)
-            send_notifications(title="Today's trade over",
+            send_notifications(title="Thank you for trade with AK. \nToday's trade over",
                                message="Please run wifi battery checker")
 
             break
 
-        sleep(sleep_time)
 except Exception as e:
     send_notifications(title="Restart Server", message="Server crashed due low internet connection")
     if driver:
