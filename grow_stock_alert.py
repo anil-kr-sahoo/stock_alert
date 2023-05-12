@@ -2,7 +2,10 @@ import contextlib
 import os
 import json
 import csv
+import pywhatkit
 import platform
+import socket
+
 from datetime import datetime
 from time import sleep
 
@@ -14,6 +17,8 @@ from plyer import notification
 
 # Use Airtel Wi-Fi battery indicator as well
 USE_WIFI_INDICATOR = True
+WHATSAPP_NUMBERS = ["+917749984274"]
+system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
@@ -23,10 +28,10 @@ urls = [
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
-    ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 7, 332.96],
+    ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 10, 341.63],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
-    ['https://groww.in/stocks/canara-bank', 2, 302.28],
+    ['https://groww.in/stocks/canara-bank', 5, 298.28],
     ['https://groww.in/stocks/cg-power-industrial-solutions-ltd', 2, 313.1],
     ['https://groww.in/stocks/coal-india-ltd', 6, 213.51],
     ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
@@ -48,31 +53,39 @@ urls = [
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/lodha-developers-ltd', 1, 1001.4],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
-    ['https://groww.in/stocks/nhpc-ltd', 9, 41.71],
+    ['https://groww.in/stocks/nhpc-ltd', 11, 42.06],
     ['https://groww.in/stocks/nmdc-ltd', 5, 113.66],
-    ['https://groww.in/stocks/ntpc-ltd', 5, 168.77],
+    ['https://groww.in/stocks/ntpc-ltd', 7, 170.72],
     ['https://groww.in/stocks/oil-india-ltd', 15, 252.53],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
+    ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 6, 163.46],
-    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 3, 224.03],
+    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 6, 233.11],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/shriram-transport-finance-company-ltd', 0, 0],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
-    ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
+    ['https://groww.in/stocks/tech-mahindra-ltd', 0, 0],
     ['https://groww.in/stocks/timken-india-ltd', 1, 3084.6],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
-    ['https://groww.in/stocks/vedanta-ltd', 4, 274.05],
+    ['https://groww.in/stocks/vedanta-ltd', 8, 274.43],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
     ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
 ]
 
-
+def send_whatsapp_notification(message):
+    for each_num in WHATSAPP_NUMBERS:
+        pywhatkit.sendwhatmsg_instantly(
+            phone_no=each_num,
+            message=message,
+        )
 def send_notifications(title, message):
+    if system_name == "":
+        send_whatsapp_notification(title)
     notification.notify(
         title=title,
         message=message,
