@@ -296,7 +296,7 @@ try:
             file = 'stock_data'
             data = all_stocks_data
             generate_files(file, data)
-            send_notifications(title="Thank you for trade with AK. \nToday's trade over",
+            send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
                                message="Please run wifi battery checker")
 
             break
