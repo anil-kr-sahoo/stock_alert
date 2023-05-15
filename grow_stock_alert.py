@@ -37,7 +37,6 @@ urls = [
     ['https://groww.in/stocks/dcb-bank-ltd', 1, 119.95],
     ['https://groww.in/stocks/delta-corp-ltd', 1, 202.5],
     ['https://groww.in/stocks/divis-laboratories-ltd', 1, 3425],
-    ['https://groww.in/stocks/dlf-ltd', 1, 406],
     ['https://groww.in/stocks/hcl-technologies-ltd', 3, 1070.93],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 1, 313.65],
@@ -77,10 +76,10 @@ urls = [
 ]
 
 def send_whatsapp_notification(message):
-    pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U",
-                                             message=message,
-                                             tab_close=True
-                                             )
+    if 'Buy' in message:
+        pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U", message=message, tab_close=True)
+    else:
+        pywhatkit.sendwhatmsg_instantly(phone_no="+917749984274", message=message, tab_close=True)
 
 
 def send_notifications(title, message, wp_message=None):
