@@ -75,7 +75,7 @@ urls = [
 ]
 
 def send_whatsapp_notification(message):
-    if 'Buy' in message or 'Thank' in message:
+    if any(data in message for data in ['Buy', 'Sell', 'Thank']):
         pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U", message=message, tab_close=True)
     else:
         pywhatkit.sendwhatmsg_instantly(phone_no="+917749984274", message=message, tab_close=True)
