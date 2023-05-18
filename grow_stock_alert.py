@@ -27,8 +27,10 @@ urls = [
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
+    ['https://groww.in/stocks/bank-of-baroda', 0, 0],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 10, 341.63],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
+    ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
     ['https://groww.in/stocks/canara-bank', 5, 298.28],
     ['https://groww.in/stocks/cg-power-industrial-solutions-ltd', 2, 313.1],
@@ -36,7 +38,7 @@ urls = [
     ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
     ['https://groww.in/stocks/dcb-bank-ltd', 1, 119.95],
     ['https://groww.in/stocks/divis-laboratories-ltd', 1, 3425],
-    ['https://groww.in/stocks/hcl-technologies-ltd', 5, 1069.51, -3],
+    ['https://groww.in/stocks/hcl-technologies-ltd', 5, 1069.51],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 0, 0],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 1, 313.65],
     ['https://groww.in/stocks/hero-motocorp-ltd', 3, 2338.31],
@@ -56,7 +58,7 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
-    ['https://groww.in/stocks/power-finance-corporation-ltd', 10, 164.32, -3],
+    ['https://groww.in/stocks/power-finance-corporation-ltd', 10, 164.32],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 6, 233.11],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/schneider-electric-infrastructure-ltd', 1, 193.95],
@@ -81,7 +83,7 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ["anil-ubuntu"]:
+    if system_name in ["anil-ubuntu", "AECC-IN-DIH049"]:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
