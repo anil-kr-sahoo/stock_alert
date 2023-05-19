@@ -27,7 +27,7 @@ urls = [
     ['https://groww.in/stocks/adani-enterprises-ltd', 1, 1945.9],
     ['https://groww.in/stocks/axis-bank-ltd', 1, 880.5],
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
-    ['https://groww.in/stocks/bank-of-baroda', 0, 0],
+    ['https://groww.in/stocks/bank-of-baroda', 1, 182.10],
     ['https://groww.in/stocks/bharat-petroleum-corporation-ltd', 10, 341.63],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
