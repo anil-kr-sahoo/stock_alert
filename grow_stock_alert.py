@@ -52,7 +52,7 @@ urls = [
     ['https://groww.in/stocks/nmdc-ltd', 5, 113.66],
     ['https://groww.in/stocks/ntpc-ltd', 7, 170.72],
     ['https://groww.in/stocks/oil-india-ltd', 18, 254.10],
-    ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 2, 147.3],
+    ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 5, 154.44, -4],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
@@ -80,7 +80,7 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ["anil-ubuntu", "AECC-IN-DIH049"]:
+    if system_name in ["anil-ubuntu"]:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
