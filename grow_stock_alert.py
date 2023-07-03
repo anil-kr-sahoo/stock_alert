@@ -55,7 +55,7 @@ urls = [
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.81],
-    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 6, 233.12],
+    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 8, 237.49],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
     ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
     ['https://groww.in/stocks/shriram-transport-finance-company-ltd', 2, 1414.90],
