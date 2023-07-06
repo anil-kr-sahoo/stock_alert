@@ -53,12 +53,10 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
-    ['https://groww.in/stocks/piramal-enterprises-ltd', 0, 0],
+    ['https://groww.in/stocks/piramal-enterprises-ltd', 2, 941.40],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.81],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 8, 237.49],
     ['https://groww.in/stocks/punjab-national-bank', 3, 54.67],
-    ['https://groww.in/stocks/shilpa-medicare-ltd', 2, 270.85],
-    ['https://groww.in/stocks/shriram-transport-finance-company-ltd', 2, 1414.90],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
     ['https://groww.in/stocks/tech-mahindra-ltd', 3, 1077.17],
@@ -217,7 +215,11 @@ def get_stock_details(all_data):
 
 
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
-    whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
+    if 'Sell' in notification_title:
+        whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
+                           f"If the purchased amount is less than {individual_stock_details['Stock Average Value']}"
+    else:
+        whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
                        f"Day Returns {individual_stock_details['Day Returns']}"
     send_notifications(notification_title, notify_details, whatsapp_message)
     stock_list_type.append(individual_stock_details)
