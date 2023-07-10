@@ -25,7 +25,7 @@ sell_stock_list = []
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
-    ['https://groww.in/stocks/bank-of-baroda', 3, 182.56],
+    ['https://groww.in/stocks/bank-of-baroda', 5, 191.66],
     ['https://groww.in/stocks/bharti-airtel-ltd', 1, 815],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 0, 0],
