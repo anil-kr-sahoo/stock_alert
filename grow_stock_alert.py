@@ -57,7 +57,6 @@ urls = [
     ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.81],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 10, 240.22],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
-    ['https://groww.in/stocks/sun-pharma-advanced-research-company-ltd', 1, 212.1],
     ['https://groww.in/stocks/tech-mahindra-ltd', 3, 1077.17],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
     ['https://groww.in/stocks/vedanta-ltd', 10, 275.40],
