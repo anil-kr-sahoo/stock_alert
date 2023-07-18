@@ -37,7 +37,7 @@ urls = [
     ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 0, 0],
     ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.80],
     ['https://groww.in/stocks/hdfc-asset-management-company-ltd', 1, 1932],
-    ['https://groww.in/stocks/hero-motocorp-ltd', 4, 2468.70],
+    ['https://groww.in/stocks/hero-motocorp-ltd', 6, 2671.30],
     ['https://groww.in/stocks/hindalco-industries-ltd', 1, 430.45],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
     ['https://groww.in/stocks/indian-overseas-bank', 1, 31.4],
