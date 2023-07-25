@@ -233,71 +233,69 @@ def generate_files(file_name, file_data):
         stock_details = [list(element.values()) for element in file_data]
         writer.writerows(heading + stock_details)
 
-def __main__():
-    driver = None
-    try:
-        while True:
-            all_stocks_data = []
+driver = None
+try:
+    while True:
+        all_stocks_data = []
 
-            options = Options()
-            options.headless = True
-            options.add_argument('--remote-debugging-port=61625')
-            options.add_argument('--no-sandbox')
-            driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-            for data in urls:
+        options = Options()
+        options.headless = True
+        options.add_argument('--remote-debugging-port=61625')
+        options.add_argument('--no-sandbox')
+        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+        for data in urls:
+            driver.execute_script("window.open('about:blank', 'secondtab');")
+
+            # It is switching to second tab now
+            driver.switch_to.window("secondtab")
+            all_stocks_data.append(get_stock_details(data))
+
+        if USE_WIFI_INDICATOR:
+            with contextlib.suppress(Exception):
+                # Get airtel wi-fi modem battery health
+                # ------------------------------------------------------------------------------------------------------------------
                 driver.execute_script("window.open('about:blank', 'secondtab');")
-
-                # It is switching to second tab now
                 driver.switch_to.window("secondtab")
-                all_stocks_data.append(get_stock_details(data))
-
-            if USE_WIFI_INDICATOR:
+                driver.get(modem_url)
+                battery_level = \
+                    driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
+                        '</b>')[
+                        0][:-1]
+                print(battery_level)
                 with contextlib.suppress(Exception):
-                    # Get airtel wi-fi modem battery health
-                    # ------------------------------------------------------------------------------------------------------------------
-                    driver.execute_script("window.open('about:blank', 'secondtab');")
-                    driver.switch_to.window("secondtab")
-                    driver.get(modem_url)
-                    battery_level = \
-                        driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
-                            '</b>')[
-                            0][:-1]
-                    print(battery_level)
-                    with contextlib.suppress(Exception):
-                        if int(battery_level) <= 15:
-                            send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
-                                               message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-            driver.quit()
+                    if int(battery_level) <= 15:
+                        send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
+                                           message="Wifi modem is going to be shut down soon\nPlease plug in charger")
+        driver.quit()
 
-            # Calculate total dividend to get from stocks
-            total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
-            print(f"{int(total_units)} units purchased till now.")
-            total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
-            print(f"Total returns is {total}/-")
+        # Calculate total dividend to get from stocks
+        total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
+        print(f"{int(total_units)} units purchased till now.")
+        total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
+        print(f"Total returns is {total}/-")
 
-            if buy_stock_list:
-                file = 'buy_stock_details'
-                data = buy_stock_list
-                generate_files(file, data)
-            if sell_stock_list:
-                file = 'sell_stock_details'
-                data = sell_stock_list
-                generate_files(file, data)
-            if (
-                    datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
-                file = 'stock_data'
-                data = all_stocks_data
-                generate_files(file, data)
-                send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
-                                   message="Please run wifi battery checker")
+        if buy_stock_list:
+            file = 'buy_stock_details'
+            data = buy_stock_list
+            generate_files(file, data)
+        if sell_stock_list:
+            file = 'sell_stock_details'
+            data = sell_stock_list
+            generate_files(file, data)
+        if (
+                datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
+            file = 'stock_data'
+            data = all_stocks_data
+            generate_files(file, data)
+            send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
+                               message="Please run wifi battery checker")
 
-                break
+            break
 
-    except Exception as e:
-        if driver:
-            driver.quit()
-            driver.close()
+except Exception as e:
+    send_notifications(title="Restart Server", message="Server crashed due low internet connection")
+    if driver:
+        driver.quit()
+        driver.close()
 
-        __main__()
 
-__main__()
