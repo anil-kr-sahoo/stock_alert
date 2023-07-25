@@ -294,9 +294,10 @@ def __main__():
                 break
 
     except Exception as e:
-        __main__()
         if driver:
             driver.quit()
             driver.close()
+
+        __main__()
 
 __main__()
