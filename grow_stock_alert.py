@@ -50,7 +50,7 @@ urls = [
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 11, 995.90],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.82],
-    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 18, 241.27],
+    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.84],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
