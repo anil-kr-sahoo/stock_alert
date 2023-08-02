@@ -42,7 +42,7 @@ urls = [
     ['https://groww.in/stocks/itc-ltd', 7, 418.33],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/marico-ltd', 1, 526.6],
-    ['https://groww.in/stocks/nhpc-ltd', 16, 43.75],
+    ['https://groww.in/stocks/nhpc-ltd', 18, 44.61],
     ['https://groww.in/stocks/nmdc-ltd', 7, 113.22],
     ['https://groww.in/stocks/ntpc-ltd', 9, 171.23],
     ['https://groww.in/stocks/oil-india-ltd', 18, 254.11],
