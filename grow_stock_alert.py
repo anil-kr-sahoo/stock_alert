@@ -48,6 +48,7 @@ urls = [
     ['https://groww.in/stocks/oil-india-ltd', 18, 254.11],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
+    ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 11, 995.90],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.82],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.84],
