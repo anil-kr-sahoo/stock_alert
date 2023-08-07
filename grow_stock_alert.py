@@ -24,7 +24,7 @@ sell_stock_list = []
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
-    ['https://groww.in/stocks/bajaj-auto-ltd', 0, 0],
+    ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
     ['https://groww.in/stocks/bank-of-baroda', 11, 195.01],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
@@ -55,10 +55,9 @@ urls = [
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
-    ['https://groww.in/stocks/vedanta-ltd', 12, 274.75],
+    ['https://groww.in/stocks/vedanta-ltd', 14, 270.90],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
-    ['https://groww.in/stocks/zomato-ltd', 7, 79.01],
 ]
 
 def send_whatsapp_notification(message):
