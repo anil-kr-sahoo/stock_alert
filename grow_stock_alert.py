@@ -55,7 +55,7 @@ urls = [
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
-    ['https://groww.in/stocks/vedanta-ltd', 14, 270.90],
+    ['https://groww.in/stocks/vedanta-ltd', 15, 268.95],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
 ]
