@@ -212,8 +212,10 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
                            f"If the purchased amount is less than {individual_stock_details['Stock Average Value']}"
     else:
-        whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
-                       f"Day Returns {individual_stock_details['Day Returns']}"
+        whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
+                           f"{individual_stock_details['Url']}\n" \
+                           f"Day Returns {individual_stock_details['Day Returns']}\n" \
+                           f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
     send_notifications(notification_title, notify_details, whatsapp_message)
     stock_list_type.append(individual_stock_details)
     print(json.dumps(individual_stock_details, indent=2))
@@ -238,7 +240,7 @@ try:
         options.headless = True
         options.add_argument('--remote-debugging-port=61625')
         options.add_argument('--no-sandbox')
-        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+        driver = webdriver.Chrome(executable_path=ChromeDriverManager(version="114.0.5735.90").install(), options=options)
         for data in urls:
             driver.execute_script("window.open('about:blank', 'secondtab');")
 
