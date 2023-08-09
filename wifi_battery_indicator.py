@@ -39,7 +39,11 @@ try:
         wifi_options.headless = True
         wifi_options.add_argument('--remote-debugging-port=61625')
         wifi_options.add_argument('--no-sandbox')
-        wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
+        try:
+            wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=wifi_options)
+        except Exception:
+            wifi_driver = webdriver.Chrome(executable_path=ChromeDriverManager(version="114.0.5735.90").install(),
+                                      options=wifi_options)
         wifi_driver.execute_script("window.open('about:blank', 'secondtab');")
         wifi_driver.switch_to.window("secondtab")
         wifi_driver.get(modem_url)
