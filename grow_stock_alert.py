@@ -41,11 +41,10 @@ urls = [
     ['https://groww.in/stocks/irb-infrastructure-developers-ltd', 1, 29.65],
     ['https://groww.in/stocks/itc-ltd', 7, 418.33],
     ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
-    ['https://groww.in/stocks/marico-ltd', 1, 526.6],
     ['https://groww.in/stocks/nhpc-ltd', 18, 44.61],
     ['https://groww.in/stocks/nmdc-ltd', 7, 113.22],
     ['https://groww.in/stocks/ntpc-ltd', 9, 171.23],
-    ['https://groww.in/stocks/oil-india-ltd', 18, 254.11],
+    ['https://groww.in/stocks/oil-india-ltd', 19, 254.88],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
@@ -210,7 +209,7 @@ def get_stock_details(all_data):
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
     if 'Sell' in notification_title:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
-                           f"If the purchased amount is less than {individual_stock_details['Stock Average Value']}"
+                           f"If the purchased amount is less than {individual_stock_details['Stock Average Value']}/-"
     else:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
                            f"{individual_stock_details['Url']}\n" \
