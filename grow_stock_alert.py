@@ -21,6 +21,7 @@ system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 buy_stock_list = []
 sell_stock_list = []
+start_time = datetime.now()
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
@@ -294,7 +295,13 @@ try:
             break
 
 except Exception as e:
-    send_notifications(title="Restart Server", message="Server crashed due low internet connection")
+    title = "Restart Server\n"
+    hour = int((datetime.now()- start_time).seconds/60/60)
+    minute = int((datetime.now()- start_time).seconds/60)
+    seconds = int((datetime.now()- start_time).seconds%60)
+    title += f"Server ran for {hour} hour, {minute} minutes, {seconds} seconds"
+
+    send_notifications(title=title, message="Server crashed due low internet connection")
     if driver:
         driver.quit()
         driver.close()
