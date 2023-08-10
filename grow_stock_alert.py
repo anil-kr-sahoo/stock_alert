@@ -41,7 +41,6 @@ urls = [
     ['https://groww.in/stocks/infosys-ltd', 7, 1365.07],
     ['https://groww.in/stocks/irb-infrastructure-developers-ltd', 1, 29.65],
     ['https://groww.in/stocks/itc-ltd', 7, 418.33],
-    ['https://groww.in/stocks/jsw-steel-ltd', 1, 749.65],
     ['https://groww.in/stocks/nhpc-ltd', 18, 44.61],
     ['https://groww.in/stocks/nmdc-ltd', 7, 113.22],
     ['https://groww.in/stocks/ntpc-ltd', 9, 171.23],
@@ -50,7 +49,7 @@ urls = [
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 11, 995.90],
-    ['https://groww.in/stocks/power-finance-corporation-ltd', 11, 167.82],
+    ['https://groww.in/stocks/power-finance-corporation-ltd', 13, 182.75],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.84],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
@@ -300,7 +299,7 @@ except Exception as e:
     minute = int((datetime.now()- start_time).seconds/60)
     seconds = int((datetime.now()- start_time).seconds%60)
     title += f"Server ran for {hour} hour{'s' if hour>1 else ''}," \
-             f" {minute} minutes{'s' if minute>1 else ''}," \
+             f" {minute} minute{'s' if minute>1 else ''}," \
              f" {seconds} second{'s' if seconds>1 else ''}"
 
     send_notifications(title=title, message="Server crashed due low internet connection")
