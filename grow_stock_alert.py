@@ -299,7 +299,9 @@ except Exception as e:
     hour = int((datetime.now()- start_time).seconds/60/60)
     minute = int((datetime.now()- start_time).seconds/60)
     seconds = int((datetime.now()- start_time).seconds%60)
-    title += f"Server ran for {hour} hour, {minute} minutes, {seconds} seconds"
+    title += f"Server ran for {hour} hour{'s' if hour>1 else ''}," \
+             f" {minute} minutes{'s' if minute>1 else ''}," \
+             f" {seconds} second{'s' if seconds>1 else ''}"
 
     send_notifications(title=title, message="Server crashed due low internet connection")
     if driver:
