@@ -59,6 +59,7 @@ urls = [
     ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
 ]
 
+
 def send_whatsapp_notification(message):
     if any(data in message for data in ['Buy', 'Sell', 'Thank']):
         pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U", message=message, tab_close=True)
@@ -230,6 +231,7 @@ def generate_files(file_name, file_data):
         stock_details = [list(element.values()) for element in file_data]
         writer.writerows(heading + stock_details)
 
+
 driver = None
 try:
     while True:
@@ -295,16 +297,14 @@ try:
 
 except Exception as e:
     title = "Restart Server\n"
-    hour = int((datetime.now()- start_time).seconds/60/60)
-    minute = int((datetime.now()- start_time).seconds/60)
-    seconds = int((datetime.now()- start_time).seconds%60)
-    title += f"Server ran for {hour} hour{'s' if hour>1 else ''}," \
-             f" {minute} minute{'s' if minute>1 else ''}," \
-             f" {seconds} second{'s' if seconds>1 else ''}"
+    hour = int((datetime.now() - start_time).seconds / 60 / 60)
+    minute = int((datetime.now() - start_time).seconds / 60) % 60
+    seconds = int((datetime.now() - start_time).seconds % 60)
+    title += f"Server ran for {hour} hour{'s' if hour > 1 else ''}," \
+             f" {minute} minute{'s' if minute > 1 else ''}," \
+             f" {seconds} second{'s' if seconds > 1 else ''}"
 
     send_notifications(title=title, message="Server crashed due low internet connection")
     if driver:
         driver.quit()
         driver.close()
-
-
