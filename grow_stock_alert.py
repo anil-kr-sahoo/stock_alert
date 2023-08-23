@@ -19,6 +19,9 @@ from plyer import notification
 USE_WIFI_INDICATOR = True
 system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
+
+# 10% minimum profit added
+required_min_percentage = .1
 buy_stock_list = []
 sell_stock_list = []
 start_time = datetime.now()
@@ -127,8 +130,7 @@ def get_stock_details(all_data):
     url = all_data[0]
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
-
-    target_stock_val = stock_average_val + stock_average_val * .1
+    target_stock_val = stock_average_val + stock_average_val * required_min_percentage
     dividend_ratio_percentage = 0
     roe = 0
     driver.get(url)
@@ -209,8 +211,10 @@ def get_stock_details(all_data):
 
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
     if 'Sell' in notification_title:
+        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
+            'Current Price'] * required_min_percentage)
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
-                           f"If the purchased amount is less than {individual_stock_details['Stock Average Value']}/-"
+                           f"If the purchased amount is less than {least_sell_amount}/-"
     else:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
                            f"{individual_stock_details['Url']}\n" \
