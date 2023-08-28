@@ -52,7 +52,7 @@ urls = [
     ['https://groww.in/stocks/oil-india-ltd', 19, 254.88],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
-    ['https://groww.in/stocks/piramal-enterprises-ltd', 11, 995.90],
+    ['https://groww.in/stocks/piramal-enterprises-ltd', 13, 1004.86],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.84],
     ['https://groww.in/stocks/spicejet-ltd', 1, 44.8],
     ['https://groww.in/stocks/state-bank-of-india', 0, 0],
@@ -61,7 +61,6 @@ urls = [
     ['https://groww.in/stocks/uco-bank', 1, 31.5],
     ['https://groww.in/stocks/vedanta-ltd', 15, 268.95],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
-    ['https://groww.in/stocks/yes-bank-ltd', 1, 18],
 ]
 
 
