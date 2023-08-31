@@ -47,10 +47,10 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 13, 1004.86],
-    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.84],
+    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.85],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
-    ['https://groww.in/stocks/vedanta-ltd', 15, 268.95],
+    ['https://groww.in/stocks/vedanta-ltd', 15, 268.96],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
 ]
 
