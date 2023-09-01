@@ -24,6 +24,7 @@ modem_url = "http://192.168.1.1/index.html"
 required_min_percentage = .1
 buy_stock_list = []
 sell_stock_list = []
+triggered_stocks_list = []
 start_time = datetime.now()
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
@@ -202,6 +203,7 @@ def get_stock_details(all_data):
 
 
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
+    global triggered_stocks_list
     if 'Sell' in notification_title:
         least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
             'Current Price'] * required_min_percentage)
@@ -212,7 +214,9 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
                            f"{individual_stock_details['Url']}\n" \
                            f"Day Returns {individual_stock_details['Day Returns']}\n" \
                            f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
-    send_notifications(notification_title, notify_details, whatsapp_message)
+    if individual_stock_details['Url'] not in triggered_stocks_list:
+        triggered_stocks_list.append(individual_stock_details['Url'])
+        send_notifications(notification_title, notify_details, whatsapp_message)
     stock_list_type.append(individual_stock_details)
     print(json.dumps(individual_stock_details, indent=2))
 
