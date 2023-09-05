@@ -240,11 +240,7 @@ try:
         options.headless = True
         options.add_argument('--remote-debugging-port=61625')
         options.add_argument('--no-sandbox')
-        try:
-            driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-        except Exception:
-            driver = webdriver.Chrome(executable_path=ChromeDriverManager(version="114.0.5735.90").install(),
-                                      options=options)
+        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
         for data in urls:
             driver.execute_script("window.open('about:blank', 'secondtab');")
 
