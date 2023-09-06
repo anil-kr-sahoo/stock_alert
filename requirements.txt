@@ -2,3 +2,6 @@ plyer==2.1.0
 pywhatkit==5.4
 selenium==4.8.2
 webdriver-manager==4.0.0
+# For linux use 3.8.6
+# webdriver-manager==3.8.6
+
