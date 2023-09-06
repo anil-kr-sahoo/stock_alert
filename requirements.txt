@@ -1,4 +1,3 @@
-dbus-python==1.3.2
 plyer==2.1.0
 pywhatkit==5.4
 selenium==4.8.2

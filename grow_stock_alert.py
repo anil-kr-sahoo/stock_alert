@@ -15,6 +15,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from plyer import notification
 
+from weekly_update import stocks_dict
+
 # Use Airtel Wi-Fi battery indicator as well
 USE_WIFI_INDICATOR = True
 system_name = socket.gethostname()
@@ -35,7 +37,6 @@ urls = [
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
     ['https://groww.in/stocks/canara-bank', 12, 309.88],
     ['https://groww.in/stocks/coal-india-ltd', 11, 221.22],
-    ['https://groww.in/stocks/colgatepalmolive-india-ltd', 0, 0],
     ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 3, 199.43],
     ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.63],
     ['https://groww.in/stocks/hero-motocorp-ltd', 9, 2815.93],
@@ -46,6 +47,7 @@ urls = [
     ['https://groww.in/stocks/oil-india-ltd', 21, 256.97],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
+    ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
     ['https://groww.in/stocks/piramal-enterprises-ltd', 13, 1004.86],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.85],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
@@ -55,8 +57,20 @@ urls = [
 ]
 
 
+def check_weekly_stock_details():
+    if stocks_dict["trigger_date"] == datetime.now().date().strftime("%d/%m/%Y"):
+        weekly_stock_msg = "Weekly update for stock monitoring"
+        if stocks_dict['removed_stocks']:
+            weekly_stock_msg += f"\n\nRemoved Stocks :-\n\n"
+            weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
+        if stocks_dict['newly_added_stocks']:
+            weekly_stock_msg += f"\n\nAdded Stocks :-\n\n"
+            weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
+        return weekly_stock_msg
+
+
 def send_whatsapp_notification(message):
-    if any(data in message for data in ['Buy', 'Sell', 'Thank']):
+    if any(data in message for data in ['Buy', 'Sell', 'Thank', 'Weekly']):
         pywhatkit.sendwhatmsg_to_group_instantly(group_id="KbFKSNqUkWs8RGVhiPpw4U", message=message, tab_close=True)
     else:
         pywhatkit.sendwhatmsg_instantly(phone_no="+917749984274", message=message, tab_close=True)
@@ -86,6 +100,8 @@ def send_notifications(title, message, wp_message=None):
                 os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
             elif 'Restart' in title:
                 os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
+            elif 'Weekly' in title:
+                os.system('spd-say "Hi Sir, Weekly stock portfolio updated" ')
             else:
                 os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
 
@@ -235,7 +251,6 @@ driver = None
 try:
     while True:
         all_stocks_data = []
-
         options = Options()
         options.headless = True
         options.add_argument('--remote-debugging-port=61625')
@@ -287,7 +302,9 @@ try:
             generate_files(file, data)
             send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
                                message="Please run wifi battery checker")
-
+            weekly_update_msg = check_weekly_stock_details()
+            if weekly_update_msg:
+                send_notifications(title=weekly_update_msg, message="Weekly Stocks update details")
             break
 
 except Exception as e:
