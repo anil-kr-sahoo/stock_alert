@@ -10,6 +10,14 @@ stocks_dict = {
         'Colgate-Palmolive (India)'
     ],
     "newly_added_stocks": [
-        'Petronet LNG',
+        'HDFC Bank',
+        'IRCTC',
+        'LTIMindtree',
+        'Paytm',
+        'PolicyBazaar - PB Fintech Ltd.',
+        'Tata Steel',
+        'Avenue Supermarts (DMART)',
+        'Happiest Minds Technologies',
+        'Petronet LNG'
     ]
 }

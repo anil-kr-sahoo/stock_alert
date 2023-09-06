@@ -15,6 +15,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from plyer import notification
 
+from user_stocks import user_stocks
 from weekly_update import stocks_dict
 
 # Use Airtel Wi-Fi battery indicator as well
@@ -48,13 +49,16 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
     ['https://groww.in/stocks/petronet-lng-ltd', 0, 0],
-    ['https://groww.in/stocks/piramal-enterprises-ltd', 13, 1004.86],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 22, 243.85],
+    ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/vedanta-ltd', 15, 268.96],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
 ]
+
+for k, v in user_stocks.items():
+    urls += v
 
 
 def check_weekly_stock_details():
@@ -204,8 +208,7 @@ def get_stock_details(all_data):
             individual_stock_details,
         )
     if (
-            stock_qty
-            and target_stock_val < current_price
+            target_stock_val < current_price
             and (dividend_ratio_percentage < 2 or roe < 10)
     ):
         global_notifier(
@@ -300,11 +303,12 @@ try:
             file = 'stock_data'
             data = all_stocks_data
             generate_files(file, data)
-            send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
-                               message="Please run wifi battery checker")
             weekly_update_msg = check_weekly_stock_details()
             if weekly_update_msg:
-                send_notifications(title=weekly_update_msg, message="Weekly Stocks update details")
+                send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
+
+            send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
+                               message="Please run wifi battery checker")
             break
 
 except Exception as e:
