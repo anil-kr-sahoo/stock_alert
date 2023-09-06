@@ -43,7 +43,7 @@ urls = [
     ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
     ['https://groww.in/stocks/infosys-ltd', 7, 1365.07],
     ['https://groww.in/stocks/itc-ltd', 7, 418.33],
-    ['https://groww.in/stocks/nmdc-ltd', 7, 113.22],
+    ['https://groww.in/stocks/nmdc-ltd', 10, 121.14],
     ['https://groww.in/stocks/oil-india-ltd', 21, 256.97],
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 0, 0],
