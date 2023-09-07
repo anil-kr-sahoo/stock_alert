@@ -4,6 +4,6 @@ stocks_dict = {
 
     ],
     "newly_added_stocks": [
-
+        "Banco Products (India)"
     ]
 }

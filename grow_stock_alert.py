@@ -33,6 +33,7 @@ start_time = datetime.now()
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
+    ['https://groww.in/stocks/banco-products-india-ltd', 0, 0],
     ['https://groww.in/stocks/bank-of-baroda', 11, 195.01],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
