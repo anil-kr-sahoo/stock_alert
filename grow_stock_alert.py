@@ -62,15 +62,25 @@ for k, v in user_stocks.items():
 
 
 def check_weekly_stock_details():
-    if stocks_dict["trigger_date"] == datetime.now().date().strftime("%d/%m/%Y"):
-        weekly_stock_msg = "Weekly update for stock monitoring"
-        if stocks_dict['removed_stocks']:
-            weekly_stock_msg += f"\n\nRemoved Stocks :-\n\n"
-            weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
-        if stocks_dict['newly_added_stocks']:
-            weekly_stock_msg += f"\n\nAdded Stocks :-\n\n"
-            weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
-        return weekly_stock_msg
+    if stocks_dict["trigger_date"] != datetime.now().date().strftime(
+        "%d/%m/%Y"
+    ):
+        return
+    weekly_stock_msg = "Weekly update for stock monitoring"
+    weekly_stock_msg += f"\n\nRemoved Stocks :-\n\n"
+    if stocks_dict['removed_stocks']:
+        weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
+    else:
+        weekly_stock_msg += "NA"
+    weekly_stock_msg += f"\n\nAdded Stocks :-\n\n"
+    if stocks_dict['newly_added_stocks']:
+        weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
+    else:
+        weekly_stock_msg += "NA"
+    weekly_stock_msg += "\n\nNote:- The monitoring stocks are present in group description." \
+                        "\nIf you invested any other stocks which not being monitoring, " \
+                        "please message personally to admin, about the stock and it's average value."
+    return weekly_stock_msg
 
 
 def send_whatsapp_notification(message):
