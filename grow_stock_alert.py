@@ -42,6 +42,7 @@ urls = [
     ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.63],
     ['https://groww.in/stocks/hero-motocorp-ltd', 9, 2815.93],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
+    ['https://groww.in/stocks/indraprastha-gas-ltd', 0, 0],
     ['https://groww.in/stocks/infosys-ltd', 7, 1365.07],
     ['https://groww.in/stocks/itc-ltd', 7, 418.33],
     ['https://groww.in/stocks/nmdc-ltd', 10, 121.14],
