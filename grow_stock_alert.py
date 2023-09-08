@@ -37,7 +37,6 @@ urls = [
     ['https://groww.in/stocks/bank-of-baroda', 11, 195.01],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
-    ['https://groww.in/stocks/canara-bank', 12, 309.88],
     ['https://groww.in/stocks/coal-india-ltd', 11, 221.22],
     ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 3, 199.43],
     ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.63],
