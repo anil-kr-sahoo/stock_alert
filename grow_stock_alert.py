@@ -33,7 +33,7 @@ start_time = datetime.now()
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
-    ['https://groww.in/stocks/banco-products-india-ltd', 0, 0],
+    ['https://groww.in/stocks/banco-products-india-ltd', 4, 477.95, -5],
     ['https://groww.in/stocks/bank-of-baroda', 11, 195.01],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
@@ -212,8 +212,9 @@ def get_stock_details(all_data):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
+        buy_message = "Buy 1 more Stock" if lowest_day_limit != -2 else "Buy 2 Stocks"
         global_notifier(
-            f"Buy {round(day_returns * -1)} Stocks",
+            buy_message,
             notify_details,
             buy_stock_list,
             individual_stock_details,
