@@ -33,11 +33,11 @@ start_time = datetime.now()
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
-    ['https://groww.in/stocks/banco-products-india-ltd', 12, 469.04],
+    ['https://groww.in/stocks/banco-products-india-ltd', 13, 468.33],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
     ['https://groww.in/stocks/coal-india-ltd', 14, 232.13],
-    ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 9, 207.89],
+    ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 11, 211.35],
     ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.63],
     ['https://groww.in/stocks/hero-motocorp-ltd', 9, 2815.93],
     ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
@@ -53,7 +53,7 @@ urls = [
     ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
-    ['https://groww.in/stocks/vedanta-ltd', 15, 268.96],
+    ['https://groww.in/stocks/vedanta-ltd', 17, 264.58],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
 ]
 
