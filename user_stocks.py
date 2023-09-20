@@ -7,6 +7,5 @@ user_stocks = {
         ["https://groww.in/stocks/larsen-toubro-infotech-ltd", 0, 5359.83],
         ["https://groww.in/stocks/one-communications-ltd", 0, 1370.00],
         ["https://groww.in/stocks/pb-fintech-ltd", 0, 1272.32],
-        ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ]
 }

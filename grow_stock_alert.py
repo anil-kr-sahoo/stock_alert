@@ -33,8 +33,7 @@ start_time = datetime.now()
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 urls = [
     ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
-    ['https://groww.in/stocks/banco-products-india-ltd', 9, 467.43],
-    ['https://groww.in/stocks/bank-of-baroda', 13, 195.54],
+    ['https://groww.in/stocks/banco-products-india-ltd', 12, 469.04],
     ['https://groww.in/stocks/bosch-ltd', 0, 0],
     ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
     ['https://groww.in/stocks/coal-india-ltd', 14, 232.13],
@@ -51,7 +50,7 @@ urls = [
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 3, 4274],
     ['https://groww.in/stocks/petronet-lng-ltd', 5, 240.89],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 25, 185.87],
-    ['https://groww.in/stocks/tata-steel-ltd', 0, 0],
+    ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/vedanta-ltd', 15, 268.96],
