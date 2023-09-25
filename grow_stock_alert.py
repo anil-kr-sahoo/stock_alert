@@ -293,7 +293,8 @@ try:
                     if int(battery_level) <= 15:
                         send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
                                            message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-        driver.quit()
+        if driver:
+            driver.quit()
 
         # Calculate total dividend to get from stocks
         total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
