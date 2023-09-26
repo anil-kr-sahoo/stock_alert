@@ -50,6 +50,7 @@ urls = [
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 3, 4274],
     ['https://groww.in/stocks/petronet-lng-ltd', 5, 240.89],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 25, 185.87],
+    ['https://groww.in/stocks/southern-petrochemical-industries-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
