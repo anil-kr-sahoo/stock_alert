@@ -50,7 +50,6 @@ urls = [
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 3, 4274],
     ['https://groww.in/stocks/petronet-lng-ltd', 5, 240.89],
     ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 25, 185.87],
-    ['https://groww.in/stocks/southern-petrochemical-industries-corporation-ltd', 0, 0],
     ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
@@ -64,7 +63,7 @@ for k, v in user_stocks.items():
 
 def check_weekly_stock_details():
     if stocks_dict["trigger_date"] != datetime.now().date().strftime(
-        "%d/%m/%Y"
+            "%d/%m/%Y"
     ):
         return
     weekly_stock_msg = "Weekly update for stock monitoring"
@@ -220,6 +219,7 @@ def get_stock_details(all_data):
             individual_stock_details,
         )
     if (
+            target_stock_val and
             target_stock_val < current_price
             and (dividend_ratio_percentage < 2 or roe < 10)
     ):
