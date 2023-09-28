@@ -53,7 +53,7 @@ urls = [
     ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
-    ['https://groww.in/stocks/vedanta-ltd', 17, 264.58],
+    ['https://groww.in/stocks/vedanta-ltd', 23, 250.75],
     ['https://groww.in/stocks/wipro-ltd', 3, 605.28],
 ]
 
@@ -211,7 +211,7 @@ def get_stock_details(all_data):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
-        buy_message = "Buy 1 more Stock" if lowest_day_limit != -2 else "Buy 2 Stocks"
+        buy_message = "Buy 1 more Stock" if lowest_day_limit != -2 else f"Buy {round(day_returns * -1)} Stocks"
         global_notifier(
             buy_message,
             notify_details,
