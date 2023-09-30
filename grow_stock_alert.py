@@ -65,7 +65,6 @@ urls = [
     ['https://groww.in/stocks/rec-ltd', 0, 0],
     ['https://groww.in/stocks/reliance-nippon-life-asset-management-ltd', 0, 0],
     ['https://groww.in/stocks/sun-tv-network-ltd', 0, 0],
-    ['https://groww.in/stocks/tata-steel-ltd', 0, 135.70],
     ['https://groww.in/stocks/tata-consultancy-services-ltd', 0, 0],
     ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
     ['https://groww.in/stocks/torrent-power-ltd', 0, 0],
