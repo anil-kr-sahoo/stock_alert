@@ -1,5 +1,5 @@
 stocks_dict = {
-    "trigger_date": "29/09/2023",
+    "trigger_date": "06/10/2023",
     "removed_stocks": [
     ],
     "newly_added_stocks": [

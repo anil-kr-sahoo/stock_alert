@@ -163,7 +163,7 @@ def get_to_be_credit_dividend(stock_price, dividend_ratio):
         return 0
 
 
-def get_stock_details(all_data):
+def get_stock_details(all_data, set_timer=False):
     global buy_stock_list, sell_stock_list
     url = all_data[0]
     stock_qty = all_data[1]
@@ -172,11 +172,11 @@ def get_stock_details(all_data):
     dividend_ratio_percentage = 0
     roe = 0
     driver.get(url)
-    if (
-            datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
-        sleep(5)
+    if set_timer: sleep(5)
     name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
     current_price = get_current_stock_price()
+    if not current_price:
+        get_stock_details(all_data, set_timer=True)
     multiplier = 1
     check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
     if check_negative_multiplier:
