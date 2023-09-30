@@ -60,8 +60,8 @@ urls = [
     ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 7, 154.79],
     ['https://groww.in/stocks/oracle-financial-services-software-ltd', 3, 4274],
     ['https://groww.in/stocks/petronet-lng-ltd', 5, 240.89],
-    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 32, 185.87],
     ['https://groww.in/stocks/power-finance-corporation-ltd', 0, 0],
+    ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 32, 185.87],
     ['https://groww.in/stocks/rec-ltd', 0, 0],
     ['https://groww.in/stocks/reliance-nippon-life-asset-management-ltd', 0, 0],
     ['https://groww.in/stocks/sun-tv-network-ltd', 0, 0],
@@ -83,12 +83,12 @@ def check_weekly_stock_details():
     ):
         return
     weekly_stock_msg = "Weekly update for stock monitoring"
-    weekly_stock_msg += f"\n\nRemoved Stocks :-\n\n"
+    weekly_stock_msg += f"\n\nRemoved Stocks ({len(stocks_dict['removed_stocks'])}):-\n\n"
     if stocks_dict['removed_stocks']:
         weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
     else:
         weekly_stock_msg += "NA"
-    weekly_stock_msg += f"\n\nAdded Stocks :-\n\n"
+    weekly_stock_msg += f"\n\nAdded Stocks ({len(stocks_dict['newly_added_stocks'])}):-\n\n"
     if stocks_dict['newly_added_stocks']:
         weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
     else:
@@ -352,4 +352,3 @@ except Exception as e:
     send_notifications(title=title, message="Server crashed due low internet connection")
     if driver:
         driver.quit()
-        driver.close()
