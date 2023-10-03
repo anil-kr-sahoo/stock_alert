@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from user_stocks_input_file import user_stocks
 
 filter_url = "https://groww.in/stocks/filter?closePriceHigh=100000&closePriceLow=0&index=Nifty%20Next%2050," \
              "Nifty%20Midcap%20100,Nifty%2050,Nifty%20100,BSE%20100&marketCapHigh=2000000&marketCapLow=0&page=0&size=1000&sortType=ASC"
@@ -30,6 +31,24 @@ def get_current_stock_price():
         return get_two_decimal_val(get_float_val(raw_amount) / 100)
     except Exception:
         return 0
+
+
+def check_stocks_eligibility(sort_listed_stocks):
+    risky_urls = list()
+    all_urls = list()
+    for k, v in user_stocks.items():
+        all_urls += [data[0] for data in v]
+        stock_urls = [data[0] for data in v if not data[1] and not data[2]]
+        risky_urls += stock_urls
+    stock_details = {
+        "Add Stocks": [
+            url for url in sort_listed_stocks if url not in all_urls
+        ],
+        "Remove Stocks": [
+            url for url in risky_urls if url not in sort_listed_stocks
+        ],
+    }
+    return stock_details
 
 
 def get_stock_details(url, sleep_timer=False):
@@ -95,8 +114,10 @@ def check_details():
                     }
                 )
 
-        print(json.dumps(sorted(eligible_stocks, key=lambda i: i['Url']), indent=2))
-        print(len(eligible_stocks))
+        # print(json.dumps(sorted(eligible_stocks, key=lambda i: i['Url']), indent=2))
+        print("Total Eligible Stocks - ", len(eligible_stocks))
+        stock_details = check_stocks_eligibility([data['Url'] for data in eligible_stocks])
+        print(json.dumps(stock_details, indent=2))
         if driver:
             driver.quit()
     except Exception as e:
