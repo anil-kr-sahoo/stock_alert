@@ -7,6 +7,7 @@ BUY or SELL criteria only sent to WhatsApp groups, you can change code if you ne
 Buy Criteria :-<br>
 - Stock ROE must be greater than 10<br>
 - Stock Dividend Yield must be greater than 2%
+- Day Changes must fall below -2%
 
 Sell Criteria :-<br>
 - The stocks which are already bought, must have at least 10% gain<br>
