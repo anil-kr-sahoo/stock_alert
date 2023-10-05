@@ -1,4 +1,5 @@
 import json
+from tqdm import tqdm
 from time import sleep
 
 from bs4 import BeautifulSoup
@@ -104,7 +105,7 @@ def check_details():
                 link = f'https://groww.in{raw_link}'
                 table_data.append(link)
 
-        for each_stock_url in table_data:
+        for each_stock_url in tqdm(table_data, desc="Stock Scanned", unit='stocks'):
             details = get_stock_details(each_stock_url)
             if details and details['ROE'] >= 10 and details['Dividend Yield'] >= 2:
                 eligible_stocks.append(
@@ -113,7 +114,6 @@ def check_details():
                         "Url": details['Url'],
                     }
                 )
-
         # print(json.dumps(sorted(eligible_stocks, key=lambda i: i['Url']), indent=2))
         print("Total Eligible Stocks - ", len(eligible_stocks))
         stock_details = check_stocks_eligibility([data['Url'] for data in eligible_stocks])
