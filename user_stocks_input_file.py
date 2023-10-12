@@ -8,8 +8,8 @@ THANK_YOU_MESSAGE = "Thank you for trade with AK. \nToday's trade is over."
 user_stocks = {
     "my_stocks": [
         ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
-        ['https://groww.in/stocks/banco-products-india-ltd', 13, 468.33],
-        ['https://groww.in/stocks/bank-of-baroda', 3, 212.73],
+        ['https://groww.in/stocks/banco-products-india-ltd', 15, 468.28],
+        ['https://groww.in/stocks/bank-of-baroda', 6, 210.47],
         ['https://groww.in/stocks/bosch-ltd', 0, 0],
         ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
         ['https://groww.in/stocks/canara-bank', 5, 373.11],
@@ -30,7 +30,7 @@ user_stocks = {
         ['https://groww.in/stocks/nhpc-ltd', 5, 52.09],
         ['https://groww.in/stocks/nmdc-ltd', 18, 130.03],
         ['https://groww.in/stocks/ntpc-ltd', 3, 234.15],
-        ['https://groww.in/stocks/oil-india-ltd', 24, 261.07],
+        ['https://groww.in/stocks/oil-india-ltd', 26, 264.96],
         ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 11, 166.11],
         ['https://groww.in/stocks/oracle-financial-services-software-ltd', 3, 4274],
         ['https://groww.in/stocks/petronet-lng-ltd', 7, 236.67],

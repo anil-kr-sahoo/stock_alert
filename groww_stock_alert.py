@@ -8,6 +8,7 @@ import socket
 
 from datetime import datetime
 from time import sleep
+from tqdm import tqdm
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -142,7 +143,7 @@ def get_stock_details(all_data, set_timer=False):
         multiplier *= -1
     try:
         lowest_day_limit = all_data[3]
-        print(f"Manually limit provided on -------- {name}")
+        print(f"\nManually limit provided on -------- {name}")
     except Exception as e:
         lowest_day_limit = -2
     day_returns = get_float_val(
@@ -246,7 +247,7 @@ try:
         options.add_argument('--remote-debugging-port=61625')
         options.add_argument('--no-sandbox')
         driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-        for data in urls:
+        for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
             driver.execute_script("window.open('about:blank', 'secondtab');")
 
             # It is switching to second tab now
