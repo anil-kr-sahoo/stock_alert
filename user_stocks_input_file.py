@@ -5,6 +5,7 @@ THANK_YOU_MESSAGE = "Thank you for trade with AK. \nToday's trade is over."
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 
+
 user_stocks = {
     "my_stocks": [
         ['https://groww.in/stocks/bajaj-auto-ltd', 1, 4720.20],
