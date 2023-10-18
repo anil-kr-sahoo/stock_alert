@@ -174,7 +174,7 @@ def get_stock_details(all_data, set_timer=False):
     individual_stock_details["Qty"] = stock_qty
     individual_stock_details["Total Returns"] = (current_price - stock_average_val) * stock_qty
     notify_details_1 = f"Name : {name}\nCurrent Price : {current_price}\n"
-    notify_details_2 = f"Day Returns : {day_returns}\nDividend : {dividend_ratio_percentage}\n" \
+    notify_details_2 = f"Day Returns : {day_returns}%\nDividend : {dividend_ratio_percentage}\n" \
                        f"Current Stock QTY : {stock_qty}"
     if stock_qty:
         notify_details = f"{notify_details_1}Average Value : {stock_average_val}\n{notify_details_2}"
@@ -218,7 +218,7 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
     else:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
                            f"{individual_stock_details['Url']}\n" \
-                           f"Day Returns {individual_stock_details['Day Returns']}\n" \
+                           f"Day Returns {individual_stock_details['Day Returns']}%\n" \
                            f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
     if individual_stock_details['Url'] not in triggered_stocks_list:
         triggered_stocks_list.append(individual_stock_details['Url'])
