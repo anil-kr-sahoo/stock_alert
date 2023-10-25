@@ -16,7 +16,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from plyer import notification
 
-from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE
+from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE, ALLOW_NOTIFICATION
 from weekly_update import stocks_dict
 
 # Use Airtel Wi-Fi battery indicator as well
@@ -31,9 +31,9 @@ urls = list()
 for k, v in user_stocks.items():
     urls += v
 
-buy_stock_list = []
-sell_stock_list = []
-triggered_stocks_list = []
+buy_stock_list = list()
+sell_stock_list = list()
+in_memory_data = dict()
 start_time = datetime.now()
 def check_weekly_stock_details():
     if stocks_dict["trigger_date"] != datetime.now().date().strftime(
@@ -124,7 +124,7 @@ def get_to_be_credit_dividend(stock_price, dividend_ratio):
 
 
 def get_stock_details(all_data, set_timer=False):
-    global buy_stock_list, sell_stock_list
+    global buy_stock_list, sell_stock_list, in_memory_data
     url = all_data[0]
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
@@ -141,11 +141,16 @@ def get_stock_details(all_data, set_timer=False):
     check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
     if check_negative_multiplier:
         multiplier *= -1
-    try:
-        lowest_day_limit = all_data[3]
-        print(f"\nManually limit provided on -------- {name}")
-    except Exception as e:
-        lowest_day_limit = -2
+    if not in_memory_data.get(all_data[0]):
+        try:
+            in_memory_data[all_data[0]] = all_data[3]
+        except Exception:
+            in_memory_data[all_data[0]] = -2
+
+    lowest_day_limit = in_memory_data[all_data[0]]
+    if lowest_day_limit != -2:
+        print(f"\nManually limit provided on -------- {name} With value {lowest_day_limit}")
+
     day_returns = get_float_val(
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
@@ -187,6 +192,7 @@ def get_stock_details(all_data, set_timer=False):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
+        in_memory_data[all_data[0]] -= 1
         buy_message = "Buy 1 more Stock" if lowest_day_limit != -2 else f"Buy {round(day_returns * -1)} Stocks"
         global_notifier(
             buy_message,
@@ -209,7 +215,6 @@ def get_stock_details(all_data, set_timer=False):
 
 
 def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
-    global triggered_stocks_list
     if 'Sell' in notification_title:
         least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
             'Current Price'] * required_min_percentage)
@@ -220,8 +225,7 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
                            f"{individual_stock_details['Url']}\n" \
                            f"Day Returns {individual_stock_details['Day Returns']}%\n" \
                            f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
-    if individual_stock_details['Url'] not in triggered_stocks_list:
-        triggered_stocks_list.append(individual_stock_details['Url'])
+    if ALLOW_NOTIFICATION:
         send_notifications(notification_title, notify_details, whatsapp_message)
     stock_list_type.append(individual_stock_details)
     print(json.dumps(individual_stock_details, indent=2))
