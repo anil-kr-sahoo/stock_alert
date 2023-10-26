@@ -134,25 +134,30 @@ def get_stock_details(all_data, set_timer=False):
     driver.get(url)
     if set_timer: sleep(5)
     name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+    check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
+    multiplier = 1
+    if check_negative_multiplier:
+        multiplier *= -1
+    day_returns = get_float_val(
+        driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     current_price = get_current_stock_price()
     if not current_price:
         get_stock_details(all_data, set_timer=True)
-    multiplier = 1
-    check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
-    if check_negative_multiplier:
-        multiplier *= -1
+
     if not in_memory_data.get(all_data[0]):
         try:
             in_memory_data[all_data[0]] = all_data[3]
         except Exception:
-            in_memory_data[all_data[0]] = -2
+            least_day_return = round(day_returns * -1)
+            if least_day_return >= -2:
+                in_memory_data[all_data[0]] = -2
+            else:
+                in_memory_data[all_data[0]] = least_day_return
 
     lowest_day_limit = in_memory_data[all_data[0]]
     if lowest_day_limit != -2:
         print(f"\nManually limit provided on -------- {name} With value {lowest_day_limit}")
 
-    day_returns = get_float_val(
-        driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
     individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
                                 "Name": name,
