@@ -148,7 +148,7 @@ def get_stock_details(all_data, set_timer=False):
         try:
             in_memory_data[all_data[0]] = all_data[3]
         except Exception:
-            least_day_return = round(day_returns * -1)
+            least_day_return = round(day_returns)
             if least_day_return >= -2:
                 in_memory_data[all_data[0]] = -2
             else:
