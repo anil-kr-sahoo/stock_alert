@@ -72,7 +72,7 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ["anil-ubuntu"]:
+    if system_name in ["anil-ubuntu", "AECC-IN-DIH049"]:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
@@ -259,9 +259,9 @@ try:
         try:
             all_stocks_data = []
             options = Options()
-            options.headless = True
             options.add_argument('--remote-debugging-port=61625')
             options.add_argument('--no-sandbox')
+            options.add_argument('--headless=new')
             driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
             for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
                 driver.execute_script("window.open('about:blank', 'secondtab');")
