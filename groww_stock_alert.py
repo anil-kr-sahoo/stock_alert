@@ -324,7 +324,7 @@ try:
                 print(f"Retries left {retries}")
                 time.sleep(5)
             else:
-                raise e
+                raise Exception (e)
 except Exception as e:
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
