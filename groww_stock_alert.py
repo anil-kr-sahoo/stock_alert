@@ -13,6 +13,7 @@ from datetime import datetime
 from time import sleep
 
 from selenium.common import NoSuchElementException, TimeoutException, WebDriverException
+from selenium.webdriver.chrome.service import Service
 from tqdm import tqdm
 
 from selenium import webdriver
@@ -72,7 +73,7 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ["anil-ubuntu", "AECC-IN-DIH049"]:
+    if system_name in ["anil-ubuntu"]:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
@@ -262,7 +263,7 @@ try:
             options.add_argument('--remote-debugging-port=61625')
             options.add_argument('--no-sandbox')
             options.add_argument('--headless=new')
-            driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
             for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
                 driver.execute_script("window.open('about:blank', 'secondtab');")
 
@@ -317,6 +318,8 @@ try:
                 break
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
                     if retries > 0:
+                        if driver:
+                            driver.quit()
                         retries -= 1
                         print(f"Retries left {retries}")
                         time.sleep(5)
