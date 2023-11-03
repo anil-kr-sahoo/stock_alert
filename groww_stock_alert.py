@@ -2,12 +2,17 @@ import contextlib
 import os
 import json
 import csv
+import time
+import traceback
+
 import pywhatkit
 import platform
 import socket
 
 from datetime import datetime
 from time import sleep
+
+from selenium.common import NoSuchElementException, TimeoutException, WebDriverException
 from tqdm import tqdm
 
 from selenium import webdriver
@@ -248,8 +253,9 @@ def generate_files(file_name, file_data):
 
 
 driver = None
+retries = 10
 try:
-    while True:
+    while retries > 0:
         all_stocks_data = []
         options = Options()
         options.headless = True
@@ -308,7 +314,13 @@ try:
             send_notifications(title=THANK_YOU_MESSAGE,
                                message="Please run wifi battery checker")
             break
-
+except (NoSuchElementException, TimeoutException, WebDriverException) as e:
+            if retries > 0:
+                retries -= 1
+                print("Retries left {}, Continuing on {}".format(retries, traceback.format_exc()))
+                time.sleep(5)
+            else:
+                raise e
 except Exception as e:
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
