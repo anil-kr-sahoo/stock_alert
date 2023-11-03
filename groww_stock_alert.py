@@ -256,71 +256,72 @@ driver = None
 retries = 10
 try:
     while retries > 0:
-        all_stocks_data = []
-        options = Options()
-        options.headless = True
-        options.add_argument('--remote-debugging-port=61625')
-        options.add_argument('--no-sandbox')
-        driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
-        for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
-            driver.execute_script("window.open('about:blank', 'secondtab');")
-
-            # It is switching to second tab now
-            driver.switch_to.window("secondtab")
-            all_stocks_data.append(get_stock_details(data))
-
-        if USE_WIFI_INDICATOR:
-            with contextlib.suppress(Exception):
-                # Get airtel wi-fi modem battery health
-                # ------------------------------------------------------------------------------------------------------------------
+        try:
+            all_stocks_data = []
+            options = Options()
+            options.headless = True
+            options.add_argument('--remote-debugging-port=61625')
+            options.add_argument('--no-sandbox')
+            driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=options)
+            for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
                 driver.execute_script("window.open('about:blank', 'secondtab');")
+
+                # It is switching to second tab now
                 driver.switch_to.window("secondtab")
-                driver.get(modem_url)
-                battery_level = \
-                    driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
-                        '</b>')[
-                        0][:-1]
-                print(battery_level)
+                all_stocks_data.append(get_stock_details(data))
+
+            if USE_WIFI_INDICATOR:
                 with contextlib.suppress(Exception):
-                    if int(battery_level) <= 15:
-                        send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
-                                           message="Wifi modem is going to be shut down soon\nPlease plug in charger")
-        if driver:
-            driver.quit()
+                    # Get airtel wi-fi modem battery health
+                    # ------------------------------------------------------------------------------------------------------------------
+                    driver.execute_script("window.open('about:blank', 'secondtab');")
+                    driver.switch_to.window("secondtab")
+                    driver.get(modem_url)
+                    battery_level = \
+                        driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
+                            '</b>')[
+                            0][:-1]
+                    print(battery_level)
+                    with contextlib.suppress(Exception):
+                        if int(battery_level) <= 15:
+                            send_notifications(title=f"Wifi running low, {battery_level}% Battery Left",
+                                               message="Wifi modem is going to be shut down soon\nPlease plug in charger")
+            if driver:
+                driver.quit()
 
-        # Calculate total dividend to get from stocks
-        total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
-        print(f"{int(total_units)} units purchased till now.")
-        total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
-        print(f"Total returns is {total}/-")
+            # Calculate total dividend to get from stocks
+            total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
+            print(f"{int(total_units)} units purchased till now.")
+            total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
+            print(f"Total returns is {total}/-")
 
-        if buy_stock_list:
-            file = 'buy_stock_details'
-            data = buy_stock_list
-            generate_files(file, data)
-        if sell_stock_list:
-            file = 'sell_stock_details'
-            data = sell_stock_list
-            generate_files(file, data)
-        if (
-                datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
-            file = 'stock_data'
-            data = all_stocks_data
-            generate_files(file, data)
-            weekly_update_msg = check_weekly_stock_details()
-            if weekly_update_msg:
-                send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
+            if buy_stock_list:
+                file = 'buy_stock_details'
+                data = buy_stock_list
+                generate_files(file, data)
+            if sell_stock_list:
+                file = 'sell_stock_details'
+                data = sell_stock_list
+                generate_files(file, data)
+            if (
+                    datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
+                file = 'stock_data'
+                data = all_stocks_data
+                generate_files(file, data)
+                weekly_update_msg = check_weekly_stock_details()
+                if weekly_update_msg:
+                    send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
 
-            send_notifications(title=THANK_YOU_MESSAGE,
-                               message="Please run wifi battery checker")
-            break
-except (NoSuchElementException, TimeoutException, WebDriverException) as e:
-            if retries > 0:
-                retries -= 1
-                print("Retries left {}, Continuing on {}".format(retries, traceback.format_exc()))
-                time.sleep(5)
-            else:
-                raise e
+                send_notifications(title=THANK_YOU_MESSAGE,
+                                   message="Please run wifi battery checker")
+                break
+        except (NoSuchElementException, TimeoutException, WebDriverException) as e:
+                    if retries > 0:
+                        retries -= 1
+                        print(f"Retries left {retries}")
+                        time.sleep(5)
+                    else:
+                        raise e
 except Exception as e:
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
