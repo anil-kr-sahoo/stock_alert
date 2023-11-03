@@ -317,14 +317,14 @@ try:
                                    message="Please run wifi battery checker")
                 break
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
-                    if retries > 0:
-                        if driver:
-                            driver.quit()
-                        retries -= 1
-                        print(f"Retries left {retries}")
-                        time.sleep(5)
-                    else:
-                        raise e
+            if retries > 0:
+                if driver:
+                    driver.quit()
+                retries -= 1
+                print(f"Retries left {retries}")
+                time.sleep(5)
+            else:
+                raise e
 except Exception as e:
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
