@@ -39,6 +39,7 @@ for k, v in user_stocks.items():
 
 buy_stock_list = list()
 sell_stock_list = list()
+notified_stock_list = list()
 in_memory_data = dict()
 start_time = datetime.now()
 def check_weekly_stock_details():
@@ -130,7 +131,7 @@ def get_to_be_credit_dividend(stock_price, dividend_ratio):
 
 
 def get_stock_details(all_data, set_timer=False):
-    global buy_stock_list, sell_stock_list, in_memory_data
+    global buy_stock_list, sell_stock_list, in_memory_data, notified_stock_list
     url = all_data[0]
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
@@ -204,7 +205,11 @@ def get_stock_details(all_data, set_timer=False):
             and dividend_ratio_percentage >= 2
     ):
         in_memory_data[all_data[0]] -= 1
-        buy_message = "Buy 1 more Stock" if lowest_day_limit != -2 else f"Buy {round(day_returns * -1)} Stocks"
+        if individual_stock_details['Url'] in notified_stock_list:
+            buy_message = f"Buy {round(day_returns * -1)} Stocks"
+        else:
+            notified_stock_list.append(individual_stock_details['Url'])
+            buy_message = "Buy 1 more Stock"
         global_notifier(
             buy_message,
             notify_details,
