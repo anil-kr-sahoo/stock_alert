@@ -206,10 +206,10 @@ def get_stock_details(all_data, set_timer=False):
     ):
         in_memory_data[all_data[0]] -= 1
         if individual_stock_details['Url'] in notified_stock_list:
-            buy_message = f"Buy {round(day_returns * -1)} Stocks"
+            buy_message = "Buy 1 more Stock"
         else:
             notified_stock_list.append(individual_stock_details['Url'])
-            buy_message = "Buy 1 more Stock"
+            buy_message = f"Buy {round(day_returns * -1)} Stocks"
         global_notifier(
             buy_message,
             notify_details,
