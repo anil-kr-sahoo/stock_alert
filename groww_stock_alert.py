@@ -154,6 +154,8 @@ def get_stock_details(all_data, set_timer=False):
     if not in_memory_data.get(all_data[0]):
         try:
             in_memory_data[all_data[0]] = all_data[3]
+            if all_data[0] not in notified_stock_list:
+                notified_stock_list.append(all_data[0])
         except Exception:
             least_day_return = round(day_returns)
             if least_day_return >= -2:
