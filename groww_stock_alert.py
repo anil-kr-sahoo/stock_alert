@@ -325,8 +325,8 @@ try:
                 all_stock_day_return_list = [each_data['Day Returns'] for each_data in data]
                 most_grow_stock = max(all_stock_day_return_list)
                 most_losser_stock = min(all_stock_day_return_list)
-                eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock})'
-                                                   f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock})')
+                eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
+                                                   f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock}%)')
                 send_notifications(title=eod_message,
                                    message="Please run wifi battery checker")
                 break
