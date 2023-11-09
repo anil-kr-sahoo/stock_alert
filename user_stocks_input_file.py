@@ -1,5 +1,6 @@
 GROUP_LIST = ["KbFKSNqUkWs8RGVhiPpw4U"]
 PHONE_NO_LIST = ["+917749984274"]
+ALLOWED_DEVICE_ACCESS = ["anil-ubuntu"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
 # List details

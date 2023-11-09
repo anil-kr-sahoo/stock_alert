@@ -7,6 +7,7 @@ import platform
 import pywhatkit
 from plyer import notification
 
+from user_stocks_input_file import ALLOWED_DEVICE_ACCESS
 from weekly_update import stocks_dict
 
 system_name = socket.gethostname()
@@ -39,7 +40,7 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ["anil-ubuntu"]:
+    if system_name in ALLOWED_DEVICE_ACCESS:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
