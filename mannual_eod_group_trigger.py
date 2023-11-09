@@ -18,7 +18,7 @@ def check_weekly_stock_details():
         "%d/%m/%Y"
     ):
         return
-    weekly_stock_msg = "Weekly update for stock monitoring"
+    weekly_stock_msg = "Weekly update for AK Stock Monitoring"
     weekly_stock_msg += f"\n\nRemoved Stocks :-\n\n"
     if stocks_dict['removed_stocks']:
         weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
