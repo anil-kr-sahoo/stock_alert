@@ -263,7 +263,7 @@ def generate_files(file_name, file_data):
 
 
 driver = None
-retries = 10
+retries = 30
 try:
     while retries > 0:
         try:
