@@ -157,7 +157,7 @@ def get_stock_details(all_data, set_timer=False):
             if url not in notified_stock_list:
                 notified_stock_list.append(url)
         except Exception:
-            least_day_return = round(day_returns)
+            least_day_return = int(day_returns)
             if least_day_return >= -2:
                 in_memory_data[all_data[0]] = -2
             else:
