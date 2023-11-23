@@ -53,37 +53,41 @@ def check_stocks_eligibility(sort_listed_stocks):
 
 
 def get_stock_details(url, sleep_timer=False):
-    driver.get(url)
-    if sleep_timer:
-        sleep(5)
-    name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
-    all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
-    current_price = get_current_stock_price()
-    if not current_price:
-        get_stock_details(url, True)
-    individual_stock_details = {"Name": name,
-                                "Current Price": current_price,
-                                "Url": url
-                                }
-    for each in all_details.split('\n'):
-        if 'Dividend' in each:
-            dividend = get_float_val(each.split(" ")[-1][:-1])
-            if dividend < 2:
-                return
-            individual_stock_details[' '.join(each.split(" ")[:-1])] = dividend
-        elif 'ROE' in each:
-            roe = get_float_val(each.split(" ")[-1][:-1])
-            if roe < 2:
-                return
-            individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
-        elif 'Market' in each:
-            individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
-                each.split(" ")[-1][1:-2].replace(',', ''))
-        else:
-            individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1])
+    try:
+        driver.get(url)
+        if sleep_timer:
+            sleep(5)
+        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+        all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
+        current_price = get_current_stock_price()
+        if not current_price:
+            get_stock_details(url, True)
+        individual_stock_details = {"Name": name,
+                                    "Current Price": current_price,
+                                    "Url": url
+                                    }
+        for each in all_details.split('\n'):
+            if 'Dividend' in each:
+                dividend = get_float_val(each.split(" ")[-1][:-1])
+                if dividend < 2:
+                    return
+                individual_stock_details[' '.join(each.split(" ")[:-1])] = dividend
+            elif 'ROE' in each:
+                roe = get_float_val(each.split(" ")[-1][:-1])
+                if roe < 2:
+                    return
+                individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
+            elif 'Market' in each:
+                individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
+                    each.split(" ")[-1][1:-2].replace(',', ''))
+            else:
+                individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1])
 
-    return individual_stock_details
-
+        return individual_stock_details
+    except Exception as e:
+        print(e)
+        print(f"\nProblem in fetching details{'-'*20}{url}")
+        return
 
 def check_details():
     global driver
