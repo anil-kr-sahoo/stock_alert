@@ -221,10 +221,12 @@ def get_stock_details(all_data, set_timer=False):
             individual_stock_details,
         )
     if (
-            target_stock_val and
-            target_stock_val < current_price
+            target_stock_val
+            and target_stock_val < current_price
             and (dividend_ratio_percentage < 2 or roe < 10)
+            and url not in notified_stock_list
     ):
+        notified_stock_list.append(url)
         global_notifier(
             "Sell All Stocks",
             notify_details,
