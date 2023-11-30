@@ -307,6 +307,11 @@ try:
             total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
             print(f"Total returns is {total}/-")
 
+            # Generate Files After Each Stock Bulk Scan
+            file = 'stock_data'
+            data = all_stocks_data
+            generate_files(file, data)
+
             if buy_stock_list:
                 file = 'buy_stock_details'
                 data = buy_stock_list
@@ -317,9 +322,6 @@ try:
                 generate_files(file, data)
             if (
                     datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
-                file = 'stock_data'
-                data = all_stocks_data
-                generate_files(file, data)
                 weekly_update_msg = check_weekly_stock_details()
                 if weekly_update_msg:
                     send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)

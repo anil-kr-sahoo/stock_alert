@@ -1,4 +1,5 @@
 import contextlib
+import json
 import os
 from datetime import datetime
 import socket
@@ -7,7 +8,7 @@ import platform
 import pywhatkit
 from plyer import notification
 
-from user_stocks_input_file import ALLOWED_DEVICE_ACCESS
+from user_stocks_input_file import ALLOWED_DEVICE_ACCESS, THANK_YOU_MESSAGE
 from weekly_update import stocks_dict
 
 system_name = socket.gethostname()
@@ -65,5 +66,26 @@ weekly_update_msg = check_weekly_stock_details()
 if weekly_update_msg:
     send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
 
-send_notifications(title="Thank you for trade with AK. \nToday's trade is over",
+file = open('stock_data.json')
+data = json.load(file)
+
+heighest_day_returns = data[0]['Day Returns']
+heighest_stock_name =  data[0]['Name']
+lowest_day_returns =  data[0]['Day Returns']
+lowest_stock_name =  data[0]['Name']
+for each_stock in data[1:]:
+    if each_stock['Day Returns'] > heighest_day_returns:
+        heighest_day_returns = each_stock['Day Returns']
+        heighest_stock_name =  each_stock['Name']
+
+    if each_stock['Day Returns'] < lowest_day_returns:
+        lowest_day_returns = each_stock['Day Returns']
+        lowest_stock_name =  each_stock['Name']
+
+file.close()
+eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{heighest_stock_name} ({heighest_day_returns}%)'
+                                   f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{lowest_stock_name} ({lowest_day_returns}%)')
+
+print(eod_message)
+send_notifications(title=eod_message,
                    message="Please run wifi battery checker")
