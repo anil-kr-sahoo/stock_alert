@@ -309,8 +309,8 @@ try:
 
             # Generate Files After Each Stock Bulk Scan
             file = 'stock_data'
-            data = all_stocks_data
-            generate_files(file, data)
+            stocks_data = all_stocks_data
+            generate_files(file, stocks_data)
 
             if buy_stock_list:
                 file = 'buy_stock_details'
@@ -325,8 +325,8 @@ try:
                 weekly_update_msg = check_weekly_stock_details()
                 if weekly_update_msg:
                     send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
-                all_stock_name_list = [each_data['Name'] for each_data in data]
-                all_stock_day_return_list = [each_data['Day Returns'] for each_data in data]
+                all_stock_name_list = [each_data['Name'] for each_data in stocks_data]
+                all_stock_day_return_list = [each_data['Day Returns'] for each_data in stocks_data]
                 most_grow_stock = max(all_stock_day_return_list)
                 most_losser_stock = min(all_stock_day_return_list)
                 eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
