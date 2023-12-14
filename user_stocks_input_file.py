@@ -27,7 +27,6 @@ user_stocks = {
         ['https://groww.in/stocks/itc-ltd', 10, 424.65],
         ['https://groww.in/stocks/mahindra-mahindra-financial-services-ltd', 6, 270.47],
         ['https://groww.in/stocks/mphasis-ltd', 3, 2370.55],
-        ['https://groww.in/stocks/national-aluminium-company-ltd', 2, 94.50],
         ['https://groww.in/stocks/nmdc-ltd', 18, 130.03],
         ['https://groww.in/stocks/ntpc-ltd', 3, 234.15],
         ['https://groww.in/stocks/oil-india-ltd', 26, 264.96],
