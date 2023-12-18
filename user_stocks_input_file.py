@@ -34,7 +34,7 @@ user_stocks = {
         ['https://groww.in/stocks/petronet-lng-ltd', 7, 236.68],
         ['https://groww.in/stocks/piramal-enterprises-ltd', 6, 901.93],
         ['https://groww.in/stocks/power-finance-corporation-ltd', 8, 306.81],
-        ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 32, 185.87],
+        ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 34, 188.61],
         ['https://groww.in/stocks/rec-ltd', 9, 346.07],
         ['https://groww.in/stocks/reliance-nippon-life-asset-management-ltd', 2, 324.30],
         ['https://groww.in/stocks/sun-tv-network-ltd', 2, 609],
