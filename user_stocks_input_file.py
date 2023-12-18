@@ -41,7 +41,7 @@ user_stocks = {
         ['https://groww.in/stocks/tata-consultancy-services-ltd', 2, 3588.55],
         ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
         ['https://groww.in/stocks/torrent-power-ltd', 2, 734.75],
-        ['https://groww.in/stocks/union-bank-of-india', 15, 103.98],
+        ['https://groww.in/stocks/union-bank-of-india', 19, 108.34],
         ['https://groww.in/stocks/vedanta-ltd', 27, 246.72],
         ['https://groww.in/stocks/wipro-ltd', 3, 605.28]
     ],
