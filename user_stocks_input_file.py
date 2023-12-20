@@ -32,7 +32,7 @@ user_stocks = {
         ['https://groww.in/stocks/oil-natural-gas-corporation-ltd', 11, 166.11],
         ['https://groww.in/stocks/oracle-financial-services-software-ltd', 7, 4181.45],
         ['https://groww.in/stocks/petronet-lng-ltd', 7, 236.68],
-        ['https://groww.in/stocks/piramal-enterprises-ltd', 6, 901.93],
+        ['https://groww.in/stocks/piramal-enterprises-ltd', 10, 908.35],
         ['https://groww.in/stocks/power-finance-corporation-ltd', 10, 327.03],
         ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 34, 188.61],
         ['https://groww.in/stocks/rec-ltd', 11, 361.44],
