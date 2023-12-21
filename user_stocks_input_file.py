@@ -36,7 +36,7 @@ user_stocks = {
         ['https://groww.in/stocks/power-finance-corporation-ltd', 13, 343.34],
         ['https://groww.in/stocks/power-grid-corporation-of-india-ltd', 34, 188.61],
         ['https://groww.in/stocks/rec-ltd', 14, 374.42],
-        ['https://groww.in/stocks/reliance-nippon-life-asset-management-ltd', 2, 324.30],
+        ['https://groww.in/stocks/reliance-nippon-life-asset-management-ltd', 3, 366.91],
         ['https://groww.in/stocks/sun-tv-network-ltd', 2, 609],
         ['https://groww.in/stocks/tata-consultancy-services-ltd', 2, 3588.55],
         ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
