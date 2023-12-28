@@ -12,7 +12,6 @@ user_stocks = {
         ['https://groww.in/stocks/banco-products-india-ltd', 15, 468.28],
         ['https://groww.in/stocks/bank-of-baroda', 10, 213.46],
         ['https://groww.in/stocks/bosch-ltd', 0, 0],
-        ['https://groww.in/stocks/britannia-industries-ltd', 3, 4813.13],
         ['https://groww.in/stocks/canara-bank', 8, 395.01],
         ['https://groww.in/stocks/castrol-india-ltd', 6, 143.16],
         ['https://groww.in/stocks/coal-india-ltd', 20, 268.01],

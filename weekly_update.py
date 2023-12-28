@@ -2,6 +2,7 @@ stocks_dict = {
     "trigger_date": "29/12/2023",
     "removed_stocks": [
         "Avenue Supermarts",
+        "Britannia Industries",
         "Happiest Minds Technologies",
         "HDFC Bank",
         "IRCTC",
