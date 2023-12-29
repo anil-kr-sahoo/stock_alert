@@ -20,7 +20,7 @@ user_stocks = {
         ['https://groww.in/stocks/hero-motocorp-ltd', 9, 2815.93],
         ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
         ['https://groww.in/stocks/housing-urban-development-corporation-ltd', 25, 88.63],
-        ['https://groww.in/stocks/indian-oil-corporation-ltd', 3, 120.60],
+        ['https://groww.in/stocks/indian-oil-corporation-ltd', 6, 125.12],
         ['https://groww.in/stocks/indraprastha-gas-ltd', 12, 422.78],
         ['https://groww.in/stocks/infosys-ltd', 7, 1365.07],
         ['https://groww.in/stocks/itc-ltd', 10, 424.65],
@@ -39,7 +39,7 @@ user_stocks = {
         ['https://groww.in/stocks/sun-tv-network-ltd', 2, 609],
         ['https://groww.in/stocks/tata-consultancy-services-ltd', 2, 3588.55],
         ['https://groww.in/stocks/tech-mahindra-ltd', 9, 1083.39],
-        ['https://groww.in/stocks/torrent-power-ltd', 2, 734.75],
+        ['https://groww.in/stocks/torrent-power-ltd', 4, 819.00],
         ['https://groww.in/stocks/union-bank-of-india', 19, 108.34],
         ['https://groww.in/stocks/vedanta-ltd', 27, 246.72],
         ['https://groww.in/stocks/wipro-ltd', 3, 605.28]
