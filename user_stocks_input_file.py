@@ -15,7 +15,7 @@ user_stocks = {
         ['https://groww.in/stocks/canara-bank', 8, 395.01],
         ['https://groww.in/stocks/castrol-india-ltd', 6, 143.16],
         ['https://groww.in/stocks/coal-india-ltd', 20, 268.01],
-        ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 18, 234.63],
+        ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 20, 241.94],
         ['https://groww.in/stocks/hcl-technologies-ltd', 9, 1093.63],
         ['https://groww.in/stocks/hero-motocorp-ltd', 9, 2815.93],
         ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
