@@ -20,7 +20,7 @@ user_stocks = {
         ['https://groww.in/stocks/hero-motocorp-ltd', 12, 3115.27],
         ['https://groww.in/stocks/hindustan-zinc-ltd', 5, 324.93],
         ['https://groww.in/stocks/housing-urban-development-corporation-ltd', 29, 93.89],
-        ['https://groww.in/stocks/indian-oil-corporation-ltd', 6, 125.12],
+        ['https://groww.in/stocks/indian-oil-corporation-ltd', 8, 126.37],
         ['https://groww.in/stocks/indraprastha-gas-ltd', 12, 422.78],
         ['https://groww.in/stocks/infosys-ltd', 8, 1381.48],
         ['https://groww.in/stocks/itc-ltd', 10, 424.65],
