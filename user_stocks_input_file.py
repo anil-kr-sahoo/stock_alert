@@ -23,7 +23,7 @@ user_stocks = {
         ['https://groww.in/stocks/indraprastha-gas-ltd', 17, 420.60],
         ['https://groww.in/stocks/infosys-ltd', 8, 1381.48],
         ['https://groww.in/stocks/itc-ltd', 10, 424.65],
-        ['https://groww.in/stocks/mahindra-mahindra-financial-services-ltd', 11, 270.62],
+        ['https://groww.in/stocks/mahindra-mahindra-financial-services-ltd', 13, 270.27],
         ['https://groww.in/stocks/nmdc-ltd', 24, 148.60],
         ['https://groww.in/stocks/ntpc-ltd', 9, 282.24],
         ['https://groww.in/stocks/oil-india-ltd', 30, 279.12],
