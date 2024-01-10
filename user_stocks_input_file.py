@@ -8,7 +8,7 @@ ALLOW_NOTIFICATION = True
 
 user_stocks = {
     "my_stocks": [
-        ['https://groww.in/stocks/banco-products-india-ltd', 18, 496.50],
+        ['https://groww.in/stocks/banco-products-india-ltd', 20, 514.05],
         ['https://groww.in/stocks/bank-of-baroda', 10, 213.47],
         ['https://groww.in/stocks/bosch-ltd', 0, 0],
         ['https://groww.in/stocks/canara-bank', 8, 395.01],
