@@ -212,7 +212,7 @@ def get_stock_details(all_data, set_timer=False):
             notified_stock_list.append(url)
             buy_message = f"Buy {round(day_returns * -1)} Stocks"
         else:
-            buy_message = "Buy 1 more Stock"
+            buy_message = "Buy 2 more Stocks"
 
         global_notifier(
             buy_message,
