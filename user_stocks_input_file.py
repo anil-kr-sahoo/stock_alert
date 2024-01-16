@@ -12,7 +12,7 @@ user_stocks = {
         ['https://groww.in/stocks/bank-of-baroda', 10, 213.47],
         ['https://groww.in/stocks/bosch-ltd', 0, 0],
         ['https://groww.in/stocks/canara-bank', 8, 395.01],
-        ['https://groww.in/stocks/castrol-india-ltd', 10, 160.89],
+        ['https://groww.in/stocks/castrol-india-ltd', 13, 163.63],
         ['https://groww.in/stocks/coal-india-ltd', 25, 290.86],
         ['https://groww.in/stocks/general-insurance-corporation-of-india-ltd', 20, 241.94],
         ['https://groww.in/stocks/hcl-technologies-ltd', 10, 1128.10],
