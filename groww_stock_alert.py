@@ -253,15 +253,15 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
     print(json.dumps(individual_stock_details, indent=2))
 
 
-def generate_files(file_name, file_data):
+def generate_files(file_name, file_data, only_json=False):
     with open(f"{file_name}.json", "w") as stock_data:
-        json.dump(file_data, stock_data, indent=4, sort_keys=True)
-
-    with open(f'{file_name}.csv', 'w') as file:
-        writer = csv.writer(file)
-        heading = [list(file_data[0].keys())]
-        stock_details = [list(element.values()) for element in file_data]
-        writer.writerows(heading + stock_details)
+        json.dump(file_data, stock_data, indent=2 if only_json else 4, sort_keys=True)
+    if not only_json:
+        with open(f'{file_name}.csv', 'w') as file:
+            writer = csv.writer(file)
+            heading = [list(file_data[0].keys())]
+            stock_details = [list(element.values()) for element in file_data]
+            writer.writerows(heading + stock_details)
 
 
 driver = None
@@ -311,6 +311,22 @@ try:
             file = 'stock_data'
             stocks_data = all_stocks_data
             generate_files(file, stocks_data)
+
+            file= 'input_modified'
+            modified_stocks=user_stocks.copy()
+            for k,v in modified_stocks.items():
+                user_stock_list= list()
+                for new_data in v:
+                    if in_memory_data[new_data[0]] != -2:
+                        if len(new_data) == 4:
+                            new_data[3] = in_memory_data[new_data[0]]
+                        else:
+                            new_data.append(in_memory_data[new_data[0]])
+                        user_stock_list.append(new_data)
+                    else:
+                        user_stock_list.append(new_data)
+                modified_stocks[k]=user_stock_list
+            generate_files(file, modified_stocks, only_json=True)
 
             if buy_stock_list:
                 file = 'buy_stock_details'
