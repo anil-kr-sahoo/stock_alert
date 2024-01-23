@@ -30,8 +30,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            13,
-            163.63
+            25,
+            168.94
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -39,14 +39,9 @@ user_stocks = {
             290.86
         ],
         [
-            "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            20,
-            241.94
-        ],
-        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             10,
-            1128.1
+            1128.11
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -60,18 +55,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            29,
-            93.89
+            45,
+            115.72
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             17,
-            420.6
+            420.61
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
             8,
-            1381.48
+            1381.49
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -80,8 +75,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            13,
-            270.27
+            15,
+            271.10
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -95,8 +90,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            30,
-            279.12
+            36,
+            300.37
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -131,22 +126,22 @@ user_stocks = {
         [
             "https://groww.in/stocks/rec-ltd",
             19,
-            385.55
+            385.56
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            5,
-            413.83
+            7,
+            439.17
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            5,
-            656.88
+            9,
+            652.73
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             3,
-            3626.06
+            3626.07
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -157,11 +152,6 @@ user_stocks = {
             "https://groww.in/stocks/torrent-power-ltd",
             4,
             819.0
-        ],
-        [
-            "https://groww.in/stocks/union-bank-of-india",
-            19,
-            108.34
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
