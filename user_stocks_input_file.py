@@ -31,7 +31,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             25,
-            168.94
+            168.95
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -56,7 +56,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
             45,
-            115.72
+            115.73
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -91,7 +91,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/oil-india-ltd",
             36,
-            300.37
+            300.38
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -101,7 +101,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             9,
-            4209.03
+            4209.04
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
@@ -131,7 +131,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             7,
-            439.17
+            439.18
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
