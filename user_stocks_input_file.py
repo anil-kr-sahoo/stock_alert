@@ -39,6 +39,11 @@ user_stocks = {
             290.86
         ],
         [
+            "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             10,
             1128.11
@@ -57,6 +62,11 @@ user_stocks = {
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
             45,
             115.73
+        ],
+        [
+            "https://groww.in/stocks/indian-oil-corporation-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
