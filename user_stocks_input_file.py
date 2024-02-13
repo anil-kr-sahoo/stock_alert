@@ -1,6 +1,6 @@
 GROUP_LIST = ["KbFKSNqUkWs8RGVhiPpw4U"]
 PHONE_NO_LIST = ["+917749984274"]
-ALLOWED_DEVICE_ACCESS = ["anil-ubuntu"]
+ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
 # List details
@@ -29,14 +29,9 @@ user_stocks = {
             395.01
         ],
         [
-            "https://groww.in/stocks/castrol-india-ltd",
-            25,
-            168.95
-        ],
-        [
             "https://groww.in/stocks/coal-india-ltd",
-            25,
-            290.86
+            29,
+            311.75
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -60,33 +55,33 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            45,
-            115.73
-        ],
-        [
-            "https://groww.in/stocks/indian-oil-corporation-ltd",
             0,
             0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            17,
-            420.61
+            19,
+            422.62
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            8,
-            1381.49
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            10,
-            424.65
+            13,
+            422.28
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            15,
-            271.10
+            17,
+            273.59
+        ],
+        [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            10,
+            454.25
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -99,6 +94,11 @@ user_stocks = {
             285.23
         ],
         [
+            "https://groww.in/stocks/oracle-financial-services-software-ltd",
+            11,
+            4701.03
+        ],
+        [
             "https://groww.in/stocks/oil-india-ltd",
             36,
             300.38
@@ -109,19 +109,14 @@ user_stocks = {
             175.79
         ],
         [
-            "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            9,
-            4209.04
-        ],
-        [
             "https://groww.in/stocks/petronet-lng-ltd",
-            7,
-            236.68
+            10,
+            250.35
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
-            10,
-            908.36
+            14,
+            905.45
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -137,11 +132,6 @@ user_stocks = {
             "https://groww.in/stocks/rec-ltd",
             19,
             385.56
-        ],
-        [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            7,
-            439.18
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
@@ -160,8 +150,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/torrent-power-ltd",
-            4,
-            819.0
+            7,
+            952.29
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",

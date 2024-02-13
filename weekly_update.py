@@ -1,7 +1,7 @@
 stocks_dict = {
-    "trigger_date": "25/01/2024",
+    "trigger_date": "16/02/2024",
     "removed_stocks": [
-        'Union Bank of India',
+        'Castrol India',
     ],
     "newly_added_stocks": [
     ]
