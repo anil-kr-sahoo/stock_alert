@@ -19,11 +19,6 @@ user_stocks = {
             213.47
         ],
         [
-            "https://groww.in/stocks/bosch-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/canara-bank",
             8,
             395.01
@@ -32,11 +27,6 @@ user_stocks = {
             "https://groww.in/stocks/coal-india-ltd",
             29,
             311.75
-        ],
-        [
-            "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -52,11 +42,6 @@ user_stocks = {
             "https://groww.in/stocks/hindustan-zinc-ltd",
             5,
             324.93
-        ],
-        [
-            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
