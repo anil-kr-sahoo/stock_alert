@@ -44,6 +44,11 @@ user_stocks = {
             324.93
         ],
         [
+            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             19,
             422.62
