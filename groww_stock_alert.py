@@ -43,9 +43,8 @@ notified_stock_list = list()
 in_memory_data = dict()
 start_time = datetime.now()
 def check_weekly_stock_details():
-    if stocks_dict["trigger_date"] != datetime.now().date().strftime(
-            "%d/%m/%Y"
-    ):
+    if (stocks_dict["trigger_date"] != datetime.now().date().strftime("%d/%m/%Y") or
+            not (len(stocks_dict['newly_added_stocks']) or len(stocks_dict['removed_stocks']))):
         return
     weekly_stock_msg = "Weekly update for AK Stock Monitoring"
     weekly_stock_msg += f"\n\nRemoved Stocks ({len(stocks_dict['removed_stocks'])}):-\n\n"
