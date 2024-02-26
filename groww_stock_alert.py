@@ -26,7 +26,7 @@ from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK
 from weekly_update import stocks_dict
 
 # Use Airtel Wi-Fi battery indicator as well
-USE_WIFI_INDICATOR = True
+USE_WIFI_INDICATOR = False
 system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 
