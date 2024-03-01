@@ -1,9 +1,10 @@
 from datetime import datetime
 
 stocks_dict = {
-    "trigger_date": "23/02/2024",
+    "trigger_date": "08/03/2024",
     "removed_stocks": [
     ],
     "newly_added_stocks": [
+        "HUDCO"
     ]
 }
