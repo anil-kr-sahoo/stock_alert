@@ -24,6 +24,11 @@ user_stocks = {
             395.01
         ],
         [
+            "https://groww.in/stocks/castrol-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/coal-india-ltd",
             29,
             311.75
@@ -42,11 +47,6 @@ user_stocks = {
             "https://groww.in/stocks/hindustan-zinc-ltd",
             5,
             324.93
-        ],
-        [
-            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
