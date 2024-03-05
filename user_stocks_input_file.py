@@ -105,8 +105,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
-            14,
-            905.45
+            16,
+            910.48
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -130,8 +130,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            3,
-            3626.07
+            5,
+            3777.28
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
