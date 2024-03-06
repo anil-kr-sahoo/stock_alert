@@ -20,8 +20,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            29,
-            311.75
+            32,
+            324.39
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            17,
-            273.59
+            18,
+            274.04
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
