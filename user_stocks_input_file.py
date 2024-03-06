@@ -14,16 +14,6 @@ user_stocks = {
             514.05
         ],
         [
-            "https://groww.in/stocks/bank-of-baroda",
-            10,
-            213.47
-        ],
-        [
-            "https://groww.in/stocks/canara-bank",
-            8,
-            395.01
-        ],
-        [
             "https://groww.in/stocks/castrol-india-ltd",
             0,
             0
@@ -50,8 +40,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            19,
-            422.62
+            23,
+            425.92
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
