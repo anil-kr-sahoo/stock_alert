@@ -95,8 +95,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
-            16,
-            910.48
+            18,
+            909.94
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
