@@ -64,6 +64,11 @@ user_stocks = {
             274.04
         ],
         [
+            "https://groww.in/stocks/mphasis-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             10,
             454.25
