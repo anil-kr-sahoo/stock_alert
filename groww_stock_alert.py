@@ -156,7 +156,7 @@ def get_stock_details(all_data, set_timer=False):
             if url not in notified_stock_list:
                 notified_stock_list.append(url)
         except Exception:
-            least_day_return = int(day_returns)
+            least_day_return = round(day_returns)
             if least_day_return >= -2:
                 in_memory_data[all_data[0]] = -2
             else:
@@ -205,13 +205,13 @@ def get_stock_details(all_data, set_timer=False):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
-        in_memory_data[all_data[0]] -= 1
+        in_memory_data[all_data[0]] = round(day_returns)
 
         if url not in notified_stock_list:
             notified_stock_list.append(url)
             buy_message = f"Buy {round(day_returns * -1)} Stocks"
         else:
-            buy_message = "Buy 2 more Stocks"
+            buy_message = f"Buy {int((day_returns-lowest_day_limit) * -1)} more Stocks"
 
         global_notifier(
             buy_message,

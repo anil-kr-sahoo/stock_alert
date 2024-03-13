@@ -14,6 +14,11 @@ user_stocks = {
             514.05
         ],
         [
+            "https://groww.in/stocks/bank-of-baroda",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/canara-bank",
             0,
             0
@@ -42,6 +47,11 @@ user_stocks = {
             "https://groww.in/stocks/hindustan-zinc-ltd",
             5,
             324.93
+        ],
+        [
+            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
