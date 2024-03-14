@@ -201,7 +201,7 @@ def get_stock_details(all_data, set_timer=False):
     if (
             current_price != 0
             and day_returns != -100
-            and day_returns <= lowest_day_limit
+            and day_returns < lowest_day_limit
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
