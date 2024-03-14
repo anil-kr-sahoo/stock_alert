@@ -205,7 +205,7 @@ def get_stock_details(all_data, set_timer=False):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
-        in_memory_data[all_data[0]] = int(day_returns)+1
+        in_memory_data[all_data[0]] = int(day_returns)-1
 
         if url not in notified_stock_list:
             notified_stock_list.append(url)
