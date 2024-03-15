@@ -264,7 +264,7 @@ def generate_files(file_name, file_data, only_json=False):
 
 
 driver = None
-retries = 30
+retries = 100
 try:
     while retries > 0:
         try:
