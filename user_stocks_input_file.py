@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            0,
-            0
+            2,
+            250.45
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -25,8 +25,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            0,
-            0
+            1,
+            196.90
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -56,17 +56,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             28,
-            425.81
+            425.82
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            0,
-            0
+            2,
+            1562.50
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            13,
-            422.28
+            15,
+            420.61
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -75,8 +75,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            0,
-            0
+            2,
+            2410.20
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -86,7 +86,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             25,
-            152.01
+            152.02
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -116,7 +116,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
             18,
-            909.94
+            909.95
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            9,
-            652.73
+            10,
+            645.48
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
