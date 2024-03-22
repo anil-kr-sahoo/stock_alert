@@ -31,7 +31,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/coal-india-ltd",
             32,
-            324.39
+            324.40
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -50,8 +50,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            0,
-            0
+            2,
+            174
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -66,7 +66,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             15,
-            420.61
+            420.62
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -136,7 +136,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
             10,
-            645.48
+            645.49
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
