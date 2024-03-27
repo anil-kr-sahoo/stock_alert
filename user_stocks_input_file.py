@@ -10,8 +10,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/banco-products-india-ltd",
-            20,
-            514.05
+            22,
+            519.34
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -26,7 +26,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             3,
-            190.56
+            190.57
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -120,8 +120,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            17,
-            354.04
+            19,
+            357.07
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -131,7 +131,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/rec-ltd",
             19,
-            385.56
+            387.07
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
