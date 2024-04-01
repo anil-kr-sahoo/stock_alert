@@ -100,8 +100,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            36,
-            300.38
+            38,
+            315.46
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -147,11 +147,6 @@ user_stocks = {
             "https://groww.in/stocks/tech-mahindra-ltd",
             10,
             1100.08
-        ],
-        [
-            "https://groww.in/stocks/torrent-power-ltd",
-            7,
-            952.29
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
