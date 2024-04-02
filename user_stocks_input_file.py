@@ -40,8 +40,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            12,
-            3115.27
+            15,
+            3403.41
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -80,8 +80,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            10,
-            454.25
+            12,
+            458.20
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
