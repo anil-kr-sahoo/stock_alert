@@ -120,13 +120,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            22,
-            394.17
+            23,
+            396.28
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            10,
-            645.49
+            12,
+            637.34
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
