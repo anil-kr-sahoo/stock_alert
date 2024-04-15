@@ -16,12 +16,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/bank-of-baroda",
             4,
-            259.52
+            259.53
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            3,
-            190.57
+            4,
+            197.26
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -71,7 +71,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             14,
-            467.21
+            467.22
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -121,7 +121,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/rec-ltd",
             23,
-            396.28
+            396.29
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
