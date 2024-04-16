@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            4,
-            259.53
+            6,
+            258.27
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            2,
-            1562.50
+            4,
+            1495.87
         ],
         [
             "https://groww.in/stocks/itc-ltd",
