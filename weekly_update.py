@@ -5,6 +5,6 @@ stocks_dict = {
     "removed_stocks": [
     ],
     "newly_added_stocks": [
-        "Canara Bank"
+        "HUDCO"
     ]
 }
