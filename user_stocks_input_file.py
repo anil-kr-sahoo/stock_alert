@@ -65,8 +65,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            18,
-            274.04
+            23,
+            272.11
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
