@@ -44,11 +44,6 @@ user_stocks = {
             3403.41
         ],
         [
-            "https://groww.in/stocks/hindustan-zinc-ltd",
-            5,
-            324.93
-        ],
-        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             28,
             425.82
