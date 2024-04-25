@@ -19,11 +19,6 @@ user_stocks = {
             257.17
         ],
         [
-            "https://groww.in/stocks/canara-bank",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/castrol-india-ltd",
             4,
             197.26
