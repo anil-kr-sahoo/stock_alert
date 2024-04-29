@@ -30,8 +30,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            10,
-            1128.11
+            14,
+            1211.16
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -127,11 +127,6 @@ user_stocks = {
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             5,
             3777.28
-        ],
-        [
-            "https://groww.in/stocks/tech-mahindra-ltd",
-            10,
-            1100.08
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
