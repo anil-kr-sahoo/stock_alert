@@ -30,8 +30,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            14,
-            1211.16
+            17,
+            1242.63
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
