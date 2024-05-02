@@ -90,8 +90,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            42,
-            344.58
+            44,
+            356.54
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
