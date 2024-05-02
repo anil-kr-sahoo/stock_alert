@@ -29,6 +29,11 @@ user_stocks = {
             324.40
         ],
         [
+            "https://groww.in/stocks/gujarat-narmada-valley-fertilizers-chemicals-ltd",
+            2,
+            697.40
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             17,
             1242.63

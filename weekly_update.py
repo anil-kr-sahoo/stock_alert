@@ -6,6 +6,7 @@ stocks_dict = {
         "Tech Mahindra"
     ],
     "newly_added_stocks": [
+        "GNFC",
         "Indian Oil Corporation"
     ]
 }
