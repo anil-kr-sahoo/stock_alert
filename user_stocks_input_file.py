@@ -100,8 +100,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            12,
-            254.70
+            15,
+            266.22
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
