@@ -16,7 +16,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/bank-of-baroda",
             8,
-            257.17
+            257.18
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -44,14 +44,14 @@ user_stocks = {
             429.82
         ],
         [
-            "https://groww.in/stocks/indian-oil-corporation-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/infosys-ltd",
             6,
             1460.60
+        ],
+        [
+            "https://groww.in/stocks/indian-oil-corporation-ltd",
+            170.05,
+            2
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -61,7 +61,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
             23,
-            272.11
+            272.12
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -126,7 +126,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
             14,
-            639.07
+            639.08
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
