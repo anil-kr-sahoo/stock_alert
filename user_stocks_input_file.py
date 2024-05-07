@@ -16,7 +16,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/banco-products-india-ltd",
             25,
-            529.71
+            529.72
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -26,7 +26,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             13,
-            199.00
+            199.01
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
-            5,
-            167.83
+            6,
+            167.00
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -65,8 +65,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            23,
-            272.12
+            25,
+            270.70
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -82,11 +82,6 @@ user_stocks = {
             "https://groww.in/stocks/nmdc-ltd",
             28,
             163.80
-        ],
-        [
-            "https://groww.in/stocks/ntpc-ltd",
-            10,
-            285.23
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -110,8 +105,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
-            18,
-            909.95
+            20,
+            912.07
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -120,8 +115,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
-            36,
-            195.00
+            39,
+            203.03
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -141,7 +136,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/vedanta-ltd",
             34,
-            270.10
+            270.11
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
