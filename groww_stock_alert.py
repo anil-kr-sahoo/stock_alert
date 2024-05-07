@@ -41,6 +41,7 @@ buy_stock_list = list()
 sell_stock_list = list()
 notified_stock_list = list()
 in_memory_data = dict()
+message_summary = dict()
 start_time = datetime.now()
 def check_weekly_stock_details():
     if (stocks_dict["trigger_date"] != datetime.now().date().strftime("%d/%m/%Y") or
@@ -73,33 +74,33 @@ def send_whatsapp_notification(message):
 
 
 def send_notifications(title, message, wp_message=None):
-    if system_name in ALLOWED_DEVICE_ACCESS:
+    if ALLOW_NOTIFICATION and system_name in ALLOWED_DEVICE_ACCESS:
         if wp_message:
             send_whatsapp_notification(wp_message)
         else:
             send_whatsapp_notification(title)
 
-    notification.notify(
-        title=title,
-        message=message,
-        timeout=2
-    )
-    if platform.system() == "Linux":
-        # For ubuntu, as it has not any sound on desktop notification
-        # "sudo apt install sox"
-        with contextlib.suppress(Exception):
-            if 'Buy' in title:
-                os.system('spd-say "Hi Sir, A stock is ready to Buy" ')
-            elif 'Sell' in title:
-                os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
-            elif 'over' in title:
-                os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
-            elif 'Restart' in title:
-                os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
-            elif 'Weekly' in title:
-                os.system('spd-say "Hi Sir, Weekly stock portfolio updated" ')
-            else:
-                os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
+        notification.notify(
+            title=title,
+            message=message,
+            timeout=2
+        )
+        if platform.system() == "Linux":
+            # For ubuntu, as it has not any sound on desktop notification
+            # "sudo apt install sox"
+            with contextlib.suppress(Exception):
+                if 'Buy' in title:
+                    os.system('spd-say "Hi Sir, A stock is ready to Buy" ')
+                elif 'Sell' in title:
+                    os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
+                elif 'over' in title:
+                    os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
+                elif 'Restart' in title:
+                    os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
+                elif 'Weekly' in title:
+                    os.system('spd-say "Hi Sir, Weekly stock portfolio updated" ')
+                else:
+                    os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
 
 
 def get_two_decimal_val(decimal_num):
@@ -157,7 +158,7 @@ def get_stock_details(all_data, set_timer=False):
                 notified_stock_list.append(url)
         except Exception:
             least_day_return = round(day_returns)
-            if least_day_return >= -2:
+            if least_day_return >= -2 or url not in notified_stock_list:
                 in_memory_data[all_data[0]] = -2
             else:
                 in_memory_data[all_data[0]] = least_day_return
@@ -235,7 +236,7 @@ def get_stock_details(all_data, set_timer=False):
     return individual_stock_details
 
 
-def global_notifier(notification_title, notify_details, stock_list_type, individual_stock_details):
+def global_notifier(notification_title, notify_details, notified_buy_stock_list, individual_stock_details):
     if 'Sell' in notification_title:
         least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
             'Current Price'] * required_min_percentage)
@@ -248,7 +249,7 @@ def global_notifier(notification_title, notify_details, stock_list_type, individ
                            f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
     if ALLOW_NOTIFICATION:
         send_notifications(notification_title, notify_details, whatsapp_message)
-    stock_list_type.append(individual_stock_details)
+    notified_buy_stock_list.append(individual_stock_details)
     print(json.dumps(individual_stock_details, indent=2))
 
 
@@ -264,7 +265,7 @@ def generate_files(file_name, file_data, only_json=False):
 
 
 driver = None
-retries = 100
+retries = 200
 try:
     while retries > 0:
         try:
@@ -346,8 +347,25 @@ try:
                 most_losser_stock = min(all_stock_day_return_list)
                 eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
                                                    f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock}%)')
+                for each_stock in buy_stock_list:
+                    if each_stock['Url'] not in message_summary:
+                        message_summary[each_stock['Url']] = {'name': each_stock['Name']}
+                    to_be_purchase_unit = sum([individual_stock['Day Returns']
+                                               for individual_stock in buy_stock_list
+                                               if individual_stock['Url'] == each_stock['Url']])
+                    message_summary[each_stock['Url']]['notified_units'] = round(to_be_purchase_unit * -1)
+                    message_summary[each_stock['Url']]['triggered_price'] = each_stock['Current Price']
+                    message_summary[each_stock['Url']]['current_price'] = [each_stock_details['Current Price']
+                                                                           for each_stock_details in stocks_data
+                                                                           if each_stock_details['Url'] == each_stock['Url']][-1]
+                eod_message += "\n\nToday's Summery:-\n\n"
+                for stock_url, stock_details in message_summary.items():
+                    eod_message += (f"{stock_details['name']} - {stock_details['notified_units']} Units\n"
+                                    f"Triggered Price - {stock_details['triggered_price']}/-\n"
+                                    f"Current Price - {stock_details['current_price']}/-\n"
+                                    f"{stock_url}\n\n")
                 send_notifications(title=eod_message,
-                                   message="Please run wifi battery checker")
+                                   message="Stock Monitoring Turning Off")
                 break
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
             if retries > 0:
