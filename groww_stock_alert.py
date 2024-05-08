@@ -347,23 +347,24 @@ try:
                 most_losser_stock = min(all_stock_day_return_list)
                 eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
                                                    f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock}%)')
-                for each_stock in buy_stock_list:
-                    if each_stock['Url'] not in message_summary:
-                        message_summary[each_stock['Url']] = {'name': each_stock['Name']}
-                    to_be_purchase_unit = sum([individual_stock['Day Returns']
-                                               for individual_stock in buy_stock_list
-                                               if individual_stock['Url'] == each_stock['Url']])
-                    message_summary[each_stock['Url']]['notified_units'] = round(to_be_purchase_unit * -1)
-                    message_summary[each_stock['Url']]['triggered_price'] = each_stock['Current Price']
-                    message_summary[each_stock['Url']]['current_price'] = [each_stock_details['Current Price']
-                                                                           for each_stock_details in stocks_data
-                                                                           if each_stock_details['Url'] == each_stock['Url']][-1]
-                eod_message += "\n\nToday's Summery:-\n\n"
-                for stock_url, stock_details in message_summary.items():
-                    eod_message += (f"{stock_details['name']} - {stock_details['notified_units']} Units\n"
-                                    f"Triggered Price - {stock_details['triggered_price']}/-\n"
-                                    f"Current Price - {stock_details['current_price']}/-\n"
-                                    f"{stock_url}\n\n")
+                if buy_stock_list:
+                    for each_stock in buy_stock_list:
+                        if each_stock['Url'] not in message_summary:
+                            message_summary[each_stock['Url']] = {'name': each_stock['Name']}
+                        to_be_purchase_unit = sum([individual_stock['Day Returns']
+                                                   for individual_stock in buy_stock_list
+                                                   if individual_stock['Url'] == each_stock['Url']])
+                        message_summary[each_stock['Url']]['notified_units'] = round(to_be_purchase_unit * -1)
+                        message_summary[each_stock['Url']]['triggered_price'] = each_stock['Current Price']
+                        message_summary[each_stock['Url']]['current_price'] = [each_stock_details['Current Price']
+                                                                               for each_stock_details in stocks_data
+                                                                               if each_stock_details['Url'] == each_stock['Url']][-1]
+                    eod_message += "\n\nToday's Summery:-\n\n"
+                    for stock_url, stock_details in message_summary.items():
+                        eod_message += (f"{stock_details['name']} - {stock_details['notified_units']} Units\n"
+                                        f"Triggered Price - {stock_details['triggered_price']}/-\n"
+                                        f"Current Price - {stock_details['current_price']}/-\n"
+                                        f"{stock_url}\n\n")
                 send_notifications(title=eod_message,
                                    message="Stock Monitoring Turning Off")
                 break
