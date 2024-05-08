@@ -154,6 +154,7 @@ def get_stock_details(all_data, set_timer=False):
     if not in_memory_data.get(all_data[0]):
         try:
             in_memory_data[all_data[0]] = all_data[3]
+            buy_stock_list = json.load(open('buy_stock_details.json'))
             if url not in notified_stock_list:
                 notified_stock_list.append(url)
         except Exception:
