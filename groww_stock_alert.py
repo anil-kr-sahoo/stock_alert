@@ -22,7 +22,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from plyer import notification
 
-from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE, ALLOW_NOTIFICATION, ALLOWED_DEVICE_ACCESS
+from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE, ALLOW_NOTIFICATION, \
+    ALLOWED_DEVICE_ACCESS
 from weekly_update import stocks_dict
 
 # Use Airtel Wi-Fi battery indicator as well
@@ -43,6 +44,8 @@ notified_stock_list = list()
 in_memory_data = dict()
 message_summary = dict()
 start_time = datetime.now()
+
+
 def check_weekly_stock_details():
     if (stocks_dict["trigger_date"] != datetime.now().date().strftime("%d/%m/%Y") or
             not (len(stocks_dict['newly_added_stocks']) or len(stocks_dict['removed_stocks']))):
@@ -207,13 +210,15 @@ def get_stock_details(all_data, set_timer=False):
             and roe >= 10
             and dividend_ratio_percentage >= 2
     ):
-        in_memory_data[all_data[0]] = int(day_returns)-1
+        in_memory_data[all_data[0]] = int(day_returns) - 1
 
         if url not in notified_stock_list:
             notified_stock_list.append(url)
             buy_message = f"Buy {round(day_returns * -1)} Stocks"
+            individual_stock_details["Buy Units"] = round(day_returns * -1)
         else:
-            buy_message = f"Buy {int((day_returns-lowest_day_limit-1) * -1)} more Stocks"
+            buy_message = f"Buy {int((day_returns - lowest_day_limit - 1) * -1)} more Stocks"
+            individual_stock_details["Buy Units"] = int((day_returns - lowest_day_limit - 1) * -1)
 
         global_notifier(
             buy_message,
@@ -313,10 +318,10 @@ try:
             stocks_data = all_stocks_data
             generate_files(file, stocks_data)
 
-            file= 'input_modified'
-            modified_stocks=user_stocks.copy()
-            for k,v in modified_stocks.items():
-                user_stock_list= list()
+            file = 'input_modified'
+            modified_stocks = user_stocks.copy()
+            for k, v in modified_stocks.items():
+                user_stock_list = list()
                 for new_data in v:
                     if in_memory_data[new_data[0]] != -2:
                         if len(new_data) == 4:
@@ -326,7 +331,7 @@ try:
                         user_stock_list.append(new_data)
                     else:
                         user_stock_list.append(new_data)
-                modified_stocks[k]=user_stock_list
+                modified_stocks[k] = user_stock_list
             generate_files(file, modified_stocks, only_json=True)
 
             if buy_stock_list:
@@ -341,25 +346,29 @@ try:
                     datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
                 weekly_update_msg = check_weekly_stock_details()
                 if weekly_update_msg:
-                    send_notifications(title="Weekly Update", message="Weekly Stocks update details", wp_message=weekly_update_msg)
+                    send_notifications(title="Weekly Update", message="Weekly Stocks update details",
+                                       wp_message=weekly_update_msg)
                 all_stock_name_list = [each_data['Name'] for each_data in stocks_data]
                 all_stock_day_return_list = [each_data['Day Returns'] for each_data in stocks_data]
                 most_grow_stock = max(all_stock_day_return_list)
                 most_losser_stock = min(all_stock_day_return_list)
-                eod_message = THANK_YOU_MESSAGE + (f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
-                                                   f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock}%)')
+                eod_message = THANK_YOU_MESSAGE + (
+                    f'\n\nToday\'s Top Gainer Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_grow_stock)]} ({most_grow_stock}%)'
+                    f'\n\nToday\'s Top Loser Stock in AK Stock Monitoring\n{all_stock_name_list[all_stock_day_return_list.index(most_losser_stock)]} ({most_losser_stock}%)')
                 if buy_stock_list:
                     for each_stock in buy_stock_list:
                         if each_stock['Url'] not in message_summary:
                             message_summary[each_stock['Url']] = {'name': each_stock['Name']}
-                        to_be_purchase_unit = sum([individual_stock['Day Returns']
+                        to_be_purchase_unit = sum([individual_stock['Buy Units']
                                                    for individual_stock in buy_stock_list
                                                    if individual_stock['Url'] == each_stock['Url']])
-                        message_summary[each_stock['Url']]['notified_units'] = round(to_be_purchase_unit * -1)
+                        message_summary[each_stock['Url']]['notified_units'] = to_be_purchase_unit
                         message_summary[each_stock['Url']]['triggered_price'] = each_stock['Current Price']
                         message_summary[each_stock['Url']]['current_price'] = [each_stock_details['Current Price']
                                                                                for each_stock_details in stocks_data
-                                                                               if each_stock_details['Url'] == each_stock['Url']][-1]
+                                                                               if
+                                                                               each_stock_details['Url'] == each_stock[
+                                                                                   'Url']][-1]
                     eod_message += "\n\nToday's Summery:-\n\n"
                     for stock_url, stock_details in message_summary.items():
                         eod_message += (f"{stock_details['name']} - {stock_details['notified_units']} Units\n"
@@ -377,7 +386,7 @@ try:
                 print(f"Retries left {retries}")
                 time.sleep(5)
             else:
-                raise Exception (e)
+                raise Exception(e)
 except Exception as e:
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
