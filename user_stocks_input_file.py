@@ -90,8 +90,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            44,
-            356.54
+            45,
+            362.47
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -110,8 +110,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            31,
-            386.37
+            33,
+            389.05
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
