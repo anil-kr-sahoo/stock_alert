@@ -95,8 +95,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            20,
-            204.50
+            21,
+            207.65
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
