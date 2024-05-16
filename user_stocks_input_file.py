@@ -143,5 +143,29 @@ user_stocks = {
             3,
             605.28
         ]
+    ],
+    "sandeep_padhi": [
+        [
+            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
+            2,
+            307.67
+        ],
+        [
+            "https://groww.in/stocks/nmdc-ltd",
+            2,
+            262.60
+        ],
+        [
+            "https://groww.in/stocks/vedanta-ltd",
+            2,
+            430.27
+        ]
+    ],
+    "mohan_krushna": [
+        [
+            "https://groww.in/stocks/oil-india-ltd",
+            4,
+            585
+        ]
     ]
 }
