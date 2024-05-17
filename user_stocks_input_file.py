@@ -34,6 +34,11 @@ user_stocks = {
             339.22
         ],
         [
+            "https://groww.in/stocks/gail-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             17,
             1242.63
