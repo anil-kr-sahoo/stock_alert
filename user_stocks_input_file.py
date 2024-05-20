@@ -24,6 +24,21 @@ user_stocks = {
             257.18
         ],
         [
+            "https://groww.in/stocks/bank-of-india",
+            0,
+            0
+        ],
+        [
+            "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
+            0,
+            0
+        ],
+        [
+            "https://groww.in/stocks/canara-bank",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/castrol-india-ltd",
             13,
             199.01
@@ -32,6 +47,11 @@ user_stocks = {
             "https://groww.in/stocks/coal-india-ltd",
             36,
             339.22
+        ],
+        [
+            "https://groww.in/stocks/colgatepalmolive-india-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -47,6 +67,11 @@ user_stocks = {
             "https://groww.in/stocks/hero-motocorp-ltd",
             15,
             3403.41
+        ],
+        [
+            "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",

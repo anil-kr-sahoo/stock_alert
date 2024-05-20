@@ -247,7 +247,7 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
         least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
             'Current Price'] * required_min_percentage)
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
-                           f"If the purchased amount is less than {least_sell_amount}/-"
+                           f"If the average amount is less than {least_sell_amount}/-"
     else:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
                            f"{individual_stock_details['Url']}\n" \
