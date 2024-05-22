@@ -177,8 +177,8 @@ user_stocks = {
     "sandeep_padhi": [
         [
             "https://groww.in/stocks/gail-india-ltd",
-            5,
-            204.70
+            10,
+            204.55
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -187,13 +187,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            2,
-            262.60
+            5,
+            270.05
+        ],
+        [
+            "https://groww.in/stocks/rec-ltd",
+            3,
+            536.07
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            2,
-            430.27
+            6,
+            462.54
         ]
     ],
     "mohan_krushna": [
