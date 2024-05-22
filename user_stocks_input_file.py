@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            0,
-            0
+            2,
+            204.80
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -175,6 +175,11 @@ user_stocks = {
         ]
     ],
     "sandeep_padhi": [
+        [
+            "https://groww.in/stocks/gail-india-ltd",
+            5,
+            204.70
+        ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
             2,
