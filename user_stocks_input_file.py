@@ -197,8 +197,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            6,
-            462.54
+            12,
+            467.75
         ]
     ],
     "mohan_krushna": [
@@ -206,6 +206,13 @@ user_stocks = {
             "https://groww.in/stocks/oil-india-ltd",
             4,
             585
+        ]
+    ],
+    "shradha_mohans_friend": [
+        [
+            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
+            3,
+            313
         ]
     ]
 }
