@@ -14,6 +14,11 @@ user_stocks = {
             2337.30
         ],
         [
+            "https://groww.in/stocks/ashok-leyland-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/banco-products-india-ltd",
             25,
             529.72
