@@ -115,8 +115,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            28,
-            163.80
+            30,
+            170.36
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -130,8 +130,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            21,
-            207.65
+            23,
+            213.72
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
@@ -155,8 +155,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            16,
-            640.54
+            18,
+            641.12
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
