@@ -75,8 +75,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            0,
-            0
+            2,
+            544.20
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
