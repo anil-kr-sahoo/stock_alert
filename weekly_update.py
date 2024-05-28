@@ -6,6 +6,8 @@ stocks_dict = {
         "Petronet LNG"
     ],
     "newly_added_stocks": [
-        "Ashok Leyland"
+        "Ashok Leyland",
+        "Manappuram Finance",
+        "National Aluminium Co"
     ]
 }

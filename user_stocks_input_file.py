@@ -114,6 +114,16 @@ user_stocks = {
             487.64
         ],
         [
+            "https://groww.in/stocks/manappuram-finance-ltd",
+            0,
+            0
+        ],
+        [
+            "https://groww.in/stocks/national-aluminium-company-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/nmdc-ltd",
             30,
             170.36
@@ -150,8 +160,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            33,
-            430.21
+            35,
+            437.93
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
