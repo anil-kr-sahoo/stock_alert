@@ -9,6 +9,6 @@ stocks_dict = {
         "Ashok Leyland",
         "General Insurance",
         "Manappuram Finance",
-        "National Aluminium Co"
+        "NTPC"
     ]
 }

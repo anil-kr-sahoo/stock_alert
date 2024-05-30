@@ -96,7 +96,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
             6,
-            167.00
+            167.01
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -109,9 +109,14 @@ user_stocks = {
             269.31
         ],
         [
-            "https://groww.in/stocks/mphasis-ltd",
+            "https://groww.in/stocks/manappuram-finance-ltd",
             2,
-            2410.20
+            168.80
+        ],
+        [
+            "https://groww.in/stocks/mphasis-ltd",
+            4,
+            2358.47
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -119,19 +124,14 @@ user_stocks = {
             487.64
         ],
         [
-            "https://groww.in/stocks/manappuram-finance-ltd",
-            0,
-            0
-        ],
-        [
-            "https://groww.in/stocks/national-aluminium-company-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/nmdc-ltd",
-            30,
-            170.36
+            33,
+            177.60
+        ],
+        [
+            "https://groww.in/stocks/ntpc-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -141,12 +141,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/oil-india-ltd",
             47,
-            374.26
+            374.27
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            23,
-            213.72
+            25,
+            217.91
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
@@ -155,18 +155,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            33,
-            389.05
+            35,
+            395.34
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
-            39,
-            203.03
+            42,
+            210.37
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            35,
-            437.93
+            39,
+            449.17
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
@@ -180,8 +180,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            34,
-            270.11
+            38,
+            287.76
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
