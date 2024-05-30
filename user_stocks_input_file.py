@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            0,
-            0
+            2,
+            222
         ],
         [
             "https://groww.in/stocks/banco-products-india-ltd",
@@ -62,6 +62,11 @@ user_stocks = {
             "https://groww.in/stocks/gail-india-ltd",
             2,
             204.80
+        ],
+        [
+            "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -135,8 +140,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            45,
-            362.47
+            47,
+            374.26
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",

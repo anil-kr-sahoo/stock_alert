@@ -7,6 +7,7 @@ stocks_dict = {
     ],
     "newly_added_stocks": [
         "Ashok Leyland",
+        "General Insurance",
         "Manappuram Finance",
         "National Aluminium Co"
     ]
