@@ -10,8 +10,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
-            5,
-            2299.87
+            8,
+            2283.16
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
@@ -40,8 +40,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            13,
-            199.01
+            16,
+            196.66
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            2,
-            204.80
+            6,
+            209.36
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
