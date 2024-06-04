@@ -10,18 +10,13 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
-            2,
-            2337.30
+            5,
+            2299.87
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
             2,
             222
-        ],
-        [
-            "https://groww.in/stocks/banco-products-india-ltd",
-            25,
-            529.72
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -95,8 +90,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
-            6,
-            167.01
+            7,
+            166.24
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -116,7 +111,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/mphasis-ltd",
             4,
-            2358.47
+            2358.48
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -126,7 +121,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             33,
-            177.60
+            177.61
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -156,7 +151,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
             35,
-            395.34
+            395.35
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",

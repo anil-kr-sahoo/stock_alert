@@ -1,14 +1,10 @@
 from datetime import datetime
 
 stocks_dict = {
-    "trigger_date": "31/05/2024",
+    "trigger_date": "06/06/2024",
     "removed_stocks": [
-        "Petronet LNG"
+        "Banco Products (India)"
     ],
     "newly_added_stocks": [
-        "Ashok Leyland",
-        "General Insurance",
-        "Manappuram Finance",
-        "NTPC"
     ]
 }
