@@ -64,9 +64,19 @@ user_stocks = {
             0
         ],
         [
+            "https://groww.in/stocks/godrej-agrovet-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             17,
             1242.63
+        ],
+        [
+            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -224,5 +234,77 @@ user_stocks = {
             3,
             313
         ]
+    ],
+    "sudarsan_puhana": [
+        [
+            "https://groww.in/stocks/ajanta-pharma-ltd",
+            1,
+            2336.15
+        ],
+        [
+            "https://groww.in/stocks/avenue-supermarts-ltd",
+            1,
+            5162
+        ],
+        [
+            "https://groww.in/stocks/happiest-minds-technologies-ltd",
+            19,
+            1204.89
+        ],
+        [
+            "https://groww.in/stocks/indian-oil-corporation-ltd",
+            2,
+            161.70
+        ],
+        [
+            "https://groww.in/stocks/manappuram-finance-ltd",
+            2,
+            168.70
+        ],
+        [
+            "https://groww.in/stocks/nmdc-ltd",
+            8,
+            262.40
+        ],
+        [
+            "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
+            1,
+            266.95
+        ],
+        [
+            "https://groww.in/stocks/one-communications-ltd",
+            40,
+            465.00
+        ],
+        [
+            "https://groww.in/stocks/power-finance-corporation-ltd",
+            2,
+            482.40
+        ],
+        [
+            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
+            5,
+            308.48
+        ],
+        [
+            "https://groww.in/stocks/rec-ltd",
+            1,
+            542.63
+        ],
+        [
+            "https://groww.in/stocks/sun-tv-network-ltd",
+            2,
+            642.57
+        ],
+        [
+            "https://groww.in/stocks/tata-technologies-ltd",
+            20,
+            500
+        ],
+        [
+            "https://groww.in/stocks/vedanta-ltd",
+            5,
+            454.23
+        ],
     ]
 }

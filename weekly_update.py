@@ -6,5 +6,11 @@ stocks_dict = {
         "Banco Products (India)"
     ],
     "newly_added_stocks": [
+        "Avenue Supermarts",
+        "Happiest Minds Technologies",
+        "HDFC Asset Management Company",
+        "Godrej Agrovet",
+        "Paytm",
+        "Tata Technologies"
     ]
 }
