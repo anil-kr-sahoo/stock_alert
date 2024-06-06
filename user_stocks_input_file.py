@@ -50,8 +50,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            0,
-            0
+            2,
+            2897.10
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
