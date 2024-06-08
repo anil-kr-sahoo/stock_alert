@@ -64,19 +64,9 @@ user_stocks = {
             0
         ],
         [
-            "https://groww.in/stocks/godrej-agrovet-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             17,
             1242.63
-        ],
-        [
-            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
