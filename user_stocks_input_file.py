@@ -287,11 +287,6 @@ user_stocks = {
             642.57
         ],
         [
-            "https://groww.in/stocks/tata-technologies-ltd",
-            20,
-            500
-        ],
-        [
             "https://groww.in/stocks/vedanta-ltd",
             5,
             454.23
