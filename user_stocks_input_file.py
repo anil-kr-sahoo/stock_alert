@@ -186,29 +186,69 @@ user_stocks = {
     ],
     "sandeep_padhi": [
         [
-            "https://groww.in/stocks/gail-india-ltd",
-            10,
-            204.55
+            "https://groww.in/stocks/bank-of-india",
+            4,
+            129.38
         ],
         [
-            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
-            2,
-            307.67
+            "https://groww.in/stocks/canara-bank",
+            6,
+            117.61
+        ],
+        [
+            "https://groww.in/stocks/coal-india-ltd",
+            8,
+            476.59
+        ],
+        [
+            "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
+            5,
+            550.71
+        ],
+        [
+            "https://groww.in/stocks/indian-oil-corporation-ltd",
+            4,
+            163.20
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            5,
-            270.05
+            11,
+            263.30
+        ],
+        [
+            "https://groww.in/stocks/ntpc-ltd",
+            2,
+            353.65
+        ],
+        [
+            "https://groww.in/stocks/oil-india-ltd",
+            6,
+            639.05
+        ],
+        [
+            "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
+            6,
+            274.93
+        ],
+        [
+            "https://groww.in/stocks/power-finance-corporation-ltd",
+            4,
+            501.60
+        ],
+        [
+            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
+            7,
+            309.42
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            3,
-            536.07
+            12,
+            545.24
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            12,
-            467.75
+            21,
+            456.26
         ]
     ],
     "mohan_krushna": [
