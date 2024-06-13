@@ -78,11 +78,11 @@ user_stocks = {
             2,
             544.20
         ],
-        [
-            "https://groww.in/stocks/indraprastha-gas-ltd",
-            32,
-            429.83
-        ],
+        # [
+        #     "https://groww.in/stocks/indraprastha-gas-ltd",
+        #     32,
+        #     429.83
+        # ],
         [
             "https://groww.in/stocks/infosys-ltd",
             6,
