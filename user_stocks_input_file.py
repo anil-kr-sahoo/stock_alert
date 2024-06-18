@@ -25,8 +25,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            0,
-            0
+            2,
+            122.95
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -60,8 +60,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            0,
-            0
+            2,
+            386.70
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -78,11 +78,6 @@ user_stocks = {
             2,
             544.20
         ],
-        # [
-        #     "https://groww.in/stocks/indraprastha-gas-ltd",
-        #     32,
-        #     429.83
-        # ],
         [
             "https://groww.in/stocks/infosys-ltd",
             6,
@@ -102,11 +97,6 @@ user_stocks = {
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
             27,
             269.31
-        ],
-        [
-            "https://groww.in/stocks/manappuram-finance-ltd",
-            2,
-            168.80
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",

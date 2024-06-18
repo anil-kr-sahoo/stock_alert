@@ -1,9 +1,7 @@
 stocks_dict = {
-    "trigger_date": "14/06/2024",
+    "trigger_date": "21/06/2024",
     "removed_stocks": [
-        "Godrej Agrovet",
-        "HDFC Asset Management Company",
-        "Indraprastha Gas",
+        "Manappuram Finance",
     ],
     "newly_added_stocks": [
     ]
