@@ -94,11 +94,6 @@ user_stocks = {
             420.62
         ],
         [
-            "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            27,
-            269.31
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
             4,
             2358.48
@@ -275,11 +270,6 @@ user_stocks = {
             "https://groww.in/stocks/indian-oil-corporation-ltd",
             2,
             161.70
-        ],
-        [
-            "https://groww.in/stocks/manappuram-finance-ltd",
-            2,
-            168.70
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
