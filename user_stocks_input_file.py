@@ -10,13 +10,13 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
-            8,
-            2283.16
+            10,
+            2299.50
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            2,
-            222
+            6,
+            229.64
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -30,8 +30,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            0,
-            0
+            2,
+            619.05
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -45,8 +45,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            36,
-            339.22
+            38,
+            346.61
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -55,13 +55,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            6,
-            209.36
+            8,
+            211.55
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            2,
-            386.70
+            4,
+            383.40
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -75,8 +75,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            2,
-            544.20
+            4,
+            531.45
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            35,
-            395.35
+            37,
+            400.90
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -145,8 +145,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            39,
-            449.17
+            41,
+            452.51
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
