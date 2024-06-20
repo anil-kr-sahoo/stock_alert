@@ -118,10 +118,10 @@ def get_float_val(string_num):
 
 
 def get_current_stock_price():
-    raw_html = driver.find_element(By.CLASS_NAME, "lpu38Pri").get_attribute('innerHTML').split('hidden;">')[1:]
-    raw_amount = ''.join(all_raw.split('</span>')[0] for all_raw in raw_html)
     try:
-        return get_two_decimal_val(get_float_val(raw_amount) / 100)
+        raw_html = driver.find_element(By.CLASS_NAME, "lpu38Pri").get_attribute('innerHTML').split('">')[-1]
+        raw_amount = raw_html.split('</span>')[0]
+        return get_two_decimal_val(get_float_val(raw_amount))
     except Exception:
         return 0
 
@@ -143,6 +143,9 @@ def get_stock_details(all_data, set_timer=False):
     roe = 0
     driver.get(url)
     if set_timer: sleep(5)
+    current_price = get_current_stock_price()
+    if not current_price:
+        get_stock_details(all_data, set_timer=True)
     name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
     check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
     multiplier = 1
@@ -150,9 +153,6 @@ def get_stock_details(all_data, set_timer=False):
         multiplier *= -1
     day_returns = get_float_val(
         driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
-    current_price = get_current_stock_price()
-    if not current_price:
-        get_stock_details(all_data, set_timer=True)
 
     if not in_memory_data.get(all_data[0]):
         try:
