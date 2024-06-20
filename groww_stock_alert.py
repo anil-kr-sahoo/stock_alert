@@ -145,7 +145,7 @@ def get_stock_details(all_data, set_timer=False):
     if set_timer: sleep(5)
     current_price = get_current_stock_price()
     if not current_price:
-        get_stock_details(all_data, set_timer=True)
+        return get_stock_details(all_data, set_timer=True)
     name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
     check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
     multiplier = 1
