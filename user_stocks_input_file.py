@@ -11,17 +11,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
             10,
-            2299.50
+            2299.51
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
             6,
-            229.64
+            229.65
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            9,
-            258.03
+            11,
+            261.97
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -30,23 +30,23 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            2,
-            619.05
+            4,
+            308.50
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            0,
-            0
+            2,
+            118.78
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
             16,
-            196.66
+            196.67
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
             38,
-            346.61
+            346.62
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -56,7 +56,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/gail-india-ltd",
             8,
-            211.55
+            211.56
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -71,12 +71,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
             17,
-            3654.76
+            3654.77
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            4,
-            531.45
+            7,
+            349.03
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
