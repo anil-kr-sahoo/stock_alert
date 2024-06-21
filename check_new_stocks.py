@@ -26,9 +26,9 @@ def get_two_decimal_val(decimal_num):
 
 
 def get_current_stock_price():
-    raw_html = driver.find_element(By.CLASS_NAME, "lpu38Pri").get_attribute('innerHTML').split('hidden;">')[1:]
-    raw_amount = ''.join(all_raw.split('</span>')[0] for all_raw in raw_html)
     try:
+        raw_html = driver.find_element(By.CLASS_NAME, "lpu38Pri").get_attribute('innerHTML').split('">')[-1]
+        raw_amount = raw_html.split('</span>')[0]
         return get_two_decimal_val(get_float_val(raw_amount) / 100)
     except Exception:
         return 0
@@ -57,11 +57,11 @@ def get_stock_details(url, sleep_timer=False):
         driver.get(url)
         if sleep_timer:
             sleep(5)
-        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
-        all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
         current_price = get_current_stock_price()
         if not current_price:
             get_stock_details(url, True)
+        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+        all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
         individual_stock_details = {"Name": name,
                                     "Current Price": current_price,
                                     "Url": url
@@ -86,8 +86,9 @@ def get_stock_details(url, sleep_timer=False):
         return individual_stock_details
     except Exception as e:
         print(e)
-        print(f"\nProblem in fetching details{'-'*20}{url}")
+        print(f"\nProblem in fetching details{'-' * 20}{url}")
         return
+
 
 def check_details():
     global driver

@@ -70,8 +70,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            15,
-            3403.41
+            17,
+            3654.76
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            37,
-            400.90
+            41,
+            408.92
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -145,8 +145,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            41,
-            452.51
+            43,
+            454.97
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
