@@ -35,8 +35,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            2,
-            118.78
+            4,
+            117.70
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -55,8 +55,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            8,
-            211.56
+            10,
+            211.30
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
