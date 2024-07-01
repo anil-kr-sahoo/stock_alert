@@ -21,7 +21,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/bank-of-baroda",
             11,
-            261.97
+            261.98
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -110,8 +110,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
-            0,
-            0
+            2,
+            370.40
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -157,6 +157,11 @@ user_stocks = {
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             5,
             3777.28
+        ],
+        [
+            "https://groww.in/stocks/union-bank-of-india",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
