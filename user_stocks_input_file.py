@@ -20,13 +20,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            11,
-            261.98
+            13,
+            262.67
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            2,
-            122.95
+            4,
+            120.75
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -35,8 +35,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            4,
-            117.70
+            6,
+            117.15
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -100,13 +100,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            17,
-            487.64
+            19,
+            504.45
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            33,
-            177.61
+            37,
+            184.85
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -121,7 +121,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/oil-india-ltd",
             47,
-            374.27
+            251.29
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -145,8 +145,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            43,
-            454.97
+            47,
+            461.99
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
