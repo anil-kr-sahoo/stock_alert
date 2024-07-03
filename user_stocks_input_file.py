@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            6,
-            229.65
+            10,
+            228.55
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
