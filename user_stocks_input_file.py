@@ -150,8 +150,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            18,
-            641.12
+            20,
+            655.05
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
