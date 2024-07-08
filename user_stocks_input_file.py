@@ -10,8 +10,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
-            10,
-            2299.51
+            12,
+            2277.22
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
@@ -30,13 +30,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            4,
+            6,
             308.50
         ],
         [
             "https://groww.in/stocks/canara-bank",
             6,
-            117.15
+            117.16
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -75,7 +75,7 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            7,
+            9,
             349.03
         ],
         [
@@ -101,7 +101,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             19,
-            504.45
+            504.46
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -146,12 +146,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/rec-ltd",
             47,
-            461.99
+            462
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
             20,
-            655.05
+            655.06
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
