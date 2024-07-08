@@ -20,8 +20,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            13,
-            262.67
+            17,
+            263.18
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -30,13 +30,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            6,
-            308.50
+            8,
+            306.58
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            6,
-            117.16
+            8,
+            116.75
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
