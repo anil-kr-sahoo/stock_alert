@@ -23,6 +23,10 @@
 # b= float(input("enter second= "))
 # print("average= ", (a+b)/2)
 
-a= int(input("enter first= "))
-b= int(input("enter second= "))
-print(a>=b)
+# a= int(input("enter first= "))
+# b= int(input("enter second= "))
+# print(a>=b)
+# string1="my name is suchitra pani.\nanil kumar sahoo is my husband"
+# print(string1)
+string2="i love you jerry.\nAlso hate you more."
+print(string2)
