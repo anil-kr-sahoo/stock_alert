@@ -39,7 +39,7 @@ for k, v in user_stocks.items():
     urls += v
 
 buy_stock_list = list()
-sell_stock_list = list()
+sell_stock_list = list()  # update this list if already notification sent
 notified_stock_list = list()
 in_memory_data = dict()
 message_summary = dict()
