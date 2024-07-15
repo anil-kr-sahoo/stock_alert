@@ -20,8 +20,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            17,
-            263.18
+            19,
+            261.84
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -56,12 +56,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/gail-india-ltd",
             12,
-            213.60
+            213.61
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            4,
-            383.40
+            6,
+            389.97
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -120,7 +120,7 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            47,
+            70,
             251.29
         ],
         [
