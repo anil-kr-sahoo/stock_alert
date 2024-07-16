@@ -119,11 +119,6 @@ user_stocks = {
             4701.03
         ],
         [
-            "https://groww.in/stocks/oil-india-ltd",
-            70,
-            251.29
-        ],
-        [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
             25,
             217.91
@@ -145,8 +140,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            49,
-            468.92
+            52,
+            477.52
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
