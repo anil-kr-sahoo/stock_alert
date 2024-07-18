@@ -40,13 +40,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            16,
-            196.67
+            23,
+            216.65
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            38,
-            346.62
+            40,
+            354.37
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -55,13 +55,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            12,
-            213.61
+            14,
+            215.80
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            6,
-            389.97
+            10,
+            396.76
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -70,8 +70,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            17,
-            3654.77
+            20,
+            3921.50
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
@@ -105,8 +105,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            37,
-            184.85
+            39,
+            187.78
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -115,8 +115,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            11,
-            4701.03
+            13,
+            5652.80
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -130,8 +130,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            45,
-            421.37
+            47,
+            426.38
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -140,13 +140,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            52,
-            477.52
+            54,
+            482.29
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            20,
-            655.06
+            22,
+            667.49
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
