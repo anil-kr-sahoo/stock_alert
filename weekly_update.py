@@ -4,5 +4,6 @@ stocks_dict = {
         "Oil India"
     ],
     "newly_added_stocks": [
+        "Hindustan Zinc"
     ]
 }
