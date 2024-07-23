@@ -37,7 +37,7 @@ urls = list()
 
 for k, v in user_stocks.items():
     urls += v
-
+# print(sorted(set([data[0] for data in urls])))
 buy_stock_list = list()
 sell_stock_list = list()
 notified_stock_list = list()  # update this list if already notification sent
@@ -132,6 +132,21 @@ def get_to_be_credit_dividend(stock_price, dividend_ratio):
     except Exception:
         return 0
 
+def get_current_stock_data(source_url):
+    try:
+        mapping_stocks = json.load(open('stocks_mapping.json'))
+        destination_url = mapping_stocks[source_url]
+        driver.get(destination_url)
+        all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split('\n')
+        price = get_float_val(all_data[0][1:].replace(',',''))
+        day_returns = get_float_val(all_data[1][:-1]) * -1 if all_data[2][0] == "-" else get_float_val(all_data[1][:-1])
+        driver.execute_script("window.open('about:blank', 'secondtab');")
+        driver.switch_to.window("secondtab")
+        return price, day_returns
+    except Exception as e:
+        driver.execute_script("window.open('about:blank', 'secondtab');")
+        driver.switch_to.window("secondtab")
+        return 0, 0
 
 def get_stock_details(all_data, set_timer=False):
     global buy_stock_list, sell_stock_list, in_memory_data, notified_stock_list
@@ -141,18 +156,26 @@ def get_stock_details(all_data, set_timer=False):
     target_stock_val = stock_average_val + stock_average_val * required_min_percentage
     dividend_ratio_percentage = 0
     roe = 0
+    current_price, day_returns = get_current_stock_data(url)
     driver.get(url)
     if set_timer: sleep(5)
-    current_price = get_current_stock_price()
-    if not current_price:
+    try:
+        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+        if not name:
+            return get_stock_details(all_data, set_timer=True)
+    except Exception as e:
         return get_stock_details(all_data, set_timer=True)
-    name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
-    check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
-    multiplier = 1
-    if check_negative_multiplier:
-        multiplier *= -1
-    day_returns = get_float_val(
-        driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
+
+    # current_price = get_current_stock_price()
+    # if not current_price:
+    #     return get_stock_details(all_data, set_timer=True)
+    # name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+    # check_negative_multiplier = driver.find_element(By.CLASS_NAME, "lpu38Day").text[0] == '-'
+    # multiplier = 1
+    # if check_negative_multiplier:
+    #     multiplier *= -1
+    # day_returns = get_float_val(
+    #     driver.find_element(By.CLASS_NAME, "lpu38Day").text.split('(')[1].split(')')[0][:-1]) * multiplier
 
     if not in_memory_data.get(all_data[0]):
         try:
@@ -379,6 +402,7 @@ try:
                                    message="Stock Monitoring Turning Off")
                 break
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
+            print(e)
             if retries > 0:
                 if driver:
                     driver.quit()
@@ -388,6 +412,7 @@ try:
             else:
                 raise Exception(e)
 except Exception as e:
+    print(e)
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
     minute = int((datetime.now() - start_time).seconds / 60) % 60
