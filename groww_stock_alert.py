@@ -144,6 +144,7 @@ def get_current_stock_data(source_url):
         driver.switch_to.window("secondtab")
         return price, day_returns
     except Exception as e:
+        print("Error - ", e)
         driver.execute_script("window.open('about:blank', 'secondtab');")
         driver.switch_to.window("secondtab")
         return 0, 0

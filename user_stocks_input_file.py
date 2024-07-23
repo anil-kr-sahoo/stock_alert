@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            10,
-            228.55
+            14,
+            226.31
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -30,23 +30,23 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            13,
-            306.88
+            15,
+            306.29
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            10,
-            116.07
+            12,
+            115.41
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            28,
-            223.05
+            30,
+            224.51
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
             42,
-            361.11
+            361.12
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -56,12 +56,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/gail-india-ltd",
             17,
-            217.06
+            217.07
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            13,
-            396.56
+            21,
+            386.22
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -76,7 +76,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
             13,
-            348.45
+            348.46
+        ],
+        [
+            "https://groww.in/stocks/hindustan-zinc-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -94,11 +99,6 @@ user_stocks = {
             420.62
         ],
         [
-            "https://groww.in/stocks/mphasis-ltd",
-            4,
-            2358.48
-        ],
-        [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             19,
             504.46
@@ -106,7 +106,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             42,
-            187.78
+            191.07
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -120,8 +120,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            29,
-            232.55
+            33,
+            242.22
         ],
         [
             "https://groww.in/stocks/piramal-enterprises-ltd",
@@ -155,8 +155,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            38,
-            287.76
+            45,
+            310.33
         ],
         [
             "https://groww.in/stocks/wipro-ltd",

@@ -57,13 +57,14 @@ def get_stock_details(url, sleep_timer=False):
         driver.get(url)
         if sleep_timer:
             sleep(5)
-        current_price = get_current_stock_price()
-        if not current_price:
-            get_stock_details(url, True)
-        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+        try:
+            name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+            if not name:
+                return get_stock_details(url, sleep_timer=True)
+        except Exception as e:
+            return get_stock_details(url, sleep_timer=True)
         all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
         individual_stock_details = {"Name": name,
-                                    "Current Price": current_price,
                                     "Url": url
                                     }
         for each in all_details.split('\n'):
