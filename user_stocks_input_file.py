@@ -20,8 +20,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            19,
-            261.84
+            21,
+            260.37
         ],
         [
             "https://groww.in/stocks/bank-of-india",

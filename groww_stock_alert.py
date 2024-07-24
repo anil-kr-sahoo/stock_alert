@@ -403,7 +403,6 @@ try:
                                    message="Stock Monitoring Turning Off")
                 break
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
-            print(e)
             if retries > 0:
                 if driver:
                     driver.quit()
