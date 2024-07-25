@@ -35,8 +35,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            12,
-            115.41
+            14,
+            114.62
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -80,8 +80,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            0,
-            0
+            2,
+            620
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -150,8 +150,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            2,
-            136.80
+            4,
+            134.40
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
