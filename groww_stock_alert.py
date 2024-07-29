@@ -268,8 +268,7 @@ def get_stock_details(all_data, set_timer=False):
 
 def global_notifier(notification_title, notify_details, notified_buy_stock_list, individual_stock_details):
     if 'Sell' in notification_title:
-        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] - individual_stock_details[
-            'Current Price'] * required_min_percentage)
+        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage*100) / 100))
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
                            f"If the average amount is less than {least_sell_amount}/-"
     else:
