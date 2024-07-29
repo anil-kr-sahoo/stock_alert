@@ -132,13 +132,14 @@ def get_to_be_credit_dividend(stock_price, dividend_ratio):
     except Exception:
         return 0
 
+
 def get_current_stock_data(source_url):
     try:
         mapping_stocks = json.load(open('stocks_mapping.json'))
         destination_url = mapping_stocks[source_url]
         driver.get(destination_url)
         all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split('\n')
-        price = get_float_val(all_data[0][1:].replace(',',''))
+        price = get_float_val(all_data[0][1:].replace(',', ''))
         day_returns = get_float_val(all_data[1][:-1]) * -1 if all_data[2][0] == "-" else get_float_val(all_data[1][:-1])
         driver.execute_script("window.open('about:blank', 'secondtab');")
         driver.switch_to.window("secondtab")
@@ -148,6 +149,7 @@ def get_current_stock_data(source_url):
         driver.execute_script("window.open('about:blank', 'secondtab');")
         driver.switch_to.window("secondtab")
         return 0, 0
+
 
 def get_stock_details(all_data, set_timer=False):
     global buy_stock_list, sell_stock_list, in_memory_data, notified_stock_list
@@ -268,7 +270,7 @@ def get_stock_details(all_data, set_timer=False):
 
 def global_notifier(notification_title, notify_details, notified_buy_stock_list, individual_stock_details):
     if 'Sell' in notification_title:
-        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage*100) / 100))
+        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage * 100) / 100))
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
                            f"If the average amount is less than {least_sell_amount}/-"
     else:

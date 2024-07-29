@@ -49,11 +49,6 @@ user_stocks = {
             361.12
         ],
         [
-            "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            2,
-            2897.10
-        ],
-        [
             "https://groww.in/stocks/gail-india-ltd",
             17,
             217.07
