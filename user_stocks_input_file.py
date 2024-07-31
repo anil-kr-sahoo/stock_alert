@@ -40,8 +40,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            32,
-            227.09
+            37,
+            232.02
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -102,11 +102,6 @@ user_stocks = {
             "https://groww.in/stocks/nmdc-ltd",
             42,
             191.07
-        ],
-        [
-            "https://groww.in/stocks/ntpc-ltd",
-            2,
-            370.40
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -194,11 +189,6 @@ user_stocks = {
             "https://groww.in/stocks/nmdc-ltd",
             21,
             254.26
-        ],
-        [
-            "https://groww.in/stocks/ntpc-ltd",
-            4,
-            361.78
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",

@@ -4,7 +4,8 @@ stocks_dict = {
         "Avenue Supermarts",
         "Colgate-Palmolive (India)",
         "Happiest Minds Technologies",
-        "Paytm"
+        "Paytm",
+        "NTPC",
     ],
     "newly_added_stocks": [
     ]
