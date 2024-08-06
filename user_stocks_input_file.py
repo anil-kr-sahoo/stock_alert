@@ -9,11 +9,6 @@ ALLOW_NOTIFICATION = True
 user_stocks = {
     "my_stocks": [
         [
-            "https://groww.in/stocks/ajanta-pharma-ltd",
-            12,
-            2277.22
-        ],
-        [
             "https://groww.in/stocks/ashok-leyland-ltd",
             17,
             230.48
@@ -127,11 +122,6 @@ user_stocks = {
             "https://groww.in/stocks/rec-ltd",
             56,
             487.58
-        ],
-        [
-            "https://groww.in/stocks/sun-tv-network-ltd",
-            22,
-            667.49
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
