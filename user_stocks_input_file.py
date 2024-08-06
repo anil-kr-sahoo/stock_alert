@@ -20,13 +20,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            6,
-            120.87
+            10,
+            120.25
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            15,
-            306.30
+            17,
+            309.60
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -35,8 +35,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            39,
-            233.28
+            41,
+            233.66
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -50,8 +50,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            27,
-            392.98
+            29,
+            391.91
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -80,8 +80,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
-            9,
-            168.87
+            11,
+            168.51
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -115,8 +115,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            51,
-            435.41
+            59,
+            441.45
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -125,13 +125,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            56,
-            487.58
+            58,
+            490.30
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            4,
-            134.40
+            6,
+            130.52
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
