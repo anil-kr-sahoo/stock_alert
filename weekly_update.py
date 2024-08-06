@@ -5,5 +5,6 @@ stocks_dict = {
         "Sun TV Network"
     ],
     "newly_added_stocks": [
+        "Mphasis"
     ]
 }
