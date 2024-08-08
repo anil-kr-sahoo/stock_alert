@@ -25,8 +25,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            17,
-            309.60
+            21,
+            314.46
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -45,18 +45,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            17,
-            217.07
+            19,
+            218.29
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
             29,
-            391.91
+            391.92
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            17,
-            1242.63
+            19,
+            1276.39
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -70,13 +70,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            13,
-            348.46
+            18,
+            359.16
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            6,
-            1460.60
+            10,
+            1574.42
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -90,8 +90,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            0,
-            0
+            2,
+            2672
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -100,8 +100,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            42,
-            191.07
+            44,
+            192.56
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -110,18 +110,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            33,
-            242.23
+            35,
+            246.80
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
             59,
-            441.45
+            441.46
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
-            42,
-            210.37
+            46,
+            221.94
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            45,
-            310.33
+            47,
+            315.12
         ],
         [
             "https://groww.in/stocks/wipro-ltd",

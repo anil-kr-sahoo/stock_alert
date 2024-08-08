@@ -368,7 +368,7 @@ try:
                 data = sell_stock_list
                 generate_files(file, data)
             if (
-                    datetime.now().hour >= 15 and datetime.now().minute > 20) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
+                    datetime.now().hour >= 15 and datetime.now().minute > 30) or datetime.now().hour > 15 or datetime.now().weekday() > 4:
                 weekly_update_msg = check_weekly_stock_details()
                 if weekly_update_msg:
                     send_notifications(title="Weekly Update", message="Weekly Stocks update details",
