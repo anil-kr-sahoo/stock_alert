@@ -25,8 +25,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            21,
-            314.46
+            23,
+            315.96
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -56,7 +56,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
             19,
-            1276.39
+            1276.40
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -70,8 +70,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            18,
-            359.16
+            22,
+            362.62
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -136,7 +136,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/vedanta-ltd",
             47,
-            315.12
+            315.13
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
