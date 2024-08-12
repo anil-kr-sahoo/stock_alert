@@ -90,13 +90,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            2,
-            2672
+            4,
+            2670.82
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            19,
-            504.46
+            23,
+            528.67
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -125,13 +125,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/rec-ltd",
-            58,
-            490.30
+            60,
+            493.14
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            6,
-            130.52
+            8,
+            128.03
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
