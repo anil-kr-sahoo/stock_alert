@@ -1,11 +1,10 @@
 stocks_dict = {
-    "trigger_date": "09/08/2024",
+    "trigger_date": "16/08/2024",
     "removed_stocks": [
-        "Ajanta Pharma",
-        "GTL Infrastructure",
-        "Sun TV Network"
     ],
     "newly_added_stocks": [
-        "Mphasis"
+        "Petronet LNG",
+        "National Aluminium Co",
+        "Sun TV Network"
     ]
 }
