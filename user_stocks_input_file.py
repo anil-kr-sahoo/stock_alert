@@ -65,8 +65,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            11,
-            599.67
+            19,
+            569.07
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
