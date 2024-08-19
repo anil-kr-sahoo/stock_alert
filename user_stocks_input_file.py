@@ -9,11 +9,6 @@ ALLOW_NOTIFICATION = True
 user_stocks = {
     "my_stocks": [
         [
-            "https://groww.in/stocks/ashok-leyland-ltd",
-            17,
-            230.48
-        ],
-        [
             "https://groww.in/stocks/bank-of-baroda",
             21,
             260.38
@@ -65,8 +60,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            19,
-            569.07
+            24,
+            553.48
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
