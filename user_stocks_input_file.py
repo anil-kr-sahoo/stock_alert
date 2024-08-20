@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            0,
-            0
+            2,
+            796.45
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
