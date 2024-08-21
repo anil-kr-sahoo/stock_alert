@@ -84,11 +84,6 @@ user_stocks = {
             420.62
         ],
         [
-            "https://groww.in/stocks/mphasis-ltd",
-            4,
-            2670.83
-        ],
-        [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             0,
             0
