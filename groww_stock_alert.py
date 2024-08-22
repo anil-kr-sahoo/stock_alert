@@ -32,7 +32,7 @@ system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 
 # 10% minimum profit added
-required_min_percentage = .1
+required_min_percentage = .13
 urls = list()
 
 for k, v in user_stocks.items():
@@ -61,9 +61,7 @@ def check_weekly_stock_details():
         weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
     else:
         weekly_stock_msg += "NA"
-    weekly_stock_msg += "\n\nNote:- The monitoring stocks are present in group description." \
-                        "\nIf you invested any other stocks which not being monitoring, " \
-                        "please message personally to admin, about the stock and it's average value."
+    weekly_stock_msg += "\n\nNote:- The monitoring stocks are present in group description."
     return weekly_stock_msg
 
 
