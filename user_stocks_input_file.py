@@ -40,8 +40,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            19,
-            218.29
+            21,
+            219.34
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -95,8 +95,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            46,
-            193.97
+            48,
+            195.13
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -110,8 +110,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            0,
-            0
+            2,
+            373.75
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -130,8 +130,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            2,
-            796.45
+            4,
+            785.22
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
@@ -140,8 +140,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            49,
-            319.57
+            51,
+            324.70
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
