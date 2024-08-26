@@ -15,8 +15,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            10,
-            120.25
+            12,
+            119.87
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -135,8 +135,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            8,
-            128.03
+            10,
+            127.31
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
