@@ -20,8 +20,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            27,
-            317.23
+            29,
+            319.11
         ],
         [
             "https://groww.in/stocks/canara-bank",
