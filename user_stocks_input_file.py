@@ -9,9 +9,14 @@ ALLOW_NOTIFICATION = True
 user_stocks = {
     "my_stocks": [
         [
+            "https://groww.in/stocks/ashok-leyland-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/bank-of-baroda",
-            23,
-            259.06
+            25,
+            257.39
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -25,8 +30,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            23,
-            112.53
+            24,
+            112.22
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -80,8 +85,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            15,
-            420.62
+            17,
+            429.85
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
