@@ -3,11 +3,17 @@ PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "anil-kr-sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
+NOTIFIED_SELL_STOCK_URLS = list() # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 
 user_stocks = {
     "my_stocks": [
+        [
+            "https://groww.in/stocks/ashok-leyland-ltd",
+            0,
+            0
+        ],
         [
             "https://groww.in/stocks/bank-of-baroda",
             25,

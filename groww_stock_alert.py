@@ -23,7 +23,7 @@ from selenium.webdriver.chrome.options import Options
 from plyer import notification
 
 from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE, ALLOW_NOTIFICATION, \
-    ALLOWED_DEVICE_ACCESS
+    ALLOWED_DEVICE_ACCESS, NOTIFIED_SELL_STOCK_URLS
 from weekly_update import stocks_dict
 
 # Use Airtel Wi-Fi battery indicator as well
@@ -40,7 +40,7 @@ for k, v in user_stocks.items():
 # print(sorted(set([data[0] for data in urls])))
 buy_stock_list = list()
 sell_stock_list = list()
-notified_stock_list = list()  # update this list if already notification sent
+notified_stock_list = NOTIFIED_SELL_STOCK_URLS
 in_memory_data = dict()
 message_summary = dict()
 start_time = datetime.now()
