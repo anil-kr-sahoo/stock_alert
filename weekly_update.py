@@ -1,8 +1,7 @@
 stocks_dict = {
-    "trigger_date": "23/08/2024",
+    "trigger_date": "20/09/2024",
     "removed_stocks": [
-        "Ashok Leyland",
-        "Mphasis"
+        "OFSS"
     ],
     "newly_added_stocks": [
     ]

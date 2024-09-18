@@ -11,8 +11,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            2,
-            238.65
+            4,
+            237.22
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -32,7 +32,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/canara-bank",
             24,
-            112.22
+            112.23
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -56,8 +56,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            19,
-            1276.40
+            23,
+            1361.26
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -76,8 +76,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            10,
-            1574.42
+            15,
+            1682.93
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -87,12 +87,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             17,
-            429.85
+            429.86
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            6,
-            178.17
+            8,
+            179.30
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -101,18 +101,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            54,
-            197.29
-        ],
-        [
-            "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            15,
-            6342.40
+            56,
+            197.74
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            42,
-            258.93
+            44,
+            260.29
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
