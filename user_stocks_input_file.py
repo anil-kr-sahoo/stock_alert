@@ -91,8 +91,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            14,
-            179.21
+            16,
+            179.35
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
