@@ -51,7 +51,7 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            39,
+            40,
             392.67
         ],
         [
@@ -61,8 +61,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            22,
-            4054.73
+            24,
+            4193.08
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -97,7 +97,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             36,
-            579.29
+            579.30
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -127,7 +127,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
             51,
-            234.96
+            234.97
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -142,7 +142,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/union-bank-of-india",
             16,
-            125.45
+            125.46
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
