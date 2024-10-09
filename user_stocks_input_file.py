@@ -52,7 +52,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
             40,
-            392.67
+            392.68
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -62,7 +62,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
             24,
-            4193.08
+            4193.09
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -86,8 +86,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            17,
-            429.86
+            22,
+            445.47
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -102,7 +102,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             59,
-            198.78
+            198.79
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
