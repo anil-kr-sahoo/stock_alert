@@ -121,11 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
                             menuItem.classList.add('menu-item');
 
                             menuItem.innerHTML = `
-                                <img src="${dish.image_url}" alt="${dish.name}">
-                                <h5>${dish.name}</h5>
-                                <p class="price">₹${dish.price.toFixed(2)}/-</p>
-                                <button class="add-to-cart-btn" data-name="${dish.name}" data-price="${dish.price}">${isItemInCart(dish.name) ? 'Go to Cart' : 'Add to Cart'}</button>
+                                <div class="menu-item-container" style="text-align: center;">
+                                    <img src="${dish.image_url}" alt="${dish.name}" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto 10px auto;">
+                                    <h5 style="margin-top: 10px;">${dish.name}</h5>
+                                    <p class="price">₹${dish.price.toFixed(2)}/-</p>
+                                    <button class="add-to-cart-btn" data-name="${dish.name}" data-price="${dish.price}">
+                                        ${isItemInCart(dish.name) ? 'Go to Cart' : 'Add to Cart'}
+                                    </button>
+                                </div>
                             `;
+
+
 
                             // Add event listener to "Add to Cart" button
                             const addToCartButton = menuItem.querySelector('.add-to-cart-btn');
