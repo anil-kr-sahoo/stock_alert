@@ -4,17 +4,26 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 // Render the cart items on the cart page
 const renderCartItems = () => {
     const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotalContainer = document.getElementById('cart-total-container');
+    const emptyCartBanner = document.getElementById('empty-cart-banner');
     cartItemsContainer.innerHTML = ''; // Clear the container before rendering
-
-    cart.forEach((item, index) => {
+    if (cart.length === 0) {
+        // Show the empty cart banner
+        emptyCartBanner.style.display = 'block';
+        cartTotalContainer.style.display = 'none'; // Hide total and button
+    } else {
+        // Hide the empty cart banner
+        emptyCartBanner.style.display = 'none';
+        cartTotalContainer.style.display = 'block'; // Show total and button
+        cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
 
         cartItem.innerHTML = `
-            <img src="https://example.com/dummy.jpg" alt="${item.name}">
+            <img src="${item.image_src}" alt="${item.name}">
             <div class="cart-item-info">
                 <h5>${item.name}</h5>
-                <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+                <p class="cart-item-price">₹${item.price.toFixed(2)}/-</p>
             </div>
             <div class="cart-item-quantity">
                 <button class="decrease-quantity" data-index="${index}">-</button>
@@ -47,7 +56,7 @@ const renderCartItems = () => {
 
         cartItemsContainer.appendChild(cartItem);
     });
-
+    }
     updateTotalPrice();
 };
 
@@ -59,7 +68,7 @@ const updateTotalPrice = () => {
         totalPrice += item.price * item.quantity;
     });
 
-    document.getElementById('cart-total').textContent = totalPrice.toFixed(2);
+    document.getElementById('cart-total').textContent = totalPrice.toFixed(2)+'/-';
 };
 
 // Update session storage whenever cart changes

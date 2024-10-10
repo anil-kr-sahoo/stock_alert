@@ -10,7 +10,6 @@
 </head>
 <body>
     <!-- Navbar -->
-    <!-- Navbar with Cart Icon -->
     <nav class="navbar">
         <div class="logo">FoodOrder</div>
         <ul class="nav-links">
@@ -23,11 +22,29 @@
         </div>
     </nav>
 
+    <div class="shortcuts-container">
+        <h2>Jump to Category</h2>
+        <div class="shortcuts-grid">
+          <!-- Categories will be dynamically generated here as cards -->
+        </div>
+    </div>
+      
+    <!-- Filter options below categories -->
+    <div class="filter-container">
+    <div class="filter-card">
+        <label class="filter-label">
+        <input type="checkbox" id="vegFilter" /> Veg
+        </label>
+        <label class="filter-label">
+        <input type="checkbox" id="nonVegFilter" /> Non-Veg
+        </label>
+    </div>
+    </div>    
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <h1>Delicious Food Delivered to You</h1>
-        <p>Order from a variety of cuisines and get it delivered to your doorstep.</p>
+        <p>Order from a variety of cuisines and get it delivered.</p>
         <a href="#menu" class="btn">Explore Menu</a>
     </section>
 
@@ -39,6 +56,10 @@
         </div>
     </section>
 
+    <div id="menu-container">
+    <!-- Menu items will be dynamically generated here -->
+    </div>
+      
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Foodie's Delight. All rights reserved.</p>

@@ -18,12 +18,17 @@
 
     <!-- Cart Section -->
     <div id="cart">
-        <h1>Your Cart</h1>
-        <div id="cart-items"></div>
-        <div id="cart-total-container">
-            <p>Total: $<span id="cart-total">0.00</span></p>
-            <button id="place-order-btn">Place Order</button>
-        </div>
-    </div>    
+    <h1>Your Cart</h1>
+    <div id="empty-cart-banner" style="display: none; color: #ff7043; font-size: 1.5rem; text-align: center; margin-bottom: 20px;">
+        <img src="src/empty_cart.webp" alt="Empty Cart" style="width: 300px; height: auto;">
+    </div>
+    <div id="cart-items"></div>
+    <div id="cart-total-container" style="display: none;">
+        <p>Total: ₹<span id="cart-total">0.00/-</span></p>
+        <button id="place-order-btn">Place Order</button>
+    </div>
+    </div>
+
+
 </body>
 </html>

@@ -12,17 +12,59 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    padding-top: 60px; /* Adjust according to new navbar height */
 }
 
-/* Navbar */
+/* Sticky Navbar with smaller height */
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #ff7043;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    height: 50px; /* Adjust height as needed */
+}
+
+.logo {
+    font-size: 1.2rem; /* Reduced font size for smaller logo */
+    font-weight: bold;
+}
+
+.cart-icon {
+    font-size: 1.2rem; /* Adjust font size for cart icon */
     position: relative;
+    cursor: pointer;
+}
+
+.cart-icon .cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 15px; /* Reduced margin for links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem; /* Adjust font size for links */
 }
 
 #cart {
@@ -34,57 +76,17 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Cart Icon Styling */
-.cart-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: relative;
-}
-
-.cart-icon .cart-count {
-    background-color: red;
-    color: white;
-    font-size: 0.8rem;
-    border-radius: 50%;
-    padding: 4px 8px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-}
-
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-}
-
 #cart-items {
     margin-bottom: 20px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('https://example.com/hero-background.jpg');
+    padding: 120px 20px; /* Increase padding for better spacing */
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 20px;
-    color: white;
+    background-color: #f2cabd;
 }
 
 h1 {
@@ -130,6 +132,26 @@ h1 {
 /* Category Styling */
 .category-block {
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styling for Individual Category Card */
+.category-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 200px;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
 }
 
 .category-block h3 {
@@ -165,6 +187,10 @@ h1 {
 }
 
 .menu-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out items */
+    height: 100%; /* Ensure all menu items take up the same height */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -196,13 +222,15 @@ h1 {
 
 /* Add to Cart Button Styling */
 .add-to-cart-btn {
-    background-color: #ff7043;
+    background-color: #ff7043; /* Original background color */
     color: white;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Consistent padding */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Make the button take the full width */
+    text-align: center; /* Center text inside the button */
 }
 
 .add-to-cart-btn.added-to-cart {
@@ -317,6 +345,7 @@ h1 {
 }
 
 #place-order-btn {
+    margin-top: 20px;
     background-color: #28a745;
     color: white;
     border: none;
@@ -330,3 +359,77 @@ h1 {
 #place-order-btn:hover {
     background-color: #218838;
 }
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+  
+.filter-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.filter-label {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+  
+  /* Shortcuts Grid */
+.shortcuts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.shortcuts-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+  
+  /* Shortcuts Grid */
+.shortcuts-grid {
+    display: flex; /* Use flexbox layout */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px 0; /* Add padding for spacing */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+/* Individual Shortcut Item */
+.shortcut-card {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    margin-right: 15px; /* Space between shortcut cards */
+    background-color: #f2cabd; /* Background color for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    cursor: pointer; /* Indicate clickable */
+    text-align: center; /* Center text */
+    min-width: 120px; /* Minimum width for cards */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.shortcut-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+  
+  .shortcut-card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+  }
+  
