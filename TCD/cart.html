@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="cart.js"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <!-- Navbar with Home Link -->
+    <nav class="navbar">
+        <div class="logo">FoodOrder</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cart Section -->
+    <div id="cart">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div id="cart-total-container">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="place-order-btn">Place Order</button>
+        </div>
+    </div>    
+</body>
+</html>
