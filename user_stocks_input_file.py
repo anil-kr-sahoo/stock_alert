@@ -90,6 +90,16 @@ user_stocks = {
             448.31
         ],
         [
+            "https://groww.in/stocks/lt-finance-holdings-ltd",
+            0,
+            0
+        ],
+        [
+            "https://groww.in/stocks/manappuram-finance-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             16,
             179.36
@@ -138,6 +148,11 @@ user_stocks = {
             "https://groww.in/stocks/sun-tv-network-ltd",
             6,
             792.18
+        ],
+        [
+            "https://groww.in/stocks/tech-mahindra-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
