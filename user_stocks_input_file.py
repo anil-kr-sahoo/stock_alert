@@ -91,13 +91,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
-            0,
-            0
+            4,
+            151.99
         ],
         [
             "https://groww.in/stocks/manappuram-finance-ltd",
-            0,
-            0
+            2,
+            143.98
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
