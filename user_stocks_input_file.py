@@ -31,8 +31,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            26,
-            111.55
+            27,
+            111
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -75,6 +75,16 @@ user_stocks = {
             372.24
         ],
         [
+            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
+            0,
+            0
+        ],
+        [
+            "https://groww.in/stocks/indraprastha-gas-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/infosys-ltd",
             15,
             1682.93
@@ -93,6 +103,11 @@ user_stocks = {
             "https://groww.in/stocks/lt-finance-holdings-ltd",
             4,
             151.99
+        ],
+        [
+            "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/manappuram-finance-ltd",
