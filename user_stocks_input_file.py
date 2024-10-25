@@ -76,13 +76,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            0,
-            0
+            2,
+            200.03
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            0,
-            0
+            2,
+            420.10
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -106,8 +106,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            0,
-            0
+            2,
+            263.05
         ],
         [
             "https://groww.in/stocks/manappuram-finance-ltd",
