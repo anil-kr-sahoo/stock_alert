@@ -46,8 +46,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            25,
-            218.24
+            27,
+            217.10
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -131,13 +131,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            59,
-            198.79
+            61,
+            199.58
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            4,
-            11267
+            5,
+            11168.31
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
