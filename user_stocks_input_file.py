@@ -26,8 +26,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            35,
-            320.64
+            36,
+            320.16
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -36,8 +36,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            45,
-            234.71
+            46,
+            234.12
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -51,8 +51,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            40,
-            392.68
+            41,
+            391.95
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -81,8 +81,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            2,
-            420.10
+            3,
+            417.51
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -101,13 +101,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
-            4,
-            151.99
+            5,
+            150.43
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            0,
-            0
+            1,
+            1388.70
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -138,11 +138,6 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             5,
             11168.31
-        ],
-        [
-            "https://groww.in/stocks/oil-india-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
