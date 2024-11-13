@@ -130,6 +130,11 @@ user_stocks = {
             179.36
         ],
         [
+            "https://groww.in/stocks/ntpc-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             36,
             579.30

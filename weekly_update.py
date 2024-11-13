@@ -4,6 +4,7 @@ stocks_dict = {
         "Oil India"
     ],
     "newly_added_stocks": [
-        "Colgate-Palmolive (India)"
+        "Colgate-Palmolive (India)",
+        "NTPC"
     ]
 }
