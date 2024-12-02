@@ -170,11 +170,6 @@ user_stocks = {
             792.18
         ],
         [
-            "https://groww.in/stocks/tech-mahindra-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/union-bank-of-india",
             16,
             125.46
