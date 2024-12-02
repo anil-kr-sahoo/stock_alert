@@ -11,8 +11,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            4,
-            237.23
+            5,
+            235.12
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -21,13 +21,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            13,
-            118.80
+            15,
+            117.37
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             36,
-            320.16
+            320.17
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -47,7 +47,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/gail-india-ltd",
             27,
-            217.10
+            217.11
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -75,14 +75,9 @@ user_stocks = {
             372.24
         ],
         [
-            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            2,
-            200.03
-        ],
-        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             3,
-            417.51
+            417.52
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -97,7 +92,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             26,
-            449.02
+            449.03
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
@@ -137,7 +132,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             61,
-            199.58
+            199.59
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
