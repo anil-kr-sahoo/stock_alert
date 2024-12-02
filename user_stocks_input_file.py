@@ -45,6 +45,11 @@ user_stocks = {
             373.69
         ],
         [
+            "https://groww.in/stocks/colgatepalmolive-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/gail-india-ltd",
             27,
             217.11
@@ -168,6 +173,11 @@ user_stocks = {
             "https://groww.in/stocks/sun-tv-network-ltd",
             6,
             792.18
+        ],
+        [
+            "https://groww.in/stocks/tech-mahindra-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
