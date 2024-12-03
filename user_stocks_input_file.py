@@ -96,8 +96,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            26,
-            449.03
+            28,
+            450.12
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
@@ -143,6 +143,11 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             5,
             11168.31
+        ],
+        [
+            "https://groww.in/stocks/oil-india-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
