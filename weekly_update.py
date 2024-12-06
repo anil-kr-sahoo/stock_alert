@@ -4,5 +4,6 @@ stocks_dict = {
         "HUDCO",
     ],
     "newly_added_stocks": [
+        "Oil India"
     ]
 }
