@@ -1,9 +1,9 @@
 stocks_dict = {
-    "trigger_date": "06/12/2024",
+    "trigger_date": "13/12/2024",
     "removed_stocks": [
         "HUDCO",
     ],
     "newly_added_stocks": [
-        "Oil India"
+        "Colgate-Palmolive (India)"
     ]
 }
