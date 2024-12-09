@@ -115,11 +115,6 @@ user_stocks = {
             263.05
         ],
         [
-            "https://groww.in/stocks/manappuram-finance-ltd",
-            2,
-            143.98
-        ],
-        [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             16,
             179.36
