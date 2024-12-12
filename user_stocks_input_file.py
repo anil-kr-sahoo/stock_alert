@@ -116,8 +116,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            16,
-            179.36
+            18,
+            186.51
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
