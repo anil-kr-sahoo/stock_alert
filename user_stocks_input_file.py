@@ -16,13 +16,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            27,
-            255.58
+            29,
+            254.74
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            15,
-            117.37
+            17,
+            115.85
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -31,8 +31,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            27,
-            111
+            29,
+            110.30
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -106,8 +106,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            1,
-            1388.70
+            5,
+            1264.94
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -136,8 +136,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
-            0,
-            0
+            2,
+            430.25
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -151,8 +151,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
-            69,
-            446.41
+            75,
+            447.92
         ],
         [
             "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
@@ -171,13 +171,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            0,
-            0
+            4,
+            1707.12
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            16,
-            125.46
+            18,
+            124.69
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
@@ -186,8 +186,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            3,
-            605.28
+            6,
+            302.64
         ]
     ]
 }
