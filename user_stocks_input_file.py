@@ -56,8 +56,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            41,
-            391.95
+            43,
+            395.63
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -166,8 +166,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            6,
-            792.18
+            9,
+            757.42
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -181,8 +181,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/vedanta-ltd",
-            53,
-            328.97
+            55,
+            333.85
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
