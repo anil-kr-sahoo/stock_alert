@@ -51,8 +51,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            27,
-            217.11
+            29,
+            215.54
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -116,8 +116,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            18,
-            186.51
+            20,
+            189.21
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
