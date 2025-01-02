@@ -11,8 +11,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            5,
-            235.12
+            7,
+            230.71
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
@@ -46,8 +46,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            0,
-            0
+            1,
+            2701.95
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -61,8 +61,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            23,
-            1361.26
+            25,
+            1404.28
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -86,8 +86,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            15,
-            1682.93
+            19,
+            1719.84
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -126,12 +126,12 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            42,
-            599.59
+            43,
+            602.08
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            69,
+            191,
             66.59
         ],
         [
@@ -171,8 +171,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            4,
-            1707.13
+            8,
+            1703.39
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
