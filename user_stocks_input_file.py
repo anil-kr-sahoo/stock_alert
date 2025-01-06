@@ -3,7 +3,7 @@ PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "anil-kr-sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
-NOTIFIED_SELL_STOCK_URLS = list() # update this list if already notification sent
+NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 
@@ -37,7 +37,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             50,
-            230.94
+            230.95
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -57,7 +57,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
             51,
-            405.36
+            405.37
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -77,7 +77,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
             36,
-            373.94
+            373.95
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -87,17 +87,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             19,
-            1719.84
+            1719.85
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
-            22,
-            162.52
+            23,
+            161.32
         ],
         [
             "https://groww.in/stocks/itc-ltd",
             33,
-            451.79
+            451.80
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
@@ -120,11 +120,6 @@ user_stocks = {
             192.46
         ],
         [
-            "https://groww.in/stocks/ntpc-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             43,
             602.08
@@ -133,6 +128,11 @@ user_stocks = {
             "https://groww.in/stocks/nmdc-ltd",
             191,
             66.59
+        ],
+        [
+            "https://groww.in/stocks/ntpc-ltd",
+            3,
+            330.65
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
@@ -182,7 +182,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/vedanta-ltd",
             57,
-            337.72
+            337.73
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
