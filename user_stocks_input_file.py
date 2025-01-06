@@ -96,8 +96,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            28,
-            450.12
+            33,
+            451.79
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
