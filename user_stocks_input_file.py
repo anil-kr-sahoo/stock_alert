@@ -80,6 +80,11 @@ user_stocks = {
             373.95
         ],
         [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             3,
             417.52
@@ -143,6 +148,11 @@ user_stocks = {
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
             48,
             262.55
+        ],
+        [
+            "https://groww.in/stocks/oracle-financial-services-software-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
