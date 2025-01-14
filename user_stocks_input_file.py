@@ -80,6 +80,11 @@ user_stocks = {
             373.95
         ],
         [
+            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/idbi-bank-ltd",
             3,
             70.79
