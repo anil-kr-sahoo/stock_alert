@@ -80,11 +80,6 @@ user_stocks = {
             373.95
         ],
         [
-            "https://groww.in/stocks/idbi-bank-ltd",
-            3,
-            70.79
-        ],
-        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             3,
             417.52

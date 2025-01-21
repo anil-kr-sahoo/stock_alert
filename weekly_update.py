@@ -1,9 +1,8 @@
 stocks_dict = {
-    "trigger_date": "10/01/2025",
+    "trigger_date": "24/01/2025",
     "removed_stocks": [
+        "IDBI Bank",
     ],
     "newly_added_stocks": [
-        "IDBI Bank",
-        "OFSS",
     ]
 }
