@@ -11,8 +11,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            7,
-            230.71
+            8,
+            227.58
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
