@@ -194,5 +194,17 @@ user_stocks = {
             6,
             302.64
         ]
+    ],
+    "pani": [
+        [
+            "https://groww.in/stocks/nmdc-ltd",
+            2,
+            64.46
+        ],
+        [
+            "https://groww.in/stocks/oracle-financial-services-software-ltd",
+            1,
+            9272
+        ]
     ]
 }
