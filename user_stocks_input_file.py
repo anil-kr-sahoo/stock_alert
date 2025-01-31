@@ -16,8 +16,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
-            31,
-            253.87
+            38,
+            246.43
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -81,8 +81,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            3,
-            417.52
+            6,
+            208.76
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -97,7 +97,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             33,
-            451.80
+            400.20
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
@@ -171,8 +171,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            9,
-            757.42
+            11,
+            731.93
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -196,6 +196,11 @@ user_stocks = {
         ]
     ],
     "pani": [
+        [
+            "https://groww.in/stocks/bank-of-baroda",
+            2,
+            217.35
+        ],
         [
             "https://groww.in/stocks/nmdc-ltd",
             2,
