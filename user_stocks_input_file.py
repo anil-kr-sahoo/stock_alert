@@ -11,13 +11,13 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
-            8,
-            227.58
+            10,
+            224.41
         ],
         [
             "https://groww.in/stocks/bank-of-baroda",
             38,
-            246.43
+            246.44
         ],
         [
             "https://groww.in/stocks/bank-of-india",
@@ -66,8 +66,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            26,
-            4191.65
+            27,
+            4194.70
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -106,8 +106,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            5,
-            1264.94
+            6,
+            1280.68
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -121,8 +121,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            43,
-            602.08
+            44,
+            601.42
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -151,8 +151,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            8,
-            338.24
+            10,
+            332.290
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -172,7 +172,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
             11,
-            731.93
+            731.94
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -195,11 +195,16 @@ user_stocks = {
             302.64
         ]
     ],
-    "pani": [
+    "sp": [
         [
             "https://groww.in/stocks/bank-of-baroda",
             2,
             217.35
+        ],
+        [
+            "https://groww.in/stocks/bank-of-india",
+            1,
+            110.32
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
