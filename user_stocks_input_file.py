@@ -96,8 +96,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            33,
-            400.20
+            35,
+            403.31
         ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
@@ -122,7 +122,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             44,
-            601.42
+            601.43
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
