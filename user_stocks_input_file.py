@@ -212,6 +212,16 @@ user_stocks = {
             110.32
         ],
         [
+            "https://groww.in/stocks/hindustan-zinc-ltd",
+            3,
+            454.70
+        ],
+        [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            1,
+            607.45
+        ],
+        [
             "https://groww.in/stocks/nmdc-ltd",
             2,
             64.46
