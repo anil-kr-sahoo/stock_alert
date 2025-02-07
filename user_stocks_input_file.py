@@ -218,8 +218,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            2,
-            439.30
+            4,
+            435.70
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
