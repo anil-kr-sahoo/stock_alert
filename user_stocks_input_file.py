@@ -105,6 +105,11 @@ user_stocks = {
             403.31
         ],
         [
+            "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
+            2,
+            851.36
+        ],
+        [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
             5,
             150.43
@@ -131,8 +136,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            191,
-            66.59
+            193,
+            66.57
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -208,8 +213,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            1,
-            110.32
+            2,
+            107.87
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
