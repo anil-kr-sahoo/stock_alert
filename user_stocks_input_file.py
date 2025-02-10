@@ -250,6 +250,11 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             1,
             9272
+        ],
+        [
+            "https://groww.in/stocks/union-bank-of-india",
+            1,
+            115.40
         ]
     ]
 }
