@@ -51,8 +51,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            29,
-            215.55
+            31,
+            212.09
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -66,8 +66,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            27,
-            4194.70
+            28,
+            4192.19
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -104,11 +104,11 @@ user_stocks = {
             35,
             403.31
         ],
-        [
-            "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
-            2,
-            851.36
-        ],
+        # [
+        #     "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
+        #     2,
+        #     851.36
+        # ],
         [
             "https://groww.in/stocks/lt-finance-holdings-ltd",
             5,
@@ -233,8 +233,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            4,
-            435.70
+            6,
+            430.23
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -253,8 +253,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            1,
-            115.40
+            2,
+            112.98
         ]
     ]
 }
