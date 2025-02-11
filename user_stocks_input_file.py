@@ -137,7 +137,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             193,
-            66.57
+            66.58
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
