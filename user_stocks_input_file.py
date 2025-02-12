@@ -66,8 +66,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            28,
-            4192.19
+            29,
+            4184.21
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -213,8 +213,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            2,
-            107.87
+            3,
+            105.01
+        ],
+        [
+            "https://groww.in/stocks/gail-india-ltd",
+            1,
+            157.16
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -223,8 +228,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            2,
-            202
+            4,
+            193.76
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -233,13 +238,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            6,
-            430.23
+            8,
+            424.95
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            1,
-            607.45
+            5,
+            536.65
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
