@@ -10,6 +10,11 @@ NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification se
 user_stocks = {
     "my_stocks": [
         [
+            "https://groww.in/stocks/ajanta-pharma-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/ashok-leyland-ltd",
             10,
             224.41
@@ -85,6 +90,11 @@ user_stocks = {
             0
         ],
         [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             6,
             208.76
@@ -123,6 +133,11 @@ user_stocks = {
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
             4,
             262.90
+        ],
+        [
+            "https://groww.in/stocks/mphasis-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
