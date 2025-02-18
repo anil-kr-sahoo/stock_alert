@@ -196,6 +196,18 @@ def get_stock_details(all_data, set_timer=False):
         print(f"\nManually limit provided on -------- {name} With value {lowest_day_limit}")
 
     all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
+
+    # Check future dividends
+    dividend_message = ''
+    driver.find_element(By.CLASS_NAME, "tabs8Parent").find_elements(By.XPATH, "./*")[2].click()
+    sleep(.5)
+    dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split('\n')
+    if dividend_data[3].strip() == "Dividend" and dividend_data[4].strip() == "Upcoming" and dividend_data[5].strip() == "Ex date":
+        dividend_date = datetime.strptime(f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2]}", "%Y-%d-%b").date()
+        current_date = datetime.today().date()
+        if dividend_date >= current_date:
+            dividend_message = f"🔥 {dividend_data[6]}  per share declared by {dividend_data[1]} {dividend_data[2]}, {dividend_data[0]}\n"
+
     individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
                                 "Name": name,
                                 "Stock Average Value": stock_average_val,
@@ -238,10 +250,10 @@ def get_stock_details(all_data, set_timer=False):
 
         if url not in notified_stock_list:
             notified_stock_list.append(url)
-            buy_message = f"Buy {round(day_returns * -1)} Stocks"
+            buy_message = f"{dividend_message}Buy {round(day_returns * -1)} Stocks"
             individual_stock_details["Buy Units"] = round(day_returns * -1)
         else:
-            buy_message = f"Buy {int((day_returns - lowest_day_limit - 1) * -1)} more Stocks"
+            buy_message = f"{dividend_message}Buy {int((day_returns - lowest_day_limit - 1) * -1)} more Stocks"
             individual_stock_details["Buy Units"] = int((day_returns - lowest_day_limit - 1) * -1)
 
         global_notifier(
