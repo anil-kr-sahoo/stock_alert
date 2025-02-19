@@ -207,7 +207,7 @@ def get_stock_details(all_data, set_timer=False):
         current_date = datetime.today().date()
         if dividend_date >= current_date:
             dividend_message = f"🔥 {dividend_data[6]}  per share declared by {dividend_data[1]} {dividend_data[2]}, {dividend_data[0]}\n"
-
+            print("\n",dividend_message,"\n",name)
     individual_stock_details = {"Time": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
                                 "Name": name,
                                 "Stock Average Value": stock_average_val,

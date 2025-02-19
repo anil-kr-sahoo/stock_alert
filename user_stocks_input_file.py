@@ -247,6 +247,11 @@ user_stocks = {
             201.70
         ],
         [
+            "https://groww.in/stocks/infosys-ltd",
+            1,
+            1812.25
+        ],
+        [
             "https://groww.in/stocks/itc-ltd",
             8,
             424.95
