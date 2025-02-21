@@ -223,8 +223,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            3,
-            105.01
+            4,
+            104.2
+        ],
+        [
+            "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
+            2,
+            253.4
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
