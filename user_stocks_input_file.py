@@ -146,8 +146,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            193,
-            66.58
+            194,
+            66.57
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -245,6 +245,11 @@ user_stocks = {
             "https://groww.in/stocks/housing-urban-development-corporation-ltd",
             4,
             193.76
+        ],
+        [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            1,
+            71.83
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
