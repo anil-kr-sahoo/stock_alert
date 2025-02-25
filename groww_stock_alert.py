@@ -206,7 +206,7 @@ def get_stock_details(all_data, set_timer=False):
         if dividend_data[3].strip() == "Dividend" and dividend_data[4].strip() == "Upcoming" and dividend_data[5].strip() == "Ex date":
             dividend_date = datetime.strptime(f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2]}", "%Y-%d-%b").date()
             current_date = datetime.today().date()
-            if dividend_date >= current_date:
+            if dividend_date > current_date:
                 dividend_message = f"*Rs {dividend_data[6].strip()}/- dividend per share declared by {dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}*\n"
                 print("\n",dividend_message,name)
     except Exception:
