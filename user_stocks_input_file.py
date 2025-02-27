@@ -200,6 +200,11 @@ user_stocks = {
             731.94
         ],
         [
+            "https://groww.in/stocks/tata-consultancy-services-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/tech-mahindra-ltd",
             8,
             1703.39
