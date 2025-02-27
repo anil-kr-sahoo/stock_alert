@@ -9,8 +9,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from user_stocks_input_file import user_stocks
 
-filter_url = "https://groww.in/stocks/filter?closePriceHigh=100000&closePriceLow=0&index=Nifty%20Next%2050," \
-             "Nifty%20Midcap%20100,Nifty%2050,Nifty%20100,BSE%20100&marketCapHigh=2000000&marketCapLow=0&page=0&size=1000&sortType=ASC"
+filter_url = "https://groww.in/stocks/filter?closePriceHigh=100000&closePriceLow=0&index=Nifty%20100,Nifty%2050,BSE%20100&marketCapHigh=2000000&marketCapLow=0&page=0&size=1000&sortType=ASC"
 driver = None
 
 

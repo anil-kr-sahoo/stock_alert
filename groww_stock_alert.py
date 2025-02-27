@@ -156,6 +156,8 @@ def get_stock_details(all_data, set_timer=False):
     stock_average_val = all_data[2]
     target_stock_val = stock_average_val + stock_average_val * required_min_percentage
     dividend_ratio_percentage = 0
+    upcoming_dividend_amount = 0
+    upcoming_dividend_date = ''
     roe = 0
     current_price, day_returns = get_current_stock_data(url)
     driver.get(url)
@@ -207,7 +209,9 @@ def get_stock_details(all_data, set_timer=False):
             dividend_date = datetime.strptime(f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2]}", "%Y-%d-%b").date()
             current_date = datetime.today().date()
             if dividend_date > current_date:
-                dividend_message = f"*Rs {dividend_data[6].strip()}/- dividend per share declared by {dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}*\n"
+                upcoming_dividend_amount = dividend_data[6].strip()[1:]
+                upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
+                dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
                 print("\n",dividend_message,name)
     except Exception:
         pass
@@ -217,7 +221,9 @@ def get_stock_details(all_data, set_timer=False):
                                 "Stock Average Value": stock_average_val,
                                 "Day Returns": day_returns,
                                 "Current Price": current_price,
-                                "Url": url
+                                "Url": url,
+                                "Upcoming Dividend Amount": upcoming_dividend_amount,
+                                "Upcoming Dividend Date": upcoming_dividend_date
                                 }
     for each in all_details.split('\n'):
         if 'Dividend' in each:
