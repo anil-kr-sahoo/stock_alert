@@ -1,14 +1,7 @@
 import contextlib
-import os
 import json
-import csv
 import time
 import traceback
-
-import pywhatkit
-import platform
-import socket
-
 from datetime import datetime
 from time import sleep
 
@@ -20,23 +13,19 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from plyer import notification
 
 from user_stocks_input_file import user_stocks, GROUP_LIST, PHONE_NO_LIST, THANK_YOU_MESSAGE, ALLOW_NOTIFICATION, \
     ALLOWED_DEVICE_ACCESS, NOTIFIED_SELL_STOCK_URLS
-from weekly_update import stocks_dict
+from utils import *
 
 # Use Airtel Wi-Fi battery indicator as well
 USE_WIFI_INDICATOR = False
-system_name = socket.gethostname()
 modem_url = "http://192.168.1.1/index.html"
 
 # 10% minimum profit added
 required_min_percentage = .13
 urls = list()
 
-for k, v in user_stocks.items():
-    urls += v
 # print(sorted(set([data[0] for data in urls])))
 buy_stock_list = list()
 sell_stock_list = list()
@@ -45,77 +34,11 @@ in_memory_data = dict()
 message_summary = dict()
 start_time = datetime.now()
 
-
-def check_weekly_stock_details():
-    if (stocks_dict["trigger_date"] != datetime.now().date().strftime("%d/%m/%Y") or
-            not (len(stocks_dict['newly_added_stocks']) or len(stocks_dict['removed_stocks']))):
-        return
-    weekly_stock_msg = "Weekly update for AK Stock Monitoring"
-    weekly_stock_msg += f"\n\nRemoved Stocks ({len(stocks_dict['removed_stocks'])}):-\n\n"
-    if stocks_dict['removed_stocks']:
-        weekly_stock_msg += '\n'.join(stocks_dict['removed_stocks'])
-    else:
-        weekly_stock_msg += "NA"
-    weekly_stock_msg += f"\n\nAdded Stocks ({len(stocks_dict['newly_added_stocks'])}):-\n\n"
-    if stocks_dict['newly_added_stocks']:
-        weekly_stock_msg += '\n'.join(stocks_dict['newly_added_stocks'])
-    else:
-        weekly_stock_msg += "NA"
-    weekly_stock_msg += "\n\nNote:- The monitoring stocks are present in group description."
-    return weekly_stock_msg
-
-
-def send_whatsapp_notification(message):
-    if any(data in message for data in ['Buy', 'Sell', 'Thank', 'Weekly']):
-        for group_id in GROUP_LIST:
-            pywhatkit.sendwhatmsg_to_group_instantly(group_id=group_id, message=message, tab_close=True)
-    else:
-        for phone_no in PHONE_NO_LIST:
-            pywhatkit.sendwhatmsg_instantly(phone_no=phone_no, message=message, tab_close=True)
-
-
-def send_notifications(title, message, wp_message=None):
-    if ALLOW_NOTIFICATION and system_name in ALLOWED_DEVICE_ACCESS:
-        if wp_message:
-            send_whatsapp_notification(wp_message)
-        else:
-            send_whatsapp_notification(title)
-
-        notification.notify(
-            title=title,
-            message=message,
-            timeout=2
-        )
-        if platform.system() == "Linux":
-            # For ubuntu, as it has not any sound on desktop notification
-            # "sudo apt install sox"
-            with contextlib.suppress(Exception):
-                if 'Buy' in title:
-                    os.system('spd-say "Hi Sir, A stock is ready to Buy" ')
-                elif 'Sell' in title:
-                    os.system('spd-say "Hi Sir, A stock is ready to Sell" ')
-                elif 'over' in title:
-                    os.system('spd-say "Hi Sir, Trading over for today, please run wi-fi battery checker" ')
-                elif 'Restart' in title:
-                    os.system('spd-say "Hi Sir, Please restart server, its crashed due to low internet" ')
-                elif 'Weekly' in title:
-                    os.system('spd-say "Hi Sir, Weekly stock portfolio updated" ')
-                else:
-                    os.system('spd-say "Hi Sir, Your wifi battery is low, Please plug in Charger" ')
-
-
-def get_two_decimal_val(decimal_num):
-    return float('%.2f' % decimal_num)
-
-
-def get_float_val(string_num):
-    try:
-        return float(string_num)
-    except Exception:
-        return 0
-
-
 def get_current_stock_price():
+    """
+    This helper function used to get realtime current data from Groww
+    :return:
+    """
     try:
         raw_html = driver.find_element(By.CLASS_NAME, "lpu38Pri").get_attribute('innerHTML').split('">')[-1]
         raw_amount = raw_html.split('</span>')[0]
@@ -124,14 +47,12 @@ def get_current_stock_price():
         return 0
 
 
-def get_to_be_credit_dividend(stock_price, dividend_ratio):
-    try:
-        return get_two_decimal_val(get_float_val(stock_price) * get_float_val(dividend_ratio) / 100)
-    except Exception:
-        return 0
-
-
 def get_current_stock_data(source_url):
+    """
+    This helper function used to get realtime current data from Google finance
+    :param source_url:
+    :return:
+    """
     try:
         mapping_stocks = json.load(open('stocks_mapping.json'))
         destination_url = mapping_stocks[source_url]
@@ -208,7 +129,7 @@ def get_stock_details(all_data, set_timer=False):
         if dividend_data[3].strip() == "Dividend" and dividend_data[4].strip() == "Upcoming" and dividend_data[5].strip() == "Ex date":
             dividend_date = datetime.strptime(f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2]}", "%Y-%d-%b").date()
             current_date = datetime.today().date()
-            if dividend_date > current_date:
+            if dividend_date >= current_date:
                 upcoming_dividend_amount = dividend_data[6].strip()[1:]
                 upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
                 dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
@@ -289,6 +210,14 @@ def get_stock_details(all_data, set_timer=False):
 
 
 def global_notifier(notification_title, notify_details, notified_buy_stock_list, individual_stock_details):
+    """
+    This function helps to generate realtime messages to send in notification
+    :param notification_title:
+    :param notify_details:
+    :param notified_buy_stock_list:
+    :param individual_stock_details:
+    :return:
+    """
     if 'Sell' in notification_title:
         least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage * 100) / 100))
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
@@ -304,34 +233,30 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
     print(json.dumps(individual_stock_details, indent=2))
 
 
-def generate_files(file_name, file_data, only_json=False):
-    with open(f"{file_name}.json", "w") as stock_data:
-        json.dump(file_data, stock_data, indent=2 if only_json else 4, sort_keys=True)
-    if not only_json:
-        with open(f'{file_name}.csv', 'w') as file:
-            writer = csv.writer(file)
-            heading = [list(file_data[0].keys())]
-            stock_details = [list(element.values()) for element in file_data]
-            writer.writerows(heading + stock_details)
-
-
 driver = None
 retries = 200
 try:
     while retries > 0:
         try:
             all_stocks_data = []
+            portfolio_data = []
             options = Options()
             options.add_argument('--remote-debugging-port=61625')
             options.add_argument('--no-sandbox')
             options.add_argument('--headless=new')
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-            for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
-                driver.execute_script("window.open('about:blank', 'secondtab');")
+            for user, urls in tqdm(user_stocks.items(), desc=f"Scanning", unit='user'):
+                for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
+                    driver.execute_script("window.open('about:blank', 'secondtab');")
 
-                # It is switching to second tab now
-                driver.switch_to.window("secondtab")
-                all_stocks_data.append(get_stock_details(data))
+                    # It is switching to second tab now
+                    driver.switch_to.window("secondtab")
+                    stock_data = get_stock_details(data)
+                    if user in ["my_stocks", "sp"]:
+                        portfolio_data.append(stock_data)
+                    all_stocks_data.append(stock_data)
+
+            generate_portfolio_data(portfolio_data)
 
             if USE_WIFI_INDICATOR:
                 with contextlib.suppress(Exception):
@@ -434,6 +359,7 @@ try:
                 raise Exception(e)
 except Exception as e:
     print(e)
+    print(traceback.format_exc())
     title = "Restart Server\n"
     hour = int((datetime.now() - start_time).seconds / 60 / 60)
     minute = int((datetime.now() - start_time).seconds / 60) % 60
