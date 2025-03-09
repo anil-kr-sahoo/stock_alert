@@ -74,9 +74,14 @@ def get_stock_details(url, sleep_timer=False):
                 individual_stock_details[' '.join(each.split(" ")[:-1])] = dividend
             elif 'ROE' in each:
                 roe = get_float_val(each.split(" ")[-1][:-1])
-                if roe < 2:
+                if roe < 15:
                     return
                 individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
+            elif 'Debt to Equity' in each:
+                debt_to_equity = get_float_val(each.split(" ")[-1])
+                if debt_to_equity > 1:
+                    return
+                individual_stock_details[' '.join(each.split(" ")[:-1])] = debt_to_equity
             elif 'Market' in each:
                 individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
                     each.split(" ")[-1][1:-2].replace(',', ''))
@@ -121,6 +126,7 @@ def check_details():
                 )
         # print(json.dumps(sorted(eligible_stocks, key=lambda i: i['Url']), indent=2))
         print("Total Eligible Stocks - ", len(eligible_stocks))
+        print("Total Eligible Stocks - ", '\n'.join([data['Url'] for data in eligible_stocks]))
         stock_details = check_stocks_eligibility([data['Url'] for data in eligible_stocks])
         print(json.dumps(stock_details, indent=2))
         if driver:

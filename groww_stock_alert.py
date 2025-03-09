@@ -80,6 +80,7 @@ def get_stock_details(all_data, set_timer=False):
     upcoming_dividend_amount = 0
     upcoming_dividend_date = ''
     roe = 0
+    debt_to_equity = 0
     current_price, day_returns = get_current_stock_data(url)
     driver.get(url)
     if set_timer: sleep(5)
@@ -159,6 +160,9 @@ def get_stock_details(all_data, set_timer=False):
         elif 'ROE' in each:
             roe = get_float_val(each.split(" ")[-1][:-1])
             individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
+        elif 'Debt to Equity' in each:
+            debt_to_equity = get_float_val(each.split(" ")[-1])
+            individual_stock_details[' '.join(each.split(" ")[:-1])] = debt_to_equity
         elif 'Market' in each:
             individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
                 each.split(" ")[-1][1:-2].replace(',', ''))
@@ -180,8 +184,9 @@ def get_stock_details(all_data, set_timer=False):
             current_price != 0
             and day_returns != -100
             and day_returns < lowest_day_limit
-            and roe >= 10
+            and roe >= 15
             and dividend_ratio_percentage >= 2
+            and debt_to_equity <= 1
     ):
         in_memory_data[all_data[0]] = int(day_returns) - 1
 
@@ -202,7 +207,7 @@ def get_stock_details(all_data, set_timer=False):
     if (
             target_stock_val
             and target_stock_val < current_price
-            and (dividend_ratio_percentage < 2 or roe < 10)
+            and (dividend_ratio_percentage < 2 or roe < 15 or debt_to_equity > 1)
             and url not in notified_stock_list
     ):
         notified_stock_list.append(url)
