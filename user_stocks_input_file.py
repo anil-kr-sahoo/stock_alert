@@ -156,8 +156,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            12,
-            324.08
+            14,
+            317.36
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
