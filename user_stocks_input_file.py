@@ -191,8 +191,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            18,
-            124.69
+            20,
+            123.75
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
