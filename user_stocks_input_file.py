@@ -165,11 +165,6 @@ user_stocks = {
             448.01
         ],
         [
-            "https://groww.in/stocks/power-grid-corporation-of-india-ltd",
-            51,
-            234.97
-        ],
-        [
             "https://groww.in/stocks/rec-ltd",
             74,
             498.52
