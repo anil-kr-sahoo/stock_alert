@@ -1,11 +1,8 @@
 stocks_dict = {
-    "trigger_date": "28/02/2025",
+    "trigger_date": "14/03/2025",
     "removed_stocks": [
-        "HUDCO",
-        "IDBI Bank",
-        "Mphasis"
+        "Vedanta",
     ],
     "newly_added_stocks": [
-        "TCS",
     ]
 }

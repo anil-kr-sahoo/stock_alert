@@ -156,8 +156,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            10,
-            332.290
+            12,
+            324.08
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -193,11 +193,6 @@ user_stocks = {
             "https://groww.in/stocks/union-bank-of-india",
             18,
             124.69
-        ],
-        [
-            "https://groww.in/stocks/vedanta-ltd",
-            57,
-            337.73
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
