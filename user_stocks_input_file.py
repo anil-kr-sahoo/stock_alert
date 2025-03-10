@@ -131,7 +131,7 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            194,
+            196,
             66.57
         ],
         [
