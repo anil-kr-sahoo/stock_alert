@@ -31,8 +31,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            29,
-            110.30
+            31,
+            108.57
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -121,13 +121,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            24,
-            192.46
+            26,
+            192.34
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            44,
-            601.43
+            46,
+            597.88
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -176,8 +176,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            11,
-            731.94
+            13,
+            705.54
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
