@@ -86,8 +86,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            19,
-            1719.85
+            23,
+            1708.08
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -111,8 +111,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            6,
-            1280.68
+            8,
+            1274.59
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -122,22 +122,27 @@ user_stocks = {
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             28,
-            192.11
+            192.12
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            46,
-            597.88
+            50,
+            590.33
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            196,
-            66.57
+            198,
+            66.55
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
             3,
             330.65
+        ],
+        [
+            "https://groww.in/stocks/oracle-financial-services-software-ltd",
+            2,
+            7440.15
         ],
         [
             "https://groww.in/stocks/oil-india-ltd",
@@ -150,14 +155,9 @@ user_stocks = {
             262.55
         ],
         [
-            "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            2,
-            7440.15
-        ],
-        [
             "https://groww.in/stocks/petronet-lng-ltd",
             14,
-            317.36
+            317.37
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -172,7 +172,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
             13,
-            705.54
+            705.55
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
