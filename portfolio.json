@@ -2,10 +2,10 @@
   "current_stock_data": [
     {
       "Avg Stock Average Value": 224.41,
-      "Current Price": 196.21,
+      "Current Price": 196.2,
       "Name": "Ashok Leyland",
       "Total Qty": 10,
-      "Total Returns": -282.0,
+      "Total Returns": -282.1,
       "Url": "https://groww.in/stocks/ashok-leyland-ltd"
     },
     {
@@ -29,7 +29,7 @@
       "Current Price": 265.93,
       "Name": "Bharat Petroleum Corporation",
       "Total Qty": 38,
-      "Total Returns": -1925.06,
+      "Total Returns": -1927.58,
       "Url": "https://groww.in/stocks/bharat-petroleum-corporation-ltd"
     },
     {
@@ -90,10 +90,10 @@
     },
     {
       "Avg Stock Average Value": 4184.21,
-      "Current Price": 3620.8,
+      "Current Price": 3620.95,
       "Name": "Hero MotoCorp",
       "Total Qty": 29,
-      "Total Returns": -16338.89,
+      "Total Returns": -16334.54,
       "Url": "https://groww.in/stocks/hero-motocorp-ltd"
     },
     {
@@ -106,10 +106,10 @@
     },
     {
       "Avg Stock Average Value": 373.95,
-      "Current Price": 326.55,
+      "Current Price": 326.5,
       "Name": "HPCL",
       "Total Qty": 36,
-      "Total Returns": -1706.4,
+      "Total Returns": -1708.2,
       "Url": "https://groww.in/stocks/hindustan-petroleum-corporation-ltd"
     },
     {
@@ -121,11 +121,11 @@
       "Url": "https://groww.in/stocks/indraprastha-gas-ltd"
     },
     {
-      "Avg Stock Average Value": 1712.42,
+      "Avg Stock Average Value": 1700.33,
       "Current Price": 1590.05,
       "Name": "Infosys",
-      "Total Qty": 24,
-      "Total Returns": -2936.89,
+      "Total Qty": 27,
+      "Total Returns": -2977.68,
       "Url": "https://groww.in/stocks/infosys-ltd"
     },
     {
@@ -177,19 +177,19 @@
       "Url": "https://groww.in/stocks/national-aluminium-company-ltd"
     },
     {
-      "Avg Stock Average Value": 585.45,
+      "Avg Stock Average Value": 583.27,
       "Current Price": 524.8,
       "Name": "Nippon Life India AMC",
-      "Total Qty": 55,
-      "Total Returns": -3335.75,
+      "Total Qty": 57,
+      "Total Returns": -3332.65,
       "Url": "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd"
     },
     {
-      "Avg Stock Average Value": 66.53,
+      "Avg Stock Average Value": 66.5,
       "Current Price": 64.75,
       "Name": "NMDC",
-      "Total Qty": 200,
-      "Total Returns": -355.82,
+      "Total Qty": 202,
+      "Total Returns": -353.42,
       "Url": "https://groww.in/stocks/nmdc-ltd"
     },
     {
@@ -361,8 +361,8 @@
       "total_profit_loss": -48440.38
     },
     "12/03/2025": {
-      "total_investment": 556091.96,
-      "total_profit_loss": -53993.49
+      "total_investment": 562076.5,
+      "total_profit_loss": -54028.85
     }
   }
 }
