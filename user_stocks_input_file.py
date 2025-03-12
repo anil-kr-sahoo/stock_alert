@@ -86,8 +86,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            23,
-            1708.08
+            26,
+            1696.03
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -126,8 +126,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            50,
-            590.33
+            52,
+            587.75
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
