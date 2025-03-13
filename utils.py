@@ -144,11 +144,6 @@ def generate_portfolio_data(data):
     :param data:
     :return:
     """
-    # Dictionary to store aggregated results
-    import json
-    import os
-    from collections import defaultdict
-    from datetime import datetime
 
     def get_two_decimal_val(value):
         """Returns value rounded to two decimal places."""
@@ -171,7 +166,7 @@ def generate_portfolio_data(data):
     analytics_data = old_portfolio_data.get('datewise_returns', {})
     dividend_data = old_portfolio_data.get('datewise_dividends', {})
     today_date_str = datetime.now().strftime("%d %b, %Y")
-    today_date_key = datetime.now().strftime("%d/%m/%Y")  # Format for storage
+    today_date_key = datetime.now().strftime("%m/%d/%Y")  # Format for storage
 
     # Dictionary to store consolidated stock data
     stocks = defaultdict(lambda: {
@@ -205,13 +200,14 @@ def generate_portfolio_data(data):
 
             if today_date_key not in dividend_data:
                 dividend_data[today_date_key] = []
-
-            dividend_data[today_date_key].append({
-                'name': name,
-                'url': url,
-                'dividend_amount': get_two_decimal_val(dividend_amount),
-                'declared_dividend': stock["Upcoming Dividend Amount"]
-            })
+            all_urls = [details['url'] for details in dividend_data[today_date_key] if details.get('url')]
+            if url not in all_urls:
+                dividend_data[today_date_key].append({
+                    'name': name,
+                    'url': url,
+                    'dividend_amount': get_two_decimal_val(dividend_amount),
+                    'declared_dividend': stock["Upcoming Dividend Amount"]
+                })
 
     # Compute final results
     result = []
@@ -233,8 +229,7 @@ def generate_portfolio_data(data):
         })
 
     # Update analytics data
-    current_date = datetime.now().date().strftime("%d/%m/%Y")
-    analytics_data[current_date] = {
+    analytics_data[today_date_key] = {
         'total_investment': get_two_decimal_val(total_overall_investment),
         'total_profit_loss': get_two_decimal_val(total_profit_loss),
     }

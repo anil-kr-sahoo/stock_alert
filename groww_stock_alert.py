@@ -128,18 +128,19 @@ def get_stock_details(all_data, set_timer=False):
         sleep(.5)
         dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split('\n')
         upcoming_dividend_date = ''
-        if dividend_data[3].strip() == "Dividend" and dividend_data[4].strip() == "Upcoming" and dividend_data[5].strip() == "Ex date":
+        if dividend_data[3].strip() == "Dividend" and dividend_data[4].strip() in ["Upcoming", "Today"] and dividend_data[5].strip() == "Ex date":
             dividend_date = datetime.strptime(f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2]}", "%Y-%d-%b").date()
             current_date = datetime.today().date()
             if dividend_date >= current_date:
                 upcoming_dividend_amount = 0
                 for index, event_data in enumerate(dividend_data):
-                    if event_data.strip() == 'Upcoming' and dividend_data[index+1].strip() == 'Ex date':
+                    if event_data.strip() in ["Upcoming", "Today"] and dividend_data[index+1].strip() == 'Ex date':
                         upcoming_dividend_amount += get_two_decimal_val(get_float_val(dividend_data[index+2].strip()[1:]))
                         upcoming_dividend_date = f"{dividend_data[index-3].strip()} {dividend_data[index-2].strip()}, {dividend_data[0].strip()}"
                 if not upcoming_dividend_date:
                     upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
-                dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
+                if dividend_data[4].strip() == 'Upcoming':
+                    dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
                 print("\n",dividend_message,name)
     except Exception:
         pass
