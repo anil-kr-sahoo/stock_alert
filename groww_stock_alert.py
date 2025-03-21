@@ -141,7 +141,7 @@ def get_stock_details(all_data, set_timer=False):
                     upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
                 if dividend_data[4].strip() == 'Upcoming':
                     dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
-                print("\n",dividend_message,name)
+                    print("\n",dividend_message,name)
     except Exception:
         pass
 
@@ -257,8 +257,12 @@ try:
             options.add_argument('--no-sandbox')
             options.add_argument('--headless=new')
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-            for user, urls in tqdm(user_stocks.items(), desc=f"Scanning", unit='user'):
-                for data in tqdm(urls, desc=f"Scanning at {datetime.now().strftime('%H:%M:%S')}", unit='stocks'):
+            progress_bar = tqdm(total=sum(len(urls) for urls in user_stocks.values()), desc="Scanning Stocks", unit="stock")
+            for user, urls in user_stocks.items():
+                for data in urls:
+                    progress_bar.set_postfix(stock=data[0].split('/')[-1])
+                    progress_bar.update(1)  # Increment progress
+
                     driver.execute_script("window.open('about:blank', 'secondtab');")
 
                     # It is switching to second tab now
