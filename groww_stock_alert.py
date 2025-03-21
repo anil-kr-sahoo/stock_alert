@@ -295,7 +295,7 @@ try:
 
             # Calculate total dividend to get from stocks
             total_units = get_two_decimal_val(sum(data["Qty"] for data in all_stocks_data))
-            print(f"{int(total_units)} units purchased till now.")
+            print(f"\n{int(total_units)} units purchased till now.")
             total = get_two_decimal_val(sum(data["Total Returns"] for data in all_stocks_data))
             print(f"Total returns is {total}/-")
 
