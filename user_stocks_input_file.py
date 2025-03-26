@@ -186,8 +186,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            20,
-            123.75
+            22,
+            123.47
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
@@ -210,11 +210,6 @@ user_stocks = {
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             2,
             253.4
-        ],
-        [
-            "https://groww.in/stocks/gail-india-ltd",
-            1,
-            157.16
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
