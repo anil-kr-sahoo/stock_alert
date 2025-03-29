@@ -1,4 +1,4 @@
-GROUP_LIST = ["KbFKSNqUkWs8RGVhiPpw4U"]
+GROUP_LIST = ["Kov9p6ESzUNCPEYJWBHMZG"]
 PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "anil-kr-sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
@@ -113,6 +113,11 @@ user_stocks = {
             "https://groww.in/stocks/mahanagar-gas-ltd",
             8,
             1274.59
+        ],
+        [
+            "https://groww.in/stocks/mphasis-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
