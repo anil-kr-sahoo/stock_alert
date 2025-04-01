@@ -126,7 +126,7 @@ def check_details():
                 )
         # print(json.dumps(sorted(eligible_stocks, key=lambda i: i['Url']), indent=2))
         print("Total Eligible Stocks - ", len(eligible_stocks))
-        print("Total Eligible Stocks - ", '\n'.join([data['Url'] for data in eligible_stocks]))
+        print("Total Eligible Stocks - ", '\n'.join(sorted([data['Url'] for data in eligible_stocks])))
         stock_details = check_stocks_eligibility([data['Url'] for data in eligible_stocks])
         print(json.dumps(stock_details, indent=2))
         if driver:
