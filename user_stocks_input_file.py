@@ -233,8 +233,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            1,
-            201.70
+            3,
+            198.85
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -253,8 +253,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            2,
-            64.46
+            4,
+            64.70
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
