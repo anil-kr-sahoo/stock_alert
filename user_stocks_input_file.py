@@ -10,6 +10,11 @@ NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification se
 user_stocks = {
     "my_stocks": [
         [
+            "https://groww.in/stocks/ajanta-pharma-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/ashok-leyland-ltd",
             10,
             224.41
