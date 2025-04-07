@@ -11,8 +11,8 @@ user_stocks = {
     "my_stocks": [
         [
             "https://groww.in/stocks/ajanta-pharma-ltd",
-            0,
-            0
+            4,
+            2398.28
         ],
         [
             "https://groww.in/stocks/ashok-leyland-ltd",
@@ -36,18 +36,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            33,
-            106.99
+            38,
+            104.23
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            58,
-            228.73
+            65,
+            224.45
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            46,
-            373.69
+            48,
+            373.60
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -66,13 +66,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            25,
-            1404.28
+            28,
+            1397.61
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            29,
-            4184.21
+            34,
+            4081.06
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -86,13 +86,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            10,
-            198.77
+            15,
+            195.55
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            26,
-            1696.03
+            31,
+            1644.00
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -117,7 +117,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
             8,
-            1274.59
+            1274.60
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -131,18 +131,18 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            29,
-            190.49
+            39,
+            178.14
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            52,
-            587.75
+            58,
+            581.93
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            202,
-            66.52
+            209,
+            66.32
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -150,14 +150,9 @@ user_stocks = {
             330.65
         ],
         [
-            "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            2,
-            7440.15
-        ],
-        [
             "https://groww.in/stocks/oil-india-ltd",
-            4,
-            395.60
+            10,
+            360.02
         ],
         [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
@@ -165,9 +160,14 @@ user_stocks = {
             262.55
         ],
         [
+            "https://groww.in/stocks/oracle-financial-services-software-ltd",
+            2,
+            7440.15
+        ],
+        [
             "https://groww.in/stocks/petronet-lng-ltd",
-            14,
-            317.37
+            17,
+            309.74
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -196,8 +196,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            22,
-            123.47
+            27,
+            122.18
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
@@ -214,7 +214,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/bank-of-india",
             4,
-            104.2
+            104.21
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -259,7 +259,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             4,
-            64.70
+            64.71
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -269,7 +269,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/union-bank-of-india",
             2,
-            112.98
+            112.99
         ]
     ]
 }
