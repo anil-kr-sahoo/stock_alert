@@ -101,8 +101,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            35,
-            403.31
+            37,
+            403.21
         ],
         # [
         #     "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
@@ -131,8 +131,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            28,
-            192.12
+            29,
+            190.49
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
