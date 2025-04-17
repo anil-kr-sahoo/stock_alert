@@ -222,14 +222,14 @@ user_stocks = {
             253.4
         ],
         [
+            "https://groww.in/stocks/coal-india-ltd",
+            2,
+            391.30
+        ],
+        [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             4,
             452.46
-        ],
-        [
-            "https://groww.in/stocks/housing-urban-development-corporation-ltd",
-            4,
-            193.76
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
