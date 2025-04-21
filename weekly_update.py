@@ -1,9 +1,10 @@
 stocks_dict = {
-    "trigger_date": "14/03/2025",
+    "trigger_date": "26/04/2025",
     "removed_stocks": [
-        "Power Grid Corp",
-        "Vedanta",
+        "HUDCO",
+        "IDBI Bank",
     ],
     "newly_added_stocks": [
+        "HDFC Asset Management Company"
     ]
 }
