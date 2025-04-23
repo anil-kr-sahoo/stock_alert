@@ -207,14 +207,9 @@ user_stocks = {
     ],
     "sp": [
         [
-            "https://groww.in/stocks/bank-of-india",
-            4,
-            104.21
-        ],
-        [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            2,
-            253.4
+            3,
+            269.13
         ],
         [
             "https://groww.in/stocks/canara-bank",
