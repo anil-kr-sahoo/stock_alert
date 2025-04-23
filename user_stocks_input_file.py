@@ -36,8 +36,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            38,
-            104.23
+            40,
+            103.94
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -91,8 +91,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            15,
-            195.55
+            17,
+            194.22
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -114,11 +114,6 @@ user_stocks = {
         #     2,
         #     851.36
         # ],
-        [
-            "https://groww.in/stocks/lt-finance-holdings-ltd",
-            5,
-            150.43
-        ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
             8,
@@ -146,7 +141,7 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            209,
+            211,
             66.32
         ],
         [
@@ -212,11 +207,6 @@ user_stocks = {
     ],
     "sp": [
         [
-            "https://groww.in/stocks/bank-of-baroda",
-            2,
-            217.35
-        ],
-        [
             "https://groww.in/stocks/bank-of-india",
             4,
             104.21
@@ -225,6 +215,11 @@ user_stocks = {
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             2,
             253.4
+        ],
+        [
+            "https://groww.in/stocks/canara-bank",
+            3,
+            97.9
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -238,8 +233,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            3,
-            198.85
+            5,
+            193.05
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
