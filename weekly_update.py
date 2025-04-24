@@ -3,8 +3,8 @@ stocks_dict = {
     "removed_stocks": [
         "HUDCO",
         "IDBI Bank",
+        "L&T Finance",
     ],
     "newly_added_stocks": [
-        "HDFC Asset Management Company"
     ]
 }
