@@ -208,8 +208,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            3,
-            97.9
+            4,
+            97.74
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
