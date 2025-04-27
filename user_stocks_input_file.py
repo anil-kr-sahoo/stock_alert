@@ -70,6 +70,11 @@ user_stocks = {
             1397.61
         ],
         [
+            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hero-motocorp-ltd",
             34,
             4081.06
@@ -83,6 +88,11 @@ user_stocks = {
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
             36,
             373.95
+        ],
+        [
+            "https://groww.in/stocks/hindustan-unilever-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
