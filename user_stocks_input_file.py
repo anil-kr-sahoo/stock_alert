@@ -41,8 +41,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            48,
-            373.60
+            50,
+            374.22
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
