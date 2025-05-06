@@ -161,8 +161,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            2,
-            7440.15
+            4,
+            7947.07
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
