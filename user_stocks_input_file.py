@@ -96,8 +96,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            31,
-            1644.00
+            33,
+            1641.06
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -178,11 +178,6 @@ user_stocks = {
             "https://groww.in/stocks/rec-ltd",
             74,
             498.52
-        ],
-        [
-            "https://groww.in/stocks/state-bank-of-india",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
