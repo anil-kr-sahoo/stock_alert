@@ -260,7 +260,7 @@ try:
             progress_bar = tqdm(total=sum(len(urls) for urls in user_stocks.values()), desc="Scanning Stocks", unit="stock")
             for user, urls in user_stocks.items():
                 for data in urls:
-                    progress_bar.set_postfix(stock=data[0].split('/')[-1])
+                    progress_bar.set_postfix(stock=data[0].split('/')[-1][:7]+"...")
                     progress_bar.update(1)  # Increment progress
 
                     driver.execute_script("window.open('about:blank', 'secondtab');")
