@@ -180,6 +180,11 @@ user_stocks = {
             498.52
         ],
         [
+            "https://groww.in/stocks/state-bank-of-india",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/sun-tv-network-ltd",
             13,
             705.55
