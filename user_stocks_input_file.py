@@ -91,8 +91,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            17,
-            194.22
+            18,
+            194.89
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -173,6 +173,11 @@ user_stocks = {
             "https://groww.in/stocks/power-finance-corporation-ltd",
             79,
             448.01
+        ],
+        [
+            "https://groww.in/stocks/quess-corp-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/rec-ltd",
