@@ -3,7 +3,8 @@ stocks_dict = {
     "removed_stocks": [
     ],
     "newly_added_stocks": [
-        "State Bank of India",
+        "Pfizer"
         "Quess Corp",
+        "State Bank of India"
     ]
 }

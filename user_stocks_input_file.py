@@ -170,6 +170,11 @@ user_stocks = {
             309.74
         ],
         [
+            "https://groww.in/stocks/pfizer-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/power-finance-corporation-ltd",
             79,
             448.01
