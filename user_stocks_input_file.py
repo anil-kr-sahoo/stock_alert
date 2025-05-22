@@ -37,17 +37,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             67,
-            223.87
+            223.88
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
             50,
-            374.22
+            374.23
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            1,
-            2701.95
+            2,
+            2618.42
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -62,7 +62,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
             28,
-            1397.61
+            1397.62
         ],
         [
             "https://groww.in/stocks/hdfc-asset-management-company-ltd",
@@ -72,7 +72,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
             34,
-            4081.06
+            4081.07
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -114,6 +114,12 @@ user_stocks = {
         #     2,
         #     851.36
         # ],
+
+        [
+            "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
+            4,
+            262.90
+        ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
             8,
@@ -123,11 +129,6 @@ user_stocks = {
             "https://groww.in/stocks/mphasis-ltd",
             4,
             2440.90
-        ],
-        [
-            "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            4,
-            262.90
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -162,7 +163,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             4,
-            7947.07
+            7947.08
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
@@ -181,8 +182,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            0,
-            0
+            2,
+            332.85
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -217,7 +218,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/wipro-ltd",
             7,
-            295.38
+            295.39
         ]
     ],
     "sp": [
