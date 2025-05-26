@@ -151,11 +151,6 @@ user_stocks = {
             330.65
         ],
         [
-            "https://groww.in/stocks/oil-india-ltd",
-            10,
-            360.02
-        ],
-        [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
             48,
             262.55
