@@ -106,8 +106,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            39,
-            404.42
+            49,
+            410.03
         ],
         # [
         #     "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
