@@ -106,8 +106,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            49,
-            410.03
+            52,
+            410.66
         ],
         # [
         #     "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            211,
-            66.32
+            213,
+            66.36
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
