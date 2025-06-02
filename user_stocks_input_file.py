@@ -15,6 +15,11 @@ user_stocks = {
             224.41
         ],
         [
+            "https://groww.in/stocks/bajaj-auto-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/bank-of-baroda",
             38,
             246.44
@@ -184,11 +189,6 @@ user_stocks = {
             "https://groww.in/stocks/rec-ltd",
             74,
             498.52
-        ],
-        [
-            "https://groww.in/stocks/state-bank-of-india",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",

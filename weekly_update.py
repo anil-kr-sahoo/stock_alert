@@ -1,8 +1,9 @@
 stocks_dict = {
-    "trigger_date": "30/05/2025",
+    "trigger_date": "06/06/2025",
     "removed_stocks": [
-        "Oil India"
+        "State Bank of India"
     ],
     "newly_added_stocks": [
+        'Bajaj Auto'
     ]
 }
