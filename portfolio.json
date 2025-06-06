@@ -413,6 +413,14 @@
         "name": "Infosys",
         "url": "https://groww.in/stocks/infosys-ltd"
       }
+    ],
+    "06/04/2025": [
+      {
+        "declared_dividend": 30.0,
+        "dividend_amount": 30.0,
+        "name": "Tata Consultancy Services",
+        "url": "https://groww.in/stocks/tata-consultancy-services-ltd/corporate-actions"
+      }
     ]
   },
   "datewise_returns": {
