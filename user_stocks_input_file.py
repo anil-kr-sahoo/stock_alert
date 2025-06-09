@@ -70,6 +70,11 @@ user_stocks = {
             1397.62
         ],
         [
+            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hero-motocorp-ltd",
             34,
             4081.07
