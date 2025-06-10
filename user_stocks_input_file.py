@@ -26,8 +26,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bank-of-india",
-            19,
-            114.32
+            21,
+            115.48
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            58,
-            581.93
+            62,
+            594.98
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
