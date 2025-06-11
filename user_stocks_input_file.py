@@ -41,8 +41,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            67,
-            223.88
+            69,
+            223.69
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -81,8 +81,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            45,
-            516.43
+            47,
+            516.65
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            62,
-            594.98
+            65,
+            602.46
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
