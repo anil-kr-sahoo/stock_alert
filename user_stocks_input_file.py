@@ -182,8 +182,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            2,
-            332.85
+            4,
+            321.30
         ],
         [
             "https://groww.in/stocks/rec-ltd",
