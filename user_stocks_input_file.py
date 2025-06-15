@@ -70,11 +70,6 @@ user_stocks = {
             1397.62
         ],
         [
-            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hero-motocorp-ltd",
             34,
             4081.07
@@ -189,6 +184,11 @@ user_stocks = {
             "https://groww.in/stocks/rec-ltd",
             74,
             498.52
+        ],
+        [
+            "https://groww.in/stocks/state-bank-of-india",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
