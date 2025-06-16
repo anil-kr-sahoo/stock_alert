@@ -76,8 +76,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            47,
-            516.65
+            49,
+            516.18
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            215,
-            66.40
+            218,
+            66.44
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
