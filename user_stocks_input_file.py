@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            218,
-            66.44
+            220,
+            66.46
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
@@ -177,8 +177,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            4,
-            321.30
+            5,
+            318.20
         ],
         [
             "https://groww.in/stocks/rec-ltd",
