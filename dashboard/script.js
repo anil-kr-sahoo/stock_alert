@@ -1,9 +1,8 @@
 fetch("../stock_data.json")
   .then(res => res.json())
   .then(stock_data => {
-    const data = stock_data[stock_data.length - 1];
+    const latest = stock_data[stock_data.length - 1];
 
-    // Calculate total profit/loss and total quantity
     let totalReturns = 0;
     let totalQty = 0;
 
@@ -19,14 +18,23 @@ fetch("../stock_data.json")
       }
     });
 
-    document.getElementById("timestamp").textContent = "Last Time Fetched: " + formatReadableDateTime(data.Time);
-    document.getElementById("message").textContent = "🧾 Total Quantity Bought: " + totalQty;
-    document.getElementById("status").textContent = "💰 Total Profit/Loss: ₹" + totalReturns.toFixed(2);
+    document.getElementById("timestamp").textContent = "🕒 Last Time Fetched: " + formatReadableDateTime(latest.Time);
+    document.getElementById("message").textContent = "📦 Total Quantity Bought: " + totalQty;
+
+    const statusElem = document.getElementById("status");
+    const plText = "💰 Total Profit/Loss: ₹" + totalReturns.toFixed(2);
+    statusElem.textContent = plText;
+
+    if (totalReturns >= 0) {
+      statusElem.classList.add("positive");
+    } else {
+      statusElem.classList.add("negative");
+    }
   })
   .catch(() => {
-    document.getElementById("message").textContent = "Error loading stock data.";
+    document.getElementById("timestamp").textContent = "⛔ Error loading data.";
+    document.getElementById("message").textContent = "";
     document.getElementById("status").textContent = "";
-    document.getElementById("timestamp").textContent = "";
   });
 
 function formatReadableDateTime(dateString) {

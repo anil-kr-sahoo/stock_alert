@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="https://akcreation-apps.github.io/ak-stocks/logo.webp">
-  <title>Stock – Job Status</title>
+  <title>MAK – Job Status</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Courier New', Courier, monospace;
       background-color: #0a0a0a;
-      color: #0f0;
+      color: #00ff88;
       margin: 0;
       padding: 2em 1em;
       display: flex;
@@ -24,60 +21,65 @@
 
     .container {
       background: #111;
-      border: 1px solid #0f0;
-      border-radius: 10px;
+      border: 2px solid #00ff88;
+      border-radius: 15px;
       padding: 2em;
-      max-width: 500px;
+      max-width: 480px;
       width: 100%;
-      box-shadow: 0 0 15px #0f04;
+      box-shadow: 0 0 15px #00ff88a0;
       animation: fadeIn 1s ease-in-out;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 1.5em;
-      color: #0f0;
-      font-size: 2em;
+      color: #00ff88;
+      margin-bottom: 2em;
+      font-size: 1.8em;
     }
 
-    .timestamp,
-    .message,
-    .status {
-      padding: 0.75em 1em;
-      margin-bottom: 1em;
+    .card {
       background-color: #1a1a1a;
-      border-left: 4px solid #0f0;
-      border-radius: 4px;
-      font-size: 1.1em;
+      padding: 1em 1.2em;
+      margin-bottom: 1.2em;
+      border-left: 5px solid #00ff88;
+      border-radius: 6px;
+      font-size: 1.05em;
+      transition: background-color 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #222;
     }
 
     .status {
-      color: #ff0;
-      border-left-color: #ff0;
       font-weight: bold;
+      color: #fff700;
+    }
+
+    .positive {
+      color: #00ff88;
+    }
+
+    .negative {
+      color: #ff4f4f;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      to   { opacity: 1; transform: translateY(0); }
     }
 
     @media (max-width: 600px) {
-      body {
-        padding: 1em;
-      }
-      .container {
-        padding: 1.5em;
-      }
+      .container { padding: 1.5em; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Current Stock Status</h1>
-    <div class="timestamp" id="timestamp">Loading...</div>
-    <div class="message" id="message">Total Quantity: ...</div>
-    <div class="status" id="status">Total Profit/Loss: ...</div>
+    <h1>Stocks Monitor</h1>
+    <div class="card" id="timestamp">Loading...</div>
+    <div class="card" id="message">...</div>
+    <div class="card status" id="status">...</div>
   </div>
 
   <script src="script.js"></script>
