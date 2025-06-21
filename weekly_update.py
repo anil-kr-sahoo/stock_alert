@@ -4,5 +4,6 @@ stocks_dict = {
     ],
     "newly_added_stocks": [
         "Page Industries"
+        "Vedanta"
     ]
 }

@@ -216,6 +216,11 @@ user_stocks = {
             124.71
         ],
         [
+            "https://groww.in/stocks/vedanta-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/wipro-ltd",
             7,
             295.39
