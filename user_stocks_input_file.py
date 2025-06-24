@@ -161,11 +161,6 @@ user_stocks = {
             7947.08
         ],
         [
-            "https://groww.in/stocks/page-industries-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/petronet-lng-ltd",
             17,
             309.74
@@ -214,11 +209,6 @@ user_stocks = {
             "https://groww.in/stocks/union-bank-of-india",
             34,
             124.71
-        ],
-        [
-            "https://groww.in/stocks/vedanta-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
