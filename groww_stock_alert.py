@@ -210,7 +210,7 @@ def get_stock_details(all_data, set_timer=False):
             and target_stock_val < current_price
             and (dividend_ratio_percentage < 2 or roe < 15 or debt_to_equity > 1)
             and url not in notified_stock_list
-            and upcoming_dividend_amount
+            and not upcoming_dividend_amount
     ):
         notified_stock_list.append(url)
         global_notifier(
