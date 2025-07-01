@@ -80,11 +80,6 @@ user_stocks = {
             514.71
         ],
         [
-            "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            36,
-            373.95
-        ],
-        [
             "https://groww.in/stocks/hindustan-unilever-ltd",
             0,
             0
@@ -132,8 +127,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            43,
-            177.32
+            45,
+            177.83
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -142,8 +137,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            222,
-            66.46
+            226,
+            66.50
         ],
         [
             "https://groww.in/stocks/ntpc-ltd",
