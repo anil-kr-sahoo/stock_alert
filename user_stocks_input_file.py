@@ -41,8 +41,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            69,
-            223.69
+            71,
+            221.45
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
