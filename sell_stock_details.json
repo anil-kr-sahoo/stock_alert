@@ -1,9 +1,9 @@
 [
     {
         "Book Value": 595.29,
-        "Credit Dividend": 30.13,
-        "Current Price": 1514.0,
-        "Day Returns": 0.3,
+        "Credit Dividend": 30.05,
+        "Current Price": 1510.2,
+        "Day Returns": 0.046,
         "Debt to Equity": 0.03,
         "Dividend Yield": 1.99,
         "EPS(TTM)": 105.34,
@@ -16,9 +16,9 @@
         "Qty": 8,
         "ROE": 17.7,
         "Stock Average Value": 1274.6,
-        "Time": "2025-07-03 09:46:00",
-        "To Be Credit Dividend": 241.04,
-        "Total Returns": 1915.2000000000007,
+        "Time": "2025-07-03 16:01:23",
+        "To Be Credit Dividend": 240.4,
+        "Total Returns": 1884.800000000001,
         "Upcoming Dividend Amount": 0,
         "Upcoming Dividend Date": "",
         "Url": "https://groww.in/stocks/mahanagar-gas-ltd"
