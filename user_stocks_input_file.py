@@ -37,12 +37,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/canara-bank",
             42,
-            104.04
+            104.05
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
             71,
-            221.45
+            223.64
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -128,7 +128,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             45,
-            177.83
+            177.84
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -198,7 +198,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/union-bank-of-india",
             34,
-            124.71
+            124.72
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
@@ -230,7 +230,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             5,
-            193.05
+            193.06
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
