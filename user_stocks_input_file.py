@@ -116,19 +116,14 @@ user_stocks = {
             262.90
         ],
         [
-            "https://groww.in/stocks/mahanagar-gas-ltd",
-            8,
-            1274.60
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
             6,
             2505.10
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            45,
-            177.84
+            47,
+            178.28
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -172,8 +167,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            6,
-            315.34
+            8,
+            312.51
         ],
         [
             "https://groww.in/stocks/rec-ltd",
