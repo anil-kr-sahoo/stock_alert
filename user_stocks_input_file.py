@@ -31,8 +31,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            38,
-            320.52
+            40,
+            321.90
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -41,8 +41,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            71,
-            223.64
+            73,
+            223.48
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -66,8 +66,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            28,
-            1397.62
+            30,
+            1415.98
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -76,8 +76,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            50,
-            514.71
+            55,
+            506.44
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
@@ -86,8 +86,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            18,
-            194.89
+            20,
+            197.76
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -122,8 +122,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            47,
-            178.28
+            49,
+            178.62
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -157,8 +157,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
-            2,
-            5657
+            5,
+            5670.50
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -168,7 +168,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/quess-corp-ltd",
             8,
-            312.51
+            312.52
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -192,8 +192,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            34,
-            124.72
+            40,
+            127.89
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
