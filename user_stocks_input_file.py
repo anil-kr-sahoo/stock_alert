@@ -111,6 +111,11 @@ user_stocks = {
         # ],
 
         [
+            "https://groww.in/stocks/mahanagar-gas-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
             4,
             262.90

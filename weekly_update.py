@@ -1,7 +1,6 @@
 stocks_dict = {
-    "trigger_date": "11/07/2025",
+    "trigger_date": "04/07/2025",
     "removed_stocks": [
-        "Mahanagar Gas"
     ],
     "newly_added_stocks": [
     ]
