@@ -31,8 +31,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            40,
-            321.90
+            42,
+            322.97
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -71,8 +71,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            36,
-            4089.03
+            38,
+            4096.86
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -187,8 +187,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            1,
-            3535.90
+            5,
+            3340.50
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -202,8 +202,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            7,
-            295.39
+            9,
+            287.57
         ]
     ],
     "sp": [
