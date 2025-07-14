@@ -258,6 +258,16 @@ user_stocks = {
             9272
         ],
         [
+            "https://groww.in/stocks/quess-corp-ltd",
+            2,
+            304.27
+        ],
+        [
+            "https://groww.in/stocks/tata-consultancy-services-ltd",
+            2,
+            3208.90
+        ],
+        [
             "https://groww.in/stocks/union-bank-of-india",
             2,
             112.99
