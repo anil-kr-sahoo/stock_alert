@@ -34,6 +34,7 @@ in_memory_data = dict()
 message_summary = dict()
 start_time = datetime.now()
 
+
 def get_current_stock_price():
     """
     This helper function used to get realtime current data from Groww
@@ -127,6 +128,9 @@ def get_stock_details(all_data, set_timer=False):
         driver.find_element(By.CLASS_NAME, "tabs8Parent").find_elements(By.XPATH, "./*")[2].click()
         sleep(.5)
         dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split('\n')
+        if 'loading' in dividend_data[0].lower():
+            sleep(10)
+            dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split('\n')
         upcoming_dividend_date = ''
         upcoming_future_insights_list = ["Upcoming", "Today"]
         for index, stock_insight in enumerate(dividend_data):
