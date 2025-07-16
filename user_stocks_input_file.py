@@ -223,6 +223,11 @@ user_stocks = {
             391.30
         ],
         [
+            "https://groww.in/stocks/hcl-technologies-ltd",
+            2,
+            1566.40
+        ],
+        [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             4,
             452.46
