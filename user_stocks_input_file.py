@@ -274,8 +274,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            2,
-            112.99
+            4,
+            129.01
         ]
     ]
 }
