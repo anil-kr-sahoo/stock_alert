@@ -264,8 +264,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            2,
-            304.27
+            3,
+            306.92
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
