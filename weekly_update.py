@@ -4,5 +4,6 @@ stocks_dict = {
         'Mahanagar Gas'
     ],
     "newly_added_stocks": [
+        'Godrej Consumer Products'
     ]
 }
