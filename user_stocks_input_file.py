@@ -109,11 +109,11 @@ user_stocks = {
             52,
             410.67
         ],
-        # [
-        #     "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
-        #     2,
-        #     851.36
-        # ],
+        [
+            "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
+            2,
+            851.36
+        ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
             4,
@@ -213,8 +213,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            4,
-            97.74
+            6,
+            102.48
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -273,8 +273,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            4,
-            129.01
+            7,
+            134.49
+        ],
+        [
+            "https://groww.in/stocks/wipro-ltd",
+            2,
+            261.60
         ]
     ]
 }
