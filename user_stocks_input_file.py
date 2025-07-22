@@ -110,7 +110,7 @@ user_stocks = {
             410.67
         ],
         [
-            "https://groww.in/stocks/itc-hotels-ltd-463/corporate-actions",
+            "https://groww.in/stocks/itc-hotels-ltd-463",
             2,
             851.36
         ],
