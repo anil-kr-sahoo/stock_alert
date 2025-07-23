@@ -90,6 +90,11 @@ user_stocks = {
             0
         ],
         [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             20,
             197.76
@@ -113,6 +118,11 @@ user_stocks = {
             "https://groww.in/stocks/itc-hotels-ltd-463",
             2,
             851.36
+        ],
+        [
+            "https://groww.in/stocks/mahanagar-gas-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
