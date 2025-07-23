@@ -10,18 +10,18 @@
     },
     {
       "Avg Stock Average Value": 246.44,
-      "Current Price": 239.57,
+      "Current Price": 239.5,
       "Name": "Bank of Baroda",
       "Total Qty": 38,
-      "Total Returns": -261.06,
+      "Total Returns": -263.72,
       "Url": "https://groww.in/stocks/bank-of-baroda"
     },
     {
       "Avg Stock Average Value": 115.48,
-      "Current Price": 113.0,
+      "Current Price": 112.9,
       "Name": "Bank Of India",
       "Total Qty": 21,
-      "Total Returns": -52.08,
+      "Total Returns": -54.18,
       "Url": "https://groww.in/stocks/bank-of-india"
     },
     {
@@ -37,15 +37,15 @@
       "Current Price": 107.83,
       "Name": "Canara Bank",
       "Total Qty": 48,
-      "Total Returns": 190.44,
+      "Total Returns": 190.86,
       "Url": "https://groww.in/stocks/canara-bank"
     },
     {
       "Avg Stock Average Value": 223.48,
-      "Current Price": 0,
+      "Current Price": 219.55,
       "Name": "Castrol India",
       "Total Qty": 73,
-      "Total Returns": -16314.04,
+      "Total Returns": -286.89,
       "Url": "https://groww.in/stocks/castrol-india-ltd"
     },
     {
@@ -900,7 +900,7 @@
     },
     "07/22/2025": {
       "total_investment": 738050.0,
-      "total_profit_loss": -3065.74
+      "total_profit_loss": 12957.07
     }
   }
 }
