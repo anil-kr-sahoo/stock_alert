@@ -77,12 +77,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
             38,
-            4096.86
+            4096.87
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             55,
-            506.44
+            506.45
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
