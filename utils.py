@@ -208,6 +208,14 @@ def generate_portfolio_data(data):
                     'dividend_amount': get_two_decimal_val(dividend_amount),
                     'declared_dividend': stock["Upcoming Dividend Amount"]
                 })
+            for each_stock_data in dividend_data[today_date_key]:
+                if url == each_stock_data['url'] and get_two_decimal_val(dividend_amount) != each_stock_data['dividend_amount']:
+                    dividend_data[today_date_key].append({
+                        'name': name,
+                        'url': url,
+                        'dividend_amount': get_two_decimal_val(dividend_amount),
+                        'declared_dividend': stock["Upcoming Dividend Amount"]
+                    })
 
     # Compute final results
     result = []
