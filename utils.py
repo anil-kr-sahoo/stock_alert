@@ -216,7 +216,7 @@ def generate_portfolio_data(data):
                     else:
                         dividend_amount_info[url] = [get_two_decimal_val(dividend_amount)]
             for each_stock_data in dividend_data[today_date_key]:
-                if url == each_stock_data['url'] and get_two_decimal_val(dividend_amount) not in dividend_amount_info.get(url, []):
+                if url == each_stock_data['url'] and each_stock_data['dividend_amount'] not in dividend_amount_info.get(url, []):
                     dividend_data[today_date_key].append({
                         'name': name,
                         'url': url,
