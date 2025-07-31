@@ -208,15 +208,21 @@ def generate_portfolio_data(data):
                     'dividend_amount': get_two_decimal_val(dividend_amount),
                     'declared_dividend': stock["Upcoming Dividend Amount"]
                 })
+            dividend_amount_info = dict()
             for each_stock_data in dividend_data[today_date_key]:
-                if url == each_stock_data['url'] and get_two_decimal_val(dividend_amount) != each_stock_data['dividend_amount']:
+                if url == each_stock_data['url'] and get_two_decimal_val(dividend_amount) not in dividend_amount_info.get(url, []):
+                    if dividend_amount_info.get(url):
+                        dividend_amount_info[url].append(get_two_decimal_val(dividend_amount))
+                    else:
+                        dividend_amount_info[url] = [get_two_decimal_val(dividend_amount)]
+            for each_stock_data in dividend_data[today_date_key]:
+                if url == each_stock_data['url'] and get_two_decimal_val(dividend_amount) not in dividend_amount_info.get(url, []):
                     dividend_data[today_date_key].append({
                         'name': name,
                         'url': url,
                         'dividend_amount': get_two_decimal_val(dividend_amount),
                         'declared_dividend': stock["Upcoming Dividend Amount"]
                     })
-
     # Compute final results
     result = []
     total_profit_loss = 0
