@@ -382,6 +382,12 @@
         "dividend_amount": 1325.0,
         "name": "Oracle Finl. Service",
         "url": "https://groww.in/stocks/oracle-financial-services-software-ltd"
+      },
+      {
+        "declared_dividend": 265.0,
+        "dividend_amount": 265.0,
+        "name": "Oracle Finl. Service",
+        "url": "https://groww.in/stocks/oracle-financial-services-software-ltd"
       }
     ],
     "05/22/2025": [
@@ -418,6 +424,12 @@
         "dividend_amount": 770.0,
         "name": "Infosys",
         "url": "https://groww.in/stocks/infosys-ltd"
+      },
+      {
+        "declared_dividend": 22.0,
+        "dividend_amount": 22.0,
+        "name": "Infosys",
+        "url": "https://groww.in/stocks/infosys-ltd"
       }
     ],
     "06/04/2025": [
@@ -450,6 +462,12 @@
         "url": "https://groww.in/stocks/canara-bank"
       },
       {
+        "declared_dividend": 4.0,
+        "dividend_amount": 16.0,
+        "name": "Canara Bank",
+        "url": "https://groww.in/stocks/canara-bank"
+      },
+      {
         "declared_dividend": 2.05,
         "dividend_amount": 161.95,
         "name": "Power Finance Corporation",
@@ -460,6 +478,12 @@
       {
         "declared_dividend": 10.0,
         "dividend_amount": 490.0,
+        "name": "Hindustan Zinc",
+        "url": "https://groww.in/stocks/hindustan-zinc-ltd"
+      },
+      {
+        "declared_dividend": 10.0,
+        "dividend_amount": 40.0,
         "name": "Hindustan Zinc",
         "url": "https://groww.in/stocks/hindustan-zinc-ltd"
       }
@@ -476,6 +500,12 @@
       {
         "declared_dividend": 10.0,
         "dividend_amount": 720.0,
+        "name": "Nippon Life India AMC",
+        "url": "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd"
+      },
+      {
+        "declared_dividend": 10.0,
+        "dividend_amount": 50.0,
         "name": "Nippon Life India AMC",
         "url": "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd"
       },
@@ -526,6 +556,12 @@
       {
         "declared_dividend": 12.0,
         "dividend_amount": 360.0,
+        "name": "HCL Technologies",
+        "url": "https://groww.in/stocks/hcl-technologies-ltd"
+      },
+      {
+        "declared_dividend": 12.0,
+        "dividend_amount": 24.0,
         "name": "HCL Technologies",
         "url": "https://groww.in/stocks/hcl-technologies-ltd"
       }
