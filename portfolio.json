@@ -308,7 +308,7 @@
     ],
     "02/12/2025": [
       {
-        "declared_dividend": 28,
+        "declared_dividend": 100,
         "dividend_amount": 2800,
         "name": "Hero MotoCorp",
         "url": "https://groww.in/stocks/hero-motocorp-ltd"
@@ -606,8 +606,8 @@
     ],
     "08/01/2025": [
       {
-        "declared_dividend": 7.199999999999999,
-        "dividend_amount": 532.8,
+        "declared_dividend": 4.6,
+        "dividend_amount": 340.0,
         "name": "REC Limited",
         "url": "https://groww.in/stocks/rec-ltd"
       }
