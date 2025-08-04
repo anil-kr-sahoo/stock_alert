@@ -6,6 +6,7 @@ ALLOW_NOTIFICATION = True
 NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
+# Dividends values cross-checked till 4th Aug, 2025
 
 user_stocks = {
     "my_stocks": [
