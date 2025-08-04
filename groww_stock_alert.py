@@ -142,7 +142,7 @@ def get_stock_details(all_data, set_timer=False):
                         upcoming_dividend_amount = 0
                         for index, event_data in enumerate(dividend_data):
                             if event_data.strip() in upcoming_future_insights_list and dividend_data[index + 1].strip() == 'Ex date':
-                                upcoming_dividend_amount += get_two_decimal_val(get_float_val(dividend_data[index + 2].strip()[1:]))
+                                upcoming_dividend_amount = get_two_decimal_val(get_float_val(dividend_data[index + 2].strip()[1:]))
                                 upcoming_dividend_date = f"{dividend_data[index - 3].strip() if len(dividend_data[index - 3].strip()) == 2 else '0' + dividend_data[index - 3].strip()} {dividend_data[index - 2].strip()}, {dividend_data[0].strip()}"
                         if not upcoming_dividend_date:
                             upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
