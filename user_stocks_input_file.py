@@ -66,6 +66,11 @@ user_stocks = {
             405.37
         ],
         [
+            "https://groww.in/stocks/godrej-consumer-products-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             30,
             1415.98
@@ -114,11 +119,6 @@ user_stocks = {
             "https://groww.in/stocks/itc-hotels-ltd-463",
             2,
             851.36
-        ],
-        [
-            "https://groww.in/stocks/mahanagar-gas-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
@@ -251,6 +251,11 @@ user_stocks = {
             "https://groww.in/stocks/itc-ltd",
             8,
             424.95
+        ],
+        [
+            "https://groww.in/stocks/mahanagar-gas-ltd",
+            3,
+            1290.90
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
