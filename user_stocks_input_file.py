@@ -223,6 +223,11 @@ user_stocks = {
             102.48
         ],
         [
+            "https://groww.in/stocks/castrol-india-ltd",
+            3,
+            215.35
+        ],
+        [
             "https://groww.in/stocks/coal-india-ltd",
             2,
             391.30
@@ -274,8 +279,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            6,
-            300.58
+            8,
+            295.19
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
