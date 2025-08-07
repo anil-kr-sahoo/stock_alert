@@ -269,8 +269,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            4,
-            64.71
+            6,
+            66.53
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -279,8 +279,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            8,
-            295.19
+            10,
+            291.32
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
