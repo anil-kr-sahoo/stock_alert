@@ -641,6 +641,26 @@
         "name": "Coal India",
         "url": "https://groww.in/stocks/coal-india-ltd"
       }
+    ],
+    "08/08/2025": [
+      {
+        "declared_dividend": 3.0,
+        "dividend_amount": 69.0,
+        "name": "Indian Oil Corporation",
+        "url": "https://groww.in/stocks/indian-oil-corporation-ltd"
+      },
+      {
+        "declared_dividend": 6.0,
+        "dividend_amount": 48.0,
+        "name": "Quess Corp",
+        "url": "https://groww.in/stocks/quess-corp-ltd"
+      },
+      {
+        "declared_dividend": 6.0,
+        "dividend_amount": 60.0,
+        "name": "Quess Corp",
+        "url": "https://groww.in/stocks/quess-corp-ltd"
+      }
     ]
   },
   "datewise_returns": {
