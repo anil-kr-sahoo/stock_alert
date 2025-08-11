@@ -558,6 +558,12 @@
         "dividend_amount": 55.0,
         "name": "Tata Consultancy Services",
         "url": "https://groww.in/stocks/tata-consultancy-services-ltd"
+      },
+      {
+        "declared_dividend": 11.0,
+        "dividend_amount": 22.0,
+        "name": "Tata Consultancy Services",
+        "url": "https://groww.in/stocks/tata-consultancy-services-ltd"
       }
     ],
     "07/18/2025": [
@@ -600,6 +606,12 @@
       {
         "declared_dividend": 5.0,
         "dividend_amount": 45.0,
+        "name": "Wipro",
+        "url": "https://groww.in/stocks/wipro-ltd"
+      },
+      {
+        "declared_dividend": 5.0,
+        "dividend_amount": 20.0,
         "name": "Wipro",
         "url": "https://groww.in/stocks/wipro-ltd"
       }
