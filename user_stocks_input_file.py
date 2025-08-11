@@ -161,6 +161,11 @@ user_stocks = {
             7947.08
         ],
         [
+            "https://groww.in/stocks/page-industries-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/petronet-lng-ltd",
             17,
             309.74
