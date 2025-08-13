@@ -1,27 +1,45 @@
 [
     {
-        "Book Value": 1261.62,
+        "Book Value": 72.78,
         "Buy Units": 2,
-        "Credit Dividend": 882.1,
-        "Current Price": 44105.0,
-        "Day Returns": -2.04,
-        "Debt to Equity": 0.19,
-        "Dividend Yield": 2.0,
-        "EPS(TTM)": 685.61,
+        "Credit Dividend": 9.74,
+        "Current Price": 268.95,
+        "Day Returns": -2.34,
+        "Debt to Equity": 0.1,
+        "Dividend Yield": 3.62,
+        "EPS(TTM)": 6.0,
         "Face Value": 10.0,
-        "Industry P/E": 48.07,
-        "Market Cap": 50264.0,
-        "Name": "Page Industries",
-        "P/B Ratio": 35.72,
-        "P/E Ratio(TTM)": 65.73,
-        "Qty": 0,
-        "ROE": 51.82,
-        "Stock Average Value": 0,
-        "Time": "2025-08-12 15:01:17",
-        "To Be Credit Dividend": 0.0,
-        "Total Returns": 0.0,
-        "Upcoming Dividend Amount": 150.0,
-        "Upcoming Dividend Date": "13 Aug, 2025",
-        "Url": "https://groww.in/stocks/page-industries-ltd"
+        "Industry P/E": 27.98,
+        "Market Cap": 4114.0,
+        "Name": "Quess Corp",
+        "P/B Ratio": 3.79,
+        "P/E Ratio(TTM)": 45.99,
+        "Qty": 8,
+        "ROE": 18.61,
+        "Stock Average Value": 312.52,
+        "Time": "2025-08-13 09:37:29",Thank you for trade with AK Stock Monitoring.,
+      Today's trade is over.',
+
+      Today's Top Gainer Stock in AK Stock Monitoring',
+      Hero MotoCorp (2.51%),
+
+      Today's Top Loser Stock in AK Stock Monitoring',
+      Quess Corp (-2.69%),
+
+      Today's Summery:-',
+
+      Quess Corp - 2 Units,
+      Triggered Price - 268.95/-,
+      Current Price - 268.0/-,
+      "https": //groww.in/stocks/quess-corp-ltd
+
+
+
+
+        "To Be Credit Dividend": 77.92,
+        "Total Returns": -348.55999999999995,
+        "Upcoming Dividend Amount": 0,
+        "Upcoming Dividend Date": "",
+        "Url": "https://groww.in/stocks/quess-corp-ltd"
     }
 ]
