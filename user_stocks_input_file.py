@@ -11,11 +11,6 @@ NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification se
 user_stocks = {
     "my_stocks": [
         [
-            "https://groww.in/stocks/ashok-leyland-ltd",
-            20,
-            112.21
-        ],
-        [
             "https://groww.in/stocks/bajaj-auto-ltd",
             0,
             0
@@ -159,11 +154,6 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             4,
             7947.08
-        ],
-        [
-            "https://groww.in/stocks/page-industries-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
