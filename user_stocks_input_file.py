@@ -81,11 +81,6 @@ user_stocks = {
             506.45
         ],
         [
-            "https://groww.in/stocks/hindustan-unilever-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/idbi-bank-ltd",
             0,
             0
