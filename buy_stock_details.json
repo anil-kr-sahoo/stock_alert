@@ -23,5 +23,30 @@
         "Upcoming Dividend Amount": 0,
         "Upcoming Dividend Date": "",
         "Url": "https://groww.in/stocks/bajaj-auto-ltd"
+    },
+    {
+        "Book Value": 963.28,
+        "Buy Units": 2,
+        "Credit Dividend": 161.76,
+        "Current Price": 4992.6,
+        "Day Returns": -2.05,
+        "Debt to Equity": 0.04,
+        "Dividend Yield": 3.24,
+        "EPS(TTM)": 251.81,
+        "Face Value": 2.0,
+        "Industry P/E": 26.79,
+        "Market Cap": 101975.0,
+        "Name": "Hero MotoCorp",
+        "P/B Ratio": 5.29,
+        "P/E Ratio(TTM)": 20.24,
+        "Qty": 38,
+        "ROE": 22.72,
+        "Stock Average Value": 4096.87,
+        "Time": "2025-08-22 10:16:43",
+        "To Be Credit Dividend": 6146.88,
+        "Total Returns": 34037.74000000002,
+        "Upcoming Dividend Amount": 0,
+        "Upcoming Dividend Date": "",
+        "Url": "https://groww.in/stocks/hero-motocorp-ltd"
     }
 ]

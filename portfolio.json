@@ -2,98 +2,98 @@
   "current_stock_data": [
     {
       "Avg Stock Average Value": 246.44,
-      "Current Price": 243.2,
+      "Current Price": 240.7,
       "Name": "Bank of Baroda",
       "Total Qty": 38,
-      "Total Returns": -123.12,
+      "Total Returns": -218.12,
       "Url": "https://groww.in/stocks/bank-of-baroda"
     },
     {
       "Avg Stock Average Value": 115.48,
-      "Current Price": 115.9,
+      "Current Price": 115.45,
       "Name": "Bank Of India",
       "Total Qty": 21,
-      "Total Returns": 8.82,
+      "Total Returns": -0.63,
       "Url": "https://groww.in/stocks/bank-of-india"
     },
     {
       "Avg Stock Average Value": 319.7,
-      "Current Price": 320.2,
+      "Current Price": 317.0,
       "Name": "Bharat Petroleum Corporation",
       "Total Qty": 46,
-      "Total Returns": 22.98,
+      "Total Returns": -124.22,
       "Url": "https://groww.in/stocks/bharat-petroleum-corporation-ltd"
     },
     {
       "Avg Stock Average Value": 103.85,
-      "Current Price": 111.04,
+      "Current Price": 109.99,
       "Name": "Canara Bank",
       "Total Qty": 48,
-      "Total Returns": 344.94,
+      "Total Returns": 294.54,
       "Url": "https://groww.in/stocks/canara-bank"
     },
     {
       "Avg Stock Average Value": 223.16,
-      "Current Price": 208.65,
+      "Current Price": 206.48,
       "Name": "Castrol India",
       "Total Qty": 76,
-      "Total Returns": -1102.69,
+      "Total Returns": -1267.61,
       "Url": "https://groww.in/stocks/castrol-india-ltd"
     },
     {
       "Avg Stock Average Value": 374.89,
-      "Current Price": 377.5,
+      "Current Price": 374.3,
       "Name": "Coal India",
       "Total Qty": 52,
-      "Total Returns": 135.9,
+      "Total Returns": -30.5,
       "Url": "https://groww.in/stocks/coal-india-ltd"
     },
     {
       "Avg Stock Average Value": 2618.43,
-      "Current Price": 2350.0,
+      "Current Price": 2296.0,
       "Name": "Colgate-Palmolive (India)",
       "Total Qty": 2,
-      "Total Returns": -536.86,
+      "Total Returns": -644.86,
       "Url": "https://groww.in/stocks/colgatepalmolive-india-ltd"
     },
     {
       "Avg Stock Average Value": 212.09,
-      "Current Price": 177.5,
+      "Current Price": 176.3,
       "Name": "GAIL (India)",
       "Total Qty": 31,
-      "Total Returns": -1072.29,
+      "Total Returns": -1109.49,
       "Url": "https://groww.in/stocks/gail-india-ltd"
     },
     {
       "Avg Stock Average Value": 405.37,
-      "Current Price": 383.0,
+      "Current Price": 380.9,
       "Name": "General Insurance",
       "Total Qty": 51,
-      "Total Returns": -1140.87,
+      "Total Returns": -1247.97,
       "Url": "https://groww.in/stocks/general-insurance-corporation-of-india-ltd"
     },
     {
       "Avg Stock Average Value": 1425.38,
-      "Current Price": 1495.0,
+      "Current Price": 1467.1,
       "Name": "HCL Technologies",
       "Total Qty": 32,
-      "Total Returns": 2227.8,
+      "Total Returns": 1335.0,
       "Url": "https://groww.in/stocks/hcl-technologies-ltd"
     },
     {
       "Avg Stock Average Value": 4096.87,
-      "Current Price": 5109.0,
+      "Current Price": 4992.3,
       "Name": "Hero MotoCorp",
       "Total Qty": 38,
-      "Total Returns": 38460.94,
+      "Total Returns": 34026.34,
       "Url": "https://groww.in/stocks/hero-motocorp-ltd"
     },
     {
       "Avg Stock Average Value": 502.79,
-      "Current Price": 430.8,
+      "Current Price": 425.2,
       "Name": "Hindustan Zinc",
       "Total Qty": 59,
-      "Total Returns": -4247.39,
+      "Total Returns": -4577.79,
       "Url": "https://groww.in/stocks/hindustan-zinc-ltd"
     },
     {
@@ -106,186 +106,186 @@
     },
     {
       "Avg Stock Average Value": 1641.24,
-      "Current Price": 1495.5,
+      "Current Price": 1487.9,
       "Name": "Infosys",
       "Total Qty": 36,
-      "Total Returns": -5246.5,
+      "Total Returns": -5520.1,
       "Url": "https://groww.in/stocks/infosys-ltd"
     },
     {
       "Avg Stock Average Value": 161.32,
-      "Current Price": 141.69,
+      "Current Price": 140.49,
       "Name": "Indian Oil Corporation",
       "Total Qty": 23,
-      "Total Returns": -451.49,
+      "Total Returns": -479.09,
       "Url": "https://groww.in/stocks/indian-oil-corporation-ltd"
     },
     {
       "Avg Stock Average Value": 412.57,
-      "Current Price": 406.0,
+      "Current Price": 398.3,
       "Name": "ITC",
       "Total Qty": 60,
-      "Total Returns": -394.44,
+      "Total Returns": -856.44,
       "Url": "https://groww.in/stocks/itc-ltd"
     },
     {
       "Avg Stock Average Value": 851.36,
-      "Current Price": 249.26,
+      "Current Price": 244.75,
       "Name": "ITC Hotels",
       "Total Qty": 2,
-      "Total Returns": -1204.2,
+      "Total Returns": -1213.22,
       "Url": "https://groww.in/stocks/itc-hotels-ltd-463"
     },
     {
       "Avg Stock Average Value": 262.9,
-      "Current Price": 260.65,
+      "Current Price": 262.45,
       "Name": "Mah & Mah Finl. Serv",
       "Total Qty": 4,
-      "Total Returns": -9.0,
+      "Total Returns": -1.8,
       "Url": "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd"
     },
     {
       "Avg Stock Average Value": 2505.1,
-      "Current Price": 2848.8,
+      "Current Price": 2843.0,
       "Name": "Mphasis",
       "Total Qty": 6,
-      "Total Returns": 2062.2,
+      "Total Returns": 2027.4,
       "Url": "https://groww.in/stocks/mphasis-ltd"
     },
     {
       "Avg Stock Average Value": 178.62,
-      "Current Price": 191.0,
+      "Current Price": 188.85,
       "Name": "National Aluminium Co",
       "Total Qty": 49,
-      "Total Returns": 606.62,
+      "Total Returns": 501.27,
       "Url": "https://groww.in/stocks/national-aluminium-company-ltd"
     },
     {
       "Avg Stock Average Value": 611.03,
-      "Current Price": 863.0,
+      "Current Price": 866.0,
       "Name": "Nippon Life India AMC",
       "Total Qty": 77,
-      "Total Returns": 19401.35,
+      "Total Returns": 19632.35,
       "Url": "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd"
     },
     {
       "Avg Stock Average Value": 66.5,
-      "Current Price": 71.28,
+      "Current Price": 70.15,
       "Name": "NMDC",
       "Total Qty": 232,
-      "Total Returns": 1108.78,
+      "Total Returns": 846.62,
       "Url": "https://groww.in/stocks/nmdc-ltd"
     },
     {
       "Avg Stock Average Value": 330.65,
-      "Current Price": 338.5,
+      "Current Price": 336.95,
       "Name": "NTPC",
       "Total Qty": 3,
-      "Total Returns": 23.55,
+      "Total Returns": 18.9,
       "Url": "https://groww.in/stocks/ntpc-ltd"
     },
     {
       "Avg Stock Average Value": 262.55,
-      "Current Price": 238.55,
+      "Current Price": 236.2,
       "Name": "Oil & Natural Gas Corporation",
       "Total Qty": 48,
-      "Total Returns": -1152.0,
+      "Total Returns": -1264.8,
       "Url": "https://groww.in/stocks/oil-natural-gas-corporation-ltd"
     },
     {
       "Avg Stock Average Value": 8212.06,
-      "Current Price": 8715.0,
+      "Current Price": 8632.0,
       "Name": "Oracle Finl. Service",
       "Total Qty": 5,
-      "Total Returns": 2514.68,
+      "Total Returns": 2099.68,
       "Url": "https://groww.in/stocks/oracle-financial-services-software-ltd"
     },
     {
       "Avg Stock Average Value": 309.74,
-      "Current Price": 278.0,
+      "Current Price": 277.15,
       "Name": "Petronet LNG",
       "Total Qty": 17,
-      "Total Returns": -539.58,
+      "Total Returns": -554.03,
       "Url": "https://groww.in/stocks/petronet-lng-ltd"
     },
     {
       "Avg Stock Average Value": 5670.5,
-      "Current Price": 5688.5,
+      "Current Price": 5641.5,
       "Name": "Pfizer",
       "Total Qty": 5,
-      "Total Returns": 90.0,
+      "Total Returns": -145.0,
       "Url": "https://groww.in/stocks/pfizer-ltd"
     },
     {
       "Avg Stock Average Value": 448.01,
-      "Current Price": 399.9,
+      "Current Price": 399.2,
       "Name": "Power Finance Corporation",
       "Total Qty": 79,
-      "Total Returns": -3800.69,
+      "Total Returns": -3855.99,
       "Url": "https://groww.in/stocks/power-finance-corporation-ltd"
     },
     {
       "Avg Stock Average Value": 300.74,
-      "Current Price": 271.05,
+      "Current Price": 272.75,
       "Name": "Quess Corp",
       "Total Qty": 18,
-      "Total Returns": -534.46,
+      "Total Returns": -503.86,
       "Url": "https://groww.in/stocks/quess-corp-ltd"
     },
     {
       "Avg Stock Average Value": 498.52,
-      "Current Price": 380.1,
+      "Current Price": 376.1,
       "Name": "REC Limited",
       "Total Qty": 74,
-      "Total Returns": -8763.08,
+      "Total Returns": -9059.08,
       "Url": "https://groww.in/stocks/rec-ltd"
     },
     {
       "Avg Stock Average Value": 705.55,
-      "Current Price": 575.5,
+      "Current Price": 574.5,
       "Name": "Sun TV Network",
       "Total Qty": 13,
-      "Total Returns": -1690.65,
+      "Total Returns": -1703.65,
       "Url": "https://groww.in/stocks/sun-tv-network-ltd"
     },
     {
       "Avg Stock Average Value": 3302.9,
-      "Current Price": 3100.0,
+      "Current Price": 3054.7,
       "Name": "Tata Consultancy Services",
       "Total Qty": 7,
-      "Total Returns": -1420.3,
+      "Total Returns": -1737.4,
       "Url": "https://groww.in/stocks/tata-consultancy-services-ltd"
     },
     {
       "Avg Stock Average Value": 1693.27,
-      "Current Price": 1520.6,
+      "Current Price": 1503.0,
       "Name": "Tech Mahindra",
       "Total Qty": 11,
-      "Total Returns": -1899.37,
+      "Total Returns": -2092.97,
       "Url": "https://groww.in/stocks/tech-mahindra-ltd"
     },
     {
       "Avg Stock Average Value": 128.87,
-      "Current Price": 136.55,
+      "Current Price": 134.86,
       "Name": "Union Bank of India",
       "Total Qty": 47,
-      "Total Returns": 360.82,
+      "Total Returns": 281.39,
       "Url": "https://groww.in/stocks/union-bank-of-india"
     },
     {
       "Avg Stock Average Value": 278.71,
-      "Current Price": 250.4,
+      "Current Price": 248.74,
       "Name": "Wipro",
       "Total Qty": 13,
-      "Total Returns": -368.01,
+      "Total Returns": -389.59,
       "Url": "https://groww.in/stocks/wipro-ltd"
     },
     {
       "Avg Stock Average Value": 1290.9,
-      "Current Price": 1330.0,
+      "Current Price": 1325.5,
       "Name": "Mahanagar Gas",
       "Total Qty": 3,
-      "Total Returns": 117.3,
+      "Total Returns": 103.8,
       "Url": "https://groww.in/stocks/mahanagar-gas-ltd"
     }
   ],
@@ -1199,6 +1199,10 @@
     "08/21/2025": {
       "total_investment": 743304.23,
       "total_profit_loss": 32044.19
+    },
+    "08/22/2025": {
+      "total_investment": 743304.23,
+      "total_profit_loss": 22823.58
     }
   }
 }
