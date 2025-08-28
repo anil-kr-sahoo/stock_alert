@@ -3,7 +3,7 @@ PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "anil-kr-sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
-NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification sent
+NOTIFIED_SELL_STOCK_URLS = ["https://groww.in/stocks/mphasis-ltd"]  # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 # Dividends values cross-checked till 4th Aug, 2025
@@ -61,14 +61,9 @@ user_stocks = {
             405.37
         ],
         [
-            "https://groww.in/stocks/godrej-consumer-products-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             30,
-            1415.98
+            1415.98, -3
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -224,8 +219,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            2,
-            1566.40
+            3,
+            1531.90, -3
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
