@@ -63,7 +63,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
             30,
-            1415.98, -3
+            1415.98
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -220,7 +220,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
             3,
-            1531.90, -3
+            1531.90
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
