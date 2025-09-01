@@ -4,7 +4,6 @@ stocks_dict = {
     ],
     "newly_added_stocks": [
         'Godrej Consumer Products',
-        'Hindustan Unilever',
         'Page Industries'
     ]
 }

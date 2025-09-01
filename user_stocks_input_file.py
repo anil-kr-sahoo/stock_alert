@@ -228,11 +228,6 @@ user_stocks = {
             1531.90
         ],
         [
-            "https://groww.in/stocks/hindustan-unilever-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             4,
             452.46
