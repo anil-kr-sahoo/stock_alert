@@ -76,11 +76,6 @@ user_stocks = {
             506.45
         ],
         [
-            "https://groww.in/stocks/idbi-bank-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/indraprastha-gas-ltd",
             20,
             197.76
@@ -151,6 +146,11 @@ user_stocks = {
             309.74
         ],
         [
+            "https://groww.in/stocks/page-industries-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/pfizer-ltd",
             5,
             5670.50
@@ -200,17 +200,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             4,
-            285.37
+            285.38
         ],
         [
             "https://groww.in/stocks/canara-bank",
             6,
-            102.48
+            102.49
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            3,
-            215.35
+            5,
+            208.07
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -218,14 +218,29 @@ user_stocks = {
             391.30
         ],
         [
+            "https://groww.in/stocks/godrej-consumer-products-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             3,
             1531.90
         ],
         [
+            "https://groww.in/stocks/hindustan-unilever-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             4,
             452.46
+        ],
+        [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            10,
+            89.73
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -280,7 +295,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/wipro-ltd",
             4,
-            258.77
+            258.78
         ]
     ]
 }

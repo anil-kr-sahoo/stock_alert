@@ -1,8 +1,10 @@
 stocks_dict = {
-    "trigger_date": "22/08/2025",
+    "trigger_date": "05/09/2025",
     "removed_stocks": [
-        'Godrej Consumer Products'
     ],
     "newly_added_stocks": [
+        'Godrej Consumer Products',
+        'Hindustan Unilever',
+        'Page Industries'
     ]
 }
