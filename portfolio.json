@@ -749,6 +749,40 @@
         "name": "Coal India",
         "url": "https://groww.in/stocks/coal-india-ltd"
       }
+    ],
+    "09/04/2025": [
+      {
+        "declared_dividend": 10,
+        "dividend_amount": 510,
+        "name": "General Insurance",
+        "url": "https://groww.in/stocks/general-insurance-corporation-of-india-ltd"
+      },
+      {
+        "declared_dividend": 3.35,
+        "dividend_amount": 10.05,
+        "name": "NTPC",
+        "url": "https://groww.in/stocks/ntpc-ltd"
+      },
+      {
+        "declared_dividend": 1.25,
+        "dividend_amount": 60,
+        "name": "Oil & Natural Gas Corporation",
+        "url": "https://groww.in/stocks/oil-natural-gas-corporation-ltd"
+      }
+    ],
+    "09/15/2025": [
+      {
+        "declared_dividend": 1.5,
+        "dividend_amount": 30,
+        "name": "Indraprastha Gas",
+        "url": "https://groww.in/stocks/indraprastha-gas-ltd"
+      },
+      {
+        "declared_dividend": 1.5,
+        "dividend_amount": 7.5,
+        "name": "Indraprastha Gas",
+        "url": "https://groww.in/stocks/indraprastha-gas-ltd"
+      }
     ]
   },
   "datewise_returns": {
