@@ -61,6 +61,11 @@ user_stocks = {
             405.37
         ],
         [
+            "https://groww.in/stocks/godrej-consumer-products-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             30,
             1415.98
