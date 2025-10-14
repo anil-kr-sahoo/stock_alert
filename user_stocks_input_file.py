@@ -1,6 +1,6 @@
 GROUP_LIST = ["Kov9p6ESzUNCPEYJWBHMZG"]
 PHONE_NO_LIST = ["+917749984274"]
-ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "anil-kr-sahoo"]
+ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "Anil-Kr-Sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
 NOTIFIED_SELL_STOCK_URLS = ["https://groww.in/stocks/mphasis-ltd"]  # update this list if already notification sent
