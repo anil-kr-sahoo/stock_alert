@@ -3,7 +3,7 @@ PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "Anil-Kr-Sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
 ALLOW_NOTIFICATION = True
-NOTIFIED_SELL_STOCK_URLS = ["https://groww.in/stocks/mphasis-ltd"]  # update this list if already notification sent
+NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
 # Dividends values cross-checked till 4th Aug, 2025
