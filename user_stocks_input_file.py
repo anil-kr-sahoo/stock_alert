@@ -87,8 +87,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            35,
-            1636.35
+            37,
+            1625.90
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            1,
-            1812.25
+            3,
+            1565.01
         ],
         [
             "https://groww.in/stocks/itc-ltd",
