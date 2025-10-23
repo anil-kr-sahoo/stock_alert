@@ -106,11 +106,6 @@ user_stocks = {
             851.36
         ],
         [
-            "https://groww.in/stocks/mahindra-mahindra-financial-services-ltd",
-            4,
-            262.90
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
             6,
             2505.10
@@ -204,8 +199,8 @@ user_stocks = {
     "sp": [
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            4,
-            285.38
+            6,
+            331.20
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -269,8 +264,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            6,
-            66.53
+            8,
+            73.69
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",

@@ -1,8 +1,8 @@
 stocks_dict = {
-    "trigger_date": "26/09/2025",
+    "trigger_date": "24/10/2025",
     "removed_stocks": [
+        'Mah & Mah Finl. Serv'
     ],
     "newly_added_stocks": [
-        'Godrej Consumer Products'
     ]
 }
