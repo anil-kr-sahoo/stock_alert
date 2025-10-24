@@ -47,8 +47,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            2,
-            2618.43
+            5,
+            2374.51
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -114,11 +114,6 @@ user_stocks = {
             "https://groww.in/stocks/national-aluminium-company-ltd",
             49,
             178.62
-        ],
-        [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            72,
-            616.20
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -218,14 +213,19 @@ user_stocks = {
             391.30
         ],
         [
+            "https://groww.in/stocks/colgatepalmolive-india-ltd",
+            3,
+            2210.20
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             3,
             1531.90
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
-            0,
-            0
+            3,
+            2516.95
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -239,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            5,
-            193.06
+            7,
+            197.97
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -256,11 +256,6 @@ user_stocks = {
             "https://groww.in/stocks/mahanagar-gas-ltd",
             3,
             1290.90
-        ],
-        [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            5,
-            536.65
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
