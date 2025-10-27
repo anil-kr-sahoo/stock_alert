@@ -1,7 +1,7 @@
 stocks_dict = {
-    "trigger_date": "24/10/2025",
+    "trigger_date": "31/10/2025",
     "removed_stocks": [
-        'Mah & Mah Finl. Serv',
+        'Bank Of India',
         'Nippon Life India AMC'
     ],
     "newly_added_stocks": [
