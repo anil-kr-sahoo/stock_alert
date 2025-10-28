@@ -72,8 +72,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            55,
-            506.45
+            57,
+            505.27
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -224,8 +224,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            4,
-            452.46
+            6,
+            459.30
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
@@ -234,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            7,
-            197.97
+            9,
+            200.52
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
