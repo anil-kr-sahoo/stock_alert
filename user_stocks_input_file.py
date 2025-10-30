@@ -152,8 +152,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            8,
-            312.52
+            12,
+            289.68
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -229,8 +229,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
-            10,
-            89.73
+            16,
+            93.16
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -264,8 +264,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            10,
-            291.32
+            16,
+            273.32
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -274,8 +274,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            7,
-            134.49
+            10,
+            136.56
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
