@@ -142,8 +142,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
-            5,
-            5670.50
+            7,
+            5540.21
         ],
         [
             "https://groww.in/stocks/power-finance-corporation-ltd",
@@ -152,8 +152,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            12,
-            289.68
+            14,
+            282.72
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -253,6 +253,11 @@ user_stocks = {
             1290.90
         ],
         [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/nmdc-ltd",
             8,
             73.69
@@ -263,9 +268,14 @@ user_stocks = {
             9272
         ],
         [
+            "https://groww.in/stocks/pfizer-ltd",
+            2,
+            5221.20
+        ],
+        [
             "https://groww.in/stocks/quess-corp-ltd",
-            16,
-            273.32
+            18,
+            269.77
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
