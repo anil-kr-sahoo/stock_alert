@@ -42,8 +42,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            5,
-            2374.51
+            7,
+            2324.50
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -54,11 +54,6 @@ user_stocks = {
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
             51,
             405.37
-        ],
-        [
-            "https://groww.in/stocks/godrej-consumer-products-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -209,8 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            3,
-            2210.20
+            5,
+            2206.70
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -264,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            1,
-            9272
+            3,
+            8643.23
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
