@@ -148,7 +148,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/quess-corp-ltd",
             14,
-            282.72
+            282.73
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -185,7 +185,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             6,
-            331.20
+            300.55
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -220,12 +220,17 @@ user_stocks = {
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
             6,
-            459.30
+            459.31
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
             16,
             93.16
+        ],
+        [
+            "https://groww.in/stocks/itc-ltd",
+            8,
+            424.95
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -235,12 +240,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             3,
-            1565.01
-        ],
-        [
-            "https://groww.in/stocks/itc-ltd",
-            8,
-            424.95
+            1565.02
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
@@ -255,7 +255,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             8,
-            73.69
+            68.31
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -270,7 +270,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/quess-corp-ltd",
             18,
-            269.77
+            269.78
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
