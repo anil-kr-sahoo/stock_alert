@@ -11,16 +11,6 @@ NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification se
 user_stocks = {
     "my_stocks": [
         [
-            "https://groww.in/stocks/bajaj-auto-ltd",
-            0,
-            0
-        ],
-        [
-            "https://groww.in/stocks/bank-of-baroda",
-            38,
-            246.44
-        ],
-        [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             42,
             322.97
@@ -188,6 +178,11 @@ user_stocks = {
             300.55
         ],
         [
+            "https://groww.in/stocks/bajaj-auto-ltd",
+            2,
+            8745.48
+        ],
+        [
             "https://groww.in/stocks/canara-bank",
             6,
             102.49
@@ -199,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            4,
-            387.15
+            6,
+            384.51
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -213,14 +208,19 @@ user_stocks = {
             1531.90
         ],
         [
+            "https://groww.in/stocks/hero-motocorp-ltd",
+            7,
+            5323.10
+        ],
+        [
             "https://groww.in/stocks/hindustan-unilever-ltd",
             3,
             2516.95
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            6,
-            459.31
+            8,
+            462.12
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
@@ -248,14 +248,19 @@ user_stocks = {
             1290.90
         ],
         [
+            "https://groww.in/stocks/national-aluminium-company-ltd",
+            2,
+            233.55
+        ],
+        [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
             0,
             0
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            8,
-            68.31
+            10,
+            69.52
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -269,8 +274,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            18,
-            269.78
+            19,
+            267.74
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
