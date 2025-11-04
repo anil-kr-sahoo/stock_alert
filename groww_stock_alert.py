@@ -22,8 +22,11 @@ from utils import *
 USE_WIFI_INDICATOR = False
 modem_url = "http://192.168.1.1/index.html"
 
-# 10% minimum profit added
+# 13% minimum profit triggered in case company didn't match our criteria
 required_min_percentage = .13
+
+# -30% stop loss triggered, focus on it to reduce till -20%
+stop_loss_percentage = -.30
 urls = list()
 
 # print(sorted(set([data[0] for data in urls])))
@@ -77,6 +80,7 @@ def get_stock_details(all_data, set_timer=False):
     stock_qty = all_data[1]
     stock_average_val = all_data[2]
     target_stock_val = stock_average_val + stock_average_val * required_min_percentage
+    stop_loss_stock_val = stock_average_val + stock_average_val * stop_loss_percentage
     dividend_ratio_percentage = 0
     upcoming_dividend_amount = 0
     upcoming_dividend_date = ''
@@ -217,15 +221,24 @@ def get_stock_details(all_data, set_timer=False):
             individual_stock_details,
         )
     if (
-            target_stock_val
+            (target_stock_val
             and target_stock_val < current_price
-            and (dividend_ratio_percentage < 2 or roe < 15 or debt_to_equity > 1)
+            and (dividend_ratio_percentage < 2 or roe < 15 or debt_to_equity > 1))
+            or (
+            current_price != 0
+            and current_price < stop_loss_stock_val)
             and url not in notified_stock_list
             and not upcoming_dividend_amount
     ):
         notified_stock_list.append(url)
+        if (
+            current_price != 0
+            and current_price < stop_loss_stock_val):
+            notification_title = "Stop Loss !! Sell All Stocks"
+        else:
+            notification_title = "Sell All Stocks"
         global_notifier(
-            "Sell All Stocks",
+            notification_title,
             notify_details,
             sell_stock_list,
             individual_stock_details,
@@ -243,18 +256,26 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
     :return:
     """
     if 'Sell' in notification_title:
-        least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage * 100) / 100))
-        whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
-                           f"If the average amount is less than {least_sell_amount}/-"
+        if 'Stop Loss !!' in  notification_title:
+            stop_loss_amount = get_two_decimal_val(individual_stock_details['Current Price'] * (1 + (stop_loss_percentage * 100) / 100))
+            whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
+                               f"If the average amount is more than {stop_loss_amount}/-"
+            print("\nStop Loss Triggered !!")
+        else:
+            least_sell_amount = get_two_decimal_val(individual_stock_details['Current Price'] / (1 + (required_min_percentage * 100) / 100))
+            whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n" \
+                               f"If the average amount is less than {least_sell_amount}/-"
+            print("\nBook Your Profit !!")
     else:
         whatsapp_message = f"{notification_title} of {individual_stock_details['Name']}\n" \
                            f"{individual_stock_details['Url']}\n" \
                            f"Day Returns {individual_stock_details['Day Returns']}%\n" \
                            f"Current Value for a single stock is {individual_stock_details['Current Price']}/-"
+        print("\nBuy Some Stocks !!")
     if ALLOW_NOTIFICATION:
         send_notifications(notification_title, notify_details, whatsapp_message)
     notified_buy_stock_list.append(individual_stock_details)
-    print(json.dumps(individual_stock_details, indent=2))
+    # print(json.dumps(individual_stock_details, indent=2))
 
 
 driver = None
