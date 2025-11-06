@@ -81,11 +81,6 @@ user_stocks = {
             410.67
         ],
         [
-            "https://groww.in/stocks/itc-hotels-ltd-463",
-            2,
-            851.36
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
             6,
             2505.10
@@ -137,8 +132,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            14,
-            282.73
+            17,
+            272.41
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -244,13 +239,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            3,
-            1290.90
+            5,
+            1267.98
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            2,
-            233.55
+            4,
+            231.12
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -259,8 +254,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            10,
-            69.52
+            12,
+            70.05
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -274,8 +269,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            19,
-            267.74
+            23,
+            260.21
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
