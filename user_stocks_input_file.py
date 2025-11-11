@@ -112,8 +112,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            17,
-            309.74
+            19,
+            305.76
         ],
         [
             "https://groww.in/stocks/page-industries-ltd",
@@ -132,8 +132,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            17,
-            272.41
+            19,
+            266.82
         ],
         [
             "https://groww.in/stocks/rec-ltd",
@@ -179,8 +179,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            6,
-            102.49
+            8,
+            111.39
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -263,14 +263,19 @@ user_stocks = {
             8643.23
         ],
         [
+            "https://groww.in/stocks/petronet-lng-ltd",
+            2,
+            272.70
+        ],
+        [
             "https://groww.in/stocks/pfizer-ltd",
             2,
             5221.20
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            23,
-            260.21
+            25,
+            256.98
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -279,8 +284,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            10,
-            136.56
+            12,
+            138.92
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
