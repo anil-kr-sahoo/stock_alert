@@ -65,12 +65,16 @@ def get_current_stock_data(source_url):
         price = get_float_val(all_data[0][1:].replace(',', ''))
         day_returns = get_float_val(all_data[1][:-1]) * -1 if all_data[2][0] == "-" else get_float_val(all_data[1][:-1])
         driver.execute_script("window.open('about:blank', 'secondtab');")
-        driver.switch_to.window("secondtab")
+        if len(driver.window_handles) > 0:
+            driver.switch_to.window(driver.window_handles[0])
         return price, day_returns
     except Exception as e:
         print("Error - ", e)
+        traceback.print_exc()
+        print(traceback.format_exc())
         driver.execute_script("window.open('about:blank', 'secondtab');")
-        driver.switch_to.window("secondtab")
+        if len(driver.window_handles) > 0:
+            driver.switch_to.window(driver.window_handles[0])
         return 0, 0
 
 
@@ -299,7 +303,8 @@ try:
                     driver.execute_script("window.open('about:blank', 'secondtab');")
 
                     # It is switching to second tab now
-                    driver.switch_to.window("secondtab")
+                    if len(driver.window_handles) > 0:
+                        driver.switch_to.window(driver.window_handles[0])
                     stock_data = get_stock_details(data)
                     if user in ["my_stocks", "sp"]:
                         portfolio_data.append(stock_data)
@@ -312,7 +317,8 @@ try:
                     # Get airtel wi-fi modem battery health
                     # ------------------------------------------------------------------------------------------------------------------
                     driver.execute_script("window.open('about:blank', 'secondtab');")
-                    driver.switch_to.window("secondtab")
+                    if len(driver.window_handles) > 0:
+                        driver.switch_to.window(driver.window_handles[0])
                     driver.get(modem_url)
                     battery_level = \
                         driver.find_element(By.ID, "qtip-5-content").get_attribute('innerHTML').split('<b>')[1].split(
