@@ -357,6 +357,7 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
     # print(json.dumps(individual_stock_details, indent=2))
 
 
+
 # -------------------------
 # Main scanning loop
 # -------------------------
