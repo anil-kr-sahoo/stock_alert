@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            2,
-            850.25
+            4,
+            835.45
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -274,8 +274,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            25,
-            256.98
+            27,
+            253.45
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
