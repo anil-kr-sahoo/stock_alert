@@ -179,8 +179,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            8,
-            111.39
+            14,
+            126.83
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -194,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            5,
-            2206.70
+            7,
+            2180.44
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -219,8 +219,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
-            16,
-            93.16
+            18,
+            93.67
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            4,
-            835.45
+            6,
+            836.48
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -284,8 +284,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            14,
-            140.93
+            18,
+            143.35
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
