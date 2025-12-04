@@ -290,13 +290,13 @@ def get_stock_details(all_data, set_timer=False):
 
     # Sell / stop-loss condition (preserve original grouping and precedence)
     if (
-        (target_stock_val
+        ((target_stock_val
          and target_stock_val < current_price
          and (dividend_ratio_percentage < 2 or roe < 15 or debt_to_equity > 1))
         or (
             current_price != 0
             and current_price < stop_loss_stock_val
-        )
+        ))
         and url not in notified_stock_list
         and not upcoming_dividend_amount
     ):
