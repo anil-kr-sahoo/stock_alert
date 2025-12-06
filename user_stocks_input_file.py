@@ -209,8 +209,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
-            3,
-            2516.95
+            8,
+            2411.03
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            6,
-            836.48
+            8,
+            830.86
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
