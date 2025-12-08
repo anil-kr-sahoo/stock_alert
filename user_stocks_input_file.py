@@ -81,11 +81,6 @@ user_stocks = {
             410.67
         ],
         [
-            "https://groww.in/stocks/mphasis-ltd",
-            6,
-            2505.10
-        ],
-        [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             49,
             178.62
@@ -179,8 +174,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            14,
-            126.83
+            20,
+            132.02
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -204,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            7,
-            5323.10
+            9,
+            5519.9
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
@@ -219,8 +214,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
-            18,
-            93.67
+            20,
+            93.83
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -239,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            5,
-            1267.98
+            8,
+            1220.87
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -254,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            12,
-            70.05
+            14,
+            70.75
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -284,8 +279,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            18,
-            143.35
+            22,
+            144.45
         ],
         [
             "https://groww.in/stocks/wipro-ltd",

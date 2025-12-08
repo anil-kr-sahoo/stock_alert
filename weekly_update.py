@@ -1,11 +1,8 @@
 stocks_dict = {
-    "trigger_date": "07/11/2025",
+    "trigger_date": "12/12/2025",
     "removed_stocks": [
-        'Godrej Consumer Products',
-        'Bank of Baroda',
-        'ITC Hotels'
+        'Mphasis'
     ],
     "newly_added_stocks": [
-        'Nippon Life India AMC'
     ]
 }
