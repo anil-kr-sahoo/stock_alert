@@ -131,11 +131,6 @@ user_stocks = {
             266.82
         ],
         [
-            "https://groww.in/stocks/rec-ltd",
-            74,
-            498.52
-        ],
-        [
             "https://groww.in/stocks/sun-tv-network-ltd",
             13,
             705.55

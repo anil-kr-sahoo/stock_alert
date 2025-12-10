@@ -37,7 +37,7 @@ modem_url = "http://192.168.1.1/index.html"
 required_min_percentage = 0.13
 
 # -30% stop loss triggered, focus on it to reduce till -20%
-stop_loss_percentage = -0.30
+stop_loss_percentage = -0.25
 
 # -------------------------
 # Global state
