@@ -324,7 +324,7 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
     if "Sell" in notification_title:
         if "Stop Loss !!" in notification_title:
             stop_loss_amount = get_two_decimal_val(
-                individual_stock_details["Current Price"] * (1 + (stop_loss_percentage * 100) / 100)
+                individual_stock_details["Current Price"] / (1 + (stop_loss_percentage * 100) / 100)
             )
             whatsapp_message = (
                 f"{notification_title} of {individual_stock_details['Name']}\n{individual_stock_details['Url']}\n"
