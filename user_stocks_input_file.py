@@ -189,8 +189,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            3,
-            1531.90
+            5,
+            15378.30
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -244,13 +244,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            14,
-            70.75
+            16,
+            71.52
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            3,
-            8643.23
+            5,
+            8303.97
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
