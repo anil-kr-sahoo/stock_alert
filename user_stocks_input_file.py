@@ -127,8 +127,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            19,
-            266.82
+            21,
+            260.98
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
@@ -264,8 +264,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            27,
-            253.45
+            29,
+            250.14
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
