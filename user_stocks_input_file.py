@@ -121,11 +121,6 @@ user_stocks = {
             5540.21
         ],
         [
-            "https://groww.in/stocks/power-finance-corporation-ltd",
-            79,
-            448.01
-        ],
-        [
             "https://groww.in/stocks/quess-corp-ltd",
             21,
             260.98
@@ -194,8 +189,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
-            9,
-            5519.9
+            11,
+            5550.03
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
