@@ -234,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            8,
-            830.86
+            10,
+            840.11
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
