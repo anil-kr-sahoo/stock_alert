@@ -169,8 +169,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            5,
-            208.07
+            7,
+            202.80
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -199,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            10,
-            468.44
+            14,
+            511.50
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
@@ -229,8 +229,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            4,
-            231.12
+            6,
+            254.14
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -239,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            16,
-            71.52
+            18,
+            72.57
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -254,8 +254,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
-            2,
-            5221.20
+            4,
+            5084.27
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
