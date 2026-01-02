@@ -77,8 +77,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            52,
-            410.67
+            64,
+            402.83
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -122,8 +122,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            21,
-            260.98
+            23,
+            256.34
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
@@ -209,8 +209,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            8,
-            424.95
+            19,
+            392.58
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -259,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            29,
-            250.14
+            30,
+            248.73
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
