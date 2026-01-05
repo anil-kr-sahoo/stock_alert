@@ -166,7 +166,7 @@ def generate_portfolio_data(data):
     analytics_data = old_portfolio_data.get('datewise_returns', {})
     dividend_data = old_portfolio_data.get('datewise_dividends', {})
     today_date_str = datetime.now().strftime("%d %b, %Y")
-    today_date_key = datetime.now().strftime("%m/%d/%Y")  # Format for storage
+    today_date_key = datetime.now().strftime("%Y/%m/%d")  # Format for storage
 
     # Dictionary to store consolidated stock data
     stocks = defaultdict(lambda: {
