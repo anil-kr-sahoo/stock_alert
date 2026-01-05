@@ -33,7 +33,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
             7,
-            2324.50
+            2324.51
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
@@ -78,7 +78,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             68,
-            399.75
+            399.76
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -111,19 +111,14 @@ user_stocks = {
             305.76
         ],
         [
-            "https://groww.in/stocks/page-industries-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/pfizer-ltd",
             7,
             5540.21
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            23,
-            256.34
+            24,
+            254.44
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
@@ -170,12 +165,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             7,
-            202.80
+            202.81
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
             6,
-            384.51
+            384.52
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -190,12 +185,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
             11,
-            5550.03
+            5550.04
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
             10,
-            2381.24
+            2381.25
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -225,7 +220,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
             8,
-            1220.87
+            1220.88
+        ],
+        [
+            "https://groww.in/stocks/mphasis-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -245,7 +245,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             5,
-            8303.97
+            8303.98
+        ],
+        [
+            "https://groww.in/stocks/page-industries-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
@@ -255,7 +260,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/pfizer-ltd",
             4,
-            5084.27
+            5084.28
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
