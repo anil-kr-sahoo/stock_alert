@@ -37,8 +37,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/gail-india-ltd",
-            31,
-            212.09
+            33,
+            209.41
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -122,8 +122,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
-            13,
-            705.55
+            14,
+            695.08
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -194,13 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            14,
-            511.50
-        ],
-        [
-            "https://groww.in/stocks/idbi-bank-ltd",
-            20,
-            93.83
+            16,
+            526.25
         ],
         [
             "https://groww.in/stocks/itc-ltd",
