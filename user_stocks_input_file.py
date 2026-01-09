@@ -107,8 +107,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            19,
-            305.76
+            21,
+            304.08
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -127,8 +127,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            5,
-            3340.50
+            7,
+            3308.91
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -142,15 +142,15 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            9,
-            287.57
+            10,
+            285.13
         ]
     ],
     "sp": [
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            6,
-            300.55
+            9,
+            320.26
         ],
         [
             "https://groww.in/stocks/bajaj-auto-ltd",
@@ -194,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            16,
-            526.25
+            22,
+            547.13
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -224,8 +224,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            6,
-            254.14
+            11,
+            292.98
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -234,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            18,
-            72.57
+            23,
+            74.80
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            2,
-            272.70
+            4,
+            280.35
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -264,13 +264,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            2,
-            3208.90
+            4,
+            3220.37
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            22,
-            144.45
+            24,
+            146.00
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
