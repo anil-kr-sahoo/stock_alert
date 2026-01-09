@@ -36,11 +36,6 @@ user_stocks = {
             2324.51
         ],
         [
-            "https://groww.in/stocks/gail-india-ltd",
-            33,
-            209.41
-        ],
-        [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
             51,
             405.37
@@ -117,8 +112,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            24,
-            254.44
+            26,
+            251.27
         ],
         [
             "https://groww.in/stocks/sun-tv-network-ltd",
