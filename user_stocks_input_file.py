@@ -116,14 +116,9 @@ user_stocks = {
             251.27
         ],
         [
-            "https://groww.in/stocks/sun-tv-network-ltd",
-            14,
-            695.08
-        ],
-        [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            7,
-            3308.91
+            9,
+            3284.93
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -264,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            4,
-            3220.37
+            5,
+            3215.74
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
