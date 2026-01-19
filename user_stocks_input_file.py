@@ -102,8 +102,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            21,
-            304.08
+            23,
+            301.89
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -132,8 +132,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            10,
-            285.13
+            19,
+            267.74
         ]
     ],
     "sp": [
@@ -189,8 +189,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
-            0,
-            0
+            5,
+            99.65
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -229,8 +229,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            23,
-            74.80
+            25,
+            75.30
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -244,8 +244,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            4,
-            280.35
+            5,
+            280.07
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -269,8 +269,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            4,
-            258.78
+            11,
+            252.14
         ]
     ]
 }
