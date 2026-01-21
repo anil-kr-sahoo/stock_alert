@@ -101,24 +101,11 @@ def get_current_stock_data(source_url):
         except Exception:
             sleep(5)
             all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
-        price = 0
-        day_returns = 0
-
-        if len(all_data) >= 2:
-            # Price
-            price = get_float_val(all_data[0].replace("₹", "").replace(",", ""))
-
-            # Day return %
-            raw_return = all_data[1].replace("%", "").strip()
-
-            # Handle sign safely
-            if raw_return.startswith("-"):
-                day_returns = get_float_val(raw_return)
-            else:
-                day_returns = get_float_val(raw_return)
-
-        else:
-            print("\nGoogle Finance partial data:", all_data)
+        day_returns = (
+            get_float_val(all_data[1][:-1]) * -1
+            if all_data[2][0] == "-"
+            else get_float_val(all_data[1][:-1])
+        )
 
         # maintain existing behavior of opening a blank tab and switching to first handle
         reset_to_main_tab(driver)
