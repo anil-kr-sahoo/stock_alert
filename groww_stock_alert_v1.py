@@ -118,7 +118,7 @@ def get_current_stock_data(source_url):
                 day_returns = get_float_val(raw_return)
 
         else:
-            print("Google Finance partial data:", all_data)
+            print("\nGoogle Finance partial data:", all_data)
 
         # maintain existing behavior of opening a blank tab and switching to first handle
         reset_to_main_tab(driver)

@@ -133,7 +133,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/wipro-ltd",
             21,
-            256.16
+            265.17
         ]
     ],
     "sp": [
@@ -168,6 +168,11 @@ user_stocks = {
             2180.44
         ],
         [
+            "https://groww.in/stocks/emami-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             5,
             1578.30
@@ -195,7 +200,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/itc-ltd",
             25,
-            381.72
+            381.73
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -213,6 +218,11 @@ user_stocks = {
             1220.88
         ],
         [
+            "https://groww.in/stocks/mphasis-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/national-aluminium-company-ltd",
             13,
             304.01
@@ -225,7 +235,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/nmdc-ltd",
             25,
-            75.30
+            75.31
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -264,8 +274,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            11,
-            252.14
+            13,
+            250.33
         ]
     ]
 }
