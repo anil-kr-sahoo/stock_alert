@@ -96,11 +96,8 @@ def get_current_stock_data(source_url):
         mapping_stocks = json.load(open("stocks_mapping.json"))
         destination_url = mapping_stocks[source_url]
         driver.get(destination_url)
-        try:
-            all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
-        except Exception:
-            sleep(5)
-            all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
+        all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
+        price = get_float_val(all_data[0][1:].replace(",", ""))
         day_returns = (
             get_float_val(all_data[1][:-1]) * -1
             if all_data[2][0] == "-"
