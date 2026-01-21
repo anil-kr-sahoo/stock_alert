@@ -59,6 +59,21 @@ driver = None  # webdriver instance (global to match original script semantics)
 # Helper Functions
 # -------------------------
 
+def reset_to_main_tab(driver):
+    """
+    Close all extra tabs and return to main tab safely.
+    Does NOT interrupt logic.
+    """
+    try:
+        main_tab = driver.window_handles[0]
+        for handle in driver.window_handles[1:]:
+            driver.switch_to.window(handle)
+            driver.close()
+        driver.switch_to.window(main_tab)
+    except Exception:
+        pass
+
+
 def get_current_stock_price():
     """
     Helper to get real-time current price from Groww page structure.
@@ -91,9 +106,7 @@ def get_current_stock_data(source_url):
         )
 
         # maintain existing behavior of opening a blank tab and switching to first handle
-        driver.execute_script("window.open('about:blank', 'secondtab');")
-        if len(driver.window_handles) > 0:
-            driver.switch_to.window(driver.window_handles[0])
+        reset_to_main_tab(driver)
 
         return price, day_returns
 
@@ -103,9 +116,7 @@ def get_current_stock_data(source_url):
         print(traceback.format_exc())
 
         # preserve original behavior on exception
-        driver.execute_script("window.open('about:blank', 'secondtab');")
-        if len(driver.window_handles) > 0:
-            driver.switch_to.window(driver.window_handles[0])
+        reset_to_main_tab(driver)
 
         return 0, 0
 
@@ -169,7 +180,7 @@ def get_stock_details(all_data, set_timer=False):
     # Check future dividends (original block with sleeps and fallback)
     try:
         dividend_message = ""
-        driver.find_element(By.CLASS_NAME, "tabs8Parent").find_elements(By.XPATH, "./*")[2].click()
+        driver.find_element(By.CLASS_NAME, "tabs8Parent").find_elements(By.XPATH, "./*")[3].click()
         sleep(0.5)
 
         dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split("\n")
@@ -363,6 +374,7 @@ def global_notifier(notification_title, notify_details, notified_buy_stock_list,
 # -------------------------
 
 retries = 200
+stock_counter = 0
 
 try:
     while retries > 0:
@@ -387,11 +399,18 @@ try:
                 for data in urls:
                     progress_bar.set_postfix(stock=data[0].split("/")[-1][:7] + "...")
                     progress_bar.update(1)  # Increment progress
-
+                    stock_counter += 1
+                    # 🔁 Restart Chrome every 25 stocks (safe)
+                    # if stock_counter % 25 == 0:
+                    #     driver.quit()
+                    #     driver = webdriver.Chrome(
+                    #         service=Service(ChromeDriverManager().install()),
+                    #         options=options
+                    #     )
                     # Preserve original behavior: open new blank tab and switch to first handle
-                    driver.execute_script("window.open('about:blank', 'secondtab');")
-                    if len(driver.window_handles) > 0:
-                        driver.switch_to.window(driver.window_handles[0])
+                    # 🧹 Clean up extra tabs ONLY if needed
+                    if len(driver.window_handles) > 1:
+                        reset_to_main_tab(driver)
 
                     stock_data = get_stock_details(data)
 
@@ -406,9 +425,7 @@ try:
             # Optional Wi-Fi indicator check (preserved)
             if USE_WIFI_INDICATOR:
                 with contextlib.suppress(Exception):
-                    driver.execute_script("window.open('about:blank', 'secondtab');")
-                    if len(driver.window_handles) > 0:
-                        driver.switch_to.window(driver.window_handles[0])
+                    reset_to_main_tab(driver)
                     driver.get(modem_url)
 
                     battery_level = driver.find_element(By.ID, "qtip-5-content").get_attribute("innerHTML").split("<b>")[1].split("</b>")[0][:-1]
