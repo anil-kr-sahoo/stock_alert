@@ -112,7 +112,6 @@ def get_current_stock_data(source_url):
             print("Stock data element not found")
             reset_to_main_tab(driver)
             return 0, 0
-        print(all_data)
         # --- SAFETY CHECK ---
         if len(all_data) < 2:
             print("Incomplete stock data:", all_data)
@@ -140,7 +139,6 @@ def get_current_stock_data(source_url):
             print("Error parsing day returns:", all_data)
 
         reset_to_main_tab(driver)
-        print(day_returns)
         return price, day_returns
 
     except Exception as e:
