@@ -98,7 +98,7 @@ def get_current_stock_data(source_url):
         destination_url = mapping_stocks.get(source_url)
 
         if not destination_url:
-            print("Invalid stock mapping:", source_url)
+            print("\nInvalid stock mapping:", source_url)
             return 0, 0
 
         driver.get(destination_url)
@@ -109,12 +109,12 @@ def get_current_stock_data(source_url):
             )
             all_data = element.text.split("\n")
         except (TimeoutException, NoSuchElementException):
-            print("Stock data element not found")
+            print("\nStock data element not found")
             reset_to_main_tab(driver)
             return 0, 0
         # --- SAFETY CHECK ---
         if len(all_data) < 2:
-            print("Incomplete stock data:", all_data)
+            print("\nIncomplete stock data:", all_data)
             reset_to_main_tab(driver)
             return 0, 0
 
