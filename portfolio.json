@@ -161,11 +161,11 @@
       "Url": "https://groww.in/stocks/pfizer-ltd"
     },
     {
-      "Avg Stock Average Value": 247.01,
+      "Avg Stock Average Value": 245.76,
       "Current Price": 195.0,
       "Name": "Quess Corp",
-      "Total Qty": 50,
-      "Total Returns": -2600.5,
+      "Total Qty": 61,
+      "Total Returns": -3096.18,
       "Url": "https://groww.in/stocks/quess-corp-ltd"
     },
     {
@@ -1779,8 +1779,8 @@
       "total_profit_loss": 69134.09
     },
     "2026/01/23": {
-      "total_investment": 872459.36,
-      "total_profit_loss": 63980.17
+      "total_investment": 875100.04,
+      "total_profit_loss": 63484.49
     }
   }
 }
