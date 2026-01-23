@@ -8,7 +8,8 @@ from time import sleep
 from selenium.common import NoSuchElementException, TimeoutException, WebDriverException
 from selenium.webdriver.chrome.service import Service
 from tqdm import tqdm
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
@@ -94,35 +95,59 @@ def get_current_stock_data(source_url):
     """
     try:
         mapping_stocks = json.load(open("stocks_mapping.json"))
-        destination_url = mapping_stocks[source_url]
+        destination_url = mapping_stocks.get(source_url)
+
+        if not destination_url:
+            print("Invalid stock mapping:", source_url)
+            return 0, 0
+
         driver.get(destination_url)
+
         try:
-            all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
-        except Exception:
-            sleep(5)
-            all_data = driver.find_element(By.CLASS_NAME, "rPF6Lc").text.split("\n")
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "rPF6Lc"))
+            )
+            all_data = element.text.split("\n")
+        except (TimeoutException, NoSuchElementException):
+            print("Stock data element not found")
+            reset_to_main_tab(driver)
+            return 0, 0
+        print(all_data)
+        # --- SAFETY CHECK ---
+        if len(all_data) < 2:
+            print("Incomplete stock data:", all_data)
+            reset_to_main_tab(driver)
+            return 0, 0
+
+        # Price
         price = get_float_val(all_data[0][1:].replace(",", ""))
-        day_returns = (
-            get_float_val(all_data[1][:-1]) * -1
-            if all_data[2][0] == "-"
-            else get_float_val(all_data[1][:-1])
-        )
 
-        # maintain existing behavior of opening a blank tab and switching to first handle
+        # Day returns (safe parsing)
+        day_returns = 0.0
+        try:
+            percent_text = all_data[1]  # "0.12%"
+            today_text = all_data[2]  # "+0.40 Today" or "-0.40 Today"
+
+            percent_value = get_float_val(percent_text.replace("%", ""))
+
+            # Sign comes from "Today" field
+            if "-" in today_text:
+                day_returns = -percent_value
+            else:
+                day_returns = percent_value
+
+        except Exception:
+            print("Error parsing day returns:", all_data)
+
         reset_to_main_tab(driver)
-
+        print(day_returns)
         return price, day_returns
 
     except Exception as e:
         print("Error - ", e)
         traceback.print_exc()
-        print(traceback.format_exc())
-
-        # preserve original behavior on exception
         reset_to_main_tab(driver)
-
         return 0, 0
-
 
 def get_stock_details(all_data, set_timer=False):
     """
