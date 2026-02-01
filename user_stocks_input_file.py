@@ -72,8 +72,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            70,
-            398.14
+            75,
+            392.45
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -102,8 +102,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            23,
-            301.89
+            25,
+            300.44
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -139,8 +139,8 @@ user_stocks = {
     "sp": [
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            9,
-            320.26
+            13,
+            331.31
         ],
         [
             "https://groww.in/stocks/bajaj-auto-ltd",
@@ -199,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            25,
-            381.73
+            31,
+            368.00
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -224,8 +224,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            13,
-            304.01
+            33,
+            334.15
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
@@ -266,6 +266,11 @@ user_stocks = {
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             5,
             3215.74
+        ],
+        [
+            "https://groww.in/stocks/tech-mahindra-ltd",
+            2,
+            1729.80
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
