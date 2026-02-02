@@ -112,8 +112,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            31,
-            242.88
+            33,
+            240.64
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -199,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            31,
-            368.00
+            32,
+            365.97
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
@@ -259,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            30,
-            248.73
+            34,
+            243.54
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
