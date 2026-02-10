@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            22,
-            547.13
+            2,
+            552.95
         ],
         [
             "https://groww.in/stocks/idbi-bank-ltd",
