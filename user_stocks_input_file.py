@@ -140,7 +140,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             13,
-            331.31
+            331.32
         ],
         [
             "https://groww.in/stocks/bajaj-auto-ltd",
@@ -185,12 +185,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
             10,
-            2381.25
+            2366.82
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
-            2,
-            552.95
+            24,
+            552.96
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -223,19 +223,14 @@ user_stocks = {
             336.99
         ],
         [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            10,
-            840.11
-        ],
-        [
             "https://groww.in/stocks/nmdc-ltd",
             25,
             75.31
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            5,
-            8303.98
+            6,
+            8026.73
         ],
         [
             "https://groww.in/stocks/page-industries-ltd",
@@ -254,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            35,
-            242.53
+            37,
+            240.40
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",

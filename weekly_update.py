@@ -1,7 +1,7 @@
 stocks_dict = {
-    "trigger_date": "20/02/2026",
+    "trigger_date": "27/02/2026",
     "removed_stocks": [
-        'IDBI Bank'
+        'Nippon Life India AMC'
     ],
     "newly_added_stocks": [
     ]
