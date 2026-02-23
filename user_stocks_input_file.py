@@ -132,8 +132,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            24,
-            261.22
+            26,
+            256.90
         ]
     ],
     "sp": [
@@ -214,8 +214,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            0,
-            0
+            1,
+            2327.40
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -269,8 +269,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            13,
-            250.33
+            15,
+            244.26
         ]
     ]
 }
