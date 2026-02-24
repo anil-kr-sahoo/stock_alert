@@ -132,8 +132,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            26,
-            256.90
+            28,
+            252.96
         ]
     ],
     "sp": [
@@ -224,8 +224,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            25,
-            75.31
+            27,
+            75.55
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -250,7 +250,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/quess-corp-ltd",
             37,
-            240.40
+            240.41
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -270,7 +270,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/wipro-ltd",
             15,
-            244.26
+            244.27
         ]
     ]
 }
