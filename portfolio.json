@@ -982,6 +982,12 @@
         "url": "https://groww.in/stocks/national-aluminium-company-ltd"
       },
       {
+        "declared_dividend": 2.75,
+        "dividend_amount": 8.25,
+        "name": "NTPC",
+        "url": "https://groww.in/stocks/ntpc-ltd/corporate-actions"
+      },
+      {
         "declared_dividend": 5.0,
         "dividend_amount": 165.0,
         "name": "Quess Corp",
