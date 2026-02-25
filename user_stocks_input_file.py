@@ -86,11 +86,6 @@ user_stocks = {
             66.50
         ],
         [
-            "https://groww.in/stocks/ntpc-ltd",
-            3,
-            330.65
-        ],
-        [
             "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
             48,
             262.55
