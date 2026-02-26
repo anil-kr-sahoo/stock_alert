@@ -62,8 +62,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            37,
-            1625.90
+            39,
+            1609.59
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -127,8 +127,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            28,
-            252.96
+            30,
+            249.57
         ]
     ],
     "sp": [
@@ -254,8 +254,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            2,
-            1729.80
+            4,
+            1556.70
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
