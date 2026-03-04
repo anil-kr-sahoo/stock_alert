@@ -63,7 +63,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             41,
-            1593.42
+            1593.43
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -108,12 +108,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             11,
-            3163.21
+            3163.22
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
             13,
-            1638.44
+            1638.45
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
@@ -240,7 +240,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/quess-corp-ltd",
             40,
-            236.82
+            236.83
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
