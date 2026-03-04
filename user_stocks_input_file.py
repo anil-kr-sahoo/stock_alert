@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/indraprastha-gas-ltd",
-            20,
-            197.76
+            21,
+            195.87
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -102,8 +102,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            35,
-            237.87
+            37,
+            235.21
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -122,8 +122,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            32,
-            246.45
+            34,
+            243.46
         ]
     ],
     "sp": [
