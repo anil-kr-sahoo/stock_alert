@@ -122,8 +122,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            34,
-            243.46
+            36,
+            240.71
         ]
     ],
     "sp": [
@@ -239,13 +239,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            40,
-            236.83
+            42,
+            234.57
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            5,
-            3215.74
+            7,
+            3031.15
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -259,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            15,
-            244.27
+            17,
+            238.52
         ]
     ]
 }
