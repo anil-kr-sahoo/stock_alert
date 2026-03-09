@@ -264,22 +264,23 @@ def get_stock_details(all_data, set_timer=False):
     }
 
     # Parse `all_details` text lines into numeric values
-    for each in all_details.split("\n"):
+    all_details_data = all_details.split("\n")
+    for index, each in enumerate(all_details_data):
         if "Dividend" in each:
-            dividend_ratio_percentage = get_float_val(each.split(" ")[-1][:-1])
-            individual_stock_details[" ".join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1][:-1])
+            dividend_ratio_percentage = get_float_val(all_details_data[index+1][:-1])
+            individual_stock_details[each] = dividend_ratio_percentage
         elif "ROE" in each:
-            roe = get_float_val(each.split(" ")[-1][:-1])
-            individual_stock_details[" ".join(each.split(" ")[:-1])] = roe
+            roe = get_float_val(all_details_data[index+1][:-1])
+            individual_stock_details[each] = roe
         elif "Debt to Equity" in each:
-            debt_to_equity = get_float_val(each.split(" ")[-1])
-            individual_stock_details[" ".join(each.split(" ")[:-1])] = debt_to_equity
+            debt_to_equity = get_float_val(all_details_data[index+1])
+            individual_stock_details[each] = debt_to_equity
         elif "Market" in each:
-            individual_stock_details[" ".join(each.split(" ")[:-1])] = get_float_val(
-                each.split(" ")[-1][1:-2].replace(",", "")
+            individual_stock_details[each] = get_float_val(
+                all_details_data[index+1][1:-2].replace(",", "")
             )
-        else:
-            individual_stock_details[" ".join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1])
+        elif index%2 == 0:
+            individual_stock_details[each] = get_float_val(all_details_data[index+1])
 
     individual_stock_details["Credit Dividend"] = get_to_be_credit_dividend(current_price, dividend_ratio_percentage)
     individual_stock_details["To Be Credit Dividend"] = get_two_decimal_val(
