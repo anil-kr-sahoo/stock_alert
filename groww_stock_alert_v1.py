@@ -177,7 +177,7 @@ def get_stock_details(all_data, set_timer=False):
         sleep(5)
 
     try:
-        name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+        name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__Mxy2Y").text
         if not name:
             return get_stock_details(all_data, set_timer=True)
     except Exception:
@@ -201,7 +201,7 @@ def get_stock_details(all_data, set_timer=False):
     if lowest_day_limit != -2:
         print(f"\nManually limit provided on -------- {name} With value {lowest_day_limit}")
 
-    all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
+    all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__WvK77").text
 
     # Check future dividends (original block with sleeps and fallback)
     try:
