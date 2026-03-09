@@ -56,11 +56,6 @@ user_stocks = {
             505.27
         ],
         [
-            "https://groww.in/stocks/indraprastha-gas-ltd",
-            21,
-            195.87
-        ],
-        [
             "https://groww.in/stocks/infosys-ltd",
             41,
             1593.43
@@ -102,13 +97,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            37,
-            235.21
+            43,
+            228.07
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            11,
-            3163.22
+            12,
+            3110.49
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -188,11 +183,6 @@ user_stocks = {
             365.97
         ],
         [
-            "https://groww.in/stocks/indraprastha-gas-ltd",
-            9,
-            200.52
-        ],
-        [
             "https://groww.in/stocks/infosys-ltd",
             3,
             1565.02
@@ -239,8 +229,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            42,
-            234.57
+            48,
+            228.20
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
