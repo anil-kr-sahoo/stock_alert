@@ -102,8 +102,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            12,
-            3110.49
+            14,
+            3021.25
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
