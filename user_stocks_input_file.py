@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            41,
-            1593.43
+            45,
+            1563.80
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -178,6 +178,11 @@ user_stocks = {
             552.96
         ],
         [
+            "https://groww.in/stocks/idbi-bank-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/itc-ltd",
             32,
             365.97
@@ -201,6 +206,11 @@ user_stocks = {
             "https://groww.in/stocks/national-aluminium-company-ltd",
             37,
             336.99
+        ],
+        [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",

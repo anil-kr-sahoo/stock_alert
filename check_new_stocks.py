@@ -57,36 +57,38 @@ def get_stock_details(url, sleep_timer=False):
         if sleep_timer:
             sleep(5)
         try:
-            name = driver.find_element(By.CLASS_NAME, "lpu38Head").text
+            name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__Mxy2Y").text
             if not name:
                 return get_stock_details(url, sleep_timer=True)
         except Exception as e:
             return get_stock_details(url, sleep_timer=True)
-        all_details = driver.find_element(By.CLASS_NAME, "ft785TableContainer").text
+        all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__WvK77").text
         individual_stock_details = {"Name": name,
                                     "Url": url
                                     }
-        for each in all_details.split('\n'):
-            if 'Dividend' in each:
-                dividend = get_float_val(each.split(" ")[-1][:-1])
-                if dividend < 2:
+        all_details_data = all_details.split("\n")
+        for index, each in enumerate(all_details_data):
+            if "Dividend" in each:
+                dividend_ratio_percentage = get_float_val(all_details_data[index + 1][:-1])
+                if dividend_ratio_percentage < 2:
                     return
-                individual_stock_details[' '.join(each.split(" ")[:-1])] = dividend
-            elif 'ROE' in each:
-                roe = get_float_val(each.split(" ")[-1][:-1])
+                individual_stock_details[each] = dividend_ratio_percentage
+            elif "ROE" in each:
+                roe = get_float_val(all_details_data[index + 1][:-1])
                 if roe < 15:
                     return
-                individual_stock_details[' '.join(each.split(" ")[:-1])] = roe
-            elif 'Debt to Equity' in each:
-                debt_to_equity = get_float_val(each.split(" ")[-1])
+                individual_stock_details[each] = roe
+            elif "Debt to Equity" in each:
+                debt_to_equity = get_float_val(all_details_data[index + 1])
                 if debt_to_equity > 1:
                     return
-                individual_stock_details[' '.join(each.split(" ")[:-1])] = debt_to_equity
-            elif 'Market' in each:
-                individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(
-                    each.split(" ")[-1][1:-2].replace(',', ''))
-            else:
-                individual_stock_details[' '.join(each.split(" ")[:-1])] = get_float_val(each.split(" ")[-1])
+                individual_stock_details[each] = debt_to_equity
+            elif "Market" in each:
+                individual_stock_details[each] = get_float_val(
+                    all_details_data[index + 1][1:-2].replace(",", "")
+                )
+            elif index % 2 == 0:
+                individual_stock_details[each] = get_float_val(all_details_data[index + 1])
 
         return individual_stock_details
     except Exception as e:
