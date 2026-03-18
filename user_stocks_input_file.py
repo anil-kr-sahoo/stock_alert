@@ -82,8 +82,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            4,
-            7947.08
+            5,
+            7614.66
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
@@ -117,8 +117,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            36,
-            240.71
+            38,
+            238.06
         ]
     ],
     "sp": [
@@ -219,8 +219,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            6,
-            8026.73
+            7,
+            7779.34
         ],
         [
             "https://groww.in/stocks/page-industries-ltd",
@@ -259,8 +259,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            17,
-            238.52
+            19,
+            233.44
         ]
     ]
 }
