@@ -62,8 +62,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            91,
-            377.20
+            95,
+            373.95
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -103,7 +103,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             18,
-            3021.25
+            2879.55
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -117,8 +117,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            38,
-            238.06
+            40,
+            235.67
         ]
     ],
     "sp": [
