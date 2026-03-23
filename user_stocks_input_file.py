@@ -117,8 +117,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
-            40,
-            235.67
+            42,
+            233.42
         ]
     ],
     "sp": [
