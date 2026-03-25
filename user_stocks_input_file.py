@@ -22,8 +22,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
-            73,
-            223.48
+            86,
+            215.91
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -58,12 +58,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             51,
-            1524.62
+            1524.63
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            95,
-            373.95
+            110,
+            362.51
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -87,8 +87,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            25,
-            300.44
+            27,
+            295.90
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
@@ -97,8 +97,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            55,
-            216.79
+            57,
+            215.26
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            32,
-            365.97
+            34,
+            361.51
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -194,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
-            8,
-            1220.88
+            16,
+            1072.93
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -239,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            60,
-            217.55
+            63,
+            215.46
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
