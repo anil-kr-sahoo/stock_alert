@@ -32,8 +32,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            8,
-            2315.19
+            14,
+            2091.52
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -62,8 +62,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            110,
-            362.51
+            116,
+            358.64
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -97,8 +97,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            57,
-            215.26
+            67,
+            208.07
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            34,
-            361.51
+            36,
+            357.44
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
@@ -239,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            63,
-            215.46
+            66,
+            213.44
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
