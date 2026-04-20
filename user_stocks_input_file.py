@@ -199,13 +199,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            1,
-            2327.40
+            3,
+            2383.60
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            37,
-            336.99
+            40,
+            343.73
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
