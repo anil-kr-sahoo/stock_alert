@@ -1,10 +1,8 @@
 stocks_dict = {
-    "trigger_date": "13/03/2026", # DD/MM/YYYY
+    "trigger_date": "24/04/2026", # DD/MM/YYYY
     "removed_stocks": [
-        'Indraprastha Gas',
+        'Nippon Life India Asset Management',
     ],
     "newly_added_stocks": [
-        'IDBI Bank',
-        'Nippon Life India Asset Management',
     ]
 }
