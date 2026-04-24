@@ -154,8 +154,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/emami-ltd",
-            2,
-            464.95
+            5,
+            459.22
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -234,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            66,
-            213.44
+            68,
+            212.71
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
