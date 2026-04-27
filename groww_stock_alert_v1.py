@@ -473,32 +473,24 @@ try:
             total_stocks = sum(len(urls) for urls in user_stocks.values())
             progress_bar = tqdm(total=total_stocks, desc="Scanning Stocks", unit="stock")
 
-            for user, urls in user_stocks.items():
-                for data in urls:
-                    progress_bar.set_postfix(stock=data[0].split("/")[-1][:7] + "...")
-                    progress_bar.update(1)  # Increment progress
-                    stock_counter += 1
-                    # 🔁 Restart Chrome every 25 stocks (safe)
-                    # if stock_counter % 25 == 0:
-                    #     driver.quit()
-                    #     driver = webdriver.Chrome(
-                    #         service=Service(ChromeDriverManager().install()),
-                    #         options=options
-                    #     )
-                    # Preserve original behavior: open new blank tab and switch to first handle
-                    # 🧹 Clean up extra tabs ONLY if needed
-                    if len(driver.window_handles) > 1:
-                        reset_to_main_tab(driver)
+            try:
+                for user, urls in user_stocks.items():
+                    for data in urls:
+                        progress_bar.set_postfix(stock=data[0].split("/")[-1][:7] + "...")
+                        progress_bar.update(1)
+                        stock_counter += 1
+                        if len(driver.window_handles) > 1:
+                            reset_to_main_tab(driver)
 
-                    stock_data = get_stock_details(data)
+                        stock_data = get_stock_details(data)
 
-                    if not stock_data:
-                        continue
-                    if user in ["my_stocks", "sp"]:
-                        portfolio_data.append(stock_data)
-                    all_stocks_data.append(stock_data)
-
-            progress_bar.close()  # Close the progress bar when done
+                        if not stock_data:
+                            continue
+                        if user in ["my_stocks", "sp"]:
+                            portfolio_data.append(stock_data)
+                        all_stocks_data.append(stock_data)
+            finally:
+                progress_bar.close()
 
             generate_portfolio_data(portfolio_data)
 
