@@ -1,5 +1,6 @@
 import contextlib
 import json
+import random
 import time
 import traceback
 from datetime import datetime
@@ -88,32 +89,55 @@ def get_current_stock_price():
         return 0
 
 
-def get_current_stock_data(source_url):
+def get_current_stock_data(source_url, _attempt=0):
     """
     Helper to get real-time current data from Google Finance mapping.
     Returns (price, day_returns) or (0, 0) on failure.
+    Retries up to 3 times with backoff to handle transient rate-limit responses.
     """
+    MAX_ATTEMPTS = 3
     try:
-        mapping_stocks = json.load(open("stocks_mapping.json"))
+        with open("stocks_mapping.json") as f:
+            mapping_stocks = json.load(f)
         destination_url = mapping_stocks.get(source_url)
 
         if not destination_url:
             print("\nInvalid stock mapping:", source_url)
             return 0, 0
 
+        # Random human-like delay before hitting Google Finance to avoid rate limiting
+        sleep(random.uniform(1.5, 3.0))
         driver.get(destination_url)
 
-        try:
-            element = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "rPF6Lc"))
-            )
-            all_data = element.text.split("\n")
-        except (TimeoutException, NoSuchElementException):
-            print("\nStock data element not found")
+        # Try the known class first, then fall back to structural XPath selectors.
+        # The class-name selector (rPF6Lc) is a build-hash that changes on Google deployments;
+        # the XPath fallbacks target stable structural patterns in the price block.
+        element = None
+        for locator in [
+            (By.CLASS_NAME, "rPF6Lc"),
+            (By.XPATH, "//div[contains(@class,'rPF6Lc')]"),
+            (By.XPATH, "//div[@data-last-price]"),
+            (By.XPATH, "//c-wiz[@jsrenderer]//div[contains(@class,'YMlKec')]"),
+        ]:
+            try:
+                element = WebDriverWait(driver, 15).until(
+                    EC.presence_of_element_located(locator)
+                )
+                break
+            except (TimeoutException, NoSuchElementException):
+                continue
+
+        if element is None:
+            print(f"\nStock data element not found (attempt {_attempt + 1}/{MAX_ATTEMPTS}): {source_url}")
             reset_to_main_tab(driver)
+            if _attempt < MAX_ATTEMPTS - 1:
+                sleep(random.uniform(3.0, 6.0))
+                return get_current_stock_data(source_url, _attempt=_attempt + 1)
             return 0, 0
-        # --- SAFETY CHECK ---
-        if len(all_data) < 2:
+
+        all_data = element.text.split("\n")
+
+        if len(all_data) < 3:
             print("\nIncomplete stock data:", all_data)
             reset_to_main_tab(driver)
             return 0, 0
@@ -121,15 +145,14 @@ def get_current_stock_data(source_url):
         # Price
         price = get_float_val(all_data[0][1:].replace(",", ""))
 
-        # Day returns (safe parsing)
+        # Day returns
         day_returns = 0.0
         try:
             percent_text = all_data[1]  # "0.12%"
-            today_text = all_data[2]  # "+0.40 Today" or "-0.40 Today"
+            today_text = all_data[2]    # "+0.40 Today" or "-0.40 Today"
 
             percent_value = get_float_val(percent_text.replace("%", ""))
 
-            # Sign comes from "Today" field
             if "-" in today_text:
                 day_returns = -percent_value
             else:
@@ -147,13 +170,16 @@ def get_current_stock_data(source_url):
         reset_to_main_tab(driver)
         return 0, 0
 
-def get_stock_details(all_data, set_timer=False):
+def get_stock_details(all_data, set_timer=False, _depth=0):
     """
     Given stock data tuple/list `all_data`, scrape details and
     decide whether to notify buy/sell. Returns the `individual_stock_details` dict.
     This preserves the original control flow and side-effects (global lists, files, notifications).
     """
     global buy_stock_list, sell_stock_list, in_memory_data, notified_stock_list
+    if _depth > 3:
+        print(f"\nMax retry depth reached for {all_data[0]}, skipping.")
+        return {}
 
     url = all_data[0]
     stock_qty = all_data[1]
@@ -179,15 +205,16 @@ def get_stock_details(all_data, set_timer=False):
     try:
         name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__Mxy2Y").text
         if not name:
-            return get_stock_details(all_data, set_timer=True)
+            return get_stock_details(all_data, set_timer=True, _depth=_depth + 1)
     except Exception:
-        return get_stock_details(all_data, set_timer=True)
+        return get_stock_details(all_data, set_timer=True, _depth=_depth + 1)
 
     # Populate in_memory_data if not already present (original semantics)
     if not in_memory_data.get(all_data[0]):
         try:
             in_memory_data[all_data[0]] = all_data[3]
-            buy_stock_list = json.load(open("buy_stock_details.json"))
+            with open("buy_stock_details.json") as _f:
+                buy_stock_list = json.load(_f)
             if url not in notified_stock_list:
                 notified_stock_list.append(url)
         except Exception:
@@ -409,14 +436,25 @@ try:
             all_stocks_data = []
             portfolio_data = []
 
-            # Preserve original chrome options and flags (including remote-debugging-port)
             options = Options()
             options.add_argument("--remote-debugging-port=61625")
             options.add_argument("--no-sandbox")
             options.add_argument("--headless=new")
+            # Mask headless signature so Google Finance serves the real page, not a bot-challenge
+            options.add_argument(
+                "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+            )
+            options.add_experimental_option("excludeSwitches", ["enable-automation"])
+            options.add_experimental_option("useAutomationExtension", False)
 
             driver = webdriver.Chrome(
                 service=Service(ChromeDriverManager().install()), options=options
+            )
+            # Remove navigator.webdriver flag that Google Finance checks
+            driver.execute_cdp_cmd(
+                "Page.addScriptToEvaluateOnNewDocument",
+                {"source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})"},
             )
 
             total_stocks = sum(len(urls) for urls in user_stocks.values())
@@ -441,6 +479,8 @@ try:
 
                     stock_data = get_stock_details(data)
 
+                    if not stock_data:
+                        continue
                     if user in ["my_stocks", "sp"]:
                         portfolio_data.append(stock_data)
                     all_stocks_data.append(stock_data)
