@@ -27,6 +27,12 @@ from user_stocks_input_file import (
 )
 from utils import *  # noqa: F401,F403
 
+# Raised when Google Finance serves bot-challenge pages across all retries.
+# Caught by the main while-loop to kill Chrome and start a fresh session.
+class ChromeSessionError(Exception):
+    pass
+
+
 # -------------------------
 # Configuration / Constants
 # -------------------------
@@ -133,7 +139,12 @@ def get_current_stock_data(source_url, _attempt=0):
             if _attempt < MAX_ATTEMPTS - 1:
                 sleep(random.uniform(3.0, 6.0))
                 return get_current_stock_data(source_url, _attempt=_attempt + 1)
-            return 0, 0
+            # All retries exhausted — Google is serving bot-challenge pages.
+            # Raise so the traversal aborts immediately and Chrome is restarted fresh.
+            raise ChromeSessionError(
+                f"Google Finance blocked after {MAX_ATTEMPTS} attempts for {source_url}. "
+                "Aborting traversal to restart Chrome."
+            )
 
         all_data = element.text.split("\n")
 
@@ -164,6 +175,8 @@ def get_current_stock_data(source_url, _attempt=0):
         reset_to_main_tab(driver)
         return price, day_returns
 
+    except ChromeSessionError:
+        raise  # propagate so the while-loop can kill and restart Chrome
     except Exception as e:
         print("Error - ", e)
         traceback.print_exc()
@@ -592,6 +605,17 @@ try:
 
                 send_notifications(title=eod_message, message="Stock Monitoring Turning Off")
                 break
+
+        except ChromeSessionError as e:
+            # Google Finance is rate-limiting / serving bot-challenge pages.
+            # Kill the current session and wait longer before restarting so the
+            # rate-limiter has time to reset (60s is usually enough for Google).
+            print(f"\n[ChromeSessionError] {e}")
+            if driver:
+                driver.quit()
+            retries -= 1
+            print(f"Retries left {retries} — waiting 60s before fresh Chrome session...")
+            time.sleep(60)
 
         except (NoSuchElementException, TimeoutException, WebDriverException) as e:
             if retries > 0:
