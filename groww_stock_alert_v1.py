@@ -93,10 +93,6 @@ def get_current_stock_data(source_url):
     Helper to get real-time current data from Google Finance mapping.
     Returns (price, day_returns) or (0, 0) on failure.
     """
-    # Google obfuscates class names and changes them on UI updates.
-    # Try known candidates in order; the first one with non-empty text wins.
-    PRICE_BLOCK_SELECTORS = ["rPF6Lc", "YMlKec", "fxKbKc", "P6K39c"]
-
     try:
         mapping_stocks = json.load(open("stocks_mapping.json"))
         destination_url = mapping_stocks.get(source_url)
@@ -105,36 +101,18 @@ def get_current_stock_data(source_url):
             print("\nInvalid stock mapping:", source_url)
             return 0, 0
 
-        stock_label = source_url.split("/")[-1]
-        element = None
+        driver.get(destination_url)
 
-        for attempt in range(3):
-            if attempt > 0:
-                sleep(3 * attempt)
-            driver.get(destination_url)
-
-            for selector in PRICE_BLOCK_SELECTORS:
-                try:
-                    el = WebDriverWait(driver, 15).until(
-                        EC.presence_of_element_located((By.CLASS_NAME, selector))
-                    )
-                    if el and el.text.strip():
-                        element = el
-                        break
-                except (TimeoutException, NoSuchElementException):
-                    continue
-
-            if element:
-                break
-            print(f"\nRetrying stock data ({attempt + 1}/3): {stock_label}")
-
-        if not element:
-            print(f"\nStock data element not found: {stock_label}")
+        try:
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "rPF6Lc"))
+            )
+            all_data = element.text.split("\n")
+        except (TimeoutException, NoSuchElementException):
+            print("\nStock data element not found")
             reset_to_main_tab(driver)
             return 0, 0
-
-        all_data = element.text.split("\n")
-
+        # --- SAFETY CHECK ---
         if len(all_data) < 2:
             print("\nIncomplete stock data:", all_data)
             reset_to_main_tab(driver)
