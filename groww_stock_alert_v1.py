@@ -115,15 +115,11 @@ def get_current_stock_data(source_url, _attempt=0):
         sleep(random.uniform(1.5, 3.0))
         driver.get(destination_url)
 
-        # Try the known class first, then fall back to structural XPath selectors.
-        # The class-name selector (rPF6Lc) is a build-hash that changes on Google deployments;
-        # the XPath fallbacks target stable structural patterns in the price block.
         element = None
         for locator in [
-            (By.CLASS_NAME, "rPF6Lc"),
-            (By.XPATH, "//div[contains(@class,'rPF6Lc')]"),
-            (By.XPATH, "//div[@data-last-price]"),
-            (By.XPATH, "//c-wiz[@jsrenderer]//div[contains(@class,'YMlKec')]"),
+            (By.CLASS_NAME, "LhDNu"),
+            (By.CSS_SELECTOR, "div.YMlKec.fxKbKc"),
+            (By.CSS_SELECTOR, "div.YMlKec"),
         ]:
             try:
                 element = WebDriverWait(driver, 15).until(
@@ -159,16 +155,10 @@ def get_current_stock_data(source_url, _attempt=0):
         # Day returns
         day_returns = 0.0
         try:
-            percent_text = all_data[1]  # "0.12%"
-            today_text = all_data[2]    # "+0.40 Today" or "-0.40 Today"
+            percent_text = all_data[2]  # "0.12%"
+            today_text = all_data[3]    # "+0.40 Today" or "-0.40 Today"
 
-            percent_value = get_float_val(percent_text.replace("%", ""))
-
-            if "-" in today_text:
-                day_returns = -percent_value
-            else:
-                day_returns = percent_value
-
+            day_returns = get_float_val(percent_text.replace("%", ""))
         except Exception:
             print("Error parsing day returns:", all_data)
 
