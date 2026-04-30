@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            51,
-            1524.63
+            62,
+            1461.99
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -159,8 +159,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            5,
-            1578.30
+            8,
+            1434.30
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
