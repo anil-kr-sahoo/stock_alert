@@ -76,11 +76,6 @@ user_stocks = {
             66.50
         ],
         [
-            "https://groww.in/stocks/oil-natural-gas-corporation-ltd",
-            48,
-            262.55
-        ],
-        [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             5,
             7614.66
