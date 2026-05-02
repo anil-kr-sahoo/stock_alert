@@ -173,11 +173,6 @@ user_stocks = {
             552.96
         ],
         [
-            "https://groww.in/stocks/idbi-bank-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/itc-ltd",
             36,
             357.44
