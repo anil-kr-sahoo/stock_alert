@@ -204,8 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            27,
-            75.55
+            29,
+            76.44
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
