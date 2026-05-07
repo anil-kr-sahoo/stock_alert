@@ -92,8 +92,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            67,
-            208.07
+            70,
+            208.49
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
@@ -126,6 +126,11 @@ user_stocks = {
             "https://groww.in/stocks/bajaj-auto-ltd",
             2,
             8745.48
+        ],
+        [
+            "https://groww.in/stocks/bharti-infratel-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/canara-bank",
@@ -229,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            68,
-            212.71
+            70,
+            212.85
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",

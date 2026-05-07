@@ -6,5 +6,6 @@ stocks_dict = {
     ],
     "newly_added_stocks": [
         'Nippon Life India Asset Management',
+        'Indus Towers',
     ]
 }
