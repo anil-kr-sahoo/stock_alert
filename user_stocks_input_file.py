@@ -17,8 +17,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            42,
-            104.05
+            44,
+            105.14
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -134,8 +134,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            24,
-            133.46
+            26,
+            133.06
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -163,9 +163,19 @@ user_stocks = {
             1434.30
         ],
         [
+            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hero-motocorp-ltd",
             11,
             5550.04
+        ],
+        [
+            "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
