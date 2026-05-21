@@ -1,4 +1,4 @@
-*.json
+input_modified.json
 *.txt
 *.csv
 *.xml
