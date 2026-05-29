@@ -163,11 +163,6 @@ user_stocks = {
             1434.30
         ],
         [
-            "https://groww.in/stocks/hdfc-asset-management-company-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hero-motocorp-ltd",
             11,
             5550.04
@@ -221,11 +216,6 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             7,
             7779.34
-        ],
-        [
-            "https://groww.in/stocks/page-industries-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",

@@ -57,12 +57,12 @@ def get_stock_details(url, sleep_timer=False):
         if sleep_timer:
             sleep(5)
         try:
-            name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__Mxy2Y").text
+            name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__5pFSt").text
             if not name:
                 return get_stock_details(url, sleep_timer=True)
         except Exception as e:
             return get_stock_details(url, sleep_timer=True)
-        all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__WvK77").text
+        all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__tEKX_").text
         individual_stock_details = {"Name": name,
                                     "Url": url
                                     }

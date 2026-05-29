@@ -206,7 +206,7 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
         sleep(5)
 
     try:
-        name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__Mxy2Y").text
+        name = driver.find_element(By.CLASS_NAME, "instrumentProductHeader_displayName__5pFSt").text
         if not name:
             return get_stock_details(all_data, set_timer=True, _depth=_depth + 1)
     except Exception:
@@ -231,7 +231,7 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
     if lowest_day_limit != -2:
         print(f"\nManually limit provided on -------- {name} With value {lowest_day_limit}")
 
-    all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__WvK77").text
+    all_details = driver.find_element(By.CLASS_NAME, "instrumentFundamentals_root__tEKX_").text
 
     # Check future dividends (original block with sleeps and fallback)
     try:
@@ -239,10 +239,10 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
         driver.find_element(By.CLASS_NAME, "tabs8Parent").find_elements(By.XPATH, "./*")[3].click()
         sleep(0.5)
 
-        dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split("\n")
+        dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_actionRowsContainer__3ef2x").text.split("\n")
         if "loading" in dividend_data[0].lower():
             sleep(10)
-            dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_container__UKS5a").text.split("\n")
+            dividend_data = driver.find_element(By.CLASS_NAME, "corporateActions_actionRowsContainer__3ef2x").text.split("\n")
 
         upcoming_dividend_date = ""
         upcoming_future_insights_list = ["Upcoming", "Today"]
@@ -253,7 +253,7 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
                 cond_next = dividend_data[index + 1].strip() == "Ex date"
                 if cond_prev and dividend_data[index].strip() in upcoming_future_insights_list and cond_next:
                     dividend_date = datetime.strptime(
-                        f"{dividend_data[0]}-{dividend_data[1]}-{dividend_data[2][:3]}", "%Y-%d-%b"
+                        f"{datetime.now().year}-{dividend_data[0]}-{dividend_data[1]}", "%Y-%d-%b"
                     ).date()
                     current_date = datetime.today().date()
                     if dividend_date >= current_date:
@@ -274,7 +274,7 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
                                 )
                         if not upcoming_dividend_date:
                             upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
-                        if dividend_data[4].strip() == upcoming_future_insights_list[0]:
+                        if dividend_data[3].strip() == upcoming_future_insights_list[0]:
                             dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
                             print("\n", dividend_message, name)
     except Exception as e:
