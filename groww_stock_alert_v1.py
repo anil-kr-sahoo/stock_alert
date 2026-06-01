@@ -270,10 +270,10 @@ def get_stock_details(all_data, set_timer=False, _depth=0):
                                     )
                                 upcoming_dividend_date = (
                                     f"{dividend_data[dividend_index - 3].strip() if len(dividend_data[dividend_index - 3].strip()) == 2 else '0' + dividend_data[dividend_index - 3].strip()} "
-                                    f"{dividend_data[dividend_index - 2].strip()}, {dividend_data[0].strip()}"
+                                    f"{dividend_data[dividend_index - 2].strip()}, {datetime.now().year}"
                                 )
                         if not upcoming_dividend_date:
-                            upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {dividend_data[0].strip()}"
+                            upcoming_dividend_date = f"{dividend_data[1].strip()} {dividend_data[2].strip()}, {datetime.now().year}"
                         if dividend_data[3].strip() == upcoming_future_insights_list[0]:
                             dividend_message = f"*Rs {upcoming_dividend_amount}/- dividend per share declared by {upcoming_dividend_date}*\n"
                             print("\n", dividend_message, name)
