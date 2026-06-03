@@ -123,11 +123,6 @@ user_stocks = {
             331.32
         ],
         [
-            "https://groww.in/stocks/bajaj-auto-ltd",
-            2,
-            8745.48
-        ],
-        [
             "https://groww.in/stocks/bharti-infratel-ltd",
             0,
             0
@@ -164,8 +159,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hdfc-asset-management-company-ltd",
-            0,
-            0
+            3,
+            2507.20
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -194,8 +189,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            9,
-            1298.76
+            13,
+            1276.40
         ],
         [
             "https://groww.in/stocks/mahanagar-gas-ltd",
@@ -244,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            4,
-            1556.70
+            9,
+            1522.97
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
