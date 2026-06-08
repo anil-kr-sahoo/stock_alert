@@ -87,8 +87,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
-            7,
-            5540.21
+            9,
+            5292.38
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
@@ -97,8 +97,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            22,
-            2775.15
+            25,
+            2708.87
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -154,8 +154,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            8,
-            1434.30
+            10,
+            1377.24
         ],
         [
             "https://groww.in/stocks/hdfc-asset-management-company-ltd",
