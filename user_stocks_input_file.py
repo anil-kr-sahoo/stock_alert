@@ -233,6 +233,11 @@ user_stocks = {
             212.85
         ],
         [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
             13,
             2706.23

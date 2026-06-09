@@ -1,9 +1,8 @@
 stocks_dict = {
-    "trigger_date": "05/06/2026", # DD/MM/YYYY
+    "trigger_date": "12/06/2026", # DD/MM/YYYY
     "removed_stocks": [
-        'Bajaj Auto'
     ],
     "newly_added_stocks": [
-        'HDFC Asset Management Company',
+        'Nippon Life India Asset Management',
     ]
 }
