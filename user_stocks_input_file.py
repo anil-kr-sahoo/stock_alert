@@ -228,6 +228,11 @@ user_stocks = {
             5084.28
         ],
         [
+            "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/quess-corp-ltd",
             70,
             212.85
