@@ -129,8 +129,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            29,
-            132.17
+            31,
+            132.08
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -199,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            3,
-            2383.60
+            5,
+            2330.36
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -249,8 +249,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
-            36,
-            157.90
+            38,
+            158.18
         ],
         [
             "https://groww.in/stocks/wipro-ltd",
