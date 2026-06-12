@@ -42,8 +42,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            30,
-            1415.98
+            36,
+            1364.06
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            73,
-            1415.89
+            81,
+            1386.61
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -97,8 +97,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            25,
-            2708.87
+            29,
+            2632.20
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -109,11 +109,6 @@ user_stocks = {
             "https://groww.in/stocks/union-bank-of-india",
             40,
             127.89
-        ],
-        [
-            "https://groww.in/stocks/wipro-ltd",
-            42,
-            233.42
         ]
     ],
     "sp": [
