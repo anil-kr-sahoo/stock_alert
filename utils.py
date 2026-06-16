@@ -200,23 +200,19 @@ def generate_portfolio_data(data):
 
             if today_date_key not in dividend_data:
                 dividend_data[today_date_key] = []
-            all_urls = [details['url'] for details in dividend_data[today_date_key] if details.get('url')]
-            if url not in all_urls:
+            rounded_amount = get_two_decimal_val(dividend_amount)
+            existing_amounts = [
+                details['dividend_amount']
+                for details in dividend_data[today_date_key]
+                if details.get('url') == url
+            ]
+            if rounded_amount not in existing_amounts:
                 dividend_data[today_date_key].append({
                     'name': name,
                     'url': url,
-                    'dividend_amount': get_two_decimal_val(dividend_amount),
+                    'dividend_amount': rounded_amount,
                     'declared_dividend': stock["Upcoming Dividend Amount"]
                 })
-            if url in all_urls:
-                amounts = [details['dividend_amount'] for details in dividend_data[today_date_key] if details.get('url') == url]
-                if dividend_amount not in amounts:
-                    dividend_data[today_date_key].append({
-                        'name': name,
-                        'url': url,
-                        'dividend_amount': get_two_decimal_val(dividend_amount),
-                        'declared_dividend': stock["Upcoming Dividend Amount"]
-                    })
     # Compute final results
     result = []
     total_profit_loss = 0
