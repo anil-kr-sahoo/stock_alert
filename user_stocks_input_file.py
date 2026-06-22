@@ -188,14 +188,9 @@ user_stocks = {
             1276.40
         ],
         [
-            "https://groww.in/stocks/mahanagar-gas-ltd",
-            16,
-            1072.93
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
-            5,
-            2330.36
+            11,
+            2260.23
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -244,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            9,
-            1522.97
+            14,
+            1469.98
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
