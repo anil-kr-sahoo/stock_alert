@@ -23,7 +23,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/castrol-india-ltd",
             86,
-            215.91
+            215.92
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
@@ -33,7 +33,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
             14,
-            2091.52
+            2091.53
         ],
         [
             "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
@@ -42,8 +42,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            36,
-            1364.06
+            42,
+            1323.10
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -57,13 +57,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            81,
-            1386.61
+            132,
+            1239.07
         ],
         [
             "https://groww.in/stocks/itc-ltd",
             141,
-            345.01
+            345.02
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -83,22 +83,22 @@ user_stocks = {
         [
             "https://groww.in/stocks/petronet-lng-ltd",
             27,
-            295.90
+            295.91
         ],
         [
             "https://groww.in/stocks/pfizer-ltd",
             9,
-            5292.38
+            5292.39
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
             70,
-            208.49
+            208.50
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            29,
-            2632.20
+            39,
+            2478.69
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
@@ -149,8 +149,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            10,
-            1377.24
+            14,
+            1292.14
         ],
         [
             "https://groww.in/stocks/hdfc-asset-management-company-ltd",
@@ -158,14 +158,14 @@ user_stocks = {
             2507.20
         ],
         [
-            "https://groww.in/stocks/hero-motocorp-ltd",
-            11,
-            5550.04
-        ],
-        [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
             3,
             397.12
+        ],
+        [
+            "https://groww.in/stocks/hero-motocorp-ltd",
+            11,
+            5550.04
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            13,
-            1276.40
+            15,
+            1240.70
         ],
         [
             "https://groww.in/stocks/larsen-toubro-infotech-ltd",
@@ -194,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            11,
-            2260.23
+            13,
+            2245.71
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -239,18 +239,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            14,
-            1469.98
+            16,
+            1461.73
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
             38,
             158.18
-        ],
-        [
-            "https://groww.in/stocks/wipro-ltd",
-            26,
-            219.41
         ]
     ]
 }
