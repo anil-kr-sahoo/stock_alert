@@ -164,8 +164,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            0,
-            0
+            3,
+            397.12
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
@@ -186,6 +186,11 @@ user_stocks = {
             "https://groww.in/stocks/infosys-ltd",
             13,
             1276.40
+        ],
+        [
+            "https://groww.in/stocks/larsen-toubro-infotech-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
