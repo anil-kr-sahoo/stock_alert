@@ -42,8 +42,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
-            42,
-            1323.10
+            47,
+            1294.44
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -239,8 +239,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            16,
-            1461.73
+            20,
+            1442.80
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
