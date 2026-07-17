@@ -188,11 +188,6 @@ user_stocks = {
             1240.70
         ],
         [
-            "https://groww.in/stocks/larsen-toubro-infotech-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/mphasis-ltd",
             13,
             2245.71
