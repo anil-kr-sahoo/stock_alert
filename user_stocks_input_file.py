@@ -113,6 +113,11 @@ user_stocks = {
     ],
     "sp": [
         [
+            "https://groww.in/stocks/abbott-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
             13,
             331.32
@@ -159,8 +164,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
-            3,
-            397.12
+            8,
+            392.63
         ],
         [
             "https://groww.in/stocks/hero-motocorp-ltd",
@@ -206,6 +211,11 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             7,
             7779.34
+        ],
+        [
+            "https://groww.in/stocks/punjab-national-bank",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
