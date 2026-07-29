@@ -1282,6 +1282,18 @@
         "dividend_amount": 300.0,
         "name": "Pfizer",
         "url": "https://groww.in/stocks/pfizer-ltd"
+      },
+      {
+        "declared_dividend": 12.0,
+        "dividend_amount": 564.0,
+        "name": "HCL Technologies",
+        "url": "https://groww.in/stocks/hcl-technologies-ltd"
+      },
+      {
+        "declared_dividend": 12.0,
+        "dividend_amount": 168.0,
+        "name": "HCL Technologies",
+        "url": "https://groww.in/stocks/hcl-technologies-ltd"
       }
     ],
     "2026/07/24": [
