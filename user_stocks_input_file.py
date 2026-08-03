@@ -124,8 +124,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharti-infratel-ltd",
-            0,
-            0
+            3,
+            381.95
         ],
         [
             "https://groww.in/stocks/canara-bank",
