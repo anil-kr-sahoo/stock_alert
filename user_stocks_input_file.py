@@ -213,11 +213,6 @@ user_stocks = {
             7779.34
         ],
         [
-            "https://groww.in/stocks/punjab-national-bank",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/petronet-lng-ltd",
             5,
             280.07
