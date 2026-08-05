@@ -148,6 +148,11 @@ user_stocks = {
             2180.44
         ],
         [
+            "https://groww.in/stocks/dabur-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/emami-ltd",
             5,
             459.22
@@ -228,9 +233,14 @@ user_stocks = {
             0
         ],
         [
+            "https://groww.in/stocks/punjab-national-bank",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/quess-corp-ltd",
-            76,
-            222.46
+            78,
+            224.85
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
