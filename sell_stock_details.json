@@ -1,9 +1,9 @@
 [
     {
         "Book Value": 53.56,
-        "Credit Dividend": 10.01,
-        "Current Price": 592.1,
-        "Day Returns": 0.36,
+        "Credit Dividend": 10.19,
+        "Current Price": 603.0,
+        "Day Returns": 2.2,
         "Debt to Equity": 0.39,
         "Dividend Yield": 1.69,
         "EPS(TTM)": 40.39,
@@ -16,9 +16,9 @@
         "Qty": 57,
         "ROE": 61.13,
         "Stock Average Value": 505.27,
-        "Time": "2026-08-07 09:41:56",
-        "To Be Credit Dividend": 570.57,
-        "Total Returns": 4949.310000000002,
+        "Time": "2026-08-07 20:10:01",
+        "To Be Credit Dividend": 580.83,
+        "Total Returns": 5570.610000000001,
         "Upcoming Dividend Amount": 0,
         "Upcoming Dividend Date": "",
         "Url": "https://groww.in/stocks/hindustan-zinc-ltd"
