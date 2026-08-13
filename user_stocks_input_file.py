@@ -143,9 +143,19 @@ user_stocks = {
             2180.44
         ],
         [
+            "https://groww.in/stocks/dabur-india-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/emami-ltd",
             5,
             459.22
+        ],
+        [
+            "https://groww.in/stocks/godrej-agrovet-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
