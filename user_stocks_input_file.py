@@ -153,11 +153,6 @@ user_stocks = {
             459.22
         ],
         [
-            "https://groww.in/stocks/godrej-agrovet-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             14,
             1292.14
