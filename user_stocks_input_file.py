@@ -204,8 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            40,
-            343.73
+            45,
+            347.91
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
