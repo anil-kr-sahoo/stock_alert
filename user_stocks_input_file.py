@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            141,
-            345.02
+            156,
+            338.38
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
