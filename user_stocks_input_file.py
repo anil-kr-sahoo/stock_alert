@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            50,
-            335.27
+            58,
+            325.52
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
