@@ -149,8 +149,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/emami-ltd",
-            5,
-            459.22
+            7,
+            432.67
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
