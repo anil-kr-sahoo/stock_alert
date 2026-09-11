@@ -81,11 +81,6 @@ user_stocks = {
             295.91
         ],
         [
-            "https://groww.in/stocks/pfizer-ltd",
-            9,
-            5292.39
-        ],
-        [
             "https://groww.in/stocks/quess-corp-ltd",
             70,
             208.50
