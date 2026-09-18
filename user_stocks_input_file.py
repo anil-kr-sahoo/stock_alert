@@ -144,8 +144,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/emami-ltd",
-            7,
-            432.67
+            9,
+            418.39
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -219,8 +219,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
-            0,
-            0
+            2,
+            7453
         ],
         [
             "https://groww.in/stocks/punjab-national-bank",
@@ -229,13 +229,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            78,
-            224.85
+            80,
+            227.87
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
-            20,
-            2490.20
+            24,
+            2429.74
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
