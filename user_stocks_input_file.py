@@ -214,8 +214,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/petronet-lng-ltd",
-            5,
-            280.07
+            7,
+            280.38
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
