@@ -224,8 +224,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/punjab-national-bank",
-            0,
-            0
+            3,
+            113.41
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
