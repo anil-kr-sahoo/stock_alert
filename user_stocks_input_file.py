@@ -52,8 +52,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            132,
-            1239.07
+            146,
+            1215.13
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -169,8 +169,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
-            10,
-            2366.82
+            12,
+            2285.41
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -189,8 +189,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            15,
-            1240.70
+            18,
+            1198.80
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
