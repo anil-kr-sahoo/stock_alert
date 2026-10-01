@@ -57,8 +57,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            210,
-            319.05
+            212,
+            318.46
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -67,8 +67,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            226,
-            66.50
+            232,
+            66.70
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
@@ -134,8 +134,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            7,
-            2180.44
+            9,
+            2080.65
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
@@ -179,8 +179,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            65,
-            318.42
+            67,
+            316.61
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
@@ -204,8 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
-            29,
-            76.44
+            35,
+            76.05
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
