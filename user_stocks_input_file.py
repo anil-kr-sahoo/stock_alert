@@ -36,11 +36,6 @@ user_stocks = {
             2091.53
         ],
         [
-            "https://groww.in/stocks/general-insurance-corporation-of-india-ltd",
-            51,
-            405.37
-        ],
-        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             47,
             1294.44
@@ -53,7 +48,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             146,
-            1215.13
+            1215.14
         ],
         [
             "https://groww.in/stocks/itc-ltd",
@@ -120,7 +115,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/canara-bank",
             31,
-            132.08
+            132.09
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -135,7 +130,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
             9,
-            2080.65
+            2080.66
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
@@ -145,7 +140,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/emami-ltd",
             9,
-            418.39
+            418.40
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -169,8 +164,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
-            12,
-            2285.41
+            14,
+            2221.38
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -190,7 +185,7 @@ user_stocks = {
         [
             "https://groww.in/stocks/infosys-ltd",
             18,
-            1198.80
+            1198.81
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -240,12 +235,12 @@ user_stocks = {
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
             20,
-            1442.80
+            1442.81
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
             38,
-            158.18
+            158.19
         ]
     ]
 }
