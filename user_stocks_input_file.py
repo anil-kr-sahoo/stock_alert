@@ -198,6 +198,11 @@ user_stocks = {
             347.91
         ],
         [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/nmdc-ltd",
             35,
             76.05
@@ -211,6 +216,11 @@ user_stocks = {
             "https://groww.in/stocks/petronet-lng-ltd",
             7,
             280.38
+        ],
+        [
+            "https://groww.in/stocks/pfizer-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
