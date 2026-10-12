@@ -52,8 +52,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            216,
-            317.29
+            220,
+            316.23
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -134,8 +134,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
-            0,
-            0
+            2,
+            378.65
         ],
         [
             "https://groww.in/stocks/emami-ltd",
@@ -174,8 +174,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            71,
-            313.17
+            75,
+            310.26
         ],
         [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
