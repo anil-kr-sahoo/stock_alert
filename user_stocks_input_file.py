@@ -203,6 +203,11 @@ user_stocks = {
             346.60
         ],
         [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/nmdc-ltd",
             35,
             76.05
@@ -246,6 +251,11 @@ user_stocks = {
             "https://groww.in/stocks/union-bank-of-india",
             38,
             158.19
+        ],
+        [
+            "https://groww.in/stocks/wipro-ltd",
+            0,
+            0
         ]
     ]
 }
