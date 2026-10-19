@@ -188,6 +188,11 @@ user_stocks = {
             1198.81
         ],
         [
+            "https://groww.in/stocks/mangalore-refinery-petrochemicals-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/mphasis-ltd",
             13,
             2245.71
@@ -196,11 +201,6 @@ user_stocks = {
             "https://groww.in/stocks/national-aluminium-company-ltd",
             45,
             347.91
-        ],
-        [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -216,11 +216,6 @@ user_stocks = {
             "https://groww.in/stocks/petronet-lng-ltd",
             7,
             280.38
-        ],
-        [
-            "https://groww.in/stocks/pfizer-ltd",
-            0,
-            0
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
