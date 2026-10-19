@@ -2,7 +2,7 @@ GROUP_LIST = ["Kov9p6ESzUNCPEYJWBHMZG"]
 PHONE_NO_LIST = ["+917749984274"]
 ALLOWED_DEVICE_ACCESS = ["anil-ubuntu", "AECC-IN-DIH049", "Anil-Kr-Sahoo"]
 THANK_YOU_MESSAGE = "Thank you for trade with AK Stock Monitoring. \nToday's trade is over."
-ALLOW_NOTIFICATION = True
+ALLOW_NOTIFICATION = False
 NOTIFIED_SELL_STOCK_URLS = list()  # update this list if already notification sent
 # List details
 # [Grow url of stock, quantity you have, average price of your stocks, max threshold %]
@@ -108,11 +108,6 @@ user_stocks = {
             331.32
         ],
         [
-            "https://groww.in/stocks/bharti-infratel-ltd",
-            3,
-            381.95
-        ],
-        [
             "https://groww.in/stocks/canara-bank",
             31,
             132.09
@@ -129,8 +124,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            9,
-            2080.66
+            11,
+            2016.86
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
@@ -149,8 +144,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hdfc-asset-management-company-ltd",
-            3,
-            2507.20
+            5,
+            2443.68
         ],
         [
             "https://groww.in/stocks/hindustan-petroleum-corporation-ltd",
@@ -164,8 +159,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/hindustan-unilever-ltd",
-            14,
-            2221.38
+            16,
+            2175.59
         ],
         [
             "https://groww.in/stocks/hindustan-zinc-ltd",
@@ -178,14 +173,19 @@ user_stocks = {
             310.26
         ],
         [
+            "https://groww.in/stocks/bharti-infratel-ltd",
+            3,
+            381.95
+        ],
+        [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
             0,
             0
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            18,
-            1198.81
+            20,
+            1192.85
         ],
         [
             "https://groww.in/stocks/mangalore-refinery-petrochemicals-ltd",
@@ -199,8 +199,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            45,
-            347.91
+            47,
+            346.60
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -209,13 +209,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
-            7,
-            7779.34
-        ],
-        [
-            "https://groww.in/stocks/petronet-lng-ltd",
-            7,
-            280.38
+            9,
+            8312.82
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
@@ -228,9 +223,14 @@ user_stocks = {
             113.41
         ],
         [
+            "https://groww.in/stocks/petronet-lng-ltd",
+            7,
+            280.38
+        ],
+        [
             "https://groww.in/stocks/quess-corp-ltd",
-            80,
-            227.87
+            88,
+            236.28
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
