@@ -119,8 +119,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            6,
-            384.52
+            8,
+            388.14
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
@@ -129,8 +129,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
-            2,
-            378.65
+            4,
+            375.22
         ],
         [
             "https://groww.in/stocks/emami-ltd",
@@ -169,8 +169,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/itc-ltd",
-            75,
-            310.26
+            77,
+            308.88
         ],
         [
             "https://groww.in/stocks/bharti-infratel-ltd",
@@ -189,13 +189,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mangalore-refinery-petrochemicals-ltd",
-            0,
-            0
+            2,
+            163.38
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            13,
-            2245.71
+            15,
+            2281.62
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
@@ -244,8 +244,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/tech-mahindra-ltd",
-            20,
-            1442.81
+            22,
+            1475.05
         ],
         [
             "https://groww.in/stocks/union-bank-of-india",
