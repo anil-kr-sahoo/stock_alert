@@ -32,8 +32,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            14,
-            2091.53
+            22,
+            1909.29
         ],
         [
             "https://groww.in/stocks/hcl-technologies-ltd",
@@ -104,13 +104,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/bharat-petroleum-corporation-ltd",
-            13,
-            331.32
+            16,
+            321.50
         ],
         [
             "https://groww.in/stocks/canara-bank",
-            31,
-            132.09
+            35,
+            130.33
         ],
         [
             "https://groww.in/stocks/castrol-india-ltd",
@@ -119,13 +119,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/coal-india-ltd",
-            8,
-            388.14
+            10,
+            389.25
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            11,
-            2016.86
+            18,
+            1851.20
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
@@ -204,8 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            0,
-            0
+            7,
+            907.36
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
