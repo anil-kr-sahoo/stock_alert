@@ -184,8 +184,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
-            20,
-            1192.85
+            24,
+            1179.57
         ],
         [
             "https://groww.in/stocks/mangalore-refinery-petrochemicals-ltd",
