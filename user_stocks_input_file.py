@@ -138,6 +138,11 @@ user_stocks = {
             418.40
         ],
         [
+            "https://groww.in/stocks/godrej-consumer-products-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/hcl-technologies-ltd",
             14,
             1292.14
@@ -216,6 +221,11 @@ user_stocks = {
             "https://groww.in/stocks/oracle-financial-services-software-ltd",
             9,
             8312.82
+        ],
+        [
+            "https://groww.in/stocks/pfizer-ltd",
+            0,
+            0
         ],
         [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
