@@ -223,11 +223,6 @@ user_stocks = {
             8312.82
         ],
         [
-            "https://groww.in/stocks/pfizer-ltd",
-            0,
-            0
-        ],
-        [
             "https://groww.in/stocks/procter-gamble-hygiene-health-care-ltd",
             2,
             7453
