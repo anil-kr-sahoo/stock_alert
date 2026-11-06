@@ -129,8 +129,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
-            4,
-            375.22
+            6,
+            375.73
         ],
         [
             "https://groww.in/stocks/emami-ltd",
