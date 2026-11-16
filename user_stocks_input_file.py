@@ -194,8 +194,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mangalore-refinery-petrochemicals-ltd",
-            2,
-            163.38
+            4,
+            169.16
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
@@ -204,13 +204,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            47,
-            346.60
-        ],
-        [
-            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
-            7,
-            907.36
+            50,
+            345.01
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
