@@ -124,8 +124,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/colgatepalmolive-india-ltd",
-            18,
-            1851.20
+            21,
+            1813.58
         ],
         [
             "https://groww.in/stocks/dabur-india-ltd",
@@ -199,13 +199,13 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/mphasis-ltd",
-            15,
-            2281.62
+            17,
+            2293.79
         ],
         [
             "https://groww.in/stocks/national-aluminium-company-ltd",
-            50,
-            345.01
+            51,
+            344.30
         ],
         [
             "https://groww.in/stocks/nmdc-ltd",
@@ -234,8 +234,8 @@ user_stocks = {
         ],
         [
             "https://groww.in/stocks/quess-corp-ltd",
-            88,
-            236.28
+            91,
+            239.28
         ],
         [
             "https://groww.in/stocks/tata-consultancy-services-ltd",
