@@ -178,14 +178,14 @@ user_stocks = {
             308.88
         ],
         [
-            "https://groww.in/stocks/bharti-infratel-ltd",
-            3,
-            381.95
-        ],
-        [
             "https://groww.in/stocks/indian-oil-corporation-ltd",
             2,
             145.42
+        ],
+        [
+            "https://groww.in/stocks/bharti-infratel-ltd",
+            3,
+            381.95
         ],
         [
             "https://groww.in/stocks/infosys-ltd",
