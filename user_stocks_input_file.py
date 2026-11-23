@@ -233,6 +233,11 @@ user_stocks = {
             280.38
         ],
         [
+            "https://groww.in/stocks/reliance-nippon-life-asset-management-ltd",
+            0,
+            0
+        ],
+        [
             "https://groww.in/stocks/quess-corp-ltd",
             91,
             239.28
